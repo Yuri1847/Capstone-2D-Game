@@ -1,0 +1,40 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_interior_fondelala_walls",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[3128,3129,3130,3131,3228,3229,3230,3231,3328,3329,3330,3331,3428,3429,3430,3431,],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_interior_fondelala_walls",
+  "out_columns":63,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"fondelala",
+    "path":"folders/Tile Sets/Environment/fondelala.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_in_hotel_walls",
+    "path":"sprites/spr_in_hotel_walls/spr_in_hotel_walls.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":8,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":8,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":4000,
+}

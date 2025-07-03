@@ -1,0 +1,41 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_wall_side_other",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":25,
+    "SerialiseWidth":25,
+    "TileCompressedData":[
+      -496,0,1,2443,-25,0,-3,2443,-22,0,-3,2443,-22,0,-3,2443,-22,0,-3,2443,-22,0,-2,2443,1,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"ts_wall_side_other",
+  "out_columns":63,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Environment",
+    "path":"folders/Tile Sets/Environment.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_wall_side_other",
+    "path":"sprites/spr_wall_side_other/spr_wall_side_other.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":8,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":8,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":4000,
+}
