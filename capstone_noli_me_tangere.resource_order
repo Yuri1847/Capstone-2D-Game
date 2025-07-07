@@ -623,7 +623,7 @@
     {"name":"spr_main_tileProps_Binondo","order":3,"path":"sprites/spr_main_tileProps_Binondo/spr_main_tileProps_Binondo.yy",},
     {"name":"spr_main_tileset_Binondo","order":6,"path":"sprites/spr_main_tileset_Binondo/spr_main_tileset_Binondo.yy",},
     {"name":"spr_main_tileset","order":1,"path":"sprites/spr_main_tileset/spr_main_tileset.yy",},
-    {"name":"spr_maria_clara_house","order":7,"path":"sprites/spr_maria_clara_house/spr_maria_clara_house.yy",},
+    {"name":"spr_maria_clara_house","order":8,"path":"sprites/spr_maria_clara_house/spr_maria_clara_house.yy",},
     {"name":"spr_Medium_Bush2","order":1,"path":"sprites/spr_Medium_Bush2/spr_Medium_Bush2.yy",},
     {"name":"spr_Medium_Bush3","order":2,"path":"sprites/spr_Medium_Bush3/spr_Medium_Bush3.yy",},
     {"name":"spr_Medium_Bush4","order":3,"path":"sprites/spr_Medium_Bush4/spr_Medium_Bush4.yy",},
