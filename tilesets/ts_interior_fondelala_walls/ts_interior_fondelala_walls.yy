@@ -2,7 +2,7 @@
   "$GMTileSet":"v1",
   "%Name":"ts_interior_fondelala_walls",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[3128,3129,3130,3131,3228,3229,3230,3231,3328,3329,3330,3331,3428,3429,3430,3431,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[2650,2651,2652,2654,2655,2657,2757,2756,2755,2754,2753,2752,2751,2750,2850,0,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,
