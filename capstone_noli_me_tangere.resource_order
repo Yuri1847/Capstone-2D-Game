@@ -482,6 +482,7 @@
     {"name":"rm_Cementery","order":5,"path":"rooms/rm_Cementery/rm_Cementery.yy",},
     {"name":"rm_fonde_de_lala_field","order":4,"path":"rooms/rm_fonde_de_lala_field/rm_fonde_de_lala_field.yy",},
     {"name":"rm_fonde_de_lala","order":3,"path":"rooms/rm_fonde_de_lala/rm_fonde_de_lala.yy",},
+    {"name":"rm_hardin_ng_botanika","order":4,"path":"rooms/rm_hardin_ng_botanika/rm_hardin_ng_botanika.yy",},
     {"name":"rm_Hotel_Fonda_First_Floor","order":1,"path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"rm_Hotel_Fonda_Second_Floor","order":2,"path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
     {"name":"rm_house_ibarra_inside","order":2,"path":"rooms/rm_house_ibarra_inside/rm_house_ibarra_inside.yy",},

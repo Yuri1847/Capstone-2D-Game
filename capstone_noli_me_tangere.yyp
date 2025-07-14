@@ -626,6 +626,7 @@
     {"id":{"name":"rm_Cementery","path":"rooms/rm_Cementery/rm_Cementery.yy",},},
     {"id":{"name":"rm_fonde_de_lala_field","path":"rooms/rm_fonde_de_lala_field/rm_fonde_de_lala_field.yy",},},
     {"id":{"name":"rm_fonde_de_lala","path":"rooms/rm_fonde_de_lala/rm_fonde_de_lala.yy",},},
+    {"id":{"name":"rm_hardin_ng_botanika","path":"rooms/rm_hardin_ng_botanika/rm_hardin_ng_botanika.yy",},},
     {"id":{"name":"rm_Hotel_Fonda_delala","path":"rooms/rm_Hotel_Fonda_delala/rm_Hotel_Fonda_delala.yy",},},
     {"id":{"name":"rm_Hotel_Fonda_First_Floor","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},},
     {"id":{"name":"rm_Hotel_Fonda_Second_Floor","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},},
@@ -1155,6 +1156,7 @@
         {"roomId":{"name":"rm_house_ibarra_inside","path":"rooms/rm_house_ibarra_inside/rm_house_ibarra_inside.yy",},},
       ],"groupName":"rm_sd_ibarra",},
     {"roomId":{"name":"rm_house_tasyo_inside","path":"rooms/rm_house_tasyo_inside/rm_house_tasyo_inside.yy",},},
+    {"roomId":{"name":"rm_hardin_ng_botanika","path":"rooms/rm_hardin_ng_botanika/rm_hardin_ng_botanika.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
