@@ -1131,6 +1131,7 @@
     {"id":{"name":"ts_hardin_botaniko_tile","path":"tilesets/ts_hardin_botaniko_tile/ts_hardin_botaniko_tile.yy",},},
     {"id":{"name":"ts_house_tile_interior_decoration","path":"tilesets/ts_house_tile_interior_decoration/ts_house_tile_interior_decoration.yy",},},
     {"id":{"name":"ts_interior_fondelala_walls","path":"tilesets/ts_interior_fondelala_walls/ts_interior_fondelala_walls.yy",},},
+    {"id":{"name":"ts_main_tileset_copy","path":"tilesets/ts_main_tileset_copy/ts_main_tileset_copy.yy",},},
     {"id":{"name":"ts_main_tileset","path":"tilesets/ts_main_tileset/ts_main_tileset.yy",},},
     {"id":{"name":"ts_maria_clara_house_tile","path":"tilesets/ts_maria_clara_house_tile/ts_maria_clara_house_tile.yy",},},
     {"id":{"name":"ts_maria_clara_walls","path":"tilesets/ts_maria_clara_walls/ts_maria_clara_walls.yy",},},

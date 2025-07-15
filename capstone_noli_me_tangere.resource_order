@@ -884,6 +884,7 @@
     {"name":"sprIUp_Victoria","order":4,"path":"sprites/sprIUp_Victoria/sprIUp_Victoria.yy",},
     {"name":"ts_floor_furniture","order":3,"path":"tilesets/ts_floor_furniture/ts_floor_furniture.yy",},
     {"name":"ts_house_tile_interior_decoration","order":1,"path":"tilesets/ts_house_tile_interior_decoration/ts_house_tile_interior_decoration.yy",},
+    {"name":"ts_main_tileset_copy","order":1,"path":"tilesets/ts_main_tileset_copy/ts_main_tileset_copy.yy",},
     {"name":"ts_main_tileset","order":5,"path":"tilesets/ts_main_tileset/ts_main_tileset.yy",},
     {"name":"ts_maria_clara_walls","order":1,"path":"tilesets/ts_maria_clara_walls/ts_maria_clara_walls.yy",},
     {"name":"ts_staff_station","order":2,"path":"tilesets/ts_staff_station/ts_staff_station.yy",},
