@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_book2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_book2",
   "overriddenProperties":[],
@@ -9,10 +11,7 @@
     "name":"Church",
     "path":"folders/Objects/ENVIRONMENT/SAN_DIEGO/Interior/Church.yy",
   },
-  "parentObjectId":{
-    "name":"obj_par_environment",
-    "path":"objects/obj_par_environment/obj_par_environment.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

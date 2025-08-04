@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_mc_house_stair",
+  "%Name":"obj_mc_house_stair_first_floor",
   "eventList":[],
   "managed":true,
-  "name":"obj_mc_house_stair",
+  "name":"obj_mc_house_stair_first_floor",
   "overriddenProperties":[],
   "parent":{
     "name":"Maria Clara House Inside",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mc_house_stair",
-    "path":"sprites/spr_mc_house_stair/spr_mc_house_stair.yy",
+    "name":"spr_mc_house_stair_first_floor",
+    "path":"sprites/spr_mc_house_stair_first_floor/spr_mc_house_stair_first_floor.yy",
   },
   "spriteMaskId":null,
   "visible":true,
