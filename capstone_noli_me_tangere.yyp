@@ -84,7 +84,7 @@
     {"$GMFolder":"","%Name":"SAN_DIEGO","folderPath":"folders/Objects/ENVIRONMENT/SAN_DIEGO.yy","name":"SAN_DIEGO","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Interior","folderPath":"folders/Objects/ENVIRONMENT/SAN_DIEGO/Interior.yy","name":"Interior","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Church","folderPath":"folders/Objects/ENVIRONMENT/SAN_DIEGO/Interior/Church.yy","name":"Church","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"GotoRooms","folderPath":"folders/Objects/GotoRooms.yy","name":"GotoRooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"GOTOROOMS","folderPath":"folders/Objects/GOTOROOMS.yy","name":"GOTOROOMS","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Objects/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Albina","folderPath":"folders/Objects/NPC/Albina.yy","name":"Albina","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Albino","folderPath":"folders/Objects/NPC/Albino.yy","name":"Albino","resourceType":"GMFolder","resourceVersion":"2.0",},

@@ -6,8 +6,8 @@
   "name":"obj_goto_ibarra_outside",
   "overriddenProperties":[],
   "parent":{
-    "name":"GotoRooms",
-    "path":"folders/Objects/GotoRooms.yy",
+    "name":"GOTOROOMS",
+    "path":"folders/Objects/GOTOROOMS.yy",
   },
   "parentObjectId":null,
   "persistent":false,

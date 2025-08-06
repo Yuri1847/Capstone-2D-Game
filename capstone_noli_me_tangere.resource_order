@@ -66,7 +66,7 @@
     {"name":"INTRAMUROS","order":2,"path":"folders/Objects/ENVIRONMENT/INTRAMUROS.yy",},
     {"name":"Interior","order":4,"path":"folders/Objects/ENVIRONMENT/SAN_DIEGO/Interior.yy",},
     {"name":"Church","order":8,"path":"folders/Objects/ENVIRONMENT/SAN_DIEGO/Interior/Church.yy",},
-    {"name":"GotoRooms","order":4,"path":"folders/Objects/GotoRooms.yy",},
+    {"name":"GOTOROOMS","order":4,"path":"folders/Objects/GOTOROOMS.yy",},
     {"name":"NPC","order":2,"path":"folders/Objects/NPC.yy",},
     {"name":"Albina","order":1,"path":"folders/Objects/NPC/Albina.yy",},
     {"name":"Albino","order":2,"path":"folders/Objects/NPC/Albino.yy",},
