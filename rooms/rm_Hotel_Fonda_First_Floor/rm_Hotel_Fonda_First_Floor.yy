@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_33FA2E30","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"inst_17E2E2C5","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"inst_626FA24D","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"inst_11B902C2","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
@@ -45,12 +44,15 @@
     {"name":"inst_FCC2D25","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"inst_D2C5BF2","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
     {"name":"inst_3BC6E84C","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
+    {"name":"inst_5E4003A9","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
+    {"name":"inst_51B2441","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"ins_player","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_33FA2E30","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33FA2E30","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":65.0,"y":120.0,},
-      ],"layers":[],"name":"ins_player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"ins_warp","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_5E4003A9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E4003A9","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":324.0,"y":325.0,},
+        {"$GMRInstance":"v2","%Name":"inst_51B2441","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51B2441","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":280.0,"y":143.0,},
+      ],"layers":[],"name":"ins_warp","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_invisible_blockages","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_288BEE4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_288BEE4C","objectId":{"name":"obj_Invi_Block","path":"objects/obj_Invi_Block/obj_Invi_Block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.8125,"scaleY":1.1875,"x":79.5,"y":65.5,},
         {"$GMRInstance":"v2","%Name":"inst_1CBD7FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CBD7FC","objectId":{"name":"obj_Invi_Block","path":"objects/obj_Invi_Block/obj_Invi_Block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.3125,"scaleY":1.1875,"x":266.0,"y":65.5,},

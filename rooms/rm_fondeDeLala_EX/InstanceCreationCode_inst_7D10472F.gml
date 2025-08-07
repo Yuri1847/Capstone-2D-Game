@@ -1,4 +1,4 @@
 
 targetRoom = rm_binondoBay;
-targetX = 1160;
-targetY = 370;
+targetX = 1205;
+targetY = 372;

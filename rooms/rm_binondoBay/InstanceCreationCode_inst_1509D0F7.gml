@@ -1,4 +1,4 @@
 
 targetRoom = rm_fondeDeLala_EX;
-targetX = 118;
-targetY = 387;
+targetX = 76;
+targetY = 399;
