@@ -1181,8 +1181,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"children":[
-        {"roomId":{"name":"rm_binondo_main","path":"rooms/rm_binondo_main/rm_binondo_main.yy",},},
         {"roomId":{"name":"rm_Hotel_Fonda_delala","path":"rooms/rm_Hotel_Fonda_delala/rm_Hotel_Fonda_delala.yy",},},
+        {"roomId":{"name":"rm_binondo_main","path":"rooms/rm_binondo_main/rm_binondo_main.yy",},},
         {"roomId":{"name":"rm_fondeDeLala_EX","path":"rooms/rm_fondeDeLala_EX/rm_fondeDeLala_EX.yy",},},
         {"roomId":{"name":"rm_binondoBay","path":"rooms/rm_binondoBay/rm_binondoBay.yy",},},
         {"roomId":{"name":"rm_binondoTiago_EX","path":"rooms/rm_binondoTiago_EX/rm_binondoTiago_EX.yy",},},
