@@ -1,15 +1,15 @@
-var _max_devices = 4;
+var maxDevices = 4;
 
-for (var i = 0; i < _max_devices; i++)
+for (var i = 0; i < maxDevices; i++)
 {
-	var _mouse_x = device_mouse_x_to_gui(i);
-	var _mouse_y = device_mouse_y_to_gui(i);
+	var mouseX = device_mouse_x_to_gui(i);
+	var mouseY = device_mouse_y_to_gui(i);
 	
-	var _ui_at_pos = instance_position(_mouse_x, _mouse_y, obj_joystick_base);
-	var _held = device_mouse_check_button(i, mb_left);
+	var uiAtPos = instance_position(mouseX, mouseY, obj_joystick_base);
+	var held = device_mouse_check_button(i, mb_left);
 	
-	if (_ui_at_pos != noone && _held)
+	if (uiAtPos != noone && held)
 	{
-		_ui_at_pos.input(i);
+		uiAtPos.input(i);
 	}
 }

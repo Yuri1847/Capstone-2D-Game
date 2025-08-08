@@ -1,22 +1,22 @@
-if (touch_id != -1){
-	if (device_mouse_check_button(touch_id, mb_left))
+if (touchId != -1){
+	if (device_mouse_check_button(touchId, mb_left))
 	{
-		joy_x = device_mouse_x_to_gui(touch_id) - x;
-		joy_y = device_mouse_y_to_gui(touch_id) - y;
+		joyX = device_mouse_x_to_gui(touchId) - x;
+		joyY = device_mouse_y_to_gui(touchId) - y;
 	
-		var _direction = point_direction(0, 0, joy_x, joy_y);
-		var _distance = point_distance(0, 0, joy_x, joy_y);
+		var _direction = point_direction(0, 0, joyX, joyY);
+		var _distance = point_distance(0, 0, joyX, joyY);
 	
 		if (_distance > radius)
 		{
-			joy_x = lengthdir_x(radius, _direction);
-			joy_y = lengthdir_y(radius, _direction);
+			joyX = lengthdir_x(radius, _direction);
+			joyY = lengthdir_y(radius, _direction);
 		}
 	}
 	else
 	{
-		touch_id = -1;
-		joy_x = 0;
-		joy_y = 0;
+		touchId = -1;
+		joyX = 0;
+		joyY = 0;
 	}
 }

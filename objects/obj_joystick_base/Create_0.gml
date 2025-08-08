@@ -1,12 +1,11 @@
-joy_x = 0;
-joy_y = 0;
-touch_id = -1;
-
+joyX = 0;
+joyY = 0;
+touchId = -1;
 radius = sprite_width / 2;
 
-input = function (_touch_id)
+input = function (touchId)
 {
-	touch_id = _touch_id;
+	self.touchId = touchId;
 }
 
 x = camera_get_view_x(view_camera[0]) + 300;

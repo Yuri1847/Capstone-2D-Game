@@ -1,6 +1,7 @@
 // Check keys for movement
 
 if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){
+	//for Keyboard
 	moveRight = keyboard_check(vk_right);
 	moveUp = keyboard_check(vk_up);
 	moveLeft = keyboard_check(vk_left);
@@ -9,17 +10,18 @@ if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) 
 	vx = ((moveRight - moveLeft) * walkSpeed);
 	vy = ((moveDown - moveUp) * walkSpeed);
 }else{
-	var _move_x = 0;
-	var _move_y = 0;
+	//for Joystick
+	var moveX = 0;
+	var moveY = 0;
 
 	with (obj_joystick_base)
 	{
-	_move_x = round(joy_x / radius);
-	_move_y = round(joy_y / radius);
+	moveX = round(joyX / radius);
+	moveY = round(joyY / radius);
 	}
-
-	vx = round(_move_x * walkSpeed);
-	vy = round( _move_y * walkSpeed);
+	// Calculate movement
+	vx = round(moveX * walkSpeed);
+	vy = round( moveY * walkSpeed);
 }
 
 // If Idle
