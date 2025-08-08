@@ -265,7 +265,7 @@
           8,3232,3233,3234,3235,3232,3233,3234,3235,-180,-2147483648,8,3332,3333,3334,3335,3332,3333,3334,3335,
           -180,-2147483648,8,3432,3433,3434,3435,3432,3433,3434,3435,-180,-2147483648,8,3532,3533,3534,3535,3532,
           3533,3534,3535,-10068,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_wall_side_other","path":"tilesets/ts_wall_side_other/ts_wall_side_other.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_wall_side_other","path":"tilesets/ts_wall_side_other/ts_wall_side_other.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ts_wall","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ts_wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":100,"SerialiseWidth":188,"TileCompressedData":[
           -3023,-2147483648,51,3248,3249,3250,3250,3251,3252,3253,3254,3255,3256,3257,3258,3248,3249,3254,3255,
           3256,3257,3258,3259,3249,3250,3251,3252,3253,3254,3255,3256,3257,3258,3248,3249,3250,3251,3252,3253,
