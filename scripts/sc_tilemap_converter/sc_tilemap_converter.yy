@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_tilemap_converter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_tilemap_converter",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
