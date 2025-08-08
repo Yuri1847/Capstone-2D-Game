@@ -1,4 +1,3 @@
-
 targetRoom = rm_binondo_main;
-targetX = 103;
-targetY = 208;
+targetX = 2405;
+targetY = 207;

@@ -1,11 +1,27 @@
 // Check keys for movement
-moveRight = keyboard_check(vk_right);
-moveUp = keyboard_check(vk_up);
-moveLeft = keyboard_check(vk_left);
-moveDown = keyboard_check(vk_down);
-// Calculate movement
-vx = ((moveRight - moveLeft) * walkSpeed);
-vy = ((moveDown - moveUp) * walkSpeed);
+
+if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){
+	moveRight = keyboard_check(vk_right);
+	moveUp = keyboard_check(vk_up);
+	moveLeft = keyboard_check(vk_left);
+	moveDown = keyboard_check(vk_down);
+	// Calculate movement
+	vx = ((moveRight - moveLeft) * walkSpeed);
+	vy = ((moveDown - moveUp) * walkSpeed);
+}else{
+	var _move_x = 0;
+	var _move_y = 0;
+
+	with (obj_joystick_base)
+	{
+	_move_x = round(joy_x / radius);
+	_move_y = round(joy_y / radius);
+	}
+
+	vx = round(_move_x * walkSpeed);
+	vy = round( _move_y * walkSpeed);
+}
+
 // If Idle
 if (vx == 0 && vy == 0) {
 	// Change idle Sprite based on last direction
