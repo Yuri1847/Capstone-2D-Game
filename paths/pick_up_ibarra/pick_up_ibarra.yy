@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pick_up_ibarra",
+  "closed":false,
+  "kind":0,
+  "name":"pick_up_ibarra",
+  "parent":{
+    "name":"Tiago",
+    "path":"folders/Paths/Tiago.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":766.3445,"y":410.48486,},
+    {"speed":100.0,"x":887.5566,"y":410.7273,},
+    {"speed":100.0,"x":887.2838,"y":642.0606,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -653,6 +653,7 @@
     {"id":{"name":"obj_XSmall_Tree1","path":"objects/obj_XSmall_Tree1/obj_XSmall_Tree1.yy",},},
     {"id":{"name":"obj_XSmall_Tree2","path":"objects/obj_XSmall_Tree2/obj_XSmall_Tree2.yy",},},
     {"id":{"name":"obj_XSmall_Tree3","path":"objects/obj_XSmall_Tree3/obj_XSmall_Tree3.yy",},},
+    {"id":{"name":"pick_up_ibarra","path":"paths/pick_up_ibarra/pick_up_ibarra.yy",},},
     {"id":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"id":{"name":"rm_bayan","path":"rooms/rm_bayan/rm_bayan.yy",},},
     {"id":{"name":"rm_baybayin","path":"rooms/rm_baybayin/rm_baybayin.yy",},},
@@ -1213,6 +1214,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"roomId":{"name":"rm_fondeDeLala","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},},
     {"roomId":{"name":"rm_home","path":"rooms/rm_home/rm_home.yy",},},
     {"children":[
@@ -1239,7 +1241,6 @@
         {"roomId":{"name":"rm_house_ibarra_inside","path":"rooms/rm_house_ibarra_inside/rm_house_ibarra_inside.yy",},},
       ],"groupName":"rm_sd_ibarra",},
     {"roomId":{"name":"rm_house_tasyo_inside","path":"rooms/rm_house_tasyo_inside/rm_house_tasyo_inside.yy",},},
-    {"roomId":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"roomId":{"name":"rm_baybayin","path":"rooms/rm_baybayin/rm_baybayin.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
   ],

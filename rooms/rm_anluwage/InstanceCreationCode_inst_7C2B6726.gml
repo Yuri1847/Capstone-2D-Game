@@ -1,3 +1,3 @@
-targetRoom = rm_ti;
+targetRoom = rm_tiagoHouse;
 targetX = 897;
 targetY = 680;
