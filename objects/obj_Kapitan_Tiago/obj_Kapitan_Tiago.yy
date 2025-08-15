@@ -10,8 +10,8 @@
   "name":"obj_Kapitan_Tiago",
   "overriddenProperties":[],
   "parent":{
-    "name":"Kapitan_Tiago",
-    "path":"folders/Objects/NPC/Kapitan_Tiago.yy",
+    "name":"NPC",
+    "path":"folders/Objects/NPC.yy",
   },
   "parentObjectId":{
     "name":"obj_par_environment",

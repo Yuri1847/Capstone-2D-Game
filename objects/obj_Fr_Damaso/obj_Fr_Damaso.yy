@@ -8,8 +8,8 @@
   "name":"obj_Fr_Damaso",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fr_Damaso",
-    "path":"folders/Objects/NPC/Fr_Damaso.yy",
+    "name":"NPC",
+    "path":"folders/Objects/NPC.yy",
   },
   "parentObjectId":{
     "name":"obj_par_environment",
