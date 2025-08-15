@@ -1,3 +1,3 @@
-targetRoom = rm_binondoBay;
-targetX = 1212;
-targetY = 373;
+targetRoom = rm_baybayin;
+targetX = 1140;
+targetY = 430;

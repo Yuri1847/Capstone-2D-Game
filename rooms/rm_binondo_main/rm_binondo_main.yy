@@ -698,8 +698,8 @@
   ],
   "name":"rm_binondo_main",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"MAINROOM",
+    "path":"folders/Rooms/MAINROOM.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
