@@ -1,3 +1,3 @@
-targetRoom = rm_baybayin;
-targetX = 141;
-targetY = 395;
+targetRoom = rm_ti;
+targetX = 897;
+targetY = 680;

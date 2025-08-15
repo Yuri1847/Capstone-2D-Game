@@ -526,7 +526,7 @@
     {"name":"rm_san_diego_main","order":1,"path":"rooms/rm_san_diego_main/rm_san_diego_main.yy",},
     {"name":"rm_sd_main","order":7,"path":"rooms/rm_sd_main/rm_sd_main.yy",},
     {"name":"rm_simbahan_inside","order":4,"path":"rooms/rm_simbahan_inside/rm_simbahan_inside.yy",},
-    {"name":"rm_tiagoHouse_binondoInside","order":1,"path":"rooms/rm_tiagoHouse_binondoInside/rm_tiagoHouse_binondoInside.yy",},
+    {"name":"rm_tiagoHouse","order":1,"path":"rooms/rm_tiagoHouse/rm_tiagoHouse.yy",},
     {"name":"sc_tilemap_converter","order":1,"path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},
     {"name":"scrInventory","order":1,"path":"scripts/scrInventory/scrInventory.yy",},
     {"name":"sibil_spr_back","order":1,"path":"sprites/sibil_spr_back/sibil_spr_back.yy",},

@@ -1,18 +1,18 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_tiagoHouse_binondoInside",
+  "%Name":"rm_tiagoHouse",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_4C74A925","path":"rooms/rm_tiagoHouse_binondoInside/rm_tiagoHouse_binondoInside.yy",},
+    {"name":"inst_1AAC4C0A","path":"rooms/rm_tiagoHouse/rm_tiagoHouse.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_4C74A925","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C74A925","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":448.0,},
-      ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"warp","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_1AAC4C0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1AAC4C0A","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":900.0,"y":739.0,},
+      ],"layers":[],"name":"warp","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"wall","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":135,"SerialiseWidth":240,"TileCompressedData":[
           7967,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,
           3019,3017,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,3019,3017,3018,3117,3118,3119,3117,3118,
@@ -1617,7 +1617,7 @@
           -2,314,-238,-2147483648,-2,314,-238,-2147483648,-2,314,-238,-2147483648,-6,314,-230,-2147483648,-5,314,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_floor_furniture","path":"tilesets/ts_floor_furniture/ts_floor_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
-  "name":"rm_tiagoHouse_binondoInside",
+  "name":"rm_tiagoHouse",
   "parent":{
     "name":"INTRAMUROS",
     "path":"folders/Rooms/INTRAMUROS.yy",
