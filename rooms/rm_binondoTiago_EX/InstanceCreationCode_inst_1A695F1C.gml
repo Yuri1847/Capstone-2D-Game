@@ -1,4 +1,4 @@
 
-targetRoom = rm_binondoTiago_IN;
+targetRoom = rm_tiagoHouse_binondoInside;
 targetX = 640;
 targetY = 488;

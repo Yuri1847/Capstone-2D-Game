@@ -1,3 +1,3 @@
-targetRoom = rm_fonde_de_lala_market;
-targetX = 66;
-targetY = 293;
+targetRoom = rm_fondeDeLala;
+targetX = 103;
+targetY = 383;

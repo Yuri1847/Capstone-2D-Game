@@ -1,5 +1,5 @@
 // Variables
-walkSpeed = 8;
+walkSpeed = 6;
 vx = 0;
 vy = 0;
 dir = 3;
