@@ -10,10 +10,8 @@ if (!npc_trigger && instance_exists(obj_player)) {
         path_start(pick_up_ibarra, 2, path_action_stop, false);
     }
 }
-
 // --- Detect movement manually ---
 var moving = (x != last_x) || (y != last_y);
-
 // If moving
 if (moving) {
     last_dir = direction;
@@ -58,7 +56,6 @@ else {
         image_xscale = 1;
     }
 }
-
 // Store current position for next step
 last_x = x;
 last_y = y;
