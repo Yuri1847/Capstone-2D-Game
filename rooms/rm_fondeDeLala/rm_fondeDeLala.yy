@@ -534,8 +534,8 @@
   ],
   "name":"rm_fondeDeLala",
   "parent":{
-    "name":"MAINROOM",
-    "path":"folders/Rooms/MAINROOM.yy",
+    "name":"Chapter1",
+    "path":"folders/Rooms/Chapter1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
