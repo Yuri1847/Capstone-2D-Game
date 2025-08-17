@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Walk",
-    "path":"folders/Sprites/NPC/Kapitan_Tiago/Walk.yy",
+    "path":"folders/Sprites/NPC/tiago/Walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

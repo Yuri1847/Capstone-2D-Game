@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Walk",
-    "path":"folders/Sprites/NPC/Fr_Damaso/Walk.yy",
+    "path":"folders/Sprites/NPC/damaso/Walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Fr_Damaso",
+  "%Name":"obj_damaso",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Fr_Damaso",
+  "name":"obj_damaso",
   "overriddenProperties":[],
   "parent":{
     "name":"NPC",

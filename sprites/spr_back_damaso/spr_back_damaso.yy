@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Idle",
-    "path":"folders/Sprites/NPC/Fr_Damaso/Idle.yy",
+    "path":"folders/Sprites/NPC/damaso/Idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

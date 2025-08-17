@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Idle",
-    "path":"folders/Sprites/NPC/Kapitan_Tiago/Idle.yy",
+    "path":"folders/Sprites/NPC/tiago/Idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
