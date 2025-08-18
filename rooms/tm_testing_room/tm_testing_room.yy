@@ -12,6 +12,7 @@
     {"name":"inst_78FB3092_1","path":"rooms/tm_testing_room/tm_testing_room.yy",},
     {"name":"inst_7F14A5BF","path":"rooms/tm_testing_room/tm_testing_room.yy",},
     {"name":"inst_A7BC339","path":"rooms/tm_testing_room/tm_testing_room.yy",},
+    {"name":"inst_585639EA","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

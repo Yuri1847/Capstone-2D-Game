@@ -1,0 +1,25 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[
+    {"$GMRUILayer":"v1","%Name":"pause_button_layer","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"panel","alignItems":2,"children":[
+            {"$GMRFlexPanel":"","%Name":"icon","alignItems":2,"children":[
+                {"$GMRSpriteGraphic":"v1","%Name":"graphic_69675874","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_69675874","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_pause","path":"sprites/spr_ui_pause/spr_ui_pause.yy",},"x":24.0,"y":24.0,},
+              ],"flexDirection":0,"height":{"unit":3,"value":48.0,},"justifyContent":1,"name":"icon","nodeColour":4282928882,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":48.0,},},
+            {"$GMRSpriteGraphic":"v1","%Name":"graphic_715934BA","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_715934BA","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_button","path":"sprites/spr_ui_button/spr_ui_button.yy",},"x":25.0,"y":25.0,},
+            {"$GMRInstance":"v2","%Name":"inst_585639EA","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_585639EA","objectId":{"name":"obj_ui_button","path":"objects/obj_ui_button/obj_ui_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":25.0,"y":25.0,},
+          ],"flexDirection":0,"height":{"unit":1,"value":50.0,},"justifyContent":1,"maxHeight":{"unit":0,"value":300.0,},"name":"panel","nodeColour":4286640712,"positionBottom":{"unit":1,"value":300.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":50.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"pause_button_layer","nodeColour":4282967026,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"capstone_noli_me_tangere",
+    "path":"capstone_noli_me_tangere.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}
