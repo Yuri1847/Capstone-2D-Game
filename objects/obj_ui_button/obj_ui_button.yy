@@ -1,13 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"obj_ui_button",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_ui_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"FUNCTIONS",
-    "path":"folders/Objects/FUNCTIONS.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/FUNCTIONS/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
