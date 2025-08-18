@@ -1,11 +1,11 @@
 //textbox parameter
-textbox_width = 446;
-textbox_height = 126;
+textbox_width = 447;
+textbox_height = 95;
 border = 16;
-line_sep = 20;
-line_width = textbox_width - border * 2;
+line_sep = 12;
+line_width = textbox_width - border*2;
 txtb_spr = spr_dial_menu;
-txtb_img = 0;
+txtb_img = 0;	
 txtb_img_spd = 6/10;
 
 
