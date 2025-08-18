@@ -1,7 +1,7 @@
 //textbox parameter
 textbox_width = 447;
 textbox_height = 95;
-border = 16;
+border = 8;
 line_sep = 12;
 line_width = textbox_width - border*2;
 txtb_spr = spr_dial_menu;

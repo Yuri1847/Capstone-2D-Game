@@ -10,8 +10,8 @@ if setup == false{
 	
 	setup = true;
 	draw_set_font(global.font_main);
-	draw_set_valign(fa_top);
-	draw_set_halign(fa_left);
+	draw_set_valign(fa_left);
+	draw_set_halign(fa_top);
 	
 	//loop throught pages
 	page_number = array_length(text)
@@ -36,7 +36,6 @@ if draw_char < text_length[page]{
 
 //flip through pages
 if accept_key{
-	
 	// if typing is donw
 	if draw_char == text_length[page]{
 		//next page 
@@ -61,7 +60,7 @@ txtb_img += txtb_img_spd;
 txtb_spr_w = sprite_get_width(txtb_spr);
 txtb_spr_h = sprite_get_height(txtb_spr);		
 //back to textbox
-draw_sprite_ext(txtb_spr, txtb_img, textbox_x + text_x_offset[page], textbox_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1);
+draw_sprite_ext(txtb_spr, txtb_img, textbox_x + text_x_offset[page], textbox_y, textbox_width / txtb_spr_w, textbox_height / txtb_spr_h, 0, c_white, 1);
 
 //draw text	
 var _drawtext = string_copy(text[page], 1, draw_char);
