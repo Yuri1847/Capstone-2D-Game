@@ -1,5 +1,14 @@
-// Check keys for movement
+//for dialog system
+if(keyboard_check_pressed(vk_space)){
+	create_dialog([
+	{
+		name: "tiago",
+		msg: "hello, ibarra!"
+	}
+	])
+}
 
+// Check keys for movement
 if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){
 	//for Keyboard
 	moveRight = keyboard_check(vk_right);
