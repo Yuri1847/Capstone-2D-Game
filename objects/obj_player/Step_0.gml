@@ -3,7 +3,7 @@ if(keyboard_check_pressed(vk_space)){
 	create_dialog([
 	{
 		name: "tiago",
-		msg: "hello, ibarra!"
+		msg: "hello, ibarra! kamusta kana? maayos ka namang nakarating? tagal mo ding nanatili sa europa. halika ipapakilala kita sa iba"
 	}
 	])
 }
