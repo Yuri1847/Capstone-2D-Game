@@ -20,6 +20,13 @@
     {"name":"inst_42A51B3C","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_76B1DF03","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1FA7CEE7","path":"roomui/RoomUI/RoomUI.yy",},
+<<<<<<< Updated upstream:rooms/rm_testroom/rm_testroom.yy
+=======
+    {"name":"inst_8100FD7","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_52D6E615","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_54C29C31","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_E59EEE8","path":"roomui/RoomUI/RoomUI.yy",},
+>>>>>>> Stashed changes:rooms/tm_testing_room/tm_testing_room.yy
   ],
   "isDnd":false,
   "layers":[
