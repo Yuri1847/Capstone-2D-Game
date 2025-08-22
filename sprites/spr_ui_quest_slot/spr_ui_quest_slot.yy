@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Main Menu",
-    "path":"folders/Sprites/FUNCTIONS/Main Menu.yy",
+    "name":"Quest UI",
+    "path":"folders/Sprites/FUNCTIONS/Main Menu/Quest UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

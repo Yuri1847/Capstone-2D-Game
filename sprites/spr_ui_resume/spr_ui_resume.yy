@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Main Menu",
-    "path":"folders/Sprites/FUNCTIONS/Main Menu.yy",
+    "name":"All in buttons UI",
+    "path":"folders/Sprites/FUNCTIONS/Main Menu/All in buttons UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

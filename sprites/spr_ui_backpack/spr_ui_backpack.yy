@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Main Menu",
-    "path":"folders/Sprites/FUNCTIONS/Main Menu.yy",
+    "name":"Inventory UI",
+    "path":"folders/Sprites/FUNCTIONS/Main Menu/Inventory UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
