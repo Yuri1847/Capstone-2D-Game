@@ -760,6 +760,7 @@
     {"id":{"name":"spr_ui_modal_bg","path":"sprites/spr_ui_modal_bg/spr_ui_modal_bg.yy",},},
     {"id":{"name":"spr_ui_modal_bg2","path":"sprites/spr_ui_modal_bg2/spr_ui_modal_bg2.yy",},},
     {"id":{"name":"spr_ui_pause","path":"sprites/spr_ui_pause/spr_ui_pause.yy",},},
+    {"id":{"name":"spr_ui_quest_slot","path":"sprites/spr_ui_quest_slot/spr_ui_quest_slot.yy",},},
     {"id":{"name":"spr_ui_quest","path":"sprites/spr_ui_quest/spr_ui_quest.yy",},},
     {"id":{"name":"spr_ui_resume","path":"sprites/spr_ui_resume/spr_ui_resume.yy",},},
     {"id":{"name":"spr_ui_setting","path":"sprites/spr_ui_setting/spr_ui_setting.yy",},},
