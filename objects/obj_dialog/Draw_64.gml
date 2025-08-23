@@ -22,7 +22,9 @@ draw_set_valign(fa_top);
 
 // Speaker name
 var _name = messages[current_message].name;
+draw_set_color(global.char_colors[$ _name]); // pull color of name 
 draw_text(text_x, text_y, _name);
+draw_set_color(c_white); // reset the name color
 
 // Move down for message
 text_y += 48;

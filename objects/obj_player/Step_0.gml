@@ -1,12 +1,7 @@
-//for dialog system
-if(keyboard_check_pressed(vk_space)){
-	create_dialog([
-	{
-		name: "tiago",
-		msg: "hello, ibarra! kamusta kana? maayos ka namang nakarating? tagal mo ding nanatili sa europa. halika ipapakilala kita sa iba"
-	}
-	])
-}
+//condition when dialog is open prevent player to move
+if(instance_exists(obj_dialog)) exit;
+
+
 
 // Check keys for movement
 if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){

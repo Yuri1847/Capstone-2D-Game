@@ -1,7 +1,8 @@
 //depth sorting
 depth =-y;
 
-
+//prevent moving when dialog is open
+if(instance_exists(obj_dialog)) exit;
 
 // Trigger movement toward Ibarra
 if (!npc_trigger && instance_exists(obj_player)) {
