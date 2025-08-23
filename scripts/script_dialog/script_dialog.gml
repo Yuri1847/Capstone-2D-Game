@@ -13,14 +13,15 @@ char_colors = {
 	"Ibarra": c_aqua
 }
 
-welcome_dialog = [
-{
-	name: "Tiago",
-	msg: "Kamusta ka na!"
-},
+//tiago greet ibarra
+greet_dialog = [
+	{
+		name: "Tiago",
+		msg: "Kamusta ka na!"
+	},
 
-{
-	name: "Ibarra",
-	msg: "Mabuti naman po..."
-}
+	{
+		name: "Ibarra",
+		msg: "Mabuti naman po..."
+	}
 ]

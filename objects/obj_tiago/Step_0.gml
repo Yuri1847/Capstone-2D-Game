@@ -1,3 +1,8 @@
+// Inherit the parent event
+event_inherited();
+
+
+//own event
 //depth sorting
 depth =-y;
 
@@ -60,6 +65,7 @@ else {
 // Store current position for next step
 last_x = x;
 last_y = y;
+
 
 
 

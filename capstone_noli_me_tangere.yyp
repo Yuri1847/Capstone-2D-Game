@@ -810,9 +810,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"roomId":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"roomId":{"name":"rm_baybayin","path":"rooms/rm_baybayin/rm_baybayin.yy",},},
-    {"roomId":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"roomId":{"name":"rm_fondeDeLala","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},},
     {"roomId":{"name":"rm_home","path":"rooms/rm_home/rm_home.yy",},},
     {"children":[
