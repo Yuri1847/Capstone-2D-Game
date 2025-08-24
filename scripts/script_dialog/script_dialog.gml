@@ -10,7 +10,8 @@ function create_dialog(_messages){
 char_colors = {
 	"Congrats": c_yellow,
 	"Kapitan Tiago": c_yellow,
-	"Crisostomo Ibarra": c_aqua
+	"Crisostomo Ibarra": c_aqua,
+	"Padre Damase": c_yellow
 }
 
 //tiago greet ibarra
