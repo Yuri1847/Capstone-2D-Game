@@ -1,5 +1,3 @@
-//condition when dialog is open prevent player to move
-if(instance_exists(obj_dialog)) exit;
 
 
 
