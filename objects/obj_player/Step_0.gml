@@ -1,4 +1,12 @@
-
+//test dialog
+if(keyboard_check_pressed(vk_space)){
+	create_dialogue([
+		{
+			name: "test dialog",
+			msg: "working"
+		}
+	])
+}
 
 
 // Check keys for movement
