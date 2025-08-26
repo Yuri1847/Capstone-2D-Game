@@ -489,6 +489,7 @@
     {"id":{"name":"rm_simbahan_inside","path":"rooms/rm_simbahan_inside/rm_simbahan_inside.yy",},},
     {"id":{"name":"rm_testroom","path":"rooms/rm_testroom/rm_testroom.yy",},},
     {"id":{"name":"rm_tiagoHouse","path":"rooms/rm_tiagoHouse/rm_tiagoHouse.yy",},},
+    {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"sc_nameTag","path":"scripts/sc_nameTag/sc_nameTag.yy",},},
     {"id":{"name":"sc_tilemap_converter","path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},},
