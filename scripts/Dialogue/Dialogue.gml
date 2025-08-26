@@ -3,5 +3,5 @@ function create_dialogue(_messages){
 	
 	var _inst = instance_create_depth(0,0,0,obj_dialog);
 	_inst.messages = _messages;
-	_inst.current_message = 0;s
+	_inst.current_message = 0;
 }

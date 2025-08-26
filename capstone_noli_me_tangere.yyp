@@ -382,6 +382,7 @@
     {"id":{"name":"obj_mirror_cabinet","path":"objects/obj_mirror_cabinet/obj_mirror_cabinet.yy",},},
     {"id":{"name":"obj_mug","path":"objects/obj_mug/obj_mug.yy",},},
     {"id":{"name":"obj_multitouch_manager","path":"objects/obj_multitouch_manager/obj_multitouch_manager.yy",},},
+    {"id":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},},
     {"id":{"name":"obj_old_cart_1","path":"objects/obj_old_cart_1/obj_old_cart_1.yy",},},
     {"id":{"name":"obj_old_cart_2","path":"objects/obj_old_cart_2/obj_old_cart_2.yy",},},
     {"id":{"name":"obj_old_cart_3","path":"objects/obj_old_cart_3/obj_old_cart_3.yy",},},
