@@ -387,7 +387,6 @@
     {"name":"sc_is_between","order":1,"path":"scripts/sc_is_between/sc_is_between.yy",},
     {"name":"sc_tilemap_converter","order":1,"path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},
     {"name":"sc_visible_layer","order":1,"path":"scripts/sc_visible_layer/sc_visible_layer.yy",},
-    {"name":"scrInventory","order":1,"path":"scripts/scrInventory/scrInventory.yy",},
     {"name":"spr_anvil_2","order":1,"path":"sprites/spr_anvil_2/spr_anvil_2.yy",},
     {"name":"spr_anvil_3","order":2,"path":"sprites/spr_anvil_3/spr_anvil_3.yy",},
     {"name":"spr_anvil_4","order":3,"path":"sprites/spr_anvil_4/spr_anvil_4.yy",},

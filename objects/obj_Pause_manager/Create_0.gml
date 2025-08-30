@@ -9,5 +9,3 @@ pauseSurfBuffer = -1;
 resW = 1280;
 resH = 720;
 
-//this object can implemented to menu bar, settings system or inventory system
-//this object can modified in the future
