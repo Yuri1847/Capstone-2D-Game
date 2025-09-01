@@ -14,8 +14,8 @@ if(mouse_check_button_released(mb_left)) {
 			for (var column = 0; column < inventory_columns; column++) {
 				x_pos = ui_padding_x + (column * (ui_inventory_slot_margin + ui_inventory_slot));
 				
-				if(is_between(mx, x_pos, x_pos + ui_inventory_slot)) {
-					if(is_between(my, y_pos, y_pos + ui_inventory_slot)) {
+				if(sc_is_between(mx, x_pos, x_pos + ui_inventory_slot)) {
+					if(sc_is_between(my, y_pos, y_pos + ui_inventory_slot)) {
 						var inventory_index = (row * inventory_columns) + column;
 						
 						if(inventory_index <= array_length(inventory_items) - 1) {

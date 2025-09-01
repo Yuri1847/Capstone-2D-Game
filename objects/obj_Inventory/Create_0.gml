@@ -1,7 +1,7 @@
 inventory_columns = 5;
 inventory_rows = 3;
 
-inventory = new Inventory();
+inventory = new sc_Inventory();
 
 inventory.addItem("Wood", 3, spr_wood);
 inventory.addItem("Wood", 2, spr_wood);
@@ -26,7 +26,7 @@ inventory.addItem("Eraser", 10, spr_stone);
 inventory.addItem("Apple", 10, spr_stone);
 inventory.addItem("Coin", 5, spr_stone);
 
-isEnabled = false;
+isEnabled = true;
 
 //Center inside Room
 //ui_padding_x = (room_width/2) - (464/2);

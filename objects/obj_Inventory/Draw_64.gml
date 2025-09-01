@@ -20,8 +20,8 @@ for(var row = 0; row < inventory_rows; row++){
 			
 			
 			//hover each spr_slots item
-			if(is_between(mx, x_pos, x_pos + ui_inventory_slot)) {
-				if(is_between(my, y_pos, y_pos + ui_inventory_slot)) {
+			if(sc_is_between(mx, x_pos, x_pos + ui_inventory_slot)) {
+				if(sc_is_between(my, y_pos, y_pos + ui_inventory_slot)) {
 					draw_set_color(#D5AC82)
 					draw_set_alpha(0.2)
 					draw_rectangle(x_pos+10, y_pos+10, (x_pos + ui_inventory_slot)-10, (y_pos + ui_inventory_slot)-10, false);
