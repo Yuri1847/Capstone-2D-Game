@@ -4,13 +4,14 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_ui_quest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inventory",
-    "path":"folders/Objects/FUNCTIONS/Inventory.yy",
+    "name":"Main Menu",
+    "path":"folders/Objects/FUNCTIONS/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

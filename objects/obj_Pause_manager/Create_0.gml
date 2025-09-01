@@ -8,4 +8,3 @@ pauseSurfBuffer = -1;
 //changes for whatever reason.
 resW = 1280;
 resH = 720;
-

@@ -1,4 +1,6 @@
+sc_invisible_layer(["main_menu_layer"])
+
 sc_visible_layer([
-	"Right_Option_Layer", 
-	"Pause_Button_Layer", 
+	"right_option_layer", 
+	"pause_button_layer", 
 ]);

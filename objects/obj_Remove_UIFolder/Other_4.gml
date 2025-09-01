@@ -1,11 +1,11 @@
 sc_invisible_layer([
-	"Dialog_Layer", 
-	"Inventory_Layer", 
-	"Quest_Layer", 
-	"Right_Option_Layer", 
-	"Settings_Layer", 
-	"Pause_Button_Layer", 
-	"Pause_Layer", 
-	"Control_Layer", 
-	"Joystick_Layer"
+	"exit_confirm_layer", 
+	"inventory_layer", 
+	"quest_layer", 
+	"right_option_layer", 
+	"settings_layer", 
+	"pause_button_layer", 
+	"pause_layer", 
 ]);
+
+sc_visible_layer(["main_menu_layer"])

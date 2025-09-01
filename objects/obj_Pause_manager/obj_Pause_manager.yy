@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Pause System",
-    "path":"folders/Objects/UI_AND_SETTINGS/Functional Not Implemented/Pause System.yy",
+    "path":"folders/Objects/FUNCTIONS/Pause System.yy",
   },
   "parentObjectId":null,
   "persistent":true,

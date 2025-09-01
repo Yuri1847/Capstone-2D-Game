@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Inventory System",
-    "path":"folders/Objects/UI_AND_SETTINGS/Functional Not Implemented/Inventory System.yy",
+    "path":"folders/Objects/FUNCTIONS/Inventory System.yy",
   },
   "parentObjectId":null,
   "persistent":true,

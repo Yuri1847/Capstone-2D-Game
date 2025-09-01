@@ -4,6 +4,6 @@ function clickButton(){
 	with(obj_Inventory){
 		obj_Inventory.isEnabled = true;
 	}
-	sc_visible_layer(["Inventory_Layer"]);
-	sc_invisible_layer(["Right_Option_Layer", "Pause_Button_Layer", "Control_Layer"]);
+	sc_visible_layer(["inventory_layer"]);
+	sc_invisible_layer(["right_option_layer", "pause_button_layer"]);
 }

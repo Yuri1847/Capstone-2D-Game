@@ -9,8 +9,8 @@
   "name":"obj_Remove_UIFolder",
   "overriddenProperties":[],
   "parent":{
-    "name":"Remove UI Folder For MainMenu and Loading Screen",
-    "path":"folders/Objects/UI_AND_SETTINGS/Functional Not Implemented/Remove UI Folder For MainMenu and Loading Screen.yy",
+    "name":"Remove Unessessary UI Folder For MainMenu",
+    "path":"folders/Objects/FUNCTIONS/Remove Unessessary UI Folder For MainMenu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

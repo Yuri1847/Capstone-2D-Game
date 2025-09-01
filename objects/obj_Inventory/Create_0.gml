@@ -26,7 +26,7 @@ inventory.addItem("Eraser", 10, spr_stone);
 inventory.addItem("Apple", 10, spr_stone);
 inventory.addItem("Coin", 5, spr_stone);
 
-isEnabled = true;
+isEnabled = false;
 
 //Center inside Room
 //ui_padding_x = (room_width/2) - (464/2);

@@ -1,5 +1,5 @@
 function clickButton(){
 	// settings button Pause_layer
-	sc_visible_layer(["Settings_Layer"])
-	sc_invisible_layer(["Pause_Layer"])
+	sc_visible_layer(["settings_layer"])
+	sc_invisible_layer(["pause_layer"])
 }

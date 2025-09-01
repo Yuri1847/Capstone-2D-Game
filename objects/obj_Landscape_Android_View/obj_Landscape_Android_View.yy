@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Landscape",
-    "path":"folders/Objects/UI_AND_SETTINGS/Functional Not Implemented/Landscape.yy",
+    "path":"folders/Objects/FUNCTIONS/Landscape.yy",
   },
   "parentObjectId":null,
   "persistent":true,
