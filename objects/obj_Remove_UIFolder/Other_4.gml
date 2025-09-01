@@ -1,0 +1,11 @@
+sc_invisible_layer([
+	"Dialog_Layer", 
+	"Inventory_Layer", 
+	"Quest_Layer", 
+	"Right_Option_Layer", 
+	"Settings_Layer", 
+	"Pause_Button_Layer", 
+	"Pause_Layer", 
+	"Control_Layer", 
+	"Joystick_Layer"
+]);
