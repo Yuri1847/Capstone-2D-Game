@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fn_ui",
+  "%Name":"fn_ui_loading_progress",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":12,
@@ -161,7 +161,7 @@
   "last":0,
   "lineHeight":15,
   "maintainGms1Font":false,
-  "name":"fn_ui",
+  "name":"fn_ui_loading_progress",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
