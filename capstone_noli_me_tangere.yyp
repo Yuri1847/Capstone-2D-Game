@@ -834,6 +834,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_1_cementeryo","path":"rooms/rm_1_cementeryo/rm_1_cementeryo.yy",},},
     {"roomId":{"name":"rm_anluwage","path":"rooms/rm_anluwage/rm_anluwage.yy",},},
     {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
@@ -862,7 +863,6 @@
       ],"groupName":"rm_sd_ibarra",},
     {"roomId":{"name":"rm_house_tasyo_inside","path":"rooms/rm_house_tasyo_inside/rm_house_tasyo_inside.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_1_cementeryo","path":"rooms/rm_1_cementeryo/rm_1_cementeryo.yy",},},
     {"roomId":{"name":"rm_2_tabing_lawa","path":"rooms/rm_2_tabing_lawa/rm_2_tabing_lawa.yy",},},
     {"roomId":{"name":"rm_2_ilog","path":"rooms/rm_2_ilog/rm_2_ilog.yy",},},
     {"roomId":{"name":"rm_3_gubat","path":"rooms/rm_3_gubat/rm_3_gubat.yy",},},
