@@ -1,6 +1,6 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_3_gubat",
+  "%Name":"rm_chapter23_piknik",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
@@ -10,10 +10,10 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
-  "name":"rm_3_gubat",
+  "name":"rm_chapter23_piknik",
   "parent":{
-    "name":"Chapter4",
-    "path":"folders/Rooms/Chapter4.yy",
+    "name":"Level4",
+    "path":"folders/Rooms/Level4.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

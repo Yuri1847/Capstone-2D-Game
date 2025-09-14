@@ -35,8 +35,8 @@
   ],
   "name":"rm_anluwage",
   "parent":{
-    "name":"Chapter1",
-    "path":"folders/Rooms/Chapter1.yy",
+    "name":"Level1",
+    "path":"folders/Rooms/Level1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

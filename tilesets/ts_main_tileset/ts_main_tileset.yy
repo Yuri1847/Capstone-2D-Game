@@ -10,7 +10,7 @@
     {"$GMAutoTileSet":"","%Name":"grass_water","closed_edge":false,"name":"grass_water","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[14,92,91,1,79,13,0,155,78,0,15,2,27,26,28,45,],},
     {"$GMAutoTileSet":"","%Name":"grass_dirt_cliff","closed_edge":false,"name":"grass_dirt_cliff","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[118,98,97,40,85,52,0,39,84,0,54,41,66,65,67,56,],},
     {"$GMAutoTileSet":"","%Name":"dirt_grass_cliff","closed_edge":false,"name":"dirt_grass_cliff","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[17,72,71,43,59,55,0,42,58,0,57,44,69,68,70,111,],},
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[45,96,95,33,83,21,0,6,82,0,19,8,7,32,34,20,],},
+    {"$GMAutoTileSet":"","%Name":"underwater","closed_edge":false,"name":"underwater","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[20,96,95,7,83,19,0,6,82,0,21,8,33,32,34,0,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,

@@ -12,8 +12,8 @@
   ],
   "name":"rm_3_bagumbayan",
   "parent":{
-    "name":"Chapter2",
-    "path":"folders/Rooms/Chapter2.yy",
+    "name":"Level2",
+    "path":"folders/Rooms/Level2.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

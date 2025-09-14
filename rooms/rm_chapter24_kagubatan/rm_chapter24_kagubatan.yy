@@ -1,6 +1,6 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_4_tasyo",
+  "%Name":"rm_chapter24_kagubatan",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
@@ -10,10 +10,10 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
-  "name":"rm_4_tasyo",
+  "name":"rm_chapter24_kagubatan",
   "parent":{
-    "name":"Chapter4",
-    "path":"folders/Rooms/Chapter4.yy",
+    "name":"Level4",
+    "path":"folders/Rooms/Level4.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
