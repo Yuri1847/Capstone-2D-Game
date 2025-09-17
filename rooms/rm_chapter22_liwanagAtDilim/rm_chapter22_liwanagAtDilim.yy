@@ -5,10 +5,32 @@
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
-  "instanceCreationOrder":[],
+  "instanceCreationOrder":[
+    {"name":"inst_3ED010C6","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},
+    {"name":"inst_628B4C6","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},
+    {"name":"inst_1862AAFD","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},
+    {"name":"inst_9215FF","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},
+    {"name":"inst_3236DE6F","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},
+  ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"ins_mHouse","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_3ED010C6","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3ED010C6","objectId":{"name":"obj_tiago_house_x_mariaClara","path":"objects/obj_tiago_house_x_mariaClara/obj_tiago_house_x_mariaClara.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":512.0,},
+      ],"layers":[],"name":"ins_mHouse","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"ins_block","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_628B4C6","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_628B4C6","objectId":{"name":"obj_invisible_collision_block","path":"objects/obj_invisible_collision_block/obj_invisible_collision_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":17.0,"x":256.0,"y":128.0,},
+        {"$GMRInstance":"v2","%Name":"inst_1862AAFD","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1862AAFD","objectId":{"name":"obj_invisible_collision_block","path":"objects/obj_invisible_collision_block/obj_invisible_collision_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":17.0,"x":1312.0,"y":128.0,},
+        {"$GMRInstance":"v2","%Name":"inst_9215FF","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9215FF","objectId":{"name":"obj_invisible_collision_block","path":"objects/obj_invisible_collision_block/obj_invisible_collision_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":16.5,"scaleY":1.0,"x":288.0,"y":1184.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3236DE6F","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3236DE6F","objectId":{"name":"obj_invisible_collision_block","path":"objects/obj_invisible_collision_block/obj_invisible_collision_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":16.5,"scaleY":1.0,"x":288.0,"y":128.0,},
+      ],"layers":[],"name":"ins_block","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRTileLayer":"","%Name":"ts_ground","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ts_ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":43,"SerialiseWidth":52,"TileCompressedData":[
+          -746,118,1,86,-4,139,1,87,-4,118,1,86,-4,139,1,87,-36,118,1,127,-4,17,1,125,-4,118,1,127,-4,17,1,125,
+          -36,118,1,127,-4,17,6,138,87,118,86,139,140,-4,17,1,125,-36,118,1,127,-5,17,3,138,139,140,-6,17,1,125,
+          -36,118,1,99,-4,113,1,114,-4,17,1,112,-4,113,1,100,-41,118,6,99,114,17,17,112,100,-47,118,4,127,17,17,
+          125,-48,118,4,127,17,17,125,-48,118,4,127,17,17,125,-48,118,4,127,17,17,125,-48,118,4,127,17,17,125,
+          -47,118,6,86,140,17,17,138,87,-29,118,1,86,-16,139,1,140,-4,17,1,138,-14,139,1,87,-14,118,1,127,-36,
+          17,1,125,-14,118,1,99,-36,113,1,100,-736,118,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_main_tileset","path":"tilesets/ts_main_tileset/ts_main_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
   ],
   "name":"rm_chapter22_liwanagAtDilim",
   "parent":{
@@ -26,10 +48,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":1080,
+    "Height":1360,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1920,
+    "Width":1640,
   },
   "sequenceId":null,
   "views":[

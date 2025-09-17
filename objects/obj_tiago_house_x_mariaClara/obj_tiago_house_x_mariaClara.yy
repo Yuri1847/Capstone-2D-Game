@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tiago_house",
+  "%Name":"obj_tiago_house_x_mariaClara",
   "eventList":[],
   "managed":true,
-  "name":"obj_tiago_house",
+  "name":"obj_tiago_house_x_mariaClara",
   "overriddenProperties":[],
   "parent":{
     "name":"SAN_DIEGO",

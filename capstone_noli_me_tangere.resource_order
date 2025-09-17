@@ -348,7 +348,7 @@
     {"name":"obj_table","order":6,"path":"objects/obj_table/obj_table.yy",},
     {"name":"obj_tasyo_house","order":3,"path":"objects/obj_tasyo_house/obj_tasyo_house.yy",},
     {"name":"obj_tea_cabinet","order":2,"path":"objects/obj_tea_cabinet/obj_tea_cabinet.yy",},
-    {"name":"obj_tiago_house","order":1,"path":"objects/obj_tiago_house/obj_tiago_house.yy",},
+    {"name":"obj_tiago_house_x_mariaClara","order":1,"path":"objects/obj_tiago_house_x_mariaClara/obj_tiago_house_x_mariaClara.yy",},
     {"name":"obj_tiago","order":45,"path":"objects/obj_tiago/obj_tiago.yy",},
     {"name":"obj_tomb_head_2","order":4,"path":"objects/obj_tomb_head_2/obj_tomb_head_2.yy",},
     {"name":"obj_tomb_head_3","order":3,"path":"objects/obj_tomb_head_3/obj_tomb_head_3.yy",},
