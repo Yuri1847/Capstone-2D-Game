@@ -8,5 +8,5 @@ input = function (touchId)
 	self.touchId = touchId;
 }
 
-x = camera_get_view_x(view_camera[0]) + 300;
-y = camera_get_view_y(view_camera[0]) + 500;
+x = ((display_get_width() / 2) - ((display_get_width() / 2) / 2)-128);
+y = (display_get_height() / 2 + 160);

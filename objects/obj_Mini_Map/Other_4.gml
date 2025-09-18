@@ -1,42 +1,54 @@
 //Small to Medium Map size
 //by width
 if ((room_width >= 640 && room_width < 1280) && (room_height >= 360 && room_height < 720 )){
-	global.tile_size = 4;
+	global.tile_size = 3;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
 //by height
 else if ((room_width >= 360 && room_width < 720) && (room_height >= 640 && room_height < 1280 )){
-	global.tile_size = 4;
+	global.tile_size = 3;
+	h = room_height/global.tile_size;
+	w = room_width/global.tile_size;
+} 
+
+
+if ((room_width >= 1080 && room_width < 1300) && (room_height >= 720 && room_height < 1110 )){
+	global.tile_size = 6;
+	h = room_height/global.tile_size;
+	w = room_width/global.tile_size;
+} 
+//by height
+else if ((room_width >= 700 && room_width < 1110) && (room_height >= 1000 && room_height < 1300 )){
+	global.tile_size = 7;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
 
 //medium to large Map size
 //by width
-else if ((room_width >= 1280 && room_width < 1920) && (room_height >= 720 && room_height < 1080 )){
-	global.tile_size = 8;
+else if ((room_width >= 1300 && room_width < 1920) && (room_height >= 720 && room_height < 1110 )){
+	global.tile_size = 5;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
 //by height
-else if ((room_width >= 720 && room_width < 1080) && (room_height >= 1280 && room_height < 1920 )){
-	global.tile_size = 8;
+else if ((room_width >= 720 && room_width < 1110) && (room_height >= 1300 && room_height < 1920 )){
+	global.tile_size = 5;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
 
 //large to extra large Map size
 //by width
-else if ((room_width >= 1920 && room_width < 3200 ) && (room_height >= 1080 && room_height < 3200  )){
-	global.tile_size = 12;
+else if ((room_width >= 1920 && room_width < 3200 ) && (room_height >= 1110 && room_height < 3200  )){
+	global.tile_size = 10;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
-
 //by height
-else if ((room_width >= 1080 && room_width < 3200 ) && (room_height >= 1920 && room_height < 3200  )){
-	global.tile_size = 12;
+else if ((room_width >= 1110 && room_width < 3200 ) && (room_height >= 1920 && room_height < 3200  )){
+	global.tile_size = 10;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } 
