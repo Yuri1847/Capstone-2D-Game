@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"path_katulong",
+  "closed":false,
+  "kind":0,
+  "name":"path_katulong",
+  "parent":{
+    "name":"Level_3",
+    "path":"folders/Paths/Level_3.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":835.0405,"y":882.2473,},
+    {"speed":100.0,"x":836.9653,"y":674.64514,},
+    {"speed":100.0,"x":928.5889,"y":672.1183,},
+    {"speed":100.0,"x":931.6133,"y":485.57303,},
+    {"speed":100.0,"x":933.3886,"y":482.67416,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
