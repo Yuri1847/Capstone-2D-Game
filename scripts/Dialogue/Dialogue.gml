@@ -1,3 +1,5 @@
+
+
 function create_dialogue(_messages){
 	if(instance_exists(obj_dialog)) return;
 	
@@ -7,13 +9,13 @@ function create_dialogue(_messages){
 }
 
 char_colors = {
-	"Ibarra" : c_yellow,
+	"Crisostomo Ibarra" : c_olive,
 	"Tiago" : c_aqua
 }
 
 welcome_dialog = [
 	{
-		name: "Ibarra",
+		name: "Crisostomo Ibarra",
 		msg: "Kamusta ka na kapitan tiago"
 	},
 	{
@@ -21,3 +23,15 @@ welcome_dialog = [
 		msg: "Mabuti naman ibarra"
 	},
 ]
+// level 3 
+lvl_3_one = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Narito na tayo......"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+	},
+]
+global.lvl_3_one_done = true;

@@ -2,15 +2,13 @@
 event_inherited();
 
 
-
-
-// Trigger movement toward Ibarra
-if (!npc_trigger && instance_exists(obj_player)) {
-    if (room == rm_chapter13_BabalaNgSigwa) {
-        npc_trigger = true;
-        path_start(path_katulong, 2, path_action_stop, false);
-    }
+if (!npc_trigger && instance_exists(obj_dialog)) {
+    npc_trigger = true;
+    path_start(path_katulong, 2, path_action_stop, true);
 }
+
+
+
 // --- Detect movement manually ---
 var moving = (x != last_x) || (y != last_y);
 // If moving

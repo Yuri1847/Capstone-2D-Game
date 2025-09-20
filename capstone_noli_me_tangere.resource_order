@@ -338,7 +338,7 @@
     {"name":"obj_room_door_right","order":1,"path":"objects/obj_room_door_right/obj_room_door_right.yy",},
     {"name":"obj_room_timer","order":1,"path":"objects/obj_room_timer/obj_room_timer.yy",},
     {"name":"obj_sack_rice","order":4,"path":"objects/obj_sack_rice/obj_sack_rice.yy",},
-    {"name":"obj_salvi","order":47,"path":"objects/obj_salvi/obj_salvi.yy",},
+    {"name":"obj_salvi","order":2,"path":"objects/obj_salvi/obj_salvi.yy",},
     {"name":"obj_sepulturero","order":1,"path":"objects/obj_sepulturero/obj_sepulturero.yy",},
     {"name":"obj_shelf","order":5,"path":"objects/obj_shelf/obj_shelf.yy",},
     {"name":"obj_short_cabinet","order":1,"path":"objects/obj_short_cabinet/obj_short_cabinet.yy",},

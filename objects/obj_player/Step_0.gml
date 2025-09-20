@@ -2,7 +2,6 @@
 if(instance_exists(obj_dialog)) exit;
 
 
-
 // Check keys for movement
 if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){
 	//for Keyboard

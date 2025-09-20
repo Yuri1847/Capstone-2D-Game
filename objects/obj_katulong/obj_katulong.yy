@@ -2,7 +2,6 @@
   "$GMObject":"",
   "%Name":"obj_katulong",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -13,8 +12,8 @@
     "path":"folders/Objects/NPC/Level_3.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_environment",
-    "path":"objects/obj_par_environment/obj_par_environment.yy",
+    "name":"obj_npc_parent",
+    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

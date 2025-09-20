@@ -6,8 +6,8 @@
   "name":"obj_salvi",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objects/NPC.yy",
+    "name":"Level_3",
+    "path":"folders/Objects/NPC/Level_3.yy",
   },
   "parentObjectId":null,
   "persistent":false,
