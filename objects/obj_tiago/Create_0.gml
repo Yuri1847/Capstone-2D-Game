@@ -1,5 +1,5 @@
 
-
+event_inherited();
 
 //own event
 // for direction

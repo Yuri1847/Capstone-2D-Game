@@ -5,3 +5,19 @@ function create_dialogue(_messages){
 	_inst.messages = _messages;
 	_inst.current_message = 0;
 }
+
+char_colors = {
+	"Ibarra" : c_yellow,
+	"Tiago" : c_aqua
+}
+
+welcome_dialog = [
+	{
+		name: "Ibarra",
+		msg: "Kamusta ka na kapitan tiago"
+	},
+	{
+		name: "Tiago",
+		msg: "Mabuti naman ibarra"
+	},
+]

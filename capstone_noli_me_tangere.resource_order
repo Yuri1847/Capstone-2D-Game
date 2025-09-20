@@ -605,6 +605,7 @@
     {"name":"spr_table_2","order":16,"path":"sprites/spr_table_2/spr_table_2.yy",},
     {"name":"spr_table_Binondo","order":6,"path":"sprites/spr_table_Binondo/spr_table_Binondo.yy",},
     {"name":"spr_table","order":6,"path":"sprites/spr_table/spr_table.yy",},
+    {"name":"spr_talk","order":9,"path":"sprites/spr_talk/spr_talk.yy",},
     {"name":"spr_tasyo_home","order":3,"path":"sprites/spr_tasyo_home/spr_tasyo_home.yy",},
     {"name":"spr_tea_cabinet","order":2,"path":"sprites/spr_tea_cabinet/spr_tea_cabinet.yy",},
     {"name":"spr_tiago","order":7,"path":"sprites/spr_tiago/spr_tiago.yy",},

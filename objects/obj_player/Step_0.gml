@@ -1,14 +1,6 @@
 //test dialog
 if(instance_exists(obj_dialog)) exit;
 
-if(keyboard_check_pressed(vk_space)){
-	create_dialogue([
-		{
-			name: "test dialog",
-			msg: "working"
-		}
-	])
-}
 
 
 // Check keys for movement
