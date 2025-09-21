@@ -21,8 +21,8 @@ if (moving) {
     image_speed = 1;
 
     if (direction >= 306 || direction <= 45) {
-        sprite_index = spr_left_w_kat;
-        image_xscale = -1;
+        sprite_index = spr_right_w_kat;
+        image_xscale = 1;
     }
     else if (direction >= 46 && direction <= 135) {
         sprite_index = spr_back_w_kat;
@@ -43,8 +43,8 @@ else {
     image_index = 1;
 
     if (last_dir >= 306 || last_dir <= 45) {
-        sprite_index = spr_left_kat;
-        image_xscale = -1;
+        sprite_index = spr_right_kat;
+        image_xscale = 1;
     }
     else if (last_dir >= 46 && last_dir <= 135) {
         sprite_index = spr_back_kat;
