@@ -1,19 +1,17 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_2_hardinbotaniko",
+  "%Name":"rm_chapter3_hapunan",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[],
   "isDnd":false,
-  "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-  ],
-  "name":"rm_2_hardinbotaniko",
+  "layers":[],
+  "name":"rm_chapter3_hapunan",
   "parent":{
-    "name":"Level2",
-    "path":"folders/Rooms/Level2.yy",
+    "name":"Level1",
+    "path":"folders/Rooms/Level1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -26,10 +24,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":1080,
+    "Height":1360,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1920,
+    "Width":1640,
   },
   "sequenceId":null,
   "views":[

@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"walk",
-    "path":"folders/Sprites/NPC/Level_3_NPC/sepulturero/walk.yy",
+    "path":"folders/Sprites/NPC/sepulturero/walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

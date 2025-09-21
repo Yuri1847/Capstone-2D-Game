@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"walk",
-    "path":"folders/Sprites/NPC/Level_3_NPC/katulong-ni-ibarra/walk.yy",
+    "path":"folders/Sprites/NPC/katulong-ni-ibarra/walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

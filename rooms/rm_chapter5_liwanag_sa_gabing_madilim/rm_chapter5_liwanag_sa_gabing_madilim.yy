@@ -1,19 +1,17 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_3_bagumbayan",
+  "%Name":"rm_chapter5_liwanag_sa_gabing_madilim",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[],
   "isDnd":false,
-  "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-  ],
-  "name":"rm_3_bagumbayan",
+  "layers":[],
+  "name":"rm_chapter5_liwanag_sa_gabing_madilim",
   "parent":{
-    "name":"Level2",
-    "path":"folders/Rooms/Level2.yy",
+    "name":"Level1",
+    "path":"folders/Rooms/Level1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -26,10 +24,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":1080,
+    "Height":1360,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1920,
+    "Width":1640,
   },
   "sequenceId":null,
   "views":[

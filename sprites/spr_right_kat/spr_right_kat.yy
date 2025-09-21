@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"idle",
-    "path":"folders/Sprites/NPC/Level_3_NPC/katulong-ni-ibarra/idle.yy",
+    "path":"folders/Sprites/NPC/katulong-ni-ibarra/idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

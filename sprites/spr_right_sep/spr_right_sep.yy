@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"idle",
-    "path":"folders/Sprites/NPC/Level_3_NPC/sepulturero/idle.yy",
+    "path":"folders/Sprites/NPC/sepulturero/idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
