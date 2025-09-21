@@ -19,9 +19,9 @@ draw_set_valign(fa_top);
 
 // draw name
 var _name = messages[current_message].name;
-draw_set_color(global.char_colors[$ _name]);
+//draw_set_color(global.char_colors[$ _name]);
 draw_text(_dx, _dy, _name);
-draw_set_color(c_white);
+//draw_set_color(c_white);
 
 
 // move down for message
