@@ -1,11 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
-// Only start moving after dialog is gone
-if (instance_exists(obj_dialog)) {
+if (!instance_exists(obj_dialog)) {
     path_start(path_katulong, 2, path_action_stop, true);
 }
-
 
 
 // --- Detect movement manually ---

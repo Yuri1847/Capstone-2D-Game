@@ -34,4 +34,3 @@ lvl_3_one = [
 		msg: "Ipakita mo sa akin ang nitso ng aking ama"
 	},
 ]
-global.lvl_3_one_done = true;
