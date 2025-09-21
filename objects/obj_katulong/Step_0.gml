@@ -1,9 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-
-if (!npc_trigger && instance_exists(obj_dialog)) {
-    npc_trigger = true;
+// Only start moving after dialog is gone
+if (instance_exists(obj_dialog)) {
     path_start(path_katulong, 2, path_action_stop, true);
 }
 
@@ -58,3 +57,5 @@ else {
 // Store current position for next step
 last_x = x;
 last_y = y;
+
+
