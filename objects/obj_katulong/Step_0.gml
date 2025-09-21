@@ -1,14 +1,21 @@
 // Inherit the parent event
 event_inherited();
 
-if (!instance_exists(obj_dialog)) {
+
+// if obj dialog done trigger path
+if (!instance_exists(obj_dialog) && !dialog_closed_triggered && npc_can_move) {
     path_start(path_katulong, 2, path_action_stop, true);
+    dialog_closed_triggered = true;
+}
+if (instance_exists(obj_dialog)) {
+    dialog_closed_triggered = false;
 }
 
 
-// --- Detect movement manually ---
+
+//npc movement
 var moving = (x != last_x) || (y != last_y);
-// If moving
+// If movings
 if (moving) {
     last_dir = direction;
     image_speed = 1;
@@ -33,7 +40,7 @@ if (moving) {
 // If idle
 else {
     image_speed = 0;
-    image_index = 0;
+    image_index = 1;
 
     if (last_dir >= 306 || last_dir <= 45) {
         sprite_index = spr_left_kat;

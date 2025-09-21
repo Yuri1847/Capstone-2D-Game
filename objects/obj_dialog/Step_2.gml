@@ -11,6 +11,10 @@ if (current_char < string_length(_str)){
 else if(keyboard_check_pressed(input_key)){
 	current_message++;
 	if (current_message >= array_length(messages)){
+		with (obj_katulong) {
+		    npc_can_move = true;
+		}
+
 		instance_destroy();
 	}else{
 		current_char = 0;

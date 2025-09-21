@@ -10,3 +10,5 @@ last_y = y;
 npc_trigger = false;
 
 
+
+
