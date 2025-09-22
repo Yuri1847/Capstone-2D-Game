@@ -939,7 +939,7 @@
     {"id":{"name":"spr_tea_cabinet","path":"sprites/spr_tea_cabinet/spr_tea_cabinet.yy",},},
     {"id":{"name":"spr_tiago_clara_house","path":"sprites/spr_tiago_clara_house/spr_tiago_clara_house.yy",},},
     {"id":{"name":"spr_tiago","path":"sprites/spr_tiago/spr_tiago.yy",},},
-    {"id":{"name":"spr_titleScreen_chap2_18","path":"sprites/spr_titleScreen_chap13/spr_titleScreen_chap2_18.yy",},},
+    {"id":{"name":"spr_titleScreen_chap2_18","path":"sprites/spr_titleScreen_chap2_18.yy",},},
     {"id":{"name":"spr_titleScreen_chap13","path":"sprites/spr_titleScreen_chap13/spr_titleScreen_chap13.yy",},},
     {"id":{"name":"spr_titleScreen_chap19","path":"sprites/spr_titleScreen_chap19/spr_titleScreen_chap19.yy",},},
     {"id":{"name":"spr_titleScreen_chap2","path":"sprites/spr_titleScreen_chap2/spr_titleScreen_chap2.yy",},},
