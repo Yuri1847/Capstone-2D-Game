@@ -10,8 +10,8 @@
   "layers":[],
   "name":"rm_chapter7_ligawan_sa_asotea",
   "parent":{
-    "name":"Level1",
-    "path":"folders/Rooms/Level1.yy",
+    "name":"Level2",
+    "path":"folders/Rooms/Level2.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
