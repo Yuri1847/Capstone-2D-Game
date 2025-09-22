@@ -6,8 +6,8 @@
   "name":"obj_kal2",
   "overriddenProperties":[],
   "parent":{
-    "name":"kalalakihan",
-    "path":"folders/Objects/NPC/Level_1/kalalakihan.yy",
+    "name":"kalalakihan_1",
+    "path":"folders/Objects/NPC/Level_1/Part_1/kalalakihan_1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_kal3",
-  "eventList":[],
+  "%Name":"obj_guevarra_2",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_kal3",
+  "name":"obj_guevarra_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"kalalakihan_1",
-    "path":"folders/Objects/NPC/Level_1/Part_1/kalalakihan_1.yy",
+    "name":"Part_2",
+    "path":"folders/Objects/NPC/Level_1/Part_2.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npc_parent",
+    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_front_kal3",
-    "path":"sprites/spr_front_kal3/spr_front_kal3.yy",
+    "name":"spr_front_gue",
+    "path":"sprites/spr_front_gue/spr_front_gue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

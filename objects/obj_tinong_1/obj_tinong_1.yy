@@ -8,8 +8,8 @@
   "name":"obj_tinong_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level_1",
-    "path":"folders/Objects/NPC/Level_1.yy",
+    "name":"Part_1",
+    "path":"folders/Objects/NPC/Level_1/Part_1.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent",

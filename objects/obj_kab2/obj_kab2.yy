@@ -6,8 +6,8 @@
   "name":"obj_kab2",
   "overriddenProperties":[],
   "parent":{
-    "name":"kababaihan",
-    "path":"folders/Objects/NPC/Level_1/kababaihan.yy",
+    "name":"kababaihan_1",
+    "path":"folders/Objects/NPC/Level_1/Part_1/kababaihan_1.yy",
   },
   "parentObjectId":null,
   "persistent":false,
