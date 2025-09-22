@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8b466cdf-fb41-4f35-878c-cd8c68537271","name":"8b466cdf-fb41-4f35-878c-cd8c68537271","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8b466cdf-fb41-4f35-878c-cd8c68537271","name":"8b466cdf-fb41-4f35-878c-cd8c68537271","resourceType":"GMSpriteFrame","resourceVersion":"2.0"},
   ],
   "gridX":640,
   "gridY":360,
@@ -73,7 +73,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b466cdf-fb41-4f35-878c-cd8c68537271","path":"sprites/spr_titleScreen_chap2_18/spr_titleScreen_chap2_18.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b466cdf-fb41-4f35-878c-cd8c68537271","path":"sprites/spr_titleScreen_chap2_18/spr_titleScreen_chap2_18.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0"},
               },"Disabled":false,"id":"a98a057b-120b-448e-aaa6-5c85dcc35bb4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0"},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
