@@ -512,6 +512,7 @@
     {"id":{"name":"obj_tiago_house_x_mariaClara","path":"objects/obj_tiago_house_x_mariaClara/obj_tiago_house_x_mariaClara.yy",},},
     {"id":{"name":"obj_tiago","path":"objects/obj_tiago/obj_tiago.yy",},},
     {"id":{"name":"obj_tinong_1","path":"objects/obj_tinong_1/obj_tinong_1.yy",},},
+    {"id":{"name":"obj_title_screen_timer","path":"objects/obj_title_screen_timer/obj_title_screen_timer.yy",},},
     {"id":{"name":"obj_Toilet","path":"objects/obj_Toilet/obj_Toilet.yy",},},
     {"id":{"name":"obj_tomb_head_2","path":"objects/obj_tomb_head_2/obj_tomb_head_2.yy",},},
     {"id":{"name":"obj_tomb_head_3","path":"objects/obj_tomb_head_3/obj_tomb_head_3.yy",},},
