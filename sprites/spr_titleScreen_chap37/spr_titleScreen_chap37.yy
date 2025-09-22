@@ -28,7 +28,7 @@
   "origin":0,
   "parent":{
     "name":"Level6",
-    "path":"folders/Sprites/TITLE_SCREEN/Level6.yy",
+    "path":"folders/Sprites/TITLE_SCREEN/Level6.yy"
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
