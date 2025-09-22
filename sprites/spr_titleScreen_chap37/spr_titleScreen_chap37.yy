@@ -26,7 +26,10 @@
   "name":"spr_titleScreen_chap2_18",
   "nineSlice":null,
   "origin":0,
-  
+  "parent":{
+    "name":"Level6",
+    "path":"folders/Sprites/TITLE_SCREEN/Level6.yy"
+  },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
