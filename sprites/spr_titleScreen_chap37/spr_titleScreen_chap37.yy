@@ -47,7 +47,7 @@
       "$KeyframeStore<MessageEventKeyframe>":"",
       "Keyframes":[],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
-      "resourceVersion":"2.0",
+      "resourceVersion":"2.0"
     },
     "eventStubScript":null,
     "eventToFunction":{},
@@ -57,7 +57,7 @@
       "$KeyframeStore<MomentsEventKeyframe>":"",
       "Keyframes":[],
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
-      "resourceVersion":"2.0",
+      "resourceVersion":"2.0"
     },
     "name":"spr_titleScreen_chap2_18",
     "playback":1,
@@ -75,7 +75,7 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b466cdf-fb41-4f35-878c-cd8c68537271","path":"sprites/spr_titleScreen_chap2_18/spr_titleScreen_chap2_18.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a98a057b-120b-448e-aaa6-5c85dcc35bb4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0"},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
