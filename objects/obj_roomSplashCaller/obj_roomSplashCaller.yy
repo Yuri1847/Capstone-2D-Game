@@ -1,22 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_roomSplashCaller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_roomSplashCaller",
   "overriddenProperties":[],
   "parent":{
-    "name":"PLAYER",
-    "path":"folders/Objects/PLAYER.yy",
+    "name":"CONTROL",
+    "path":"folders/Objects/CONTROL.yy",
   },
-  "parentObjectId":{
-    "name":"obj_Entity",
-    "path":"objects/obj_Entity/obj_Entity.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_front",
-    "path":"sprites/spr_front/spr_front.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
