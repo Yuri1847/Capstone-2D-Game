@@ -1,4 +1,11 @@
+// Tell splash which sprite and target room to use
+global.splash_sprite = sc_getSplashForRoom(targetRoom);
+global.splash_time   = game_get_speed(gamespeed_fps) * 1;
+global.splash_target = targetRoom;
 
-room_goto(targetRoom);
-obj_player.x = targetX;
-obj_player.y = targetY;
+// Also pass spawn position for player
+global.splash_spawnX = targetX;
+global.splash_spawnY = targetY;
+
+// Jump to splash room
+room_goto(rm_splash);

@@ -1,3 +1,3 @@
 targetRoom = rm_chapter3_hapunan;
-targetX = 1018;
-targetY = 704;
+targetX = 1015;
+targetY = 712;
