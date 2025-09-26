@@ -116,6 +116,7 @@
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BINONDO","folderPath":"folders/Rooms/BINONDO.yy","name":"BINONDO","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonda delala","folderPath":"folders/Rooms/BINONDO/Fonda delala.yy","name":"Fonda delala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Level0","folderPath":"folders/Rooms/Level0.yy","name":"Level0","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INTRAMUROS","folderPath":"folders/Rooms/INTRAMUROS.yy","name":"INTRAMUROS","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level1","folderPath":"folders/Rooms/Level1.yy","name":"Level1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level2","folderPath":"folders/Rooms/Level2.yy","name":"Level2","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -1019,8 +1020,8 @@
         {"roomId":{"name":"rm_chapter8_alaala","path":"rooms/rm_chapter8_alaala/rm_chapter8_alaala.yy",},},
       ],"groupName":"Level_2",},
     {"children":[
-        {"roomId":{"name":"rm_chapter13_BabalaNgSigwa","path":"rooms/rm_chapter13_BabalaNgSigwa/rm_chapter13_BabalaNgSigwa.yy",},},
         {"roomId":{"name":"rm_chapter19_KaranasanNgIsangGuro","path":"rooms/rm_chapter19_KaranasanNgIsangGuro/rm_chapter19_KaranasanNgIsangGuro.yy",},},
+        {"roomId":{"name":"rm_chapter13_BabalaNgSigwa","path":"rooms/rm_chapter13_BabalaNgSigwa/rm_chapter13_BabalaNgSigwa.yy",},},
       ],"groupName":"Level_3",},
     {"children":[
         {"roomId":{"name":"rm_chapter22_liwanagAtDilim","path":"rooms/rm_chapter22_liwanagAtDilim/rm_chapter22_liwanagAtDilim.yy",},},
