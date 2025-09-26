@@ -1,3 +1,3 @@
-targetRoom = rm_chapter19_KaranasanNgIsangGuro;
-targetX = 1260;
-targetY = 320;
+targetRoom = rm_chapter27_pagtatakipsilim;
+targetX = 1180;
+targetY = 620;
