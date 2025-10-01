@@ -148,6 +148,54 @@ chap2_dial7 = [
 		msg: "(Nagsimula nang magsiupuan ang mga panauhin, lalo na ang mga babae na nag-aatubili pa ring lumapit.)"
 	},
 ]
+//level 1 
+//chapter 3
+chap3_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Galit si Padre Damaso, sinisipa ang mga silya. Nagkakagulo ang mga panauhin. Ikaw, si Ibarra, ay nakaupo na sa kabisera ng hapag.)"
+	},
+	{
+		name: "Padre Sibyla",
+		msg: "Don Crisostomo, isang kagalakan na ikaw ay nasa piling naming muli."
+	},
+	{
+		name: "[Narration]",
+		msg: "[Dumating ang tinola. Sa harap mo’y inilapag ang masarap na bahagi ng manok. Sa harap ni Padre Damaso, puro leeg, pakpak, at upo.]"
+	},
+	{
+		name: "Padre Damaso",
+		msg: "Ano’ng kabalastugan ito? Ako ba’y isang hamak upang bigyan ng ganito?!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nababalot ng katahimikan ang hapag. Pinili mong hindi makipagtalo, at nagpatuloy kang kumain nang mahinahon.)"
+	},
+	{
+		name: "Laruja",
+		msg: "Don Crisostomo, gaano ka katagal nawala sa Pilipinas?"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Mahigit pitong taon. Ngunit kailanman, hindi ko nakalimutan ang bayang ito."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ngunit sa aking pagbabalik, tila Pilipinas ang nakalimot sa akin. Walang nagbalita ukol sa sinapit ng aking ama, si Don Rafael."
+	},
+	{
+		name: "Donya Victoria",
+		msg: "Kung gayon, bakit hindi ka na lamang tumelegrama? Mas madali sana iyon"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Dalawang taon akong nasa ibang bayan, malayo sa lahat. Walang paraan upang makipag-ugnayan"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagpatuloy ang hapunan sa gitna ng malamig na katahimikan. Ramdam ang alitan ng mga panauhin, ngunit nanatili kang mahinahon, pinipilit igalang ang lahat sa kabila ng iyong hinanakit.)"
+	},
+]
 
 
 
