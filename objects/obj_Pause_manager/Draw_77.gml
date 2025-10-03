@@ -19,6 +19,8 @@ function update_pause(){
 		//deactivate everything other than this instance
 		instance_deactivate_all(true);
 		instance_activate_object(obj_Inventory)
+		instance_activate_object(obj_state_slot_save)
+		instance_activate_object(obj_player)
 		//NOTE:
 		//If you need to pause anything like animating sprites, tiles, room backgrounds etc
 		//you need to do that separately, unfortunately!

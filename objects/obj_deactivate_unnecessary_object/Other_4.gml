@@ -1,0 +1,4 @@
+instance_deactivate_object(obj_player)
+instance_deactivate_object(obj_joystick_base)
+instance_deactivate_object(obj_multitouch_manager)
+instance_deactivate_object(obj_Inventory)
