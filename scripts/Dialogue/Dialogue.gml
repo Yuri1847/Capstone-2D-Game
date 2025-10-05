@@ -196,7 +196,106 @@ chap3_dial1 = [
 		msg: "(Nagpatuloy ang hapunan sa gitna ng malamig na katahimikan. Ramdam ang alitan ng mga panauhin, ngunit nanatili kang mahinahon, pinipilit igalang ang lahat sa kabila ng iyong hinanakit.)"
 	},
 ]
-
+//level 1
+//chapter 4
+chap4_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Gabi. Lumabas si Ibarra upang makalanghap ng sariwang hangin. Tahimik ang paligid habang binabaybay niya ang daan papuntang plasa ng Binondo.)"
+	},
+	{
+		name: "Crisostomo Ibarra (walang tunog na paghinga)",
+		msg: "Pitong taon akong nawala… ngunit parang isang gabi lang ang lumipas. Walang nagbago. Ang mga tindera pa rin ng prutas at gulay, naroon pa rin. Parang hindi umusad ang siyudad na ito.."
+	},
+	{
+		name: "[Narration]",
+		msg: "(May marahang tumapik sa balikat ni Ibarra. Paglingon niya, si Tinyente Guevarra pala.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ah! Tinyente Guevarra! Matagal ko na sanang gustong itanong… Alam niyo po ba kung bakit nabilanggo ang aking ama?"
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Oo, Don Crisóstomo. Alam ko ang nangyari. Halina, maglakad tayo—at ikukuwento ko sa iyo."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Naglakad silang dalawa pabalik sa kwartel habang nagsisimula ang kwento ng tinyente.)"
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Ang iyong ama, si Don Rafael Ibarra, ang pinakamayaman at pinakagalang sa aming lalawigan. Marami siyang natulungan, ngunit marami ring naiinggit at nagagalit sa kanya. Isa na riyan si Padre Dámaso."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Madalas silang magtalo. Hanggang sa akusahan si Don Rafael na erehe, dahil daw hindi siya nangungumpisal."
+	},
+	{
+		name: "Crisostomo Ibarra (halatang naguguluhan)",
+		msg: "Erehe? Ang aking ama? Hindi ko matanggap iyon."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Pakinggan mo muna. Noong mga panahong iyon, may isang Kastilang artilyero— isang hangal na palaging pinagtatawanan ng mga bata."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Isang araw, sa tindi ng galit, binato niya ng baston ang mga bata. Tinamaan ang isa sa ulo at natumba. Nang hindi pa nakontento, sinipa pa niya ang bata."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Bahagyang natahimik si Ibarra.)"
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Sakto namang napadaan ang iyong ama. Hinawakan niya ang artilyero sa bisig upang awatin, ngunit inakala ng mga tao na siya ang nananakit."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Nagpumiglas ang artilyero, nadulas, tumama ang ulo sa bato, at doon namatay."
+	},
+	{
+		name: "Crisostomo Ibarra (kitang-kita ang lungkot)",
+		msg: "Kaya pala… ang kabutihan ng ama ko’y naging dahilan pa ng kanyang pagkasawi."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Tama ka. Nang mamatay ang artilyero, si Don Rafael ang sinisi. Inimbestigahan siya at ikinulong."
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "oon lumabas ang mga lihim niyang kaaway, at nagsilabasan ang mga huwad na saksi laban sa kanya. Tinawag siyang erehe at pilibustero."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "At walang tumulong sa kanya?"
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Sinubukan kong ipagtanggol siya, ngunit walang naglakas-loob. Lahat ay takot na madamay. Hanggang sa tuluyan siyang namatay sa kulungan, walang pamilya o kaibigang nakiramay."
+	},	
+	{
+		name: "[Narration]",
+		msg: "(Matagal na katahimikan. Yumuko si Ibarra, halatang pinipigil ang luha.)"
+	},
+	{
+		name: "Tiniente Guevarra",
+		msg: "Nakakalungkot, Don Crisóstomo. Nang siya’y patay na, saka lamang napatunayan na siya ay walang sala."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumingin sa malayo si Ibarra, mariin ang tinig.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ama… Hindi ako papayag na manatiling madungisan ang iyong pangalan. Babangon ang San Diego, at maririnig muli ang kabutihan mo."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik na lumayo si Ibarra, dala ang bigat ng katotohanang kanyang nalaman.)"
+	},
+]
 
 
 // level 3 
