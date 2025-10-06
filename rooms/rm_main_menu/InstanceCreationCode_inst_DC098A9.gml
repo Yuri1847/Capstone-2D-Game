@@ -9,7 +9,8 @@ function room_start_UI_Folder(){
 		"pause_layer", 
 		"state_slot1_dialog_layer",
 		"state_slot2_dialog_layer",
-		"state_slot3_dialog_layer"
+		"state_slot3_dialog_layer",
+		"settings_menu_layer"
 	]);
 
 	sc_visible_layer(["main_menu_layer"])
