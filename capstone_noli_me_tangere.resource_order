@@ -100,6 +100,7 @@
     {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
     {"name":"BINONDO","order":1,"path":"folders/Rooms/BINONDO.yy",},
     {"name":"Fonda delala","order":2,"path":"folders/Rooms/BINONDO/Fonda delala.yy",},
+    {"name":"NOT_INCLUDED","order":20,"path":"folders/Rooms/NOT_INCLUDED.yy",},
     {"name":"INTRAMUROS","order":2,"path":"folders/Rooms/INTRAMUROS.yy",},
     {"name":"Level0","order":17,"path":"folders/Rooms/Level0.yy",},
     {"name":"Level1","order":7,"path":"folders/Rooms/Level1.yy",},

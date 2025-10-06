@@ -17,8 +17,8 @@
   ],
   "name":"rm_chapter8_alaala",
   "parent":{
-    "name":"Level2",
-    "path":"folders/Rooms/Level2.yy",
+    "name":"NOT_INCLUDED",
+    "path":"folders/Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

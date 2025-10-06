@@ -450,6 +450,100 @@ chap7_dial2 = [
 ]
 
 
+// level 3 
+chap13_dial1 = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Narito ba tayo sa tamang lugar? Sabi mo’y dito nakahimlay si Ama."
+	},
+	{
+		name: "Katiwala",
+		msg: "Opo, Don Crisóstomo. Dito po ako nagtanim ng mga bulaklak at nagtayo ng krus bilang palatandaan. Ngunit... matagal na rin akong ‘di nakabalik dahil nagkasakit ako. Si Kapitan Tiago po ang nagsabing siya na ang bahalang magpaayos ng nitso."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumapit sila sa lugar. Huminto si Ibarra sa harap ng isang malungkot na tanawin—may lupa, ngunit wala ang krus.)"
+	},
+	{
+		name: "Crisostomo Ibarra (nalilito)",
+		msg: "Nasaan ang libingan ng aking ama? Nasaan ang krus na iyong itinayo?"
+	},
+	{
+		name: "Katiwala (gulat)",
+		msg: "Diyos ko! Nandito po iyon! May mga bulaklak pa nga noon... hindi ko alam kung bakit nawala!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Agad silang nagtungo sa bahay ng sepulturero na nasa dulo ng sementeryo.)"
+	},
+	{
+		name: "Katiwala ",
+		msg: "Tao po! Kaibigan, may natanaw ka bang libing na may krus at mga bulaklak? Ang kay Don Rafael Ibarra!"
+	},
+	{
+		name: "Sepulturero (humihikab, tila walang malasakit)",
+		msg: "Ah... iyon ba? Sinunog ko na ang krus. Utos ni Padre Garrote."
+	},
+	{
+		name: "Crisostomo Ibarra (matigas ang tinig)",
+		msg: "Sinunog? Bakit?! Nasaan ang bangkay ng aking ama?!"
+	},
+	{
+		name: "Sepulturero (humihikab, tila walang malasakit)",
+		msg: "Eh... eh... pinaalis daw ni Padre Damaso—este, ni Padre Garrote. Ipinapalipat sa libingan ng mga Intsik. Pero dahil sa bigat ng bangkay at lakas ng ulan, eh... tinapon na lang namin sa lawa."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Napatigagal si Ibarra. Tila napako sa kinatatayuan. Ang hangin ay biglang lumakas, kumidlat.)"
+	},
+	{
+		name: "Katiwala (naluluha)",
+		msg: "Diyos ko... kaawa-awang Don Rafael!"
+	},
+	{
+		name: "Crisostomo Ibarra (nanlilisik ang mga mata)",
+		msg: "Tinapon... sa lawa ang aking ama?! Wala bang konsensya ang mga paring iyon?!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Bigla siyang tumakbo palabas ng sementeryo. Bumuhos ang ulan. Sa daan, nasalubong niya si Padre Salvi.)"
+	},
+]
+chap13_dial3 = [
+	{
+		name: "Padre Salvi (nagulat)",
+		msg: "Don Crisóstomo! Anong nangyayari sa inyo?"
+	},
+	{
+		name: "Crisostomo Ibarra (galit na galit, hinawakan sa balikat ang pari)",
+		msg: "Ikaw ba ang may kagagawan nito?! Ikaw ba ang nag-utos na itapon ang bangkay ng aking ama?!"
+	},
+	{
+		name: "Padre Salvi (nanginginig)",
+		msg: "Hindi! Hindi ako! Ako’y walang alam sa bagay na iyan!"
+	},
+	{
+		name: "Crisostomo Ibarra ",
+		msg: "Kung hindi ikaw... sino?! Sino ang hayop na gumawa nito?!"
+	},
+	{
+		name: "Padre Salvi (mahina)",
+		msg: "Si... si Padre Damaso. Siya ang tinutukoy nilang “Padre Garrote.”"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Binitiwan ni Ibarra si Padre Salvi. Nanginginig ito sa galit, halos di makahinga sa bigat ng damdamin.)"
+	},
+	{
+		name: "Crisostomo Ibarra ",
+		msg: "Padre Damaso... Kay tagal kong pinigil ang aking damdamin, ngunit ngayon—hindi ko na kaya!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumiksi ang kidlat, kasabay ng kulog. Tumakbo si Ibarra palayo, basang-basa sa ulan, habang ang langit ay tila nakikidalamhati sa kanyang poot.)"
+	},
+]
+
 
 // level 3 
 lvl_3_one = [

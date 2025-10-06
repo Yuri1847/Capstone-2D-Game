@@ -120,6 +120,7 @@
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BINONDO","folderPath":"folders/Rooms/BINONDO.yy","name":"BINONDO","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonda delala","folderPath":"folders/Rooms/BINONDO/Fonda delala.yy","name":"Fonda delala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"NOT_INCLUDED","folderPath":"folders/Rooms/NOT_INCLUDED.yy","name":"NOT_INCLUDED","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INTRAMUROS","folderPath":"folders/Rooms/INTRAMUROS.yy","name":"INTRAMUROS","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level0","folderPath":"folders/Rooms/Level0.yy","name":"Level0","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level1","folderPath":"folders/Rooms/Level1.yy","name":"Level1","resourceType":"GMFolder","resourceVersion":"2.0",},
