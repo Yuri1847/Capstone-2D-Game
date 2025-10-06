@@ -799,10 +799,6 @@ chapt31_dial2 = [
 		msg: "Ngunit nang lingunin niya, wala na si Elias. Tanging sermon ni Padre Damaso at bulungan ng mga tao ang naririnig. At sa katahimikang iyon, naramdaman ni Ibarra ang papalapit na bagyo ang bagyong magpapabago sa kanyang kapalaran."
 	},
 ]
-
-
-
-// level 5
 //chapter 32
 chap32_dial1 = [
 	{
@@ -1015,11 +1011,129 @@ chap33_dial1 = [
 		msg: "Sa pag-alis ni Elias, nanatiling nakatayo si Ibarra sa pintuan, pinagmamasdan ang dilim ng gabi—tila iniisip kung sino nga ba ang tunay na mga kaaway sa likod ng kanyang mabubuting hangarin."
 	},
 ]
-
-
-
-
-
+// chapter 34
+chap34_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "Nagtipon ang mga iginagalang na tao sa San Diego para sa isang marangyang pananghalian. Naroon si Ibarra, ang alkalde, si Maria Clara, Kapitan Tiago, Padre Salvi, Padre Sibyla, ang alperes, tinyente, at ilan pang dalagang bisita."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nasa magkabilang dulo ng lamesa sina Ibarra at ang alkalde. Habang kumakain, biglang may pumasok na tagadala ng telegrama.)"
+	},
+	{
+		name: "Tagadala ng Telegrama",
+		msg: "Kapitan Tiago! May telegrama po kayo!"
+	},
+	{
+		name: "Kapitan Tiago (kinuha at binasa ang papel)",
+		msg: "Ang Kapitan Heneral... darating daw bukas—at dito raw siya tutuloy, sa aking bahay!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagkagulo ang mga panauhin. Ang iba’y napasigaw sa tuwa, ang iba nama’y napangiwi sa inis.)"
+	},
+	{
+		name: "Padre Sibyla (mahina ngunit may inis)",
+		msg: "Hindi man lang sa kumbento..."
+	},
+	{
+		name: "Padre Sibyla (mapait ang ngiti)",
+		msg: "Marahil ay nais niyang magpahinga sa ingay ng simbahan..."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Natawa nang bahagya ang alkalde, samantalang tahimik lamang si Ibarra.)"
+	},
+	{
+		name: "Alperes",
+		msg: "Aba, Kapitan Tiago, malaking karangalan ito para sa San Diego!"
+	},
+	{
+		name: "Kapitan Tiago (nangingiti, halatang tuwang-tuwa)",
+		msg: "Oo nga! Isang pagpapala!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Biglang bumukas ang pinto. Pumasok si Padre Damaso, nakangiti ngunit may halatang yabang.)"
+	},
+	{
+		name: "Padre Damaso",
+		msg: "Magandang tanghali! Aba, parang walang nagsabi sa akin na may handaan!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik sandali. Kita sa mukha ni Ibarra ang pagpipigil.)"
+	},
+	{
+		name: "Alkalde (magalang)",
+		msg: "Padre Damaso! Maupo po kayo."
+	},
+	{
+		name: "Padre Damaso (umupo at ngumiti ng may panunuya)",
+		msg: "Ah, narito pala si Don Crisóstomo Ibarra. Kumusta, hijo? Hindi ka na yata nagmimisa? Baka nakakalimot ka na sa pananampalataya."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Napatingin ang lahat kay Ibarra. Si Maria Clara ay kabadong nakamasid.)"
+	},
+	{
+		name: "Crisostomo Ibarra (kalma ngunit malamig)",
+		msg: "Hindi po, Padre. May oras para sa lahat—oras ng pananampalataya at oras ng paggawa para sa bayan."
+	},
+	{
+		name: "Padre Damaso (tumawa ng mapanlait)",
+		msg: "Bayan? Bayan ang pinag-uusapan mo? Eh ang ama mo, si Don Rafael—hindi ba’t isang erehe at filibustero?"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik ang lahat. Napatingin si Ibarra, nanginginig sa galit.)"
+	},
+	{
+		name: "Maria Clara (mahina)",
+		msg: "Crisóstomo…"
+	},
+	{
+		name: "Crisostomo Ibarra (tumayo, galit na galit)",
+		msg: "Padre! Huwag mong dungisan ang alaala ng aking ama!"
+	},
+	{
+		name: "Padre Damaso (nakangisi)",
+		msg: "Aba, nagagalit? Totoo lang naman ang sinasabi ko!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Hinugot ni Ibarra ang kutsilyo at pasugod na humakbang, ngunit agad siyang napigilan ni Maria Clara.)"
+	},
+	{
+		name: "Maria Clara (mahina)",
+		msg: "Crisóstomo, huwag! Para sa akin, huwag!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Sandaling katahimikan. Huminga nang malalim si Ibarra, pinilit ang sarili na kumalma.)"
+	},
+	{
+		name: "Crisostomo Ibarra (malamig ang tinig)",
+		msg: "Patawarin ninyo ako. Hindi ako dapat magpadala sa galit."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumingon siya sa mga panauhin, tapos kay Maria Clara.)"
+	},
+	{
+		name: "Crisostomo Ibarra (malamig ang tinig)",
+		msg: "Paalam. Mas mabuti nang ako’y umalis."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumakad siyang palabas ng silid, iniwan ang tahimik at nagulat na mga panauhin.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "At sa kanyang pag-alis, iniwan ni Ibarra ang hapag na puno ng pagkain, ngunit walang sinuman ang nakaramdam ng gana—sapagkat ang araw ng pananghalian ay naging araw ng kahihiyan at pighati."
+	},
+]
 
 
 
