@@ -920,9 +920,101 @@ chap32_dial2 = [
 		msg: "At sa gitna ng sigawan, natanto ni Ibarra ang babala ni Elias ay totoo.Ang liwanag na kanyang hinahangad,ay muntik nang lamunin ng dilim."
 	},
 ]
-
-
-
+// chapter 33
+chap33_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(May marahang katok sa pinto.)"
+	},
+	{
+		name: "Crisostomo Ibarra (lumapit)",
+		msg: "Sino ‘yan?"
+	},
+	{
+		name: "Elias (mahinahon)",
+		msg: "Ako ito, Don Crisóstomo. Si Elias."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Binuksan ni Ibarra ang pinto. Lumitaw si Elias, basang-basa ng ulan.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Elias! Hindi ko inaasahan ang pagdalaw mo. Halika, pumasok ka."
+	},
+	{
+		name: "Elias (umiling)",
+		msg: "Hindi na, Don Crisóstomo. Sandali lang ako. Nais ko lang magbigay ng babala."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Babala? Tungkol saan?"
+	},
+	{
+		name: "Elias",
+		msg: "Mag-ingat ka. Hindi mo alam kung sino ang tunay mong mga kaaway. Kailangang paniwalaan nilang pinagkakatiwalaan mo sila—iyan lamang ang paraan para manatili kang ligtas."
+	},
+	{
+		name: "Crisostomo Ibarra (naguguluhan)",
+		msg: "Sino ang tinutukoy mo, Elias? Sino ang mga kalaban kong iyon?"
+	},
+	{
+		name: "Elias",
+		msg: "Isa na roon ang taong madilaw—ang nagtangkang pumatay sa iyo sa seremonya ng paghuhugos."
+	},
+	{
+		name: "Crisostomo Ibarra (malungkot)",
+		msg: "Sayang at namatay siya. Makakausap sana natin, malalaman sana natin ang dahilan."
+	},
+	{
+		name: "Elias (matigas ang tinig)",
+		msg: "Mas mabuti nang ganoon. Kung nabuhay siya, baka makatakas pa at maghasik ng mas malaking kasamaan."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Sandaling katahimikan. Dumadagundong ang kulog sa labas.)"
+	},
+	{
+		name: "Crisostomo Ibarra (malungkot)",
+		msg: "Mabigat pakinggan, Elias. Ngunit salamat sa iyong paalala."
+	},
+	{
+		name: "Elias",
+		msg: "Hindi ko ginagawa ito para sa akin. Ginagawa ko ito dahil naniniwala ako sa iyo, sa iyong mga layunin."
+	},
+	{
+		name: "Crisostomo Ibarra (malungkot)",
+		msg: "At naniniwala ako sa Diyos—higit pa sa mga himala na pinaniniwalaan ng marami."
+	},
+	{
+		name: "Elias (tumango)",
+		msg: "Tama ka. Ang pananampalataya sa Diyos ay higit na totoo kaysa sa mga milagro ng mga taong mapagpanggap."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik silang nagkatitigan. Ramdam ang bigat ng gabi.)"
+	},
+	{
+		name: "Elias",
+		msg: "Kailangan ko nang umalis. Tandaan mo, Don Crisóstomo: kung sakaling mangailangan ka ng tulong, darating ako."
+	},
+	{
+		name: "Crisostomo Ibarra (mataimtim)",
+		msg: "At ako naman ay nangangako—ang sinabi mo ngayong gabi ay mananatiling lihim."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumango si Elias at unti-unting naglakad palayo sa ulan.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Sa pag-alis ni Elias, nanatiling nakatayo si Ibarra sa pintuan, pinagmamasdan ang dilim ng gabi—tila iniisip kung sino nga ba ang tunay na mga kaaway sa likod ng kanyang mabubuting hangarin."
+	},
+]
 
 
 
