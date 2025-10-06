@@ -296,6 +296,159 @@ chap4_dial1 = [
 		msg: "(Tahimik na lumayo si Ibarra, dala ang bigat ng katotohanang kanyang nalaman.)"
 	},
 ]
+//level 1
+//chapter 5
+chap5_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Sa silid ni Ibarra sa Fonda de Lala. Tahimik ang gabi. Pumasok si Ibarra, halatang pagod at malungkot.)"
+	},
+	{
+		name: "Crisostomo Ibarra (umupo sa silya, nagbuntong-hininga)",
+		msg: "Kay tagal kong nawala… ngunit tila mas mabigat pa rin ang lahat nang aking pagbalik. Ama… bakit kayo ginanito ng tadhana?"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumapit siya sa bintana at minasdan ang tanawin sa labas.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahina ang tinig)",
+		msg: "Ang ilog ay payapa, subalit sa kabila’y may kasayahan. Mga tugtugan, tawanan, at liwanag… Ngunit sa puso ko, tanging dilim at dalamhati ang nangingibabaw."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Naririnig ang tugtog ng orkestra mula sa kabilang bahay. Napatingin siya.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahina ang tinig)",
+		msg: "Isang piging… at—(napahinto) Sino yaong dilag? Liwanag sa gitna ng gabi… tila siya lamang ang nagbibigay-buhay sa madilim kong pag-iisip."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumapit pa siya sa bintana, dahan-dahang ngumiti.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahina ang tinig)",
+		msg: "Maria Clara… Ang aking alaala, ang aking inspirasyon. Kay ganda mong tumanaw, tila pinapawi mo ang lahat ng sakit na iniwan ng nakaraan."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Pumikit si Ibarra, dahan-dahang humiga sa kama.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahina)",
+		msg: "Sa piling ng iyong alaala, Maria… magtatamo ako ng kapahingahan."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Unti-unting namatay ang ilaw sa silid habang patuloy ang tugtugin mula sa malayo. Nakatulog si Ibarra.)"
+	},
+	
+]
+
+//level 2
+//chapter 7
+chap7_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Lumipas ang ilang sandali. Dumating si Ibarra, suot ang kanyang amerikana. Tinanggap siya ni Kapitan Tiyago, at agad niyang hinanap si Maria Clara.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Nasaan si Maria Clara, Kapitan Tiyago?"
+	},
+	{
+		name: "Kapitan Tiago",
+		msg: "Naroon sa itaas, sa asotea. Tila ikaw na nga ang hinihintay niya maghapon."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumakad si Ibarra patungong asotea. Nasa gilid si Maria Clara, nakatanaw sa hardin. Nang marinig ang mga yabag, napalingon siya.)"
+	},
+]
+chap7_dial2 = [
+	{
+		name: "Maria Clara (namutla, nangingiti)",
+		msg: "Crisóstomo!"
+	},
+	{
+		name: "Crisostomo Ibarra (lumapit, nagalak)",
+		msg: "Maria Clara… sa wakas! Matagal kong hinintay ang sandaling ito."
+	},
+	{
+		name: "Maria Clara (namutla, nangingiti)",
+		msg: "At ako naman, hindi mapakali sa bawat oras ng paghihintay."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagkatinginan silang dalawa. Tahimik ang paligid, tanging huni ng mga ibon ang maririnig.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Naalala mo pa ba ang ating kabataan? Ang ating mga larong walang malisya, ang ating mga tampuhan?"
+	},
+	{
+		name: "Maria Clara (ngumiti)",
+		msg: "Paanong di ko malilimutan? May taglay pa ako ng mga dahong iyong ibinigay noon."
+	},
+	{
+		name: "Crisostomo Ibarra (naglabas ng pitaka)",
+		msg: "At ito naman ang tuyong dahon ng sambong na iniwan mo sa akin. Araw-araw kong kasama."
+	},
+	{
+		name: "Maria Clara (ngumiti)",
+		msg: "At ito? (iniabot ni Ibarra ang sulat) Ang liham mo bago ka tumulak sa Europa…"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Oo. Noon ay puno ako ng pag-asa—ngunit ngayon, pag-ibig ko na ang aking baon."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagkatinginan sila nang matagal. Maya-maya’y nagsalita si Ibarra.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Maria, kailangan kong magtungo sa San Diego. Marami pa akong kailangang ayusin para sa aking ama."
+	},
+	{
+		name: "Maria Clara (malungkot)",
+		msg: "Ganun ba… kailan ka babalik?"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Bukas Todos los Santos na. Babalik agad ako, iyan ang aking pangako."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Naluha si Maria Clara at itinago ang mukha sa panyo.)"
+	},
+	{
+		name: "Maria Clara (malungkot)",
+		msg: "Mahal kong Crisóstomo, mag-ingat ka. Napakarami raw tulisan sa daan, sabi ni Ama."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Pumasok si Kapitan Tiyago.)"
+	},
+	{
+		name: "Kapitan Tiago",
+		msg: "Anak, huwag kang malungkot. Tirik mo ang pinakamahal na kandila kay San Roque at San Rafael, upang ligtas ang paglalakbay ni Ibarra."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumango si Maria Clara habang pinapahid ang luha. Lumapit si Ibarra at marahang hinalikan ang kamay niya.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Hanggang sa muli, Maria Clara. Sa pagbalik ko, dala ko ang liwanag ng iyong mga mata."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Dahan-dahan siyang lumakad palayo. Naiwan si Maria Clara sa asotea, pinagmamasdan ang papalayong karwahe, habang unti-unting dumidilim ang langit.)"
+	},
+]
+
 
 
 // level 3 
