@@ -668,6 +668,73 @@ chap22_dial2 = [
 	},
 ]
 
+//level 4
+//chapter 23
+chap23_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Tawanan ang mga dalaga. Pagdating nila sa tabing-ilog, naroon na ang mga binata.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Magandang umaga sa inyo! Tila mga bulaklak kayo sa umagang ito."
+	},
+	{
+		name: "Sinang (mahinhing ngumiti bigla)",
+		msg: "Magandang umaga rin po, Don Crisóstomo."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagsimula silang maglayag. Ang mga lalaki’y nasa kabilang bangka.)"
+	},
+]
+chap23_dial2 =[
+	{
+		name: "Elias",
+		msg: "Magaan itong bangka... pero teka—ano iyon? May tumutulo!"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Limang butas! Maglipat na tayo bago tayo lumubog!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Agad silang lumipat sa bangkang sinasakyan ng mga dalaga. Nagkatinginan ang lahat, napayuko ang mga babae.)"
+	},
+	{
+		name: "Iday (mahina)",
+		msg: "Nakakahiya naman, andito na sila sa bangka natin..."
+	},
+	{
+		name: "Maria Clara (mahinang tawa)",
+		msg: "Hayaan mo na, Iday. Mas masaya naman pag-sama-sama."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Umawit si Maria Clara ng isang kundiman, lahat ay natahimik at nakinig.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "(May sumulpot na buwaya sa ilog! at tumalon si Elias sa tubig, walang pag-aalinlangan.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nilusob ni Elias ang buwaya, ngunit malakas ito. Hindi na nakatiis si Ibarra tumalon din siya upang tulungan si Elias.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Hawakang mabuti ang bangka! Ako na ang bahala rito!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(May sagupaan sa tubig. Saglit na tensyon, hanggang sa tuluyang napatay ang buwaya.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nang makabalik si Elias at Ibarra, basang-basa ngunit ligtas, muling bumalik ang ngiti sa lahat. Nagpatuloy sila sa pangingisda, at sa wakas ay nakahuli rin ng sariwang isda.)"
+	},
+]
+
 
 // level 3 
 lvl_3_one = [
