@@ -17,8 +17,8 @@
   ],
   "name":"rm_chapter29_arawNgPista",
   "parent":{
-    "name":"Level5",
-    "path":"folders/Rooms/Level5.yy",
+    "name":"NOT_INCLUDED",
+    "path":"folders/Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

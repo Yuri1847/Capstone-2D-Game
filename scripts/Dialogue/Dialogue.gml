@@ -8,6 +8,7 @@ function create_dialogue(_messages){
 	_inst.current_message = 0;
 }
 /*
+// color for name....
 char_colors = {
 	"Crisostomo Ibarra" : c_olive,
 	"Tiago" : c_aqua
@@ -732,6 +733,70 @@ chap23_dial2 =[
 	{
 		name: "[Narration]",
 		msg: "(Nang makabalik si Elias at Ibarra, basang-basa ngunit ligtas, muling bumalik ang ngiti sa lahat. Nagpatuloy sila sa pangingisda, at sa wakas ay nakahuli rin ng sariwang isda.)"
+	},
+]
+
+
+//level 5
+//chapter 31
+chap31_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "Nagsimula na ang misa. Lahat ng mata ay nakatuon kay Padre Damaso habang siya’y umaakyat sa pulpito upang magsermon."
+	},
+	{
+		name: "Padre Damaso (malakas ang tinig)",
+		msg: "Ang salita ng Diyos ay tulad ng binhing dapat itanim sa mabuting lupa!(Mayabang ang tindig) Ngunit, mga anak, ano ang saysay kung ito’y itatanim sa mabatong puso? Wala itong tutubong bunga!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Namangha sina Padre Sibyla at Padre Martin sa simula ng sermon. Maganda ang daloy ng pananalita ng pari, ngunit habang tumatagal—unti-unti nang nagiging mapanumbat ang tono."
+	},
+	{
+		name: "Padre Damaso",
+		msg: "Tingnan ninyo si David! Si Roland! Mga bayani ng pananampalataya! Ngunit sa ating bayan, ilan kaya ang tunay na sumusunod sa Diyos? May mga anak ngayon ng mga erehe!—walang galang, bastos, at akala mo’y kung sinong banal!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik ang mga tao. Ang mga Indio ay nagkakatinginan, di naiintindihan ang sermon na puro Kastila.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Hindi maintindihan ng mga Indio ang sermon. Tanging mga salitang “tulisan,” “gwardiya sibil,” “San Francisco,” at “San Diego” lamang ang naiintindihan nila. Marami na ang nahihimbing—si Kapitan Tiago ay naghihikab, at si Maria Clara ay palihim na sumusulyap kay Ibarra."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Samantala, nanatiling tahimik si Ibarra ngunit bakas sa mukha niya ang galit. Alam niyang siya ang pinatatamaan ni Padre Damaso."
+	},
+	{
+		name: "Padre Damaso (malakas, may diin)",
+		msg: "Ang mga anak ng erehe ay walang galang sa simbahan! Sila’y mga binhing itinanim ng demonyo sa lupain ng Diyos!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumahimik ang lahat. Napatungo si Ibarra, mahigpit ang pagkakakuyom ng kamao.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahinang bulong)",
+		msg: "Sobra na ito, Padre..."
+	},
+	{
+		name: "[Narration]",
+		msg: "Ngunit bago pa man makagawa ng hakbang si Ibarra, isang lalaking hindi napansin ng sinuman ang pumasok sa simbahan si Elias."
+	},
+]
+chapt31_dial2 = [
+	{
+		name: "Elias (mahinang boses, lumapit kay Ibarra)",
+		msg: "Don Crisóstomo, mag-ingat ka bukas sa seremonya ng pagbabasbas. Huwag kang lalapit sa pundasyong bato... baka iyon na ang huling araw mo."
+	},
+	{
+		name: "Crisostomo Ibarra (nagulat)",
+		msg: "Elias? Bakit—"
+	},
+	{
+		name: "[Narration]",
+		msg: "Ngunit nang lingunin niya, wala na si Elias. Tanging sermon ni Padre Damaso at bulungan ng mga tao ang naririnig. At sa katahimikang iyon, naramdaman ni Ibarra ang papalapit na bagyo ang bagyong magpapabago sa kanyang kapalaran."
 	},
 ]
 
