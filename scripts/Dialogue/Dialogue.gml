@@ -606,6 +606,69 @@ chap19_dial1 = [
 ]
 
 
+// level 4
+chap22_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Sa labas, maririnig ang pagdating ng karwahe. Bumaba si Ibarra, suot ang marangal na kasuotan. Lumingon siya sa bintana at ngumiti.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Maria Clara!"
+	},
+	{
+		name: "Maria Clara (masiglang tumakbo pababa)",
+		msg: "Crisóstomo! Mabuti’t nakarating ka!"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Nauna akong dumating upang ipaalam sa’yo — nais kong magdaos tayo ng isang piknik sa tabing-ilog bukas. Sama-sama tayo ng ating mga kaibigan."
+	},
+	{
+		name: "Maria Clara (nag-aalangan)",
+		msg: "Nakakatuwa iyon... ngunit, Crisóstomo, kung maaari lamang huwag mo sanang isama si Padre Salvi. Hindi ako mapalagay kapag naroon siya."
+	},
+	{
+		name: "Crisostomo Ibarra (mahinahon)",
+		msg: "Ngunit, Maria Clara, siya ay panauhin mo. At mabuti naman ang kanyang pakikitungo sa akin. Huwag kang mag-alala sa ibang bangka ko siya patatawirin, upang di siya makasama sa ating paglalayag."
+	},
+	{
+		name: "Maria Clara (napangiti)",
+		msg: "Kung gayon, ayon na nga. Ayokong masira ang araw nating iyon."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Biglang dumating si Padre Salvi. Napatingin si Maria Clara at nagpaalam upang magpahinga.)"
+	},
+]
+chap22_dial2 = [
+	{
+		name: "Padre Salvi",
+		msg: "Magandang gabi, Don Crisóstomo. Hindi ko akalaing matatagpuan kita rito."
+	},
+	{
+		name: "Crisostomo Ibarra (magalang)",
+		msg: "Padre, nagkataon lamang po. Nais ko sanang anyayahan kayo bukas sa aming munting piknik sa tabing-ilog."
+	},
+	{
+		name: "Padre Salvi (nakangiti ngunit malamig ang tinig)",
+		msg: "Isang malaking karangalan iyan. Salamat, Don Ibarra. Ako’y sasama."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Paglubog ng araw, nagpaalam si Ibarra.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Magandang gabi po, Padre. Magpahinga na rin po kayo. Maraming dapat asikasuhin bukas."
+	},
+	{
+		name: "Padre Salvi ",
+		msg: "Gayon din sa inyo, Don Crisóstomo. Nawa’y maging mapayapa ang inyong gabi."
+	},
+]
+
+
 // level 3 
 lvl_3_one = [
 	{

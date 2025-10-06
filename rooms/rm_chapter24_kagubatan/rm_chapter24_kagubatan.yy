@@ -145,8 +145,8 @@
   ],
   "name":"rm_chapter24_kagubatan",
   "parent":{
-    "name":"Level4",
-    "path":"folders/Rooms/Level4.yy",
+    "name":"NOT_INCLUDED",
+    "path":"folders/Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
