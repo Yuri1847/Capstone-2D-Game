@@ -544,6 +544,67 @@ chap13_dial3 = [
 	},
 ]
 
+// level 3 
+//chapter 19
+chap19_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Tahimik silang naglalakad sa gilid ng lawa. Sandaling huminto si Ibarra at tumingin sa tubig.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Dito... dito raw itinapon ang bangkay ng aking ama. Kay lupit ng tadhana. Ngunit ngayon, gusto kong gawing lugar ng pag-asa ang pook na ito."
+	},
+	{
+		name: "Guro (mahinahon)",
+		msg: "Don Crisóstomo, wala kayong dapat ipagpasalamat sa aking pagpunta. Malaki ang utang na loob ko kay Don Rafael. Noong siya’y nabubuhay pa, tinulungan niya kaming mga guro, gayon din ang mga batang walang kakayahang mag-aral."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Kung gayon, natutuwa akong marinig na may naiwang kabutihan ang aking ama. Ngunit... ano na ang kalagayan ng mga paaralan ngayon?"
+	},
+	{
+		name: "Guro (malungkot na tinig)",
+		msg: "Ah, Ginoo... Marami pong suliranin. Walang interes ang mga bata sa pag-aaral, at ang mga magulang naman ay hindi nagkakaisa. Kulang kami sa kagamitan, sa silid-aralan, at sa pag-asa. At higit sa lahat ang mga pari ay labis na nakikialam sa aming paraan ng pagtuturo."
+	},
+	{
+		name: "Crisostomo Ibarra (nakikinig nang mabuti)",
+		msg: "Paanong panghihimasok, Ginoo?"
+	},
+	{
+		name: "Guro (mahinahon)",
+		msg: "Kung minsan, ipinagbabawal nila ang pagtuturo ng wikang Kastila. Sinasaway ang paggamit ng mga bagong aklat at itinuturo sa amin na takutin na lang ang mga bata kaysa turuan. Kaya kahit magsikap kami, nananatiling mangmang ang marami.."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumango si Ibarra, halatang naantig.)"
+	},
+	{
+		name: "Crisostomo Ibarra (nakikinig nang mabuti)",
+		msg: "Tama ka, Ginoo. Ang lipunan ay di uunlad hangga’t hindi natututong mag-isip ang kabataan. Pangako ko sa iyo sa abot ng aking makakaya, tutulungan ko ang mga guro at ang mga mag-aaral ng San Diego. Magtatayo ako ng isang paaralang maayos, isang paaralang magtuturo ng karunungan at dangal."
+	},
+	{
+		name: "Guro (napaluha)",
+		msg: "Don Crisóstomo... kung magagawa ninyo iyon, hinding-hindi ko malilimutan ang kabutihang iyon. Maging ang inyong ama ay matutuwa kung siya’y nakikinig ngayon."
+	},
+	{
+		name: "Crisostomo Ibarra (matatag ang tinig)",
+		msg: "Sa darating na pagpupulong sa bulwagang bayan, ipahahatid ko ang ating napag-usapan. Hindi ko hahayaang manatili sa dilim ang ating bayan."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumingin si Ibarra sa lawa, habang humahampas ang alon sa pampang. Lumambot ang ekspresyon ng kanyang mukha.)"
+	},
+	{
+		name: "Crisostomo Ibarra (matatag ang tinig)",
+		msg: "Ama... sa tubig na nagkubli sa iyong katahimikan, dito ko ipapangako ang liwanag ay muling sisikat para sa mga anak ng San Diego."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tila sumabay ang ihip ng hangin sa kanyang mga salita. Nagtapos ang tagpo sa tanawing payapa ngunit puno ng pag-asa.)"
+	},
+]
+
 
 // level 3 
 lvl_3_one = [
