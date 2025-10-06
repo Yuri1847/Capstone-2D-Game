@@ -801,6 +801,151 @@ chapt31_dial2 = [
 ]
 
 
+
+// level 5
+//chapter 32
+chap32_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "Isang mahalagang araw para kay Ibarra. Itatayo na ang paaralang matagal niyang pinangarap, alaala ng kanyang ama."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Maririnig ang tugtugan ng banda. May mga palosebo, pabitin, at pukpok sa palayok.)"
+	},
+	{
+		name: "Guro",
+		msg: "Don Crisóstomo, napakaganda po ng handa ninyo! Tiyak na matutuwa ang mga bata sa bagong paaralan."
+	},
+	{
+		name: "Crisostomo Ibarra (nagulat)",
+		msg: "Sana nga. Ang paaralang ito’y para sa kanila—para sa kinabukasan ng San Diego."
+	},
+	{
+		name: "[Narration]",
+		msg: "Dumating ang mga panauhin: ang alkalde, Kapitan Tiago, Alperes, at si Padre Salvi. Sa gitna ng kasiyahan, kapansin-pansin ang kagandahan ni Maria Clara."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Huminto ang banda. Tumahimik ang lahat.)"
+	},
+]
+chap32_dial2 = [
+	{
+		name: "Alkalde",
+		msg: "Mga ginoo at ginang, magsisimula na tayo sa seremonya ng paghuhugos!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Pinalibutan ng lahat ang malaking uka sa lupa. Sa itaas ng makinarya ay naroon ang taong madilaw—nakangisi, at tila may inaantabayanan."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Napatitig si Ibarra sa itaas, kumabog ang kanyang dibdib.)"
+	},
+	{
+		name: "Crisostomo Ibarra (mahina)",
+		msg: "Ang taong iyon… (Biglang naalala ang tinig ni Elias: “Huwag kang lalapit sa pundasyong bato…”)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Ngunit nabuhayan siya ng loob nang mapansin si Elias sa may tabi ng makinarya—tila nagmamasid at handang kumilos."
+	},
+	{
+		name: "Padre Salvi (nanginginig ang tinig habang nagbabasa)",
+		msg: "Pagpalain nawa ng Diyos ang bagong bahay-aralan na maghahatid ng liwanag sa San Diego…"
+	},
+	{
+		name: "[Narration]",
+		msg: "Ipinasok na ang kahong kristal sa tinggang bumbong. Nagmungkahi ang alkalde na si Ibarra ang maglagay sa uka ng bato."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Hindi, ginoo. Ang karangalan ay ibigay na lamang natin sa Eskribano."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Inilagay ng Eskribano ang bumbong sa uka. Sinundan ito ng basbas ni Padre Salvi at ng mga piling panauhin.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Isa-isa silang bumaba. Una ang alkalde, sinundan ni Padre Salvi na halatang nanginginig habang naglalagay ng simyento."
+	},
+	{
+		name: "Padre Salvi (mahina, nanginginig)",
+		msg: "S-sumainyo nawa ang pagpapala ng langit..."
+	},
+	{
+		name: "[Narration]",
+		msg: "Napansin ni Padre Salvi na hindi pa nagpapalitada si Ibarra. Pinilit niya itong lumapit."
+	},
+	{
+		name: "Padre Salvi (mahina, nanginginig)",
+		msg: "Don Crisóstomo, kayo naman. Ang bayan ay naghihintay."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Ngumiti si Ibarra at kinuha ang pala.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Kung gano’n… para sa bayan at sa kabataan ng San Diego."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Habang itinataas niya ang pala, biglang pumutok ang tunog ng lubid—“KRRAAAK!”)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Isang iglap lang, bumagsak ang malaking bato! Nagkagulo ang lahat—sigawan, takbuhan, alikabok at ingay!"
+	},
+	{
+		name: "Maria Clara",
+		msg: "Ibarraaa!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumigil ang lahat. Dahan-dahang lumitaw si Ibarra mula sa usok, hawak pa rin ang pala.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Nakita siyang nakatayo, buhay. Ngunit sa kanyang paanan-ay ang duguang katawan ng taong madilaw."
+	},
+	{
+		name: "Elias (mahina, nakatingin kay Ibarra)",
+		msg: "Salamat sa Diyos… nakaligtas ka."
+	},
+	{
+		name: "[Narration]",
+		msg: "At sa gitna ng sigawan, natanto ni Ibarra ang babala ni Elias ay totoo.Ang liwanag na kanyang hinahangad,ay muntik nang lamunin ng dilim."
+	},
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // level 3 
 lvl_3_one = [
 	{
