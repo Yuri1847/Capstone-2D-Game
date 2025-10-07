@@ -21,13 +21,15 @@ if (is_bm_dragging) {
     slider_bm_value = (mx_bm - slider_bm_x) / slider_width;
     slider_bm_value = clamp(slider_bm_value, 0, 1);
     
-    /*if (global.BM_id != noone) {
+    if (global.BM_id != noone) {
         audio_sound_gain(global.BM_id, slider_bm_value, 0);
-    }*/
+    }
+	global.settings_data.audio.background_music_value = slider_bm_value;
+	settings_save_game();
 }
 
 if (variable_global_exists("BM_id")) {
-    //audio_sound_gain(global.BM_id, slider_bm_value, 0);
+    audio_sound_gain(global.BM_id, slider_bm_value, 0);
 }
 
 
@@ -54,5 +56,7 @@ if (mouse_check_button_released(mb_left)) {
 if (is_sfx_dragging) {
     slider_sfx_value = (mx_sfx - slider_sfx_x) / slider_width;
     slider_sfx_value = clamp(slider_sfx_value, 0, 1);
+	global.settings_data.audio.sound_effect_value = slider_sfx_value;
+	settings_save_game();
 }
 

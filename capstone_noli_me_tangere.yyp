@@ -625,6 +625,8 @@
     {"id":{"name":"sc_state_slot3_save","path":"scripts/sc_state_slot3_save/sc_state_slot3_save.yy",},},
     {"id":{"name":"sc_tilemap_converter","path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},},
     {"id":{"name":"sc_visible_layer","path":"scripts/sc_visible_layer/sc_visible_layer.yy",},},
+    {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
+    {"id":{"name":"snd_button_clicked","path":"sounds/snd_button_clicked/snd_button_clicked.yy",},},
     {"id":{"name":"spr_anvil_1","path":"sprites/spr_anvil_1/spr_anvil_1.yy",},},
     {"id":{"name":"spr_anvil_2","path":"sprites/spr_anvil_2/spr_anvil_2.yy",},},
     {"id":{"name":"spr_anvil_3","path":"sprites/spr_anvil_3/spr_anvil_3.yy",},},
@@ -1047,9 +1049,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"children":[
+        {"roomId":{"name":"rm_chapter2_crisostomo_ibarra","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},},
         {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
         {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
-        {"roomId":{"name":"rm_chapter2_crisostomo_ibarra","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},},
         {"roomId":{"name":"rm_load_game_menu","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},},
         {"roomId":{"name":"rm_chapter3_hapunan","path":"rooms/rm_chapter3_hapunan/rm_chapter3_hapunan.yy",},},
         {"roomId":{"name":"rm_chapter4_erehe_at_filibustero","path":"rooms/rm_chapter4_erehe_at_filibustero/rm_chapter4_erehe_at_filibustero.yy",},},

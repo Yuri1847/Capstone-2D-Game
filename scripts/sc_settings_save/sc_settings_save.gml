@@ -17,8 +17,8 @@ global.settings_data = {
 	}],
 	audio: 
 	{
-	sound_effect_value: 0,
-	background_music_value: 0
+	sound_effect_value: 0.8,
+	background_music_value: 0.5
 	}
 };
 
