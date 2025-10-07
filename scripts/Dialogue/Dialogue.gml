@@ -1494,6 +1494,10 @@ chap55_dial2 = [
 //chapter 58
 chap58_dial1 = [
 	{
+		name: "[Narration]",
+		msg: "(Biglang may kumatok nang malakas.)"
+	},
+	{
 		name: "Crisostomo Ibarra",
 		msg: "Narito na tayo......"
 	},
