@@ -1461,12 +1461,34 @@ chap54_dial1 = [
 //chapter 55
 chap55_dial1 = [
 	{
-		name: "Crisostomo Ibarra",
-		msg: "Narito na tayo......"
+		name: "[Narration]",
+		msg: "(Sa bahay ni Ibarra…)"
+	},
+	{
+		name: "Crisostomo Ibarra (mabilisan)",
+		msg: "Ihanda ang kabayo! Ilagay ko muna ang salapi, alahas, at ang larawan ni Maria Clara…"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Biglang may kumatok nang malakas.)"
+	},
+]
+chap55_dial2 = [
+	{
+		name: "Gwardiya Sibil",
+		msg: "Buksan mo, sa ngalan ng batas!"
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+		msg: "Ako? Aarestuhin? Pero bakit?"
+	},
+	{
+		name: "Gwardiya Sibil",
+		msg: "Walang paliwanag — sumama ka!"
+	},
+	{
+		name: "Crisostomo Ibarra (huminga nang malalim)",
+		msg: "Sige."
 	},
 ]
 //chapter 58
