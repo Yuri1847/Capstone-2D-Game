@@ -3,7 +3,7 @@ slider_height = sprite_get_height(spr_slider_bar);
 
 //Background Music
 slider_bm_x = (display_get_gui_width() / 2 - 320/2);
-slider_bm_y = (display_get_gui_height() / 2 - 141/2);
+slider_bm_y = (display_get_gui_height() / 2 - 47/2);
 
 // value between 0 and 1
 slider_bm_value = 0.5;// start at 50%
