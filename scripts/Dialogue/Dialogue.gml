@@ -1383,8 +1383,83 @@ chap48_dial1 = [
 	},
 ]
 
-
-
+// level 7
+//chapter 49
+chap49_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Sa tabing-lawa, papalubog ang araw. Nakita ni Ibarra si Elias sa bangka.)"
+	},
+	{
+		name: "Elias",
+		msg: "Don Crisostomo, pasensya ka na kung dito tayo mag-uusap. Mas tahimik dito — walang makakarinig."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ayos lang, Elias. Sabihin mo, ano ba ang pakay mo?"
+	},
+	{
+		name: "Elias",
+		msg: "Ako’y inutusan na iparating sa’yo ang mga hinaing ng mga inaapi. Hinihiling nila ang respeto sa dangal ng tao, kaligtasan ng bawat isa, at kaunting malasakit mula sa mga may kapangyarihan."
+	},
+	{
+		name: "Crisostomo Ibarra (seryoso)",
+		msg: "Naiintindihan ko. Kung pera o tulong sa mga kaibigan ko sa Madrid ang kailangan, makatutulong ako. Kahit sa Kapitan Heneral, susubukan kong makiusap."
+	},
+	{
+		name: "Elias (umiling)",
+		msg: "Hindi lamang tulong, Don Crisostomo. Ang kailangan ay pagkilos, pagbabago sa loob mismo ng bayan."
+	},
+	{
+		name: "Crisostomo Ibarra (nag-aalinlangan)",
+		msg: "Elias… baka sa halip na makatulong, lalo lang tayong mapahamak. Hindi pa handa ang bayan sa ganyang hakbang."
+	},
+	{
+		name: "Elias (malungkot)",
+		msg: "Kung gayon, sasabihin ko na lang sa kanila na hindi ka pumayag. Pero sana, huwag mo kaming kalimutan."
+	},
+	{
+		name: "Crisostomo Ibarra (mahina)",
+		msg: "Hindi ko kayo kalilimutan, Elias. Pero… umasa tayo sa Diyos. Siya lamang ang makapagtatama ng lahat."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik na tumingin si Elias sa papalubog na araw, at dahan-dahang itinuloy ang pagsagwan.)"
+	},
+]
+//chapter 54
+chap54_dial1 = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Narito na tayo......"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+	},
+]
+//chapter 55
+chap55_dial1 = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Narito na tayo......"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+	},
+]
+//chapter 58
+chap58_dial1 = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Narito na tayo......"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+	},
+]
 
 
 
