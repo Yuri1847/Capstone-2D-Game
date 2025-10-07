@@ -1290,7 +1290,55 @@ chap40_dial3 = [
 		msg: "Ilang saglit pa’y unti-unting tumahimik ang mga tao. Ang sigawan ay naging bulungan."
 	},
 ]
-
+// chapter 41
+chap41_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "Hindi makatulog si Ibarra nang gabing iyon. Upang maibsan ang bigat ng isip, nagpunta siya sa kaniyang laboratoryo at nagpatuloy sa pag-eeksperimento."
+	},
+	{
+		name: "Crisostomo Ibarra (nagsasalita sa sarili habang nagmamasid sa mga kasangkapan)",
+		msg: "Marahil... sa siyensya ko matatagpuan ang katahimikan na hindi kayang ibigay ng lipunan."
+	},
+	{
+		name: "[Narration]",
+		msg: "Abala siya sa gawain nang hindi namalayang lumipas na ang oras. Maya-maya’y kumatok si Elias at pumasok nang tahimik."
+	},
+]
+chap41_dial2 =[
+	{
+		name: "Elias",
+		msg: "Senyor Ibarra, dumaan ako upang ibalita—nagkasakit si Maria Clara."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Ano?! Si Maria Clara? Ano’ng nangyari sa kanya?"
+	},
+	{
+		name: "Elias",
+		msg: "Pagod marahil sa mga nangyari kagabi. Ngunit huwag kang mag-alala, may mga nag-aalaga sa kanya."
+	},
+	{
+		name: "Crisostomo Ibarra (huminga nang malalim)",
+		msg: "Salamat, Elias. Ngunit... gusto ko ring malaman—paano mo napatigil ang kaguluhan sa plasa?"
+	},
+	{
+		name: "Elias (mahinahon)",
+		msg: "Kilala ko ang magkapatid na nanguna sa gulo. Minsan ko na silang tinulungan nang sila’y parusahan. Kinausap ko sila kagabi—at sila mismo ang nakiusap sa iba na magpahupa ng galit.	"
+	},
+	{
+		name: "Crisostomo Ibarra (ngumiti ng bahagya)",
+		msg: "Walang hindi mo kayang ayusin, Elias."
+	},
+	{
+		name: "Elias",
+		msg: "Hindi iyon dahil sa akin, Senyor. Kundi dahil naniniwala pa rin silang may kabutihan sa’yo."
+	},
+	{
+		name: "[Narration]",
+		msg: "Ilang sandali pa, nagpaalam si Elias at umalis. Agad namang nagbihis si Ibarra at naglakad patungo sa bahay ni Maria Clara."
+	},
+]
 
 
 
