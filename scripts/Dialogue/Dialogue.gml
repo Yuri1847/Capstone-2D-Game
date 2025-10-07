@@ -1430,12 +1430,32 @@ chap49_dial1 = [
 //chapter 54
 chap54_dial1 = [
 	{
-		name: "Crisostomo Ibarra",
-		msg: "Narito na tayo......"
+		name: "Elias",
+		msg: "Don Crisostomo! Umalis ka na agad! Kalat na ang balitang ikaw ang nag-utos sa mga sasalakay sa kwartel!"
+	},
+	{
+		name: "Crisostomo Ibarra (nagulat)",
+		msg: "Ano? Hindi ako sangkot diyan! Elias, tulungan mo akong iligpit ang mahahalagang papeles!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Habang nagliligpit, nakita ni Elias ang pangalang “Don Pedro Eibarramendia.”)"
+	},
+	{
+		name: "Elias",
+		msg: "Don Pedro Eibarramendia? Kaanu-ano mo siya?"
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Ipakita mo sa akin ang nitso ng aking ama"
+		msg: "Lolo ko siya. Bakit mo tinatanong?"
+	},
+	{
+		name: "Elias (namutla)",
+		msg: "Siya… siya ang dahilan ng pagkawasak ng aming pamilya!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tahimik na tumindig si Elias, may galit at kirot sa mata, saka mabilis na umalis.)"
 	},
 ]
 //chapter 55
