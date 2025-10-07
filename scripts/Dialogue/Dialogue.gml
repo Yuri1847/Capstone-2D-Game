@@ -1136,7 +1136,68 @@ chap34_dial1 = [
 ]
 
 
-
+// level 6
+//chapter 37
+chap37_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "Ipinatawag ng Kapitan Heneral si Ibarra. Inakala ng lahat na pagagalitan siya dahil sa nangyaring pagtatalo sa pananghalian. Ngunit makalipas ang ilang sandali, lumabas si Ibarra mula sa silid ng Heneral—nakangiti.."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Nagkatinginan ang mga pari, halatang naiinis.)"
+	},
+	{
+		name: "Padre Sibyla",
+		msg: "Bakit parang... masaya si Ibarra? Hindi ba’t dapat ay pinagsabihan siya?"
+	},
+	{
+		name: "Padre Salvi (mahina ngunit may galit)",
+		msg: "Hmph. Marahil marunong magpakitang-tao ang binata."
+	},
+	{
+		name: "Padre Martin",
+		msg: "Ngunit bakit hindi tayo ang unang pinatawag ng Heneral? Kami ang mga lingkod ng simbahan!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Isa-isa silang tinawag ng kawal—una si Padre Sibyla, kasunod si Padre Salvi, at ang iba pang pari."
+	},
+]
+chap37_dial2 = [
+	{
+		name: "[Narration]",
+		msg: "(Sa loob ng silid, kausap ng Heneral si Ibarra.)"
+	},
+	{
+		name: "Kapitan Heneral (magiliw)",
+		msg: "Ibarra, narinig ko ang tungkol sa iyong ama. Isang mabuting tao raw siya—matapat at marangal. Hindi ko maipagkakaila, ako’y humahanga sa iyo sa pagtatanggol mo sa kanyang dangal."
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Maraming salamat po, Kapitan Heneral. Ginawa ko lamang ang tama."
+	},
+	{
+		name: "Kapitan Heneral ",
+		msg: "Alam mo ba? Maraming nagsabi sa akin na ikaw ay ekskomunikado, ngunit hindi ko iyon pinaniniwalaan agad. Ipag-uutos kong kausapin ang Arsobispo tungkol diyan."
+	},
+	{
+		name: "Crisostomo Ibarra (nagulat, may halong pag-asa)",
+		msg: "Napakalaking biyaya po niyan, Ginoo."
+	},
+	{
+		name: "Kapitan Heneral ",
+		msg: "Isa kang matalinong binata, Ibarra. Ngunit bakit hindi mo ipagbili ang iyong mga ari-arian dito at manirahan sa Espanya? Maraming pagkakataon doon para sa kagaya mong may magandang kaisipan."
+	},
+	{
+		name: "Crisostomo Ibarra (ngumingiti, mariin)",
+		msg: "Hindi po ako aalis. Mas matamis po ang maglingkod sa sariling bayan."
+	},
+	{
+		name: "Kapitan Heneral (tumango, humanga)",
+		msg: "Maganda ang iyong puso, hijo. Pangarap kong magtagumpay ang mga kagaya mo. Protektahan ka sana ng Diyos."
+	},
+]
 
 
 
