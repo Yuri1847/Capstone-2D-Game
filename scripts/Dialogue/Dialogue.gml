@@ -1198,7 +1198,98 @@ chap37_dial2 = [
 		msg: "Maganda ang iyong puso, hijo. Pangarap kong magtagumpay ang mga kagaya mo. Protektahan ka sana ng Diyos."
 	},
 ]
-
+//  chapter 40
+chap40_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Dumating si Ibarra. Napatingin ang lahat. Si Padre Damaso ay napabuntong-hininga.)"
+	},
+	{
+		name: "Padre Damaso (mababa ang boses, puno ng inis)",
+		msg: "Diyos ko… kahit saan ako magpunta, naroon ang ereheng iyan!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Lumapit si Ibarra kay Maria Clara at magiliw itong binati. Nagusap sila nang masinsinan, halatang sabik sa isa’t isa."
+	},
+	{
+		name: "Padre Damaso (galit na tumayo)",
+		msg: "Don Filipo! Bakit naririto ang Ibarra? Alam mo bang siya’y ekskomunikado?!"
+	},
+	{
+		name: "Don Filipo (kalma))",
+		msg: "Padre, siya po ang isa sa pinakamalaking nag-abuloy para sa pagtatanghal na ito. Hindi ko po siya maaaring paalisin."
+	},
+	{
+		name: "Padre Damaso (pasigaw)",
+		msg: "Kung ganyan, ako na ang aalis! Halina kayo, mga kapatid!"
+	},
+	{
+		name: "[Narration]",
+		msg: "At umalis si Padre Damaso kasama ang ibang pari. Tahimik na napayuko si Ibarra, nahihiya sa pangyayari."
+	},
+	{
+		name: "Crisostomo Ibarra (mahina kay Maria Clara)",
+		msg: "Patawarin mo ako, Maria. Marahil mas mabuting umalis na rin ako."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Tumayo siya at tuluyang umalis.)"
+	},
+	{
+		name: "[Narration]",
+		msg: "Pagkaraan ng ilang sandali, dumating ang dalawang sundalo."
+	},
+	{
+		name: "Unang Sundalo",
+		msg: "Ihinto ninyo ang pagtatanghal! Nagagalit ang alperes at ang kanyang senyora—hindi daw makatulog sa ingay!"
+	},
+	{
+		name: "Don Filipo (matatag)",
+		msg: "Hindi ko po ihihinto ang dula! Ito’y para sa bayan at hindi lamang para sa iilan!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Nag-ingay ang mga tao. Ang ilan ay nagsigawan, ang iba nama’y nagbato ng kung ano-anong bagay sa mga sundalo. Nagkagulo ang lahat."
+	},
+	{
+		name: "Don Filipo (sigaw)",
+		msg: "Tumigil kayo! Mga kababayan, kalma lang!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Ngunit walang nakikinig. Biglang dumating si Ibarra, hingal na hingal.)"
+	},
+	
+]
+chap40_dial2 = [
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Don Filipo! Nasaan si Maria Clara? Ano’ng nangyayari rito?"
+	},
+	{
+		name: "Don Filipo",
+		msg: "Tulungan mo akong awatin sila, Ibarra! Hindi ko na kayang pigilan ang lahat!"
+	},
+	{
+		name: "[Narration]",
+		msg: "Ngunit napakarami ng tao. Wala nang makapigil—hanggang sa dumating si Elias."
+	},
+]
+chap40_dial3 = [
+	{
+		name: "Crisostomo Ibarra (mabilis)",
+		msg: "Elias! Tulungan mo ako!"
+	},
+	{
+		name: "Elias: (tumango)",
+		msg: "Ako ang bahala rito."
+	},
+	{
+		name: "[Narration]",
+		msg: "Ilang saglit pa’y unti-unting tumahimik ang mga tao. Ang sigawan ay naging bulungan."
+	},
+]
 
 
 
