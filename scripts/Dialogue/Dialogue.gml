@@ -1339,7 +1339,49 @@ chap41_dial2 =[
 		msg: "Ilang sandali pa, nagpaalam si Elias at umalis. Agad namang nagbihis si Ibarra at naglakad patungo sa bahay ni Maria Clara."
 	},
 ]
-
+// chapter 48
+chap48_dial1 = [
+	{
+		name: "[Narration]",
+		msg: "(Sa bahay ni Kapitan Tiago)"
+	},
+	{
+		name: "Crisostomo Ibarra (may ngiti)",
+		msg: "Magandang umaga, Tiya Isabel. Nandito ako upang dalawin si Maria Clara. May dala rin akong magandang balita — napawalang-bisa na ang aking pagiging ekskomunikado."
+	},
+	{
+		name: "Tiya Isabel (tuwa)",
+		msg: "Aba! Purihin ang Diyos! Maria Clara! Halika’t narito na si Crisostomo!"
+	},
+	{
+		name: "[Narration]",
+		msg: "(Sa bahay ni Kapitan Tiago)"
+	},
+	{
+		name: "Maria Clara (may ngiti ngunit tila alangan)",
+		msg: "Crisostomo… pasensya na, may panauhin ako."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Lumabas si Linares mula sa loob ng bahay, magalang na yumuko kay Ibarra.)"
+	},
+	{
+		name: "Crisostomo Ibarra (nagulat at tila malamig ang tono)",
+		msg: "Ah… ganoon ba? Pasensya na. Marahil ay babalik na lamang ako sa ibang araw."
+	},
+	{
+		name: "Maria Clara (bahagyang nag-aalala)",
+		msg: "Crisostomo, huwag kang—"
+	},
+	{
+		name: "Crisostomo Ibarra (mahinahon)",
+		msg: "Hindi, Maria. Naiintindihan ko. Magandang araw sa’yo."
+	},
+	{
+		name: "[Narration]",
+		msg: "(Umalis si Ibarra, mabigat ang loob. Dumiretso siya sa lugar ng ginagawang paaralan.)"
+	},
+]
 
 
 
