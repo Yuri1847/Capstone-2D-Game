@@ -24,3 +24,4 @@ surface_resize(application_surface, global.design_width, global.design_height);
 
 // Make GUI scale correctly (for UI objects like joystick, inventory, quest)
 display_set_gui_maximize();
+

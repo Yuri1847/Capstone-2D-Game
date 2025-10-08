@@ -17,6 +17,11 @@ state_slot_title = [
 ];
 
 //Center inside Viewport
+//for mobile
+//ui_pos_x = (display_get_width() / 2 - 813/3);
+//ui_pos_y = (display_get_height() / 2);
+
+//for pc resolution
 ui_pos_x = (display_get_gui_width() / 2 - 813/3);
 ui_pos_y = (display_get_gui_height() / 2);
 

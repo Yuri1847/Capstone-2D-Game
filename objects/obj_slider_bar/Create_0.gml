@@ -2,8 +2,16 @@ slider_width  = 286;
 slider_height = sprite_get_height(spr_slider_bar);
 
 //Background Music
+//for mobile resolution
+//slider_bm_x = (display_get_width() / 2 - 320/2);
+//slider_bm_y = (display_get_height() / 2 - 47/2);
+
+//for pc resolution
 slider_bm_x = (display_get_gui_width() / 2 - 320/2);
 slider_bm_y = (display_get_gui_height() / 2 - 47/2);
+
+//slider_bm_x = x;
+slider_bm_y = y;
 
 settings_load_game();
 
@@ -24,6 +32,9 @@ if (variable_global_exists("BM_id")) {
 slider_sfx_x = (slider_bm_x);
 slider_sfx_y = (slider_bm_y+80);
 
+//slider_sfx_x = x;
+//slider_sfx_y = y+96;
+
 // value between 0 and 1
 slider_sfx_value = global.settings_data.audio.sound_effect_value;// start at 50%
 
@@ -31,3 +42,4 @@ slider_sfx_value = global.settings_data.audio.sound_effect_value;// start at 50%
 is_sfx_dragging = false;
 
 isEnabled = false;
+
