@@ -77,8 +77,8 @@
   ],
   "name":"rm_binondoBay",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"NOT_INCLUDED",
+    "path":"folders/Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

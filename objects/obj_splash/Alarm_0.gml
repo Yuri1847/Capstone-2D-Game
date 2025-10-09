@@ -1,9 +1,9 @@
 if (global.splash_target != noone) {
     var _target = global.splash_target;
 
-    // use spawn globals only if they exist
-    var _x = (variable_global_exists("splash_spawnX")) ? global.splash_spawnX : -1;
-    var _y = (variable_global_exists("splash_spawnY")) ? global.splash_spawnY : -1;
+	var _x = (variable_global_exists("splash_spawnX") && is_real(global.splash_spawnX)) ? global.splash_spawnX : -1;
+	var _y = (variable_global_exists("splash_spawnY") && is_real(global.splash_spawnY)) ? global.splash_spawnY : -1;
+
 
     show_debug_message("Splash done → going to " + string(_target));
 

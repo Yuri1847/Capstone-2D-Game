@@ -700,8 +700,8 @@
   ],
   "name":"rm_binondo_main",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"Level1",
+    "path":"folders/Rooms/Level1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

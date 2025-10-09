@@ -1,4 +1,4 @@
 
-targetRoom = rm_binondoTiago_EX;
+targetRoom = rm_anluwage;
 targetX = 1205;
 targetY = 459;

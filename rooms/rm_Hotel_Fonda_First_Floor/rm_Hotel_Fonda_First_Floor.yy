@@ -436,8 +436,8 @@
   ],
   "name":"rm_Hotel_Fonda_First_Floor",
   "parent":{
-    "name":"Fonda delala",
-    "path":"folders/Rooms/BINONDO/Fonda delala.yy",
+    "name":"FondeDeLala",
+    "path":"folders/Rooms/Level1/FondeDeLala.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

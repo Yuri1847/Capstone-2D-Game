@@ -526,8 +526,8 @@
   ],
   "name":"rm_fondeDeLala",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"FondeDeLala",
+    "path":"folders/Rooms/Level1/FondeDeLala.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
