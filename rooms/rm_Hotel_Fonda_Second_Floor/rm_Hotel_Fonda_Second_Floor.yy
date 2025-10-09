@@ -142,6 +142,7 @@
     {"name":"inst_183209C4","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
     {"name":"inst_51F147D","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
     {"name":"inst_69389684","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
+    {"name":"inst_12559951","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
     {"name":"inst_28FE2CA5","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_2005EBB8","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_22522AD6","path":"roomui/RoomUI/RoomUI.yy",},
@@ -171,7 +172,6 @@
     {"name":"inst_CEDC110","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_6CF22E17","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_34835E48","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_12559951","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},
   ],
   "isDnd":false,
   "layers":[
