@@ -123,7 +123,7 @@
     {"$GMFolder":"","%Name":"INTRAMUROS","folderPath":"folders/Rooms/INTRAMUROS.yy","name":"INTRAMUROS","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level0","folderPath":"folders/Rooms/Level0.yy","name":"Level0","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level1","folderPath":"folders/Rooms/Level1.yy","name":"Level1","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"FondeDeLala","folderPath":"folders/Rooms/Level1/FondeDeLala.yy","name":"FondeDeLala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"FondeDeLala","folderPath":"folders/Rooms/BINONDO/FondeDeLala.yy","name":"FondeDeLala","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level2","folderPath":"folders/Rooms/Level2.yy","name":"Level2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level3","folderPath":"folders/Rooms/Level3.yy","name":"Level3","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level4","folderPath":"folders/Rooms/Level4.yy","name":"Level4","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -1048,7 +1048,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_Hotel_Fonda_Second_Floor","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},},
     {"children":[
         {"roomId":{"name":"rm_chapter2_crisostomo_ibarra","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},},
         {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
@@ -1112,6 +1111,7 @@
     {"roomId":{"name":"rm_hardin_ng_botanika","path":"rooms/rm_hardin_ng_botanika/rm_hardin_ng_botanika.yy",},},
     {"roomId":{"name":"rm_fonde_de_lala_market","path":"rooms/rm_fonde_de_lala_market/rm_fonde_de_lala_market.yy",},},
     {"children":[],"groupName":"second_part",},
+    {"roomId":{"name":"rm_Hotel_Fonda_Second_Floor","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},},
     {"roomId":{"name":"rm_simbahan_inside","path":"rooms/rm_simbahan_inside/rm_simbahan_inside.yy",},},
     {"roomId":{"name":"rm_binondo_church_inside","path":"rooms/rm_binondo_church_inside/rm_binondo_church_inside.yy",},},
     {"roomId":{"name":"rm_Hotel_Fonda_First_Floor","path":"rooms/rm_Hotel_Fonda_First_Floor/rm_Hotel_Fonda_First_Floor.yy",},},
