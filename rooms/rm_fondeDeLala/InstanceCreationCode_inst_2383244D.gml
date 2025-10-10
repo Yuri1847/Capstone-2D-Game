@@ -1,3 +1,3 @@
-targetRoom = rm_binondo_main;
-targetX = 2372;
-targetY = 192;
+targetRoom = rm_anluwage;
+targetX = 1211;
+targetY = 444;

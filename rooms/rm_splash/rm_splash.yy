@@ -12,8 +12,8 @@
   ],
   "name":"rm_splash",
   "parent":{
-    "name":"Level0",
-    "path":"folders/Rooms/Level0.yy",
+    "name":"RoomSplashSystem",
+    "path":"folders/RoomSplashSystem.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -8,8 +8,8 @@
   "name":"obj_roomSplashCaller",
   "overriddenProperties":[],
   "parent":{
-    "name":"CONTROL",
-    "path":"folders/Objects/CONTROL.yy",
+    "name":"RoomSplashSystem",
+    "path":"folders/RoomSplashSystem.yy",
   },
   "parentObjectId":null,
   "persistent":false,
