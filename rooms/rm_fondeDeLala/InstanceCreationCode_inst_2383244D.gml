@@ -1,3 +1,3 @@
-targetRoom = rm_anluwage;
-targetX = 1211;
-targetY = 444;
+targetRoom = rm_fonde_de_lala_market;
+targetX = 1166;
+targetY = 282;

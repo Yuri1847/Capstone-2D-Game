@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_chapter2_crisostomo_ibarra",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_chapter2_crisostomo_ibarra/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
