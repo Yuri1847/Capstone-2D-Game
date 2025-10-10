@@ -1387,8 +1387,8 @@
   ],
   "name":"rm_chapter5_liwanag_sa_gabing_madilim",
   "parent":{
-    "name":"Level1",
-    "path":"folders/Rooms/Level1.yy",
+    "name":"Anluwage",
+    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

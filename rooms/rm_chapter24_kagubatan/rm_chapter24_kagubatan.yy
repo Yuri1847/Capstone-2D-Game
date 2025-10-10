@@ -146,7 +146,7 @@
   "name":"rm_chapter24_kagubatan",
   "parent":{
     "name":"NOT_INCLUDED",
-    "path":"folders/Rooms/NOT_INCLUDED.yy",
+    "path":"folders/Rooms/Old_Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

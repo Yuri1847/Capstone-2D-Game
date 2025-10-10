@@ -700,8 +700,8 @@
   ],
   "name":"rm_binondo_main",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"Main_Rooms",
+    "path":"folders/Rooms/Main_Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

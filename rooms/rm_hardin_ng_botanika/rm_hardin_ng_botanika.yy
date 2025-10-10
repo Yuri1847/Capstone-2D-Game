@@ -78,8 +78,8 @@
   ],
   "name":"rm_hardin_ng_botanika",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Main_Rooms",
+    "path":"folders/Rooms/Main_Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

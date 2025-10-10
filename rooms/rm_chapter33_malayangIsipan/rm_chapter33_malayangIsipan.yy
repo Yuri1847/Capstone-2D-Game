@@ -26,7 +26,7 @@
   "name":"rm_chapter33_malayangIsipan",
   "parent":{
     "name":"Level5",
-    "path":"folders/Rooms/Level5.yy",
+    "path":"folders/Rooms/Old_Rooms/Level5.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

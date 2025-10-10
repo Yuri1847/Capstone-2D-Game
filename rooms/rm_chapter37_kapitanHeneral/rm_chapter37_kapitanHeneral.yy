@@ -18,7 +18,7 @@
   "name":"rm_chapter37_kapitanHeneral",
   "parent":{
     "name":"Level6",
-    "path":"folders/Rooms/Level6.yy",
+    "path":"folders/Rooms/Old_Rooms/Level6.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

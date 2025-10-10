@@ -437,7 +437,7 @@
   "name":"rm_Hotel_Fonda_First_Floor",
   "parent":{
     "name":"FondeDeLala",
-    "path":"folders/Rooms/Level1/FondeDeLala.yy",
+    "path":"folders/Rooms/Main_Rooms/FondeDeLala.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

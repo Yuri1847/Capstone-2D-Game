@@ -17,8 +17,8 @@
   ],
   "name":"rm_chapter8_alaala",
   "parent":{
-    "name":"NOT_INCLUDED",
-    "path":"folders/Rooms/NOT_INCLUDED.yy",
+    "name":"Anluwage",
+    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

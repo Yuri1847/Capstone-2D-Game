@@ -18,7 +18,7 @@
   "name":"rm_chapter34_pananghalian",
   "parent":{
     "name":"Level5",
-    "path":"folders/Rooms/Level5.yy",
+    "path":"folders/Rooms/Old_Rooms/Level5.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

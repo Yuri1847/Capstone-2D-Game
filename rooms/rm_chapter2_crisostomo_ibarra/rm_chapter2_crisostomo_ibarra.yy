@@ -955,8 +955,8 @@
   ],
   "name":"rm_chapter2_crisostomo_ibarra",
   "parent":{
-    "name":"Level1",
-    "path":"folders/Rooms/Level1.yy",
+    "name":"Anluwage",
+    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

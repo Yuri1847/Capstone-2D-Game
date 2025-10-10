@@ -48,7 +48,7 @@
   "name":"rm_chapter23_piknik",
   "parent":{
     "name":"Level4",
-    "path":"folders/Rooms/Level4.yy",
+    "path":"folders/Rooms/Old_Rooms/Level4.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

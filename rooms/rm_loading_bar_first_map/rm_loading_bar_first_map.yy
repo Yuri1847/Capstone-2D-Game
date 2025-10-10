@@ -20,8 +20,8 @@
   ],
   "name":"rm_loading_bar_first_map",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"UI",
+    "path":"folders/Rooms/UI.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

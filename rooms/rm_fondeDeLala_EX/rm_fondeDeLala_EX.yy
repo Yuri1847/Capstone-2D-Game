@@ -161,8 +161,8 @@
   ],
   "name":"rm_fondeDeLala_EX",
   "parent":{
-    "name":"Fonda delala",
-    "path":"folders/Rooms/BINONDO/Fonda delala.yy",
+    "name":"BINONDO",
+    "path":"folders/Rooms/Old_Rooms/BINONDO.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

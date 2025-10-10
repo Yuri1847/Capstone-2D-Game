@@ -978,8 +978,8 @@
   ],
   "name":"rm_binondo_church_inside",
   "parent":{
-    "name":"BINONDO",
-    "path":"folders/Rooms/BINONDO.yy",
+    "name":"Main_Rooms",
+    "path":"folders/Rooms/Main_Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

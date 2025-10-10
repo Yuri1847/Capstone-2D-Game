@@ -14,7 +14,7 @@
   "name":"rm_chapter61_habulanSaLawa",
   "parent":{
     "name":"Level8",
-    "path":"folders/Rooms/Level8.yy",
+    "path":"folders/Rooms/Old_Rooms/Level8.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

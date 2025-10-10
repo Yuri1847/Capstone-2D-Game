@@ -50,8 +50,8 @@
   ],
   "name":"rm_chapter4_erehe_at_filibustero",
   "parent":{
-    "name":"Level1",
-    "path":"folders/Rooms/Level1.yy",
+    "name":"Anluwage",
+    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

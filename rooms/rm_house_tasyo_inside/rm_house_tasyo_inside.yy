@@ -944,7 +944,7 @@
   "name":"rm_house_tasyo_inside",
   "parent":{
     "name":"SAN_DIEGO",
-    "path":"folders/Rooms/SAN_DIEGO.yy",
+    "path":"folders/Rooms/Old_Rooms/SAN_DIEGO.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

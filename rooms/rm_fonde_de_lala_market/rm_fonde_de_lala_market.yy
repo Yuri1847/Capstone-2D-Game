@@ -151,8 +151,8 @@
   ],
   "name":"rm_fonde_de_lala_market",
   "parent":{
-    "name":"Fonda delala",
-    "path":"folders/Rooms/BINONDO/Fonda delala.yy",
+    "name":"FondeDeLala",
+    "path":"folders/Rooms/Main_Rooms/FondeDeLala.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

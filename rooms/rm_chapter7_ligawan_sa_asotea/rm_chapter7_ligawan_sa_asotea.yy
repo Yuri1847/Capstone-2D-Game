@@ -1385,8 +1385,8 @@
   ],
   "name":"rm_chapter7_ligawan_sa_asotea",
   "parent":{
-    "name":"Level2",
-    "path":"folders/Rooms/Level2.yy",
+    "name":"Anluwage",
+    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

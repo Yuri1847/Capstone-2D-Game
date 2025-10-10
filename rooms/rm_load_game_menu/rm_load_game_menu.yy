@@ -44,8 +44,8 @@
   ],
   "name":"rm_load_game_menu",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"UI",
+    "path":"folders/Rooms/UI.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

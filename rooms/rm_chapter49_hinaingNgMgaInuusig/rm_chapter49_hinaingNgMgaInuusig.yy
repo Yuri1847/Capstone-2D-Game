@@ -18,7 +18,7 @@
   "name":"rm_chapter49_hinaingNgMgaInuusig",
   "parent":{
     "name":"Level7",
-    "path":"folders/Rooms/Level7.yy",
+    "path":"folders/Rooms/Old_Rooms/Level7.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
