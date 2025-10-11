@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_room_timer",
+  "%Name":"obj_test",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_room_timer",
+  "name":"obj_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"RoomSplashSystem",
-    "path":"folders/RoomSplashSystem.yy",
+    "name":"Quest System",
+    "path":"folders/Quest System.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_front_tiago",
+    "path":"sprites/spr_front_tiago/spr_front_tiago.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
