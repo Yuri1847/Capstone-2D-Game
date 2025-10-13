@@ -1,3 +1,15 @@
+
+
+var elem = ui_element_get("quest_layer/main_panel/sub_panel/text_panel/title");
+
+if (elem != -1) {
+    ui_element_set_text(elem, "Quest: Find Ibarra");
+}
+
+
+
+
+/*
 /// obj_QuestUI - Create Event
 /// Purpose: Initialize Quest UI from existing UI layer elements (no dynamic creation)
 
@@ -18,7 +30,7 @@ questlist_panel  = layer_get_element_from_name("questlist_panel");
 
 // --- Step 3: Get quest text entries (already in questlist_panel)
 // Get references to the instances by name
-questentry1 = instance_find(fn_ui, 0); // or better: layer_instance_get_first("QuestLayer", fn_ui);
+layer_instance_get_first("quest_layer", fn_ui); // or better: layer_instance_get_first("QuestLayer", fn_ui);
 questentry2 = instance_find(fn_ui, 1);
 questentry3 = instance_find(fn_ui, 2);
 
@@ -57,3 +69,4 @@ if (instance_exists(questentry3)) {
 ui_visible = false;
 if (main_panel != -1)
     layer_element_set_visible(main_panel, ui_visible);
+*/
