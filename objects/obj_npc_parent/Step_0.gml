@@ -9,6 +9,7 @@ if(instance_exists(obj_player) && distance_to_object(obj_player) < 16){
 	if(global.talk_button_pressed == true){
 		create_dialogue(dialog);
 		obj_talk_button.isEnabled = false;
+		instance_deactivate_object(obj_joystick_base)
 		global.talk_button_pressed = false;
 	}
 }else if(distance_to_object(obj_player) > 16){

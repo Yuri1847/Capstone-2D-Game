@@ -41,6 +41,7 @@ if (current_char < string_length(_str)) {
     if (current_message >= array_length(messages)) {
         with (obj_katulong) npc_can_move = true;
         instance_destroy();
+		instance_activate_object(obj_joystick_base)
     } else {
         current_char = 0;
     }
@@ -48,9 +49,6 @@ if (current_char < string_length(_str)) {
 
 // --- update draw_message ---
 draw_message = string_copy(_str, 1, current_char);
-
-
-
 
 
 
