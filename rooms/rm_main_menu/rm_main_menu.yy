@@ -48,6 +48,13 @@
     {"name":"inst_6CF22E17","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_34835E48","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_5A28DBCA","path":"roomui/RoomUI/RoomUI.yy",},
+<<<<<<< HEAD
+=======
+    {"name":"inst_4D1AAC1F","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_7A181EFC","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_779D88CC","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_1325958","path":"roomui/RoomUI/RoomUI.yy",},
+>>>>>>> 7722ab316faa5632c8fd9e2fb60bf062d7933e7f
   ],
   "isDnd":false,
   "layers":[
