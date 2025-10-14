@@ -7,13 +7,15 @@ function create_dialogue(_messages){
 	_inst.messages = _messages;
 	_inst.current_message = 0;
 }
+
 /*
-// color for name....
+// color for names ....
 char_colors = {
 	"Crisostomo Ibarra" : c_olive,
 	"Tiago" : c_aqua
 }*/
 
+//testing dialogue
 welcome_dialog = [
 	{
 		name: "Crisostomo Ibarra",
@@ -24,8 +26,11 @@ welcome_dialog = [
 		msg: "Mabuti naman ibarra"
 	},
 ]
+
+
+
 //level 1
-//chapter 2
+//chapter 2 crisostomo ibarra
 chap2_dial1 = [
 	{
 		name: "[Narration]",
@@ -150,7 +155,7 @@ chap2_dial7 = [
 	},
 ]
 //level 1 
-//chapter 3
+//chapter 3 hapunan
 chap3_dial1 = [
 	{
 		name: "[Narration]",
@@ -198,7 +203,7 @@ chap3_dial1 = [
 	},
 ]
 //level 1
-//chapter 4
+//chapter 4 erehe at filibustero
 chap4_dial1 = [
 	{
 		name: "[Narration]",
@@ -298,7 +303,7 @@ chap4_dial1 = [
 	},
 ]
 //level 1
-//chapter 5
+//chapter 5  liwanag sa gabing madillim
 chap5_dial1 = [
 	{
 		name: "[Narration]",
@@ -348,7 +353,7 @@ chap5_dial1 = [
 ]
 
 //level 2
-//chapter 7
+//chapter 7 ligawan sa asotea
 chap7_dial1 = [
 	{
 		name: "[Narration]",
