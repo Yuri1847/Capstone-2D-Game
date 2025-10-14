@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_box",
-    "path":"sprites/spr_box/spr_box.yy",
+    "name":"spr_talk_button",
+    "path":"sprites/spr_talk_button/spr_talk_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

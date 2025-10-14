@@ -4,7 +4,7 @@ var _boxw = gui_w;
 var _boxh = gui_h - _dy;
 
 // draw box
-draw_sprite_stretched(spr_box, 0, _dx, _dy, _boxw, _boxh);
+draw_sprite_stretched(spr_dialog_box, 0, _dx, _dy, _boxw, _boxh);
 
 // padding inside the box
 var _pad = 32;
