@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
-  "eventList":[],
+  "%Name":"obj_testTrivia",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_testTrivia",
   "overriddenProperties":[],
   "parent":{
-    "name":"Quest System",
-    "path":"folders/Quest System.yy",
+    "name":"Trivia",
+    "path":"folders/Trivia.yy",
   },
-  "parentObjectId":{
-    "name":"obj_npc_parent",
-    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_front_tiago",
     "path":"sprites/spr_front_tiago/spr_front_tiago.yy",

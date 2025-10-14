@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_test",
-  "eventList":[],
+  "%Name":"obj_",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_test",
+  "name":"obj_",
   "overriddenProperties":[],
   "parent":{
-    "name":"Quest System",
-    "path":"folders/Quest System.yy",
+    "name":"Trivia",
+    "path":"folders/Trivia.yy",
   },
   "parentObjectId":{
     "name":"obj_npc_parent",
