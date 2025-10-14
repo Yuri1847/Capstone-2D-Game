@@ -196,6 +196,7 @@
     {"name":"inst_498907A6","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_147E5915","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_4D11455A","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
+    {"name":"inst_229809FD","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -203,6 +204,7 @@
         {"$GMRInstance":"v2","%Name":"inst_4D11455A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D11455A","objectId":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"dialog","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.welcome_dialog",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":384.0,},
+        {"$GMRInstance":"v2","%Name":"inst_229809FD","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_229809FD","objectId":{"name":"obj_testTrivia","path":"objects/obj_testTrivia/obj_testTrivia.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":352.0,},
       ],"layers":[],"name":"ins_npc","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_map","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_147E5915","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_147E5915","objectId":{"name":"obj_Mini_Map","path":"objects/obj_Mini_Map/obj_Mini_Map.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":84.0,"y":22.0,},
