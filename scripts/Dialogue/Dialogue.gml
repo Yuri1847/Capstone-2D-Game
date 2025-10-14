@@ -8,12 +8,22 @@ function create_dialogue(_messages){
 	_inst.current_message = 0;
 }
 
-/*
+
 // color for names ....
 char_colors = {
-	"Crisostomo Ibarra" : c_olive,
-	"Tiago" : c_aqua
-}*/
+	"Crisostomo Ibarra" : c_blue,
+	"Kapitan Tiago" : c_aqua,
+	"Narration" : c_olive,
+	"Padre Damaso" : c_green,
+	"Tiniente Guevarra" : c_lime,
+	"Isa sa mga binata" : c_orange,
+	"Makata" : c_teal,
+	"Lingkod" : c_olive,
+	"Kapitan Tinong" : c_olive,
+	"Laruja" : c_olive,
+	"Maria Clara" : c_olive,
+	"Katiwala" : c_olive,
+}
 
 //testing dialogue
 welcome_dialog = [
@@ -23,7 +33,7 @@ welcome_dialog = [
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "Mabuti naman ibarra"
+		msg: "Mabuti naman ibarra, May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya."
 	},
 ]
 
@@ -31,9 +41,10 @@ welcome_dialog = [
 
 //level 1
 //chapter 2 crisostomo ibarra
-chap2_dial1 = [
+
+chap2_dial1 = [ //ibarra talk to kapitan tiago
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)"
 	},
 	{
@@ -45,17 +56,17 @@ chap2_dial1 = [
 		msg: "May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagtitigan ang lahat. Namutla si Padre Dámaso, nagtanggal ng salamin si Padre Sibyla upang masdan ang binata.)"
 	},
 ]
-chap2_dial2 = [
+chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Aba! Ang kura sa aking bayan! Si Padre Dámaso, matalik na kaibigan ng aking ama!"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagtinginan ang lahat kay Padre Dámaso. Hindi ito agad kumilos.)"
 	},
 	{
@@ -63,47 +74,47 @@ chap2_dial2 = [
 		msg: "Paumanhin po, nagkamali yata ako."
 	},
 	{
-		name: "Padre Damaso (paos)",
-		msg: "Hindi ka nagkamali… Ngunit kailanma’y hindi ako naging matalik na kaibigan ng iyong ama."
+		name: "Padre Damaso",
+		msg: "(paos) Hindi ka nagkamali… Ngunit kailanma’y hindi ako naging matalik na kaibigan ng iyong ama."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Dahan-dahang iniurong ni Ibarra ang kanyang kamay. Lumapit ang teniente.)"
 	},
 ]
-chap2_dial3 = [
+chap2_dial3 = [ // after that guevarra talk to ibarra
 	{
-		name: "Tiniente Geuvarra",
+		name: "Tiniente Guevarra",
 		msg: "Binata, kayo po ba ang anak ni Don Rafael Ibarra?"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Yumuko si Ibarra bilang tugon.)"
 	},
 	{
-		name: "Tiniente Geuvarra",
+		name: "Tiniente Guevarra",
 		msg: "Nawa’y dumating kayo nang mapayapa sa inyong bayan, at nawa’y maging mas maganda ang kapalaran ninyo kaysa sa inyong ama. Nakilala ko siya, at masasabi kong isa siya sa mga taong marangal at kagalang-galang sa buong Filipinas."
 	},
 	{
-		name: "Crisostomo Ibarra (nababagbag ang damdamin)",
-		msg: "Ginoo, ang inyong papuri ay nagpapawi ng aking lungkot tungkol sa sinapit ng aking ama, na hanggang ngayon ay hindi ko pa lubos na nauunawaan."
+		name: "Crisostomo Ibarra",
+		msg: "(nababagbag ang damdamin)Ginoo, ang inyong papuri ay nagpapawi ng aking lungkot tungkol sa sinapit ng aking ama, na hanggang ngayon ay hindi ko pa lubos na nauunawaan."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Naluha ang teniente, tumalikod at agad umalis. Naiwan si Ibarra sa gitna ng sala. Lumapit siya sa mga dalaga ngunit walang sumagot.)"
 	},
 ]
-chap2_dial4 = [
+chap2_dial4 = [ //then ibarra talk to binibini
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Mga binibini, itulot ninyo sa akin ang pagbibigay-galang. Pitong taon akong nawala sa ating bayan, at ngayong nagbalik ako, nais kong bumati sa pinakamahalagang hiyas nito—ang mga anak nitong kababaihan."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Tahimik ang mga dalaga, walang tumugon. Lumipat siya sa grupo ng mga ginoo.)"
 	},
 ]
-chap2_dial5 = [
+chap2_dial5 = [ //then ibarra talks to kalalakihan
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Mga ginoo, may kaugalian sa Alemanya: kapag walang magpakilala sa isang bagong dating, siya mismo ang nagsasabi ng kanyang pangalan. Huwag ninyo pong isipin na dala ko rito ang ugali ng mga banyaga, kundi dahil napipilitan lamang akong gawin ito. Ako po si Juan Crisóstomo Ibarra y Magsalin."
@@ -121,18 +132,18 @@ chap2_dial5 = [
 		msg: "Dahil ang dakilang diwa ng isip ay hindi para ipilit sa kasinungalingan. Hinatulan ako dahil isinulat ko ang katotohanang hindi nila matanggap. Sinabi ko lamang na “ang anak ng leon ay leon din naman.” Dahil doon, muntik na akong ipatapon."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Lumayo ang makata. Dumating si Kapitan Tinong, masigla at nakangiti.)"
 	},
 ]
-chap2_dial6 = [
+chap2_dial6 = [ // then tinong talk to ibarra
 	{
 		name: "Kapitan Tinong",
 		msg: "Ginoong Ibarra! Hinahangad kong makilala kayo. Ako si Kapitan Tinong, kaibigan ni Kapitan Tiyago at ng inyong ama. Nakatira ako sa Tondo, malapit sa inyong bahay. Inaasahan kong dadalawin ninyo ako. Doon na kayo kumain bukas!"
 	},
 	{
-		name: "Crisostomo Ibarra (nakangiti)",
-		msg: "Salamat po! Ngunit bukas ay pupunta ako sa San Diego."
+		name: "Crisostomo Ibarra",
+		msg: "(nakangiti)Salamat po! Ngunit bukas ay pupunta ako sa San Diego."
 	},
 	{
 		name: "Kapitan Tinong",
@@ -140,9 +151,9 @@ chap2_dial6 = [
 	},
 	
 ]
-chap2_dial7 = [
+chap2_dial7 = [ // katulong talk to audience for hapunan
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Dumating ang isang lingkod mula sa Café “La Campana.”)"
 	},
 	{
@@ -150,15 +161,15 @@ chap2_dial7 = [
 		msg: "Handa na po ang pagkain!"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagsimula nang magsiupuan ang mga panauhin, lalo na ang mga babae na nag-aatubili pa ring lumapit.)"
 	},
 ]
 //level 1 
 //chapter 3 hapunan
-chap3_dial1 = [
+chap3_dial1 = [ // one long conversation in table
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Galit si Padre Damaso, sinisipa ang mga silya. Nagkakagulo ang mga panauhin. Ikaw, si Ibarra, ay nakaupo na sa kabisera ng hapag.)"
 	},
 	{
@@ -166,7 +177,7 @@ chap3_dial1 = [
 		msg: "Don Crisostomo, isang kagalakan na ikaw ay nasa piling naming muli."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "[Dumating ang tinola. Sa harap mo’y inilapag ang masarap na bahagi ng manok. Sa harap ni Padre Damaso, puro leeg, pakpak, at upo.]"
 	},
 	{
@@ -174,7 +185,7 @@ chap3_dial1 = [
 		msg: "Ano’ng kabalastugan ito? Ako ba’y isang hamak upang bigyan ng ganito?!"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nababalot ng katahimikan ang hapag. Pinili mong hindi makipagtalo, at nagpatuloy kang kumain nang mahinahon.)"
 	},
 	{
@@ -198,7 +209,7 @@ chap3_dial1 = [
 		msg: "Dalawang taon akong nasa ibang bayan, malayo sa lahat. Walang paraan upang makipag-ugnayan"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagpatuloy ang hapunan sa gitna ng malamig na katahimikan. Ramdam ang alitan ng mga panauhin, ngunit nanatili kang mahinahon, pinipilit igalang ang lahat sa kabila ng iyong hinanakit.)"
 	},
 ]
@@ -206,7 +217,7 @@ chap3_dial1 = [
 //chapter 4 erehe at filibustero
 chap4_dial1 = [
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Gabi. Lumabas si Ibarra upang makalanghap ng sariwang hangin. Tahimik ang paligid habang binabaybay niya ang daan papuntang plasa ng Binondo.)"
 	},
 	{
@@ -214,7 +225,7 @@ chap4_dial1 = [
 		msg: "Pitong taon akong nawala… ngunit parang isang gabi lang ang lumipas. Walang nagbago. Ang mga tindera pa rin ng prutas at gulay, naroon pa rin. Parang hindi umusad ang siyudad na ito.."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(May marahang tumapik sa balikat ni Ibarra. Paglingon niya, si Tinyente Guevarra pala.)"
 	},
 	{
@@ -226,7 +237,7 @@ chap4_dial1 = [
 		msg: "Oo, Don Crisóstomo. Alam ko ang nangyari. Halina, maglakad tayo—at ikukuwento ko sa iyo."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Naglakad silang dalawa pabalik sa kwartel habang nagsisimula ang kwento ng tinyente.)"
 	},
 	{
@@ -238,8 +249,8 @@ chap4_dial1 = [
 		msg: "Madalas silang magtalo. Hanggang sa akusahan si Don Rafael na erehe, dahil daw hindi siya nangungumpisal."
 	},
 	{
-		name: "Crisostomo Ibarra (halatang naguguluhan)",
-		msg: "Erehe? Ang aking ama? Hindi ko matanggap iyon."
+		name: "Crisostomo Ibarra",
+		msg: "(halatang naguguluhan)Erehe? Ang aking ama? Hindi ko matanggap iyon."
 	},
 	{
 		name: "Tiniente Guevarra",
@@ -250,7 +261,7 @@ chap4_dial1 = [
 		msg: "Isang araw, sa tindi ng galit, binato niya ng baston ang mga bata. Tinamaan ang isa sa ulo at natumba. Nang hindi pa nakontento, sinipa pa niya ang bata."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Bahagyang natahimik si Ibarra.)"
 	},
 	{
@@ -262,8 +273,8 @@ chap4_dial1 = [
 		msg: "Nagpumiglas ang artilyero, nadulas, tumama ang ulo sa bato, at doon namatay."
 	},
 	{
-		name: "Crisostomo Ibarra (kitang-kita ang lungkot)",
-		msg: "Kaya pala… ang kabutihan ng ama ko’y naging dahilan pa ng kanyang pagkasawi."
+		name: "Crisostomo Ibarra",
+		msg: "(kitang-kita ang lungkot) Kaya pala… ang kabutihan ng ama ko’y naging dahilan pa ng kanyang pagkasawi."
 	},
 	{
 		name: "Tiniente Guevarra",
@@ -282,7 +293,7 @@ chap4_dial1 = [
 		msg: "Sinubukan kong ipagtanggol siya, ngunit walang naglakas-loob. Lahat ay takot na madamay. Hanggang sa tuluyan siyang namatay sa kulungan, walang pamilya o kaibigang nakiramay."
 	},	
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Matagal na katahimikan. Yumuko si Ibarra, halatang pinipigil ang luha.)"
 	},
 	{
@@ -290,7 +301,7 @@ chap4_dial1 = [
 		msg: "Nakakalungkot, Don Crisóstomo. Nang siya’y patay na, saka lamang napatunayan na siya ay walang sala."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Tumingin sa malayo si Ibarra, mariin ang tinig.)"
 	},
 	{
@@ -298,7 +309,7 @@ chap4_dial1 = [
 		msg: "Ama… Hindi ako papayag na manatiling madungisan ang iyong pangalan. Babangon ang San Diego, at maririnig muli ang kabutihan mo."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Tahimik na lumayo si Ibarra, dala ang bigat ng katotohanang kanyang nalaman.)"
 	},
 ]
@@ -306,47 +317,47 @@ chap4_dial1 = [
 //chapter 5  liwanag sa gabing madillim
 chap5_dial1 = [
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Sa silid ni Ibarra sa Fonda de Lala. Tahimik ang gabi. Pumasok si Ibarra, halatang pagod at malungkot.)"
 	},
 	{
-		name: "Crisostomo Ibarra (umupo sa silya, nagbuntong-hininga)",
-		msg: "Kay tagal kong nawala… ngunit tila mas mabigat pa rin ang lahat nang aking pagbalik. Ama… bakit kayo ginanito ng tadhana?"
+		name: "Crisostomo Ibarra",
+		msg: "(umupo sa silya, nagbuntong-hininga) Kay tagal kong nawala… ngunit tila mas mabigat pa rin ang lahat nang aking pagbalik. Ama… bakit kayo ginanito ng tadhana?"
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Lumapit siya sa bintana at minasdan ang tanawin sa labas.)"
 	},
 	{
-		name: "Crisostomo Ibarra (mahina ang tinig)",
-		msg: "Ang ilog ay payapa, subalit sa kabila’y may kasayahan. Mga tugtugan, tawanan, at liwanag… Ngunit sa puso ko, tanging dilim at dalamhati ang nangingibabaw."
+		name: "Crisostomo Ibarra",
+		msg: "(mahina ang tinig) Ang ilog ay payapa, subalit sa kabila’y may kasayahan. Mga tugtugan, tawanan, at liwanag… Ngunit sa puso ko, tanging dilim at dalamhati ang nangingibabaw."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Naririnig ang tugtog ng orkestra mula sa kabilang bahay. Napatingin siya.)"
 	},
 	{
-		name: "Crisostomo Ibarra (mahina ang tinig)",
-		msg: "Isang piging… at—(napahinto) Sino yaong dilag? Liwanag sa gitna ng gabi… tila siya lamang ang nagbibigay-buhay sa madilim kong pag-iisip."
+		name: "Crisostomo Ibarra ",
+		msg: "(mahina ang tinig) Isang piging… at—(napahinto) Sino yaong dilag? Liwanag sa gitna ng gabi… tila siya lamang ang nagbibigay-buhay sa madilim kong pag-iisip."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Lumapit pa siya sa bintana, dahan-dahang ngumiti.)"
 	},
 	{
-		name: "Crisostomo Ibarra (mahina ang tinig)",
-		msg: "Maria Clara… Ang aking alaala, ang aking inspirasyon. Kay ganda mong tumanaw, tila pinapawi mo ang lahat ng sakit na iniwan ng nakaraan."
+		name: "Crisostomo Ibarra",
+		msg: "(mahina ang tinig) Maria Clara… Ang aking alaala, ang aking inspirasyon. Kay ganda mong tumanaw, tila pinapawi mo ang lahat ng sakit na iniwan ng nakaraan."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Pumikit si Ibarra, dahan-dahang humiga sa kama.)"
 	},
 	{
-		name: "Crisostomo Ibarra (mahina)",
-		msg: "Sa piling ng iyong alaala, Maria… magtatamo ako ng kapahingahan."
+		name: "Crisostomo Ibarra",
+		msg: "(mahina) Sa piling ng iyong alaala, Maria… magtatamo ako ng kapahingahan."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Unti-unting namatay ang ilaw sa silid habang patuloy ang tugtugin mula sa malayo. Nakatulog si Ibarra.)"
 	},
 	
@@ -356,7 +367,7 @@ chap5_dial1 = [
 //chapter 7 ligawan sa asotea
 chap7_dial1 = [
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Lumipas ang ilang sandali. Dumating si Ibarra, suot ang kanyang amerikana. Tinanggap siya ni Kapitan Tiyago, at agad niyang hinanap si Maria Clara.)"
 	},
 	{
@@ -368,25 +379,25 @@ chap7_dial1 = [
 		msg: "Naroon sa itaas, sa asotea. Tila ikaw na nga ang hinihintay niya maghapon."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Lumakad si Ibarra patungong asotea. Nasa gilid si Maria Clara, nakatanaw sa hardin. Nang marinig ang mga yabag, napalingon siya.)"
 	},
 ]
 chap7_dial2 = [
 	{
-		name: "Maria Clara (namutla, nangingiti)",
-		msg: "Crisóstomo!"
+		name: "Maria Clara",
+		msg: "(namutla, nangingiti) Crisóstomo!"
 	},
 	{
-		name: "Crisostomo Ibarra (lumapit, nagalak)",
-		msg: "Maria Clara… sa wakas! Matagal kong hinintay ang sandaling ito."
+		name: "Crisostomo Ibarra",
+		msg: "(lumapit, nagalak)Maria Clara… sa wakas! Matagal kong hinintay ang sandaling ito."
 	},
 	{
-		name: "Maria Clara (namutla, nangingiti)",
-		msg: "At ako naman, hindi mapakali sa bawat oras ng paghihintay."
+		name: "Maria Clara",
+		msg: "(namutla, nangingiti)At ako naman, hindi mapakali sa bawat oras ng paghihintay."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagkatinginan silang dalawa. Tahimik ang paligid, tanging huni ng mga ibon ang maririnig.)"
 	},
 	{
@@ -394,23 +405,23 @@ chap7_dial2 = [
 		msg: "Naalala mo pa ba ang ating kabataan? Ang ating mga larong walang malisya, ang ating mga tampuhan?"
 	},
 	{
-		name: "Maria Clara (ngumiti)",
-		msg: "Paanong di ko malilimutan? May taglay pa ako ng mga dahong iyong ibinigay noon."
+		name: "Maria Clara",
+		msg: "(ngumiti)Paanong di ko malilimutan? May taglay pa ako ng mga dahong iyong ibinigay noon."
 	},
 	{
-		name: "Crisostomo Ibarra (naglabas ng pitaka)",
-		msg: "At ito naman ang tuyong dahon ng sambong na iniwan mo sa akin. Araw-araw kong kasama."
+		name: "Crisostomo Ibarra",
+		msg: "(naglabas ng pitaka)At ito naman ang tuyong dahon ng sambong na iniwan mo sa akin. Araw-araw kong kasama."
 	},
 	{
-		name: "Maria Clara (ngumiti)",
-		msg: "At ito? (iniabot ni Ibarra ang sulat) Ang liham mo bago ka tumulak sa Europa…"
+		name: "Maria Clara",
+		msg: "(ngumiti) At ito? (iniabot ni Ibarra ang sulat) Ang liham mo bago ka tumulak sa Europa…"
 	},
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Oo. Noon ay puno ako ng pag-asa—ngunit ngayon, pag-ibig ko na ang aking baon."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Nagkatinginan sila nang matagal. Maya-maya’y nagsalita si Ibarra.)"
 	},
 	{
@@ -418,23 +429,23 @@ chap7_dial2 = [
 		msg: "Maria, kailangan kong magtungo sa San Diego. Marami pa akong kailangang ayusin para sa aking ama."
 	},
 	{
-		name: "Maria Clara (malungkot)",
-		msg: "Ganun ba… kailan ka babalik?"
+		name: "Maria Clara",
+		msg: "(malungkot)Ganun ba… kailan ka babalik?"
 	},
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Bukas Todos los Santos na. Babalik agad ako, iyan ang aking pangako."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Naluha si Maria Clara at itinago ang mukha sa panyo.)"
 	},
 	{
-		name: "Maria Clara (malungkot)",
-		msg: "Mahal kong Crisóstomo, mag-ingat ka. Napakarami raw tulisan sa daan, sabi ni Ama."
+		name: "Maria Clara",
+		msg: "(malungkot) Mahal kong Crisóstomo, mag-ingat ka. Napakarami raw tulisan sa daan, sabi ni Ama."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Pumasok si Kapitan Tiyago.)"
 	},
 	{
@@ -442,7 +453,7 @@ chap7_dial2 = [
 		msg: "Anak, huwag kang malungkot. Tirik mo ang pinakamahal na kandila kay San Roque at San Rafael, upang ligtas ang paglalakbay ni Ibarra."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Tumango si Maria Clara habang pinapahid ang luha. Lumapit si Ibarra at marahang hinalikan ang kamay niya.)"
 	},
 	{
@@ -450,12 +461,12 @@ chap7_dial2 = [
 		msg: "Hanggang sa muli, Maria Clara. Sa pagbalik ko, dala ko ang liwanag ng iyong mga mata."
 	},
 	{
-		name: "[Narration]",
+		name: "Narration",
 		msg: "(Dahan-dahan siyang lumakad palayo. Naiwan si Maria Clara sa asotea, pinagmamasdan ang papalayong karwahe, habang unti-unting dumidilim ang langit.)"
 	},
 ]
 
-
+/*
 // level 3 
 chap13_dial1 = [
 	{
@@ -463,7 +474,7 @@ chap13_dial1 = [
 		msg: "Narito ba tayo sa tamang lugar? Sabi mo’y dito nakahimlay si Ama."
 	},
 	{
-		name: "Katiwala",
+		name: "",
 		msg: "Opo, Don Crisóstomo. Dito po ako nagtanim ng mga bulaklak at nagtayo ng krus bilang palatandaan. Ngunit... matagal na rin akong ‘di nakabalik dahil nagkasakit ako. Si Kapitan Tiago po ang nagsabing siya na ang bahalang magpaayos ng nitso."
 	},
 	{
@@ -1512,7 +1523,7 @@ chap58_dial1 = [
 	},
 ]
 
-
+*/
 
 
 

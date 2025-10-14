@@ -370,6 +370,12 @@
   },
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
-  "viewspaceChildren":[],
+  "viewspaceChildren":[
+    {"$GMRUILayer":"v1","%Name":"trivia_panel","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"main_panel","alignItems":2,"children":[
+            {"$GMRSpriteGraphic":"v1","%Name":"panel","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"panel","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":17.109375,"scaleY":9.28125,"spriteId":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},"x":-548.0,"y":-296.0,},
+          ],"flexDirection":0,"height":{"unit":2,"value":90.0,},"justifyContent":1,"marginBottom":{"unit":1,"value":32.0,},"marginLeft":{"unit":1,"value":32.0,},"marginRight":{"unit":1,"value":32.0,},"marginTop":{"unit":1,"value":32.0,},"name":"main_panel","nodeColour":4287951432,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":90.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"trivia_panel","nodeColour":4294068422,"paddingBottom":{"unit":1,"value":32.0,},"paddingLeft":{"unit":1,"value":32.0,},"paddingRight":{"unit":1,"value":32.0,},"paddingTop":{"unit":1,"value":32.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+  ],
   "visible":true,
 }
