@@ -417,6 +417,7 @@
     {"name":"obj_Stone_Hat_House_XL_Closed_Window","order":1,"path":"objects/obj_Stone_Hat_House_XL_Closed_Window/obj_Stone_Hat_House_XL_Closed_Window.yy",},
     {"name":"obj_table_2","order":9,"path":"objects/obj_table_2/obj_table_2.yy",},
     {"name":"obj_table","order":6,"path":"objects/obj_table/obj_table.yy",},
+    {"name":"obj_talk_button","order":10,"path":"objects/obj_talk_button/obj_talk_button.yy",},
     {"name":"obj_tasyo_house","order":3,"path":"objects/obj_tasyo_house/obj_tasyo_house.yy",},
     {"name":"obj_tea_cabinet","order":2,"path":"objects/obj_tea_cabinet/obj_tea_cabinet.yy",},
     {"name":"obj_test","order":8,"path":"objects/obj_test/obj_test.yy",},

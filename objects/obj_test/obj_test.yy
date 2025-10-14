@@ -9,7 +9,10 @@
     "name":"Quest System",
     "path":"folders/Quest System.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npc_parent",
+    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,7 +29,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_front_tiago",
     "path":"sprites/spr_front_tiago/spr_front_tiago.yy",
