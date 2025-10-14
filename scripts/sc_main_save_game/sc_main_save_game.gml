@@ -27,7 +27,7 @@ function file_handling_load_game(){
 	{
 		var _buffer = buffer_load( "NolimeTangere.txt");
 	
-		var _json = buffer_read( _buffer, buffer_string);
+		var _json = buffer_read(_buffer, buffer_string);
 	
 		buffer_delete( _buffer);
 		
