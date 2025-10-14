@@ -1066,12 +1066,12 @@
     {"children":[
         {"children":[
             {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
-            {"roomId":{"name":"rm_chapter2_crisostomo_ibarra","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},},
             {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
             {"roomId":{"name":"rm_load_game_menu","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},},
           ],"groupName":"UI_Rooms",},
         {"roomId":{"name":"rm_fondeDeLala","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},},
         {"roomId":{"name":"rm_Hotel_Fonda_Second_Floor","path":"rooms/rm_Hotel_Fonda_Second_Floor/rm_Hotel_Fonda_Second_Floor.yy",},},
+        {"roomId":{"name":"rm_chapter2_crisostomo_ibarra","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},},
         {"roomId":{"name":"rm_chapter3_hapunan","path":"rooms/rm_chapter3_hapunan/rm_chapter3_hapunan.yy",},},
         {"roomId":{"name":"rm_chapter4_erehe_at_filibustero","path":"rooms/rm_chapter4_erehe_at_filibustero/rm_chapter4_erehe_at_filibustero.yy",},},
         {"roomId":{"name":"rm_chapter5_liwanag_sa_gabing_madilim","path":"rooms/rm_chapter5_liwanag_sa_gabing_madilim/rm_chapter5_liwanag_sa_gabing_madilim.yy",},},
