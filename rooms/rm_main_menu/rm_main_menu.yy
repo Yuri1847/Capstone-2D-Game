@@ -47,14 +47,15 @@
     {"name":"inst_34835E48","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_5A28DBCA","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_4D1AAC1F","path":"rooms/rm_main_menu/rm_main_menu.yy",},
-    {"name":"inst_7A181EFC","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_779D88CC","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1325958","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_4F06C7CD","path":"rooms/rm_main_menu/rm_main_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"dialogueSystem","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_4D1AAC1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D1AAC1F","objectId":{"name":"obj_triggerCont","path":"objects/obj_triggerCont/obj_triggerCont.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4F06C7CD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F06C7CD","objectId":{"name":"obj_talk_button","path":"objects/obj_talk_button/obj_talk_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":128.0,},
       ],"layers":[],"name":"dialogueSystem","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_landscape","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_736EBE6E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_736EBE6E","objectId":{"name":"obj_Landscape_Android_View","path":"objects/obj_Landscape_Android_View/obj_Landscape_Android_View.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":160.0,},

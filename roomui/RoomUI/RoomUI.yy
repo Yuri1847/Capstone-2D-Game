@@ -32,9 +32,7 @@
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"exit_confirm_layer","nodeColour":4282970709,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUIFolder":"","%Name":"Dialogue_System","children":[
         {"$GMRUILayer":"v1","%Name":"talk_button_layer","alignItems":3,"children":[
-            {"$GMRFlexPanel":"","%Name":"talk_panel","alignItems":2,"children":[
-                {"$GMRInstance":"v2","%Name":"inst_7A181EFC","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A181EFC","objectId":{"name":"obj_talk_button","path":"objects/obj_talk_button/obj_talk_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1.0,"y":1.0,},
-              ],"flexDirection":2,"height":{"unit":1,"value":64.0,},"justifyContent":1,"name":"talk_panel","nodeColour":4294111560,"positionType":0,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":64.0,},},
+            {"$GMRFlexPanel":"","%Name":"talk_panel","alignItems":2,"children":[],"flexDirection":2,"height":{"unit":1,"value":64.0,},"justifyContent":1,"name":"talk_panel","nodeColour":4294111560,"positionType":0,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":64.0,},},
           ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":2,"name":"talk_button_layer","nodeColour":4282970766,"paddingBottom":{"unit":1,"value":64.0,},"paddingLeft":{"unit":1,"value":64.0,},"paddingRight":{"unit":1,"value":64.0,},"paddingTop":{"unit":1,"value":64.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
       ],"locked":false,"name":"Dialogue_System","nodeColour":4290726130,"resourceType":"GMRUIFolder","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"state_slot_save_layer","alignItems":2,"children":[
