@@ -1,4 +1,5 @@
-	// obj_talk_button Step Event
+if(!isEnabled) exit;
+// obj_talk_button Step Event
 global.talk_button_pressed = false;
 if (mouse_check_button_pressed(mb_left)) {
     var tx = device_mouse_x_to_gui(0);
@@ -8,6 +9,3 @@ if (mouse_check_button_pressed(mb_left)) {
 		global.talk_button_pressed = true;
     }
 }
-
-
-depth =+y;
