@@ -14,13 +14,11 @@
     {"name":"inst_48DB1E33","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_2FF086D6","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_7B084861","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
-    {"name":"inst_25B5DEDF","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"ins_dialog_box_shadow","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_7B084861","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B084861","objectId":{"name":"obj_dialog_box_shadow","path":"objects/obj_dialog_box_shadow/obj_dialog_box_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v2","%Name":"inst_25B5DEDF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25B5DEDF","objectId":{"name":"obj_talk_button","path":"objects/obj_talk_button/obj_talk_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":128.0,},
       ],"layers":[],"name":"ins_dialog_box_shadow","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_state_slot_load","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_2FF086D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FF086D6","objectId":{"name":"obj_state_slot_load","path":"objects/obj_state_slot_load/obj_state_slot_load.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":96.0,},
