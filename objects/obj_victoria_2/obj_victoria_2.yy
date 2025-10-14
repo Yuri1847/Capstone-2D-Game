@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_front_damaso",
-    "path":"sprites/spr_front_damaso/spr_front_damaso.yy",
+    "name":"spr_front_victoria",
+    "path":"sprites/spr_front_victoria/spr_front_victoria.yy",
   },
   "spriteMaskId":null,
   "visible":true,
