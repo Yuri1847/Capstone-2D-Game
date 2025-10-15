@@ -40,7 +40,7 @@ draw_sprite_ext(
 // ---------------------------------------------------------
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_set_color(c_white);
+draw_set_color(c_black);
 draw_text(xp, yp - target_h / 2 + 40, "Historical Notes");
 
 // ---------------------------------------------------------
@@ -49,7 +49,7 @@ draw_text(xp, yp - target_h / 2 + 40, "Historical Notes");
 if (variable_instance_exists(self, "data")) {
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
-    draw_set_color(c_white);
+    draw_set_color(c_black);
 
     var margin_x = 70;
     var margin_y = 100;
