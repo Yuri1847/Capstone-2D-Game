@@ -15,3 +15,4 @@ if (!variable_instance_exists(self, "data")) {
         relevance: ""
     };
 }
+

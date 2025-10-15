@@ -41,7 +41,7 @@ draw_sprite_ext(
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
-draw_text(xp, yp - target_h / 2 + 40, "Historical Note");
+draw_text(xp, yp - target_h / 2 + 40, "Historical Notes");
 
 // ---------------------------------------------------------
 // DATA TEXT (inside main panel)
@@ -51,11 +51,11 @@ if (variable_instance_exists(self, "data")) {
     draw_set_valign(fa_top);
     draw_set_color(c_white);
 
-    var margin_x = 80;
+    var margin_x = 70;
     var margin_y = 100;
     var text_x = xp - target_w / 2 + margin_x;
     var text_y = yp - target_h / 2 + margin_y;
-    var line_h = 32;
+    var line_h = 16;
     var wrap_w = target_w - 160;
 
     draw_text(text_x, text_y, "Location: " + data.location);
