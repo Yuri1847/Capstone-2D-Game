@@ -1,32 +1,36 @@
-// Always update depth
+// === Always update depth ===
 depth = -y;
 
-// Check if dialogue is already active
-if (instance_exists(obj_dialog)) {
-    dialogue_active = true;
-} else {
-    dialogue_active = false;
-}
+// === Check if dialogue is already active ===
+dialogue_active = instance_exists(obj_dialog);
 
-// Check distance to player
+// === Check distance to player ===
 if (instance_exists(obj_player)) {
     var dist = distance_to_object(obj_player);
-    
-    if (dist < 16) {
-        can_talk = true;
-        // Only create dialogue when player presses key and no dialogue is running
-        if (!dialogue_active && keyboard_check_pressed(input_key)) {
-            npc_can_move = false;          // lock NPC
-            create_dialogue(dialog);   // pass self as speaker
+    can_talk = (dist < 16);
+
+    // === Touch or Click Anywhere ===
+    var max_fingers = 5;
+    var touched = false;
+
+    for (var i = 0; i < max_fingers; i++) {
+        if (device_mouse_check_button_pressed(i, mb_left)) {
+            var tx = device_mouse_x_to_gui(i);
+            var ty = device_mouse_y_to_gui(i);
+
+            // Whole screen (1280x720)
+            if (point_in_rectangle(tx, ty, 0, 0, 1280, 720)) {
+                touched = true;
+            }
         }
-    } else {
-        can_talk = false;
+    }
+
+    // === Trigger dialogue when close enough and tapped anywhere ===
+    if (can_talk && !dialogue_active && touched) {
+        npc_can_move = false;
+        create_dialogue(dialog); // pass self as speaker
     }
 }
-
-
-
-
 
 
 

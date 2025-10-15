@@ -1,5 +1,61 @@
-/*
+// === Exit if no message ===
+if (current_message < 0) exit;
 
+// === Get current message text ===
+var _str = messages[current_message].msg;
+var next = false;
+
+// === Detect touch input anywhere on screen ===
+var tapped = false;
+var max_fingers = 5;
+
+for (var i = 0; i < max_fingers; i++) {
+    if (device_mouse_check_button_pressed(i, mb_left)) {
+        var tx = device_mouse_x_to_gui(i);
+        var ty = device_mouse_y_to_gui(i);
+
+        // Whole screen (1280x720)
+        if (point_in_rectangle(tx, ty, 0, 0, 1280, 720)) {
+            tapped = true;
+        }
+    }
+}
+
+// === Handle typing and tapping logic ===
+if (current_char < string_length(_str)) {
+    // Still typing text
+    if (tapped) {
+        // Instantly complete the current line on tap
+        current_char = string_length(_str);
+    } else {
+        // Continue typing effect
+        current_char += char_speed;
+    }
+    draw_message = string_copy(_str, 0, current_char);
+}
+else {
+    // Text fully displayed — wait for next tap to continue
+    if (tapped) {
+        next = true;
+    }
+
+    // Go to next message or close dialogue
+    if (next) {
+        current_message++;
+        if (current_message >= array_length(messages)) {
+            with (obj_npc_parent) {
+                npc_can_move = true;
+            }
+            instance_destroy();
+        } else {
+            current_char = 0;
+        }
+    }
+}
+
+
+
+/*
 // --- End Step Event (Touch-based Dialogue System) ---
 if (current_message < 0) exit;
 
@@ -57,7 +113,7 @@ draw_message = string_copy(_str, 1, current_char);
 
 
 
-
+/*
 // original code space key to trigger
 if (current_message < 0) exit;
 
@@ -71,7 +127,7 @@ if (current_char < string_length(_str)){
 else if(keyboard_check_pressed(input_key)){
 	current_message++;
 	if (current_message >= array_length(messages)){
-		with (obj_npc_parent) {
+		with (obj_katulong) {
 		    npc_can_move = true;
 		}
 
@@ -79,4 +135,4 @@ else if(keyboard_check_pressed(input_key)){
 	}else{
 		current_char = 0;
 	}
-}
+}*/
