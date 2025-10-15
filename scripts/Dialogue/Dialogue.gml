@@ -30,11 +30,18 @@ char_colors = {
 welcome_dialog = [
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Kamusta ka na kapitan tiago"
+		msg: "Kamusta ka na kapitan tiago",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "Mabuti naman ibarra, May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya."
+		msg: "Mabuti naman ibarra, May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya.",
+		portrait: spr_por_tiago
+	},
+	{
+		name: "Narration",
+		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)",
+		portrait: spr_por_tiago
 	},
 ]
 
@@ -64,7 +71,7 @@ chap2_dial1 = [ //ibarra talk to kapitan tiago
 chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Aba! Ang kura sa aking bayan! Si Padre Dámaso, matalik na kaibigan ng aking ama!"
+		msg: "Aba! Ang kura sa aking bayan! Si Padre Dámaso, matalik na kaibigan ng aking ama!",
 	},
 	{
 		name: "Narration",
