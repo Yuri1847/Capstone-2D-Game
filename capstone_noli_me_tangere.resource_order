@@ -794,6 +794,7 @@
     {"name":"spr_ui_exit_title_bg","order":1,"path":"sprites/spr_ui_exit_title_bg/spr_ui_exit_title_bg.yy",},
     {"name":"spr_ui_exit","order":1,"path":"sprites/spr_ui_exit/spr_ui_exit.yy",},
     {"name":"spr_ui_home","order":6,"path":"sprites/spr_ui_home/spr_ui_home.yy",},
+    {"name":"spr_ui_load_game","order":7,"path":"sprites/spr_ui_load_game/spr_ui_load_game.yy",},
     {"name":"spr_ui_loading_frame","order":1,"path":"sprites/spr_ui_loading_frame/spr_ui_loading_frame.yy",},
     {"name":"spr_ui_modal_bg2","order":1,"path":"sprites/spr_ui_modal_bg2/spr_ui_modal_bg2.yy",},
     {"name":"spr_ui_pause","order":2,"path":"sprites/spr_ui_pause/spr_ui_pause.yy",},

@@ -44,7 +44,7 @@ for (var i = 0; i < 3; i++) {
 								if(global.settings_data.state_slot[0].date != "" && global.settings_data.state_slot[0].time != ""){
 									
 									sc_invisible_layer(["load_game_menu_layer"])
-									sc_visible_layer(["state_slot1_dialog_layer"])
+									sc_visible_layer(["load_slot1_main_dialog_layer"])
 									instance_activate_object(obj_dialog_box_shadow)
 									instance_deactivate_object(id)
 								}else {
@@ -56,7 +56,7 @@ for (var i = 0; i < 3; i++) {
 								if(global.settings_data.state_slot[1].date != "" && global.settings_data.state_slot[1].time != ""){
 									
 									sc_invisible_layer(["load_game_menu_layer"])
-									sc_visible_layer(["state_slot2_dialog_layer"])
+									sc_visible_layer(["load_slot2_main_dialog_layer"])
 									instance_activate_object(obj_dialog_box_shadow)
 									instance_deactivate_object(id)
 								}else {
@@ -68,7 +68,7 @@ for (var i = 0; i < 3; i++) {
 								if(global.settings_data.state_slot[2].date != "" && global.settings_data.state_slot[2].time != ""){
 									
 									sc_invisible_layer(["load_game_menu_layer"])
-									sc_visible_layer(["state_slot3_dialog_layer"])
+									sc_visible_layer(["load_slot3_main_dialog_layer"])
 									instance_activate_object(obj_dialog_box_shadow)
 									instance_deactivate_object(id)
 								}else {

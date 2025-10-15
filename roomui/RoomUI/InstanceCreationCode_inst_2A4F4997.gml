@@ -6,7 +6,7 @@ function clickButton(){
 	]);
 									
 									
-	sc_invisible_layer(["state_slot2_dialog_layer"])
+	sc_invisible_layer(["load_slot2_main_dialog_layer"])
 	global.is_main_state = false;
 	
 	instance_activate_object(obj_player)
