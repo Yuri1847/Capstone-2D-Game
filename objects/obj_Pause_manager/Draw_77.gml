@@ -20,6 +20,7 @@ function update_pause(){
 		instance_deactivate_all(true);
 		instance_activate_object(obj_Inventory)
 		instance_activate_object(obj_state_slot_save)
+		instance_activate_object(obj_state_slot_load)
 		instance_activate_object(obj_player)
 		instance_activate_object(obj_talk_button)
 		instance_activate_object(obj_slider_bar)

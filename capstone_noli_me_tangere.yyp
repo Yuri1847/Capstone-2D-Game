@@ -525,6 +525,7 @@
     {"id":{"name":"obj_sofa_right","path":"objects/obj_sofa_right/obj_sofa_right.yy",},},
     {"id":{"name":"obj_splash","path":"objects/obj_splash/obj_splash.yy",},},
     {"id":{"name":"obj_state_slot_load_main","path":"objects/obj_state_slot_load_main/obj_state_slot_load_main.yy",},},
+    {"id":{"name":"obj_state_slot_load","path":"objects/obj_state_slot_load/obj_state_slot_load.yy",},},
     {"id":{"name":"obj_state_slot_save","path":"objects/obj_state_slot_save/obj_state_slot_save.yy",},},
     {"id":{"name":"obj_Stone_Hat_House_XL_1Open_Window","path":"objects/obj_Stone_Hat_House_XL_1Open_Window/obj_Stone_Hat_House_XL_1Open_Window.yy",},},
     {"id":{"name":"obj_Stone_Hat_House_XL_2Open_Window","path":"objects/obj_Stone_Hat_House_XL_2Open_Window/obj_Stone_Hat_House_XL_2Open_Window.yy",},},

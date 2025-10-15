@@ -415,6 +415,7 @@
     {"name":"obj_sofa_front","order":1,"path":"objects/obj_sofa_front/obj_sofa_front.yy",},
     {"name":"obj_sofa_left","order":2,"path":"objects/obj_sofa_left/obj_sofa_left.yy",},
     {"name":"obj_sofa_right","order":3,"path":"objects/obj_sofa_right/obj_sofa_right.yy",},
+    {"name":"obj_state_slot_load","order":3,"path":"objects/obj_state_slot_load/obj_state_slot_load.yy",},
     {"name":"obj_state_slot_save","order":1,"path":"objects/obj_state_slot_save/obj_state_slot_save.yy",},
     {"name":"obj_Stone_Hat_House_XL_1Open_Window","order":2,"path":"objects/obj_Stone_Hat_House_XL_1Open_Window/obj_Stone_Hat_House_XL_1Open_Window.yy",},
     {"name":"obj_Stone_Hat_House_XL_Closed_Window","order":1,"path":"objects/obj_Stone_Hat_House_XL_Closed_Window/obj_Stone_Hat_House_XL_Closed_Window.yy",},

@@ -41,6 +41,7 @@
     {"name":"inst_4F06C7CD","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_76866BBC","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_63C80894","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_A48EE58","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_76EA024E","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_235F60F4","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_5B6CB06C","path":"roomui/RoomUI/RoomUI.yy",},
@@ -50,6 +51,12 @@
     {"name":"inst_674D633B","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_38CA3C45","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_3A377257","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_32EF7010","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_1D923A49","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_16E65E13","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_6A9738A8","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_355CCC1","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_1C2EA1E1","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,6 +73,7 @@
       ],"layers":[],"name":"Audio","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_state_slot","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_2E465186","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E465186","objectId":{"name":"obj_state_slot_save","path":"objects/obj_state_slot_save/obj_state_slot_save.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":96.0,},
+        {"$GMRInstance":"v2","%Name":"inst_A48EE58","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A48EE58","objectId":{"name":"obj_state_slot_load","path":"objects/obj_state_slot_load/obj_state_slot_load.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":158.0,},
       ],"layers":[],"name":"ins_state_slot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_pause_manager","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_23D404B9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_23D404B9","objectId":{"name":"obj_Pause_manager","path":"objects/obj_Pause_manager/obj_Pause_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":64.0,},
