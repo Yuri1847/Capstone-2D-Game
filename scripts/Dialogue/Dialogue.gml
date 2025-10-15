@@ -8,7 +8,7 @@ function create_dialogue(_messages){
 	_inst.current_message = 0;
 }
 
-
+/*
 // color for names ....
 char_colors = {
 	"Crisostomo Ibarra" : c_blue,
@@ -24,6 +24,7 @@ char_colors = {
 	"Maria Clara" : c_olive,
 	"Katiwala" : c_olive,
 }
+*/
 
 //testing dialogue
 welcome_dialog = [

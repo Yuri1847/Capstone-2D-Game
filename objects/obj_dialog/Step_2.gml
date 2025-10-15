@@ -1,9 +1,11 @@
+/*
+
 // --- End Step Event (Touch-based Dialogue System) ---
 if (current_message < 0) exit;
 
 // safety check
 if (current_message >= array_length(messages)) {
-    with (obj_katulong) npc_can_move = true;
+    with (obj_npc_parent) npc_can_move = true;
     instance_destroy();
     exit;
 }
@@ -49,13 +51,13 @@ if (current_char < string_length(_str)) {
 
 // --- update draw_message ---
 draw_message = string_copy(_str, 1, current_char);
+*/
 
 
 
 
 
 
-/*
 // original code space key to trigger
 if (current_message < 0) exit;
 
@@ -69,7 +71,7 @@ if (current_char < string_length(_str)){
 else if(keyboard_check_pressed(input_key)){
 	current_message++;
 	if (current_message >= array_length(messages)){
-		with (obj_katulong) {
+		with (obj_npc_parent) {
 		    npc_can_move = true;
 		}
 
@@ -77,4 +79,4 @@ else if(keyboard_check_pressed(input_key)){
 	}else{
 		current_char = 0;
 	}
-}*/
+}

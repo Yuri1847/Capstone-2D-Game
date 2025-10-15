@@ -6,5 +6,6 @@ last_y = y;
 npc_trigger = false;
 
 //for dialogue
-input_key = vk_space;
-can_talk = false;	
+can_talk = false;          // player is in range
+dialogue_active = false;   // whether dialogue is currently running
+input_key = vk_space;      // key to trigger dialogue
