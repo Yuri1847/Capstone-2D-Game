@@ -10,3 +10,7 @@ button_h = sprite_get_height(button_sprite);
 show_diary = false;
 current_page = 0;
 max_page = 5; // example total pages
+
+// Tabs
+tab_names = ["KABANATA", "TAUGAN", "TALA", "GANTIMPALA", "PAGMUMUNI"];
+current_tab = 0; // start on first tab

@@ -10,8 +10,8 @@
   "name":"obj_ui_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Diary_Profile",
-    "path":"folders/Diary_Profile.yy",
+    "name":"Profile",
+    "path":"folders/Profile.yy",
   },
   "parentObjectId":null,
   "persistent":true,

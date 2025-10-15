@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Diary_Profile",
-    "path":"folders/Diary_Profile.yy",
+    "name":"Profile",
+    "path":"folders/Profile.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
