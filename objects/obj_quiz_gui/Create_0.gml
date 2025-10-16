@@ -47,6 +47,10 @@ submit_h = spr_h * 1.2;
 // Bottom-right corner positioning
 submit_x = display_get_gui_width() - submit_w - 64; // 20px margin from right
 submit_y = display_get_gui_height() - submit_h - 64; // 20px margin from bottom
-
+submit_press_timer = 0;
 submit_pressed = false;
+
+//result 
+result_sprite = noone;
+
 

@@ -67,4 +67,20 @@ if (question_index + 1 < total_questions) {
 }
 
 
-draw_text(submit_x + submit_w / 2, submit_y + submit_h / 2, "SUBMIT");
+draw_text(submit_x + submit_w / 2, submit_y + submit_h / 2, button_label);
+
+
+// --- Draw result sprite if showing result ---
+if (showing_result && result_sprite != noone) {
+    var result_scale = 1.5; // adjust size
+    var spr_w = sprite_get_width(result_sprite) * result_scale;
+    var spr_h = sprite_get_height(result_sprite) * result_scale;
+
+    // Center above the options panel
+    var result_x = cx - spr_w / 2;
+    var result_y = start_y - spr_h - 40;
+
+    draw_sprite_stretched(result_sprite, 0, result_x, result_y, spr_w, spr_h);
+}
+
+

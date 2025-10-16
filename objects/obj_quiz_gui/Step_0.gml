@@ -9,26 +9,15 @@ if (keyboard_check_pressed(vk_space)) {
     instance_destroy(); // remove quiz GUI
 }*/
 
-/// Step Event – quiz logic + transition control
-
-// --- answer selection ---
-if (!showing_result) {
-    // Move between options
-    if (keyboard_check_pressed(vk_up)) selected = max(0, selected - 1);
-    if (keyboard_check_pressed(vk_down)) selected = min(array_length(options) - 1, selected + 1);
-
-    // Confirm choice with Space / Enter
-    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
-        if (selected == correct_index) {
-            result_text = "✅ Correct!";
-        } else {
-            result_text = "❌ Wrong! Correct answer: " + options[correct_index];
-        }
-
-        showing_result = true;
-        result_timer = room_speed * 2; // show result for ~2 seconds
-    }
+// Handle submit press flash timer
+if (submit_press_timer > 0) {
+    submit_press_timer -= 1;
+    submit_pressed = true;
+} else {
+    submit_pressed = false;
 }
+
+
 
 //showting result
 // --- handle result + warp transition ---
@@ -93,23 +82,25 @@ if (!showing_result) {
             // --- Check submit button (bottom-right) ---
             if (point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
                 submit_pressed = true;
+				 submit_press_timer = room_speed * 0.1; // ✅ flash for 0.1 seconds
 
                 // ✅ Handle submission logic here
                 if (!showing_result) {
                     if (selected == -1) {
-                        // No option chosen
+                        // Nothing selected — optional feedback
+                        result_sprite = noone;
                         result_text = "Please select an answer!";
                         result_timer = room_speed * 1;
                         showing_result = true;
                     } else {
-                        // Check if correct answer
+                        // ✅ Show correct/wrong sprite depending on answer
                         if (selected == correct_index) {
-                            result_text = "Correct!";
+                            result_sprite = spr_quiz_correct;
                         } else {
-                            result_text = "Wrong!";
+                            result_sprite = spr_quiz_wrong;
                         }
 
-                        // Show result for 2 seconds
+                        result_text = "";
                         result_timer = room_speed * 2;
                         showing_result = true;
                     }
@@ -118,6 +109,8 @@ if (!showing_result) {
         }
     }
 }
+
+
 
 
 
