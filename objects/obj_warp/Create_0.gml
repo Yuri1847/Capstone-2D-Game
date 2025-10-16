@@ -1,2 +1,5 @@
-// obj_warp: Create Event
-depth = -1000; // make sure it draws above tiles if visible
+/// @description Initialize warp target variables
+targetRoom = noone;
+targetX = 0;
+targetY = 0;
+depth = -1000;

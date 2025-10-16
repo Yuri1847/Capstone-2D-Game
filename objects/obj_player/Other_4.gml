@@ -1,5 +1,5 @@
-// if coming from a warp, reposition the player
-if (variable_global_exists("warp_x")) {
-    x = global.warp_x;
-    y = global.warp_y;
+/// @description Place player at warp destination if available
+if (variable_global_exists("player_next_x")) {
+    x = global.player_next_x;
+    y = global.player_next_y;
 }

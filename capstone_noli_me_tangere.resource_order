@@ -1,6 +1,8 @@
 {
   "FolderOrderSettings":[
     {"name":"Animation Curves","order":10,"path":"folders/Animation Curves.yy",},
+    {"name":"Challenges","order":24,"path":"folders/Challenges.yy",},
+    {"name":"Timeline of Encounters","order":1,"path":"folders/Challenges/Timeline of Encounters.yy",},
     {"name":"Dialogue_System","order":15,"path":"folders/Dialogue_System.yy",},
     {"name":"Portraits","order":12,"path":"folders/Dialogue_System/Portraits.yy",},
     {"name":"setPort","order":6,"path":"folders/Dialogue_System/Portraits/setPort.yy",},
@@ -305,6 +307,7 @@
     {"name":"obj_chair_right","order":4,"path":"objects/obj_chair_right/obj_chair_right.yy",},
     {"name":"obj_church_stone_table","order":1,"path":"objects/obj_church_stone_table/obj_church_stone_table.yy",},
     {"name":"obj_church_wooden_table","order":2,"path":"objects/obj_church_wooden_table/obj_church_wooden_table.yy",},
+    {"name":"obj_cont","order":2,"path":"objects/obj_cont/obj_cont.yy",},
     {"name":"obj_damaso_1","order":2,"path":"objects/obj_damaso_1/obj_damaso_1.yy",},
     {"name":"obj_deactivate_unnecessary_object","order":1,"path":"objects/obj_deactivate_unnecessary_object/obj_deactivate_unnecessary_object.yy",},
     {"name":"obj_dialog_box_shadow","order":2,"path":"objects/obj_dialog_box_shadow/obj_dialog_box_shadow.yy",},
@@ -436,6 +439,8 @@
     {"name":"obj_tiago_2","order":3,"path":"objects/obj_tiago_2/obj_tiago_2.yy",},
     {"name":"obj_tiago_house_x_mariaClara","order":1,"path":"objects/obj_tiago_house_x_mariaClara/obj_tiago_house_x_mariaClara.yy",},
     {"name":"obj_tiago","order":3,"path":"objects/obj_tiago/obj_tiago.yy",},
+    {"name":"obj_timeline_card","order":1,"path":"objects/obj_timeline_card/obj_timeline_card.yy",},
+    {"name":"obj_timeline_slot","order":2,"path":"objects/obj_timeline_slot/obj_timeline_slot.yy",},
     {"name":"obj_tinong_1","order":6,"path":"objects/obj_tinong_1/obj_tinong_1.yy",},
     {"name":"obj_tomb_head_2","order":4,"path":"objects/obj_tomb_head_2/obj_tomb_head_2.yy",},
     {"name":"obj_tomb_head_3","order":3,"path":"objects/obj_tomb_head_3/obj_tomb_head_3.yy",},
