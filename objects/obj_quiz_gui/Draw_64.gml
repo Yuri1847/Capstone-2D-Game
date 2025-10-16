@@ -42,3 +42,21 @@ if (showing_result) {
     draw_set_valign(fa_middle);
     draw_text(cx, cy + panel_h/2 - 60, result_text);
 }
+
+
+// Draw enlarged submit button
+draw_sprite_stretched(spr_quiz_submit, 0, submit_x, submit_y, submit_w, submit_h);
+
+// Optional visual feedback when pressed
+if (submit_pressed) {
+    draw_set_alpha(0.4);
+    draw_set_color(c_white);
+    draw_rectangle(submit_x, submit_y, submit_x + submit_w, submit_y + submit_h, false);
+    draw_set_alpha(1);
+}
+
+// --- Draw text centered inside button ---
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_color(c_white); // or c_black if your button is light-colored
+draw_text(submit_x + submit_w / 2, submit_y + submit_h / 2, "SUBMIT");

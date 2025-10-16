@@ -54,6 +54,12 @@ if (!showing_result) {
                 if (point_in_rectangle(tx, ty, opt_x, opt_y, opt_x + opt_w, opt_y + btn_height)) {
                     selected = j;
                 }
+				// --- Check submit button ---
+	            // --- Submit button check (bottom-left) ---
+		        if (point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
+		            submit_pressed = true;
+		            submit_quiz();
+		        }
             }
         }
     }

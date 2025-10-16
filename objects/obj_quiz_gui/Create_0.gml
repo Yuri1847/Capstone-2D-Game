@@ -34,3 +34,19 @@ start_y = cy - (panel_h * 0.5) + 150;
 
 selected = -1;
 showing_result = false;
+
+
+// --- Submit button setup ---
+var spr_w = sprite_get_width(spr_quiz_submit);
+var spr_h = sprite_get_height(spr_quiz_submit);
+
+// Make button larger — double width and slightly taller
+submit_w = spr_w * 2;
+submit_h = spr_h * 1.2;
+
+// Bottom-right corner positioning
+submit_x = display_get_gui_width() - submit_w - 64; // 20px margin from right
+submit_y = display_get_gui_height() - submit_h - 64; // 20px margin from bottom
+
+submit_pressed = false;
+
