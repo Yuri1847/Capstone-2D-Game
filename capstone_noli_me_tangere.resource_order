@@ -514,6 +514,8 @@
     {"name":"sc_timeline_encounter","order":1,"path":"scripts/sc_timeline_encounter/sc_timeline_encounter.yy",},
     {"name":"sc_visible_layer","order":1,"path":"scripts/sc_visible_layer/sc_visible_layer.yy",},
     {"name":"snd_button_clicked","order":1,"path":"sounds/snd_button_clicked/snd_button_clicked.yy",},
+    {"name":"snd_empty_slot","order":2,"path":"sounds/snd_empty_slot/snd_empty_slot.yy",},
+    {"name":"snd_saved_slot","order":3,"path":"sounds/snd_saved_slot/snd_saved_slot.yy",},
     {"name":"spr_anvil_2","order":1,"path":"sprites/spr_anvil_2/spr_anvil_2.yy",},
     {"name":"spr_anvil_3","order":2,"path":"sprites/spr_anvil_3/spr_anvil_3.yy",},
     {"name":"spr_anvil_4","order":3,"path":"sprites/spr_anvil_4/spr_anvil_4.yy",},
