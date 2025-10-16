@@ -40,8 +40,7 @@ welcome_dialog = [
 	},
 	{
 		name: "Narration",
-		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)",
-		portrait: spr_por_tiago
+		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)"
 	},
 ]
 
