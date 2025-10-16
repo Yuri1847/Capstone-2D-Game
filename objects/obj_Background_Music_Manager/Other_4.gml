@@ -18,6 +18,9 @@ switch (room_name) {
         break;
 	case "rm_Hotel_Fonda_First_Floor":
 	case "rm_Hotel_Fonda_Second_Floor":
+	case "rm_binondo_church_inside" :
+	case "rm_maria_clara_house_inside_first_floor" :
+	case "rm_maria_clara_house_inside_second_floor":
 		sc_set_bgm(snd_inside_room)
 		break;
     default:
