@@ -17,6 +17,7 @@ if (targetRoom != noone) {
 // obj_warp - Collision with player
 /// obj_warp - Collision with obj_player
 
+
 // Prevent repeating warp while quiz is active
 if (has_quiz && !quiz_active) {
 
@@ -25,8 +26,10 @@ if (has_quiz && !quiz_active) {
         instance_create_layer(0, 0, "ins_gui", obj_quiz_controller);
     }
 
-    // Set up the quiz parameters
-    quiz_show(quiz_question, quiz_options, quiz_correct);
+    // --- Multi-question setup ---
+    if (array_length(quiz_data) > 0) {
+        quiz_show(quiz_data, 0); // start from first question
+    }
 
     // Prevent immediate warp — wait until quiz is done
     global.quiz_pending_warp = true;
@@ -37,6 +40,7 @@ if (has_quiz && !quiz_active) {
     // Mark that quiz is now active
     quiz_active = true;
 }
+
 
 // If there’s no quiz, warp immediately
 if (!has_quiz) {

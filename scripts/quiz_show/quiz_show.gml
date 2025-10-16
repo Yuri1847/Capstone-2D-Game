@@ -1,16 +1,21 @@
-function quiz_show(_question, _options_array, _correct_index) {
+function quiz_show(_quiz_data, _index) {
+    var q = _quiz_data[_index];
+    
     if (!instance_exists(obj_quiz_gui))
         global.quiz_gui = instance_create_layer(0, 0, "ins_gui", obj_quiz_gui);
 
     with (obj_quiz_gui) {
         visible = true;
-        question = _question;
-        options = _options_array;
-        correct_index = _correct_index;
+        question = q.question;
+        options = q.options;
+        correct_index = q.correct;
         selected = -1;
-		
-		showing_result = false;
+
+        showing_result = false;
         result_text = "";
         result_timer = 0;
+        question_index = _index;
+        total_questions = array_length(_quiz_data);
+        quiz_data = _quiz_data;
     }
 }

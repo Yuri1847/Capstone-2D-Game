@@ -30,6 +30,40 @@ if (!showing_result) {
     }
 }
 
+//showting result
+// --- handle result + warp transition ---
+if (showing_result) {
+    result_timer -= 1;
+
+    if (result_timer <= 0) {
+        // Move to next question if any left
+        if (question_index + 1 < total_questions) {
+            quiz_show(quiz_data, question_index + 1);
+        } else {
+            // ✅ Finished all questions → trigger warp
+            if (global.quiz_pending_warp) {
+                
+                // ✅ Make sure the spawn coordinates are set FIRST
+                global.warp_spawn_x = global.quiz_target_x;
+                global.warp_spawn_y = global.quiz_target_y;
+
+                // ✅ Then create the fade transition
+                var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+                t.fading_out = true;
+                t.next_room = global.quiz_target_room;
+
+                // ✅ Finally, clear the warp flag
+                global.quiz_pending_warp = false;
+            }
+
+            // Clean up GUI after finishing quiz
+            instance_destroy();
+        }
+    }
+}
+
+
+
 
 // --- Mouse or key input ---
 // --- Make sure defaults exist ---
@@ -45,7 +79,7 @@ if (!showing_result) {
             var tx = device_mouse_x_to_gui(i);
             var ty = device_mouse_y_to_gui(i);
 
-            // Check each option for touch hit
+            // --- Check all options ---
             for (var j = 0; j < array_length(options); j++) {
                 var opt_w = panel_w * 0.8;
                 var opt_x = cx - opt_w * 0.5;
@@ -54,12 +88,32 @@ if (!showing_result) {
                 if (point_in_rectangle(tx, ty, opt_x, opt_y, opt_x + opt_w, opt_y + btn_height)) {
                     selected = j;
                 }
-				// --- Check submit button ---
-	            // --- Submit button check (bottom-left) ---
-		        if (point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
-		            submit_pressed = true;
-		            submit_quiz();
-		        }
+            }
+
+            // --- Check submit button (bottom-right) ---
+            if (point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
+                submit_pressed = true;
+
+                // ✅ Handle submission logic here
+                if (!showing_result) {
+                    if (selected == -1) {
+                        // No option chosen
+                        result_text = "Please select an answer!";
+                        result_timer = room_speed * 1;
+                        showing_result = true;
+                    } else {
+                        // Check if correct answer
+                        if (selected == correct_index) {
+                            result_text = "Correct!";
+                        } else {
+                            result_text = "Wrong!";
+                        }
+
+                        // Show result for 2 seconds
+                        result_timer = room_speed * 2;
+                        showing_result = true;
+                    }
+                }
             }
         }
     }
@@ -69,6 +123,8 @@ if (!showing_result) {
 
 
 
+
+/*
 // --- handle result + warp transition ---
 if (showing_result) {
     result_timer -= 1;
@@ -93,6 +149,6 @@ if (showing_result) {
         // Clean up GUI after result display
         instance_destroy();
     }
-}
+}*/
 
 

@@ -59,4 +59,12 @@ if (submit_pressed) {
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_white); // or c_black if your button is light-colored
+
+// ✅ Determine button label
+var button_label = "Submit";
+if (question_index + 1 < total_questions) {
+    button_label = "Next";
+}
+
+
 draw_text(submit_x + submit_w / 2, submit_y + submit_h / 2, "SUBMIT");
