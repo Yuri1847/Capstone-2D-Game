@@ -6,13 +6,32 @@ if (requires_timeline) {
         exit; // prevents warp until challenge is completed
     }
 }
-
+/*
 // If challenge already done
 if (targetRoom != noone) {
     global.warp_spawn_x = targetX;
     global.warp_spawn_y = targetY;
     room_goto(targetRoom);
+}*/
+
+if (!global.quiz_active) {
+    // Store this warp’s target info in globals
+    global.quiz_next_room = targetRoom; // must be the room asset
+    global.quiz_next_x = targetX;
+    global.quiz_next_y = targetY;
+    global.quiz_id = quiz_id;
+
+    // Start the quiz
+    quiz_start();
+} 
+// Optional: if quiz already done, warp immediately
+else if (global.quiz_done) {
+    room_goto(targetRoom);
 }
+
+
+
+
 
 
 
