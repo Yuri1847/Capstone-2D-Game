@@ -47,6 +47,14 @@ for (var i = 0; i < 3; i++) {
 									sc_visible_layer(["load_slot1_dialog_layer"])
 									instance_deactivate_object(id)
 								}else {
+								//sfx
+									var sfx_id = audio_play_sound(snd_empty_slot, 1, false);
+									// apply slider’s volume immediately
+									if (instance_exists(obj_slider_bar)) {
+									    audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+									}
+									// random pitch
+									audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 									show_toast("Empty slot 1")
 								}
 		                    break;
@@ -57,6 +65,14 @@ for (var i = 0; i < 3; i++) {
 									sc_visible_layer(["load_slot2_dialog_layer"])
 									instance_deactivate_object(id)
 								}else {
+								//sfx
+									var sfx_id = audio_play_sound(snd_empty_slot, 1, false);
+									// apply slider’s volume immediately
+									if (instance_exists(obj_slider_bar)) {
+									    audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+									}
+									// random pitch
+									audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 									show_toast("Empty slot 2")
 								}
 		                    break;
@@ -67,6 +83,14 @@ for (var i = 0; i < 3; i++) {
 									sc_visible_layer(["load_slot3_dialog_layer"])
 									instance_deactivate_object(id)
 								}else {
+								//sfx
+									var sfx_id = audio_play_sound(snd_empty_slot, 1, false);
+									// apply slider’s volume immediately
+									if (instance_exists(obj_slider_bar)) {
+									    audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+									}
+									// random pitch
+									audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 									show_toast("Empty slot 3")
 								}
 		                    break;

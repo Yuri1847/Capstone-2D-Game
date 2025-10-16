@@ -43,6 +43,14 @@ for (var i = 0; i < 3; i++) {
 				
 					switch (i) {
 	                case 0:
+					//sfx
+						var sfx_id = audio_play_sound(snd_saved_slot, 1, false);
+						// apply slider’s volume immediately
+						if (instance_exists(obj_slider_bar)) {
+							audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+						}
+						// random pitch
+						audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 					//state slot 1
 						global.settings_data.state_slot[0].date = string(month) + "/" +string(day) + "/" + string(year);
 						global.settings_data.state_slot[0].time = string(hour) + ":" + minute + ":" + second + " " + ampm;
@@ -58,6 +66,14 @@ for (var i = 0; i < 3; i++) {
 						show_toast("Successfully save game from slot 1")
 	                    break;
 	                case 1:
+					//sfx
+						var sfx_id = audio_play_sound(snd_saved_slot, 1, false);
+						// apply slider’s volume immediately
+						if (instance_exists(obj_slider_bar)) {
+							audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+						}
+						// random pitch
+						audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 					//state slot 2
 						global.settings_data.state_slot[1].date = string(month) + "/" +string(day) + "/" + string(year);
 						global.settings_data.state_slot[1].time = string(hour) + ":" + minute + ":" + second + " " + ampm;
@@ -73,6 +89,14 @@ for (var i = 0; i < 3; i++) {
 						show_toast("Successfully save game from slot 2")
 	                    break;
 	                case 2:
+					//sfx
+						var sfx_id = audio_play_sound(snd_saved_slot, 1, false);
+						// apply slider’s volume immediately
+						if (instance_exists(obj_slider_bar)) {
+							audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+						}
+						// random pitch
+						audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
 					//state slot 3
 						global.settings_data.state_slot[2].date = string(month) + "/" +string(day) + "/" + string(year);
 						global.settings_data.state_slot[2].time = string(hour) + ":" + minute + ":" + second + " " + ampm;
