@@ -8,5 +8,9 @@ function quiz_show(_question, _options_array, _correct_index) {
         options = _options_array;
         correct_index = _correct_index;
         selected = -1;
+		
+		showing_result = false;
+        result_text = "";
+        result_timer = 0;
     }
 }

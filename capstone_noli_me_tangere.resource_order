@@ -270,6 +270,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fn_dial","order":3,"path":"fonts/fn_dial/fn_dial.yy",},
+    {"name":"fn_quiz","order":5,"path":"fonts/fn_quiz/fn_quiz.yy",},
     {"name":"fn_title_screen_font","order":3,"path":"fonts/fn_title_screen_font/fn_title_screen_font.yy",},
     {"name":"fn_ui_loading_progress","order":2,"path":"fonts/fn_ui_loading_progress/fn_ui_loading_progress.yy",},
     {"name":"fn_ui_state_slot_title","order":1,"path":"fonts/fn_ui_state_slot_title/fn_ui_state_slot_title.yy",},
@@ -723,6 +724,8 @@
     {"name":"spr_por_tinong","order":5,"path":"sprites/spr_por_tinong/spr_por_tinong.yy",},
     {"name":"spr_potato_stall","order":4,"path":"sprites/spr_potato_stall/spr_potato_stall.yy",},
     {"name":"spr_pumpkin_stall","order":3,"path":"sprites/spr_pumpkin_stall/spr_pumpkin_stall.yy",},
+    {"name":"spr_quiz_bg","order":3,"path":"sprites/spr_quiz_bg/spr_quiz_bg.yy",},
+    {"name":"spr_quiz_opt","order":4,"path":"sprites/spr_quiz_opt/spr_quiz_opt.yy",},
     {"name":"spr_rake","order":4,"path":"sprites/spr_rake/spr_rake.yy",},
     {"name":"spr_right_damaso","order":4,"path":"sprites/spr_right_damaso/spr_right_damaso.yy",},
     {"name":"spr_right_gue","order":3,"path":"sprites/spr_right_gue/spr_right_gue.yy",},
