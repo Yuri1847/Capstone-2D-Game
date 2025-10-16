@@ -1,5 +1,5 @@
 // obj_quiz_controller - Step Event
-
+/*
 if (quiz_done) {
     if (global.quiz_pending_warp) {
         global.quiz_pending_warp = false;
@@ -18,4 +18,4 @@ if (quiz_done) {
     }
 
     instance_destroy(); // clean up controller
-}
+}*/

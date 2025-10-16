@@ -1,7 +1,9 @@
+/*
 visible = false;
 
 // re-enable player movement
 if (instance_exists(obj_player)) with (obj_player) move_lock = false;
+
 
 // If a warp is pending, do it after quiz
 if (variable_global_exists("pending_warp_room")) {
@@ -12,4 +14,4 @@ if (variable_global_exists("pending_warp_room")) {
     variable_global_remove("pending_warp_room");
     variable_global_remove("pending_warp_x");
     variable_global_remove("pending_warp_y");
-}
+}*/

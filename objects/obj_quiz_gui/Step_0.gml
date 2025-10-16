@@ -37,21 +37,29 @@ if (!variable_instance_exists(id, "showing_result")) showing_result = false;
 
 // --- Only handle input if result not showing ---
 if (!showing_result) {
-    var mx = device_mouse_x(0);
-    var my = device_mouse_y(0);
+    var max_fingers = 5; // supports up to 5 simultaneous touches
 
-    if (mouse_check_button_pressed(mb_left)) {
-        for (var i = 0; i < array_length(options); i++) {
-            var opt_y = start_y + i * (btn_height + btn_spacing);
-            var opt_w = panel_w * 0.8;
-            var opt_x = cx - opt_w / 2;
+    for (var i = 0; i < max_fingers; i++) {
+        if (device_mouse_check_button_pressed(i, mb_left)) {
+            // Get touch position in GUI coordinates
+            var tx = device_mouse_x_to_gui(i);
+            var ty = device_mouse_y_to_gui(i);
 
-            if (mx > opt_x && mx < opt_x + opt_w && my > opt_y && my < opt_y + btn_height) {
-                selected = i;
+            // Check each option for touch hit
+            for (var j = 0; j < array_length(options); j++) {
+                var opt_w = panel_w * 0.8;
+                var opt_x = cx - opt_w * 0.5;
+                var opt_y = start_y + j * (btn_height + btn_spacing);
+
+                if (point_in_rectangle(tx, ty, opt_x, opt_y, opt_x + opt_w, opt_y + btn_height)) {
+                    selected = j;
+                }
             }
         }
     }
 }
+
+
 
 
 
@@ -60,16 +68,25 @@ if (showing_result) {
     result_timer -= 1;
 
     if (result_timer <= 0) {
-        // if there’s a pending warp, fade to next room
+        // If there’s a pending warp, fade to next room
         if (global.quiz_pending_warp) {
+
+            // ✅ Make sure the spawn coordinates are set FIRST
+            global.warp_spawn_x = global.quiz_target_x;
+            global.warp_spawn_y = global.quiz_target_y;
+
+            // ✅ Then create the fade transition
             var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
             t.fading_out = true;
             t.next_room = global.quiz_target_room;
 
+            // ✅ Finally, clear the warp flag
             global.quiz_pending_warp = false;
         }
 
-        instance_destroy(); // remove the quiz GUI
+        // Clean up GUI after result display
+        instance_destroy();
     }
 }
+
 

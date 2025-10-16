@@ -25,9 +25,12 @@ gui_h = display_get_gui_height();
 panel_w = gui_w * 0.8;
 panel_h = gui_h * 0.6;
 
-cx = gui_w / 2;
-cy = gui_h / 2;
+cx = gui_w * 0.5;
+cy = gui_h * 0.5;
 
 btn_height = 60;
 btn_spacing = 20;
-start_y = cy - panel_h / 2 + 150;
+start_y = cy - (panel_h * 0.5) + 150;
+
+selected = -1;
+showing_result = false;
