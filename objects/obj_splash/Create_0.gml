@@ -1,4 +1,4 @@
-show_debug_message("Splash created for target: " + string(global.splash_target));
+//show_debug_message("Splash created for target: " + string(global.splash_target));
 
 sprite_index = global.splash_sprite;
 image_speed  = 0;

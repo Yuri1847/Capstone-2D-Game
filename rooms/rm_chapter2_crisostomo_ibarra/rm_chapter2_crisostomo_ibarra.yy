@@ -22,13 +22,11 @@
     {"name":"inst_51E2C205","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},
     {"name":"inst_460F3C76","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},
     {"name":"inst_6EABFD96","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},
-    {"name":"inst_34448925","path":"rooms/rm_chapter2_crisostomo_ibarra/rm_chapter2_crisostomo_ibarra.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"ins_warp","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_6EABFD96","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EABFD96","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":704.0,},
-        {"$GMRInstance":"v2","%Name":"inst_34448925","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34448925","objectId":{"name":"obj_roomSplashCaller","path":"objects/obj_roomSplashCaller/obj_roomSplashCaller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":480.0,},
       ],"layers":[],"name":"ins_warp","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_npc","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_AD25986","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AD25986","objectId":{"name":"obj_tiago_1","path":"objects/obj_tiago_1/obj_tiago_1.yy",},"properties":[
