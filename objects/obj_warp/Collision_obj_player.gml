@@ -1,12 +1,23 @@
-/// @description Warp player to the next room
-if (targetRoom != noone) {
-    // Store new player position for next room
-    global.player_next_x = targetX;
-    global.player_next_y = targetY;
+if (requires_timeline) {
+    if (!ds_map_exists(global.timeline_flags, timeline_flag) ||
+        !global.timeline_flags[? timeline_flag]) {
 
-    // Change room
+        sc_timeline_encounter(); // spawns obj_timeline_ui dynamically
+        exit; // prevents warp until challenge is completed
+    }
+}
+
+// If challenge already done
+if (targetRoom != noone) {
+    global.warp_spawn_x = targetX;
+    global.warp_spawn_y = targetY;
     room_goto(targetRoom);
 }
+
+
+
+
+
 
 
 // Tell splash which sprite and target room to use
