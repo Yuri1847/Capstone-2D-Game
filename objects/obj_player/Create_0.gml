@@ -1,4 +1,7 @@
-persistent = true; // only one player for the whole game
+//persistent = true; // only one player for the whole game
+
+// obj_player - Create Event challenges
+requires_timeline = false;
 
 // Variables
 walkSpeed = 4;

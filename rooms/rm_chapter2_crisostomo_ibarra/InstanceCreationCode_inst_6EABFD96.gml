@@ -2,4 +2,5 @@
 targetRoom = rm_chapter3_hapunan;
 targetX = 878;
 targetY = 675;
-challenge_type = "timeline";
+
+sc_timeline_encounter();
