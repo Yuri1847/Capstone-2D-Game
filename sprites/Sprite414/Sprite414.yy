@@ -19,7 +19,7 @@
   "height":36,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"71859798-b0e0-41d6-83e2-d049678d183c","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"71859798-b0e0-41d6-83e2-d049678d183c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e8bcff51-6278-4ba4-8287-ce5f726d68f5","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"e8bcff51-6278-4ba4-8287-ce5f726d68f5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Sprite414",
   "nineSlice":null,

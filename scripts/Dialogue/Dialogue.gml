@@ -56,11 +56,13 @@ chap2_dial1 = [ //ibarra talk to kapitan tiago
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "Magandang gabi po, mga ginoo! Magandang gabi po, among! - (Hinalikan niya ang mga kamay ng mga pari na nakalimot magbendisyon.)"
+		msg: "Magandang gabi po, mga ginoo! Magandang gabi po, among! - (Hinalikan niya ang mga kamay ng mga pari na nakalimot magbendisyon.)",
+		portrait: spr_por_tiago
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya."
+		msg: "May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya.",
+		portrait: spr_por_tiago
 	},
 	{
 		name: "Narration",
@@ -71,6 +73,7 @@ chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Aba! Ang kura sa aking bayan! Si Padre Dámaso, matalik na kaibigan ng aking ama!",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -78,11 +81,13 @@ chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Paumanhin po, nagkamali yata ako."
+		msg: "Paumanhin po, nagkamali yata ako.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Padre Damaso",
-		msg: "(paos) Hindi ka nagkamali… Ngunit kailanma’y hindi ako naging matalik na kaibigan ng iyong ama."
+		msg: "(paos) Hindi ka nagkamali… Ngunit kailanma’y hindi ako naging matalik na kaibigan ng iyong ama.",
+		portrait: spr_por_damaso
 	},
 	{
 		name: "Narration",
@@ -92,7 +97,8 @@ chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 chap2_dial3 = [ // after that guevarra talk to ibarra
 	{
 		name: "Tiniente Guevarra",
-		msg: "Binata, kayo po ba ang anak ni Don Rafael Ibarra?"
+		msg: "Binata, kayo po ba ang anak ni Don Rafael Ibarra?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -100,11 +106,13 @@ chap2_dial3 = [ // after that guevarra talk to ibarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Nawa’y dumating kayo nang mapayapa sa inyong bayan, at nawa’y maging mas maganda ang kapalaran ninyo kaysa sa inyong ama. Nakilala ko siya, at masasabi kong isa siya sa mga taong marangal at kagalang-galang sa buong Filipinas."
+		msg: "Nawa’y dumating kayo nang mapayapa sa inyong bayan, at nawa’y maging mas maganda ang kapalaran ninyo kaysa sa inyong ama. Nakilala ko siya, at masasabi kong isa siya sa mga taong marangal at kagalang-galang sa buong Filipinas.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(nababagbag ang damdamin)Ginoo, ang inyong papuri ay nagpapawi ng aking lungkot tungkol sa sinapit ng aking ama, na hanggang ngayon ay hindi ko pa lubos na nauunawaan."
+		msg: "(nababagbag ang damdamin)Ginoo, ang inyong papuri ay nagpapawi ng aking lungkot tungkol sa sinapit ng aking ama, na hanggang ngayon ay hindi ko pa lubos na nauunawaan.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -114,7 +122,8 @@ chap2_dial3 = [ // after that guevarra talk to ibarra
 chap2_dial4 = [ //then ibarra talk to binibini
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Mga binibini, itulot ninyo sa akin ang pagbibigay-galang. Pitong taon akong nawala sa ating bayan, at ngayong nagbalik ako, nais kong bumati sa pinakamahalagang hiyas nito—ang mga anak nitong kababaihan."
+		msg: "Mga binibini, itulot ninyo sa akin ang pagbibigay-galang. Pitong taon akong nawala sa ating bayan, at ngayong nagbalik ako, nais kong bumati sa pinakamahalagang hiyas nito—ang mga anak nitong kababaihan.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -124,19 +133,23 @@ chap2_dial4 = [ //then ibarra talk to binibini
 chap2_dial5 = [ //then ibarra talks to kalalakihan
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Mga ginoo, may kaugalian sa Alemanya: kapag walang magpakilala sa isang bagong dating, siya mismo ang nagsasabi ng kanyang pangalan. Huwag ninyo pong isipin na dala ko rito ang ugali ng mga banyaga, kundi dahil napipilitan lamang akong gawin ito. Ako po si Juan Crisóstomo Ibarra y Magsalin."
+		msg: "Mga ginoo, may kaugalian sa Alemanya: kapag walang magpakilala sa isang bagong dating, siya mismo ang nagsasabi ng kanyang pangalan. Huwag ninyo pong isipin na dala ko rito ang ugali ng mga banyaga, kundi dahil napipilitan lamang akong gawin ito. Ako po si Juan Crisóstomo Ibarra y Magsalin.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Isa sa mga binata",
-		msg: "Ang pangalan ko’y A—á! (bahagyang yumuko)"
+		msg: "Ang pangalan ko’y A—á! (bahagyang yumuko)",
+		portrait: spr_por_kalalakihan_1
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "May karangalan ba akong makausap ang isang makata na siyang nagpanatili ng aking pagmamahal sa ating bayan? Bakit daw po kayo tumigil sa pagsusulat?"
+		msg: "May karangalan ba akong makausap ang isang makata na siyang nagpanatili ng aking pagmamahal sa ating bayan? Bakit daw po kayo tumigil sa pagsusulat?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Makata",
-		msg: "Dahil ang dakilang diwa ng isip ay hindi para ipilit sa kasinungalingan. Hinatulan ako dahil isinulat ko ang katotohanang hindi nila matanggap. Sinabi ko lamang na “ang anak ng leon ay leon din naman.” Dahil doon, muntik na akong ipatapon."
+		msg: "Dahil ang dakilang diwa ng isip ay hindi para ipilit sa kasinungalingan. Hinatulan ako dahil isinulat ko ang katotohanang hindi nila matanggap. Sinabi ko lamang na “ang anak ng leon ay leon din naman.” Dahil doon, muntik na akong ipatapon.",
+		portrait: spr_por_makata
 	},
 	{
 		name: "Narration",
@@ -146,15 +159,18 @@ chap2_dial5 = [ //then ibarra talks to kalalakihan
 chap2_dial6 = [ // then tinong talk to ibarra
 	{
 		name: "Kapitan Tinong",
-		msg: "Ginoong Ibarra! Hinahangad kong makilala kayo. Ako si Kapitan Tinong, kaibigan ni Kapitan Tiyago at ng inyong ama. Nakatira ako sa Tondo, malapit sa inyong bahay. Inaasahan kong dadalawin ninyo ako. Doon na kayo kumain bukas!"
+		msg: "Ginoong Ibarra! Hinahangad kong makilala kayo. Ako si Kapitan Tinong, kaibigan ni Kapitan Tiyago at ng inyong ama. Nakatira ako sa Tondo, malapit sa inyong bahay. Inaasahan kong dadalawin ninyo ako. Doon na kayo kumain bukas!",
+		portrait: spr_por_tinong
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(nakangiti)Salamat po! Ngunit bukas ay pupunta ako sa San Diego."
+		msg: "(nakangiti)Salamat po! Ngunit bukas ay pupunta ako sa San Diego.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Kapitan Tinong",
-		msg: "Sayang! Kung gayon, sa pagbabalik ninyo na lamang."
+		msg: "Sayang! Kung gayon, sa pagbabalik ninyo na lamang.",
+		portrait: spr_por_tinong
 	},
 	
 ]
