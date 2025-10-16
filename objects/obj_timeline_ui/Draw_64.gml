@@ -1,74 +1,92 @@
-/// obj_timeline_ui - Draw GUI
-draw_set_alpha(1);
+/// obj_timeline_ui – Draw GUI
+/// All sprites use Top-Left origin (0,0)
 
-/// Panel background (semi-transparent)
-draw_set_color(c_black);
-draw_set_alpha(0.7);
-draw_rectangle(panel_x, panel_y, panel_x + panel_w, panel_y + panel_h, false);
+// === Base reference size ===
+var base_w = 1280;
+var base_h = 720;
 
-/// Inner white card
-draw_set_alpha(1);
-draw_set_color(c_white);
-var inner_x = panel_x + 8;
-var inner_y = panel_y + 8;
-var inner_w = panel_w - 16;
-var inner_h = panel_h - 16;
-draw_rectangle(inner_x, inner_y, inner_x + inner_w, inner_y + inner_h, false);
+var gui_w = display_get_gui_width();
+var gui_h = display_get_gui_height();
 
-/// Title and meta
-draw_set_halign(fa_center);
-draw_set_valign(fa_top);
-if (font_title != -1) draw_set_font(font_title);
-draw_set_color(c_black);
-draw_text(panel_x + panel_w/2, panel_y + 12, title_text);
-if (font_body != -1) draw_set_font(font_body);
-draw_set_color(c_gray);
-draw_text(panel_x + panel_w/2, panel_y + 40, subtitle_text);
-draw_set_color(c_black);
-draw_text(panel_x + panel_w/2, panel_y + 60, purpose_text);
+var scale_x = gui_w / base_w;
+var scale_y = gui_h / base_h;
+var scale = min(scale_x, scale_y);
 
-/// Draw slots outline (empty positions)
-for (var s = 0; s < array_length(slots); ++s) {
-    var sx = slots[s].x;
-    var sy = slots[s].y;
-    draw_set_alpha(0.12);
-    draw_rectangle(sx, sy, sx + card_w, sy + card_h, true);
-    draw_set_alpha(1);
+// === MAIN BACKGROUND ===
+if (sprite_exists(spr_main_panel)) {
+    draw_sprite_stretched(spr_main_panel, 0, 0, 0, gui_w, gui_h);
 }
 
-/// Draw cards (bottom to top)
-draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
-for (var i = 0; i < array_length(card_objects); ++i) {
-    var c = card_objects[i];
-    // shadow
-    draw_set_alpha(0.12);
-    draw_rectangle(c.x + 4, c.y + 6, c.x + c.w + 4, c.y + c.h + 6, true);
-    draw_set_alpha(1);
-    // card background
-    draw_set_color(c_white);
-    draw_rectangle(c.x, c.y, c.x + c.w, c.y + c.h, true);
-    // border (thin)
-    draw_set_color(c_black);
-    draw_rectangle(c.x + 1, c.y + 1, c.x + c.w - 1, c.y + c.h - 1, true);
-    // text
-    draw_set_color(c_black);
-    var tx = c.x + 12;
-    var ty = c.y + c.h/2;
-    draw_text(tx, ty, c.text);
+// ===================================================
+// 🟪 INVISIBLE PANEL (container, not drawn)
+// ===================================================
+var inv_w = gui_w * 0.9;
+var inv_h = gui_h * 0.9;
+var inv_x = (gui_w - inv_w) * 0.5;
+var inv_y = (gui_h - inv_h) * 0.5;
+
+// Child areas
+var info_h  = inv_h * 0.2;
+var panel_h = inv_h - info_h;
+
+// === INFO PANEL ===
+if (sprite_exists(spr_info)) {
+    draw_sprite_stretched(spr_info, 0, inv_x, inv_y, inv_w, info_h);
 }
 
-/// success / failure overlays
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-if (success) {
-    draw_set_alpha(success_alpha);
-    draw_set_color(c_green);
-    draw_text(panel_x + panel_w/2, panel_y + panel_h - 32, "✔ Correct — Timeline complete");
-    draw_set_alpha(1);
-} else if (failure_alpha > 0) {
-    draw_set_alpha(failure_alpha);
-    draw_set_color(c_red);
-    draw_text(panel_x + panel_w/2, panel_y + panel_h - 32, "Try again");
-    draw_set_alpha(1);
+// === MAIN PANEL ===
+if (sprite_exists(spr_panel)) {
+    draw_sprite_stretched(spr_panel, 0, inv_x, inv_y + info_h, inv_w, panel_h);
 }
+
+// ===================================================
+// 🟦 SLOT & CARD LAYOUT (centered inside spr_panel)
+// ===================================================
+var slot_count = array_length(slots);
+if (slot_count > 0) {
+
+    // Fixed size for slots/cards (in GUI pixels)
+    var card_w = 256 * scale;
+    var card_h = 342 * scale;
+    var margin = 24 * scale;
+
+    // Compute horizontal centering inside spr_panel
+    var total_w = slot_count * card_w + (slot_count - 1) * margin;
+    var start_x = inv_x + (inv_w - total_w) * 0.5;
+    var center_y = (inv_y + info_h) + (panel_h * 0.5) - (card_h * 0.5);
+
+    // === SLOTS ===
+    if (sprite_exists(spr_slotTE)) {
+        for (var i = 0; i < slot_count; i++) {
+            var sx = start_x + i * (card_w + margin);
+            var sy = center_y;
+            draw_sprite_stretched(spr_slotTE, 0, sx, sy, card_w, card_h);
+        }
+    }
+
+    // === CARDS ===
+    if (sprite_exists(spr_cardTE)) {
+        for (var i = 0; i < array_length(card_objects); i++) {
+            var c = card_objects[i];
+            // Align each card to slot position
+            var cx = start_x + i * (card_w + margin);
+            var cy = center_y;
+            draw_sprite_stretched(spr_cardTE, 0, cx, cy, card_w, card_h);
+
+            draw_set_halign(fa_center);
+            draw_set_valign(fa_middle);
+            draw_set_font(-1);
+            draw_set_color(c_black);
+            draw_text(cx + card_w * 0.5, cy + card_h * 0.5, c.text);
+        }
+    }
+}
+
+
+// ===================================================
+// 🧩 (Optional Debug – visualize layout)
+// ===================================================
+// draw_set_color(c_aqua);
+// draw_rectangle(inv_x, inv_y, inv_x + inv_w, inv_y + inv_h, false);
+// draw_set_color(c_lime);
+// draw_rectangle(inv_x, inv_y + info_h, inv_x + inv_w, inv_y + info_h + panel_h, false);
