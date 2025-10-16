@@ -3,7 +3,7 @@ targetX = 1166;
 targetY = 282;
 
 
-
+/*
 // --- quiz trigger setup ---
 has_quiz = true;
 
@@ -24,4 +24,5 @@ quiz_data = [
         correct: 0
     }
 ];
+*/
 
