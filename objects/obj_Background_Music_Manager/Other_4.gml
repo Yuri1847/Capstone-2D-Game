@@ -16,8 +16,12 @@ switch (room_name) {
 	case "rm_load_game_menu": 
         sc_set_bgm(snd_background_music);
         break;
+	case "rm_Hotel_Fonda_First_Floor":
+	case "rm_Hotel_Fonda_Second_Floor":
+		sc_set_bgm(snd_inside_room)
+		break;
     default:
-        sc_set_bgm(snd_outside);
+        sc_set_bgm(snd_outside_room);
         break;
     // add more rooms as needed
 }
