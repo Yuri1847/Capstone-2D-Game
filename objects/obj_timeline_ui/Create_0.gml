@@ -1,94 +1,86 @@
-/// obj_timeline_ui - Create
+/// obj_timeline_ui – Create
+
+// === Base GUI ===
 visible = true;
 is_finished = false;
 
-/// layout (GUI coordinates)
+// === GUI dimensions ===
 gui_w = display_get_gui_width();
 gui_h = display_get_gui_height();
 
-panel_margin = 48;
-panel_w = min(900, gui_w - panel_margin*2);
-panel_h = 360;
-panel_x = (gui_w - panel_w) / 2;
-panel_y = (gui_h - panel_h) / 2 - 20;
+// === Background panel ===
+main_w = gui_w;
+main_h = gui_h;
 
-/// title / meta
-title_text = "Timeline of Encounters";
-subtitle_text = "🔹Type: Sequence Challenge";
-purpose_text = "Purpose: Strengthens recall and story structure comprehension.";
+// === Info panel (top) ===
+info_w = gui_w * 0.9;
+info_h = gui_h * 0.2;
+info_x = (gui_w - info_w) * 0.5;
+info_y = gui_h * 0.05; // small top margin
 
-font_title = -1;
-font_body = -1;
+// === Center panel (bottom timeline area) ===
+panel_w = gui_w * 0.9;
+panel_h = gui_h * 0.7;
+panel_x = (gui_w - panel_w) * 0.5;
+panel_y = info_y + info_h + (gui_h * 0.1); // 10% vertical gap
 
-/// card layout
-card_w = 220;
-card_h = 64;
-card_margin = 16;
+// === Card / Slot layout ===
+card_w = 160;
+card_h = 220;
+card_margin = 40;
 
-/// Input / dragging
+// === Input ===
 drag_index = -1;
 drag_offset_x = 0;
 drag_offset_y = 0;
 mouse_was_down = false;
 
-/// Feedback
-success = false;
-success_alpha = 0;
-failure_alpha = 0;
-
-/// Default timeline (will be overwritten if instance.timeline_cards exists)
-default_cards = [
+// === Timeline data ===
+cards = [
     "Ibarra introduced by Tiago",
     "Damaso insult",
     "Guevarra’s praise",
     "Tinong’s invitation",
     "Dinner call"
 ];
-
-/// Use provided cards if present (warp can set timeline_cards before creating this object)
-if (variable_instance_exists(id, "timeline_cards") && array_length(timeline_cards) > 0) {
-    cards = timeline_cards;
-} else {
-    cards = default_cards;
-}
-
 slot_count = array_length(cards);
 
-/// Build slot positions (visual anchors)
+// === Build slot positions (horizontal layout, centered) ===
 slots = [];
-for (var s = 0; s < slot_count; ++s) {
-    var sx = panel_x + panel_margin + s * (card_w + card_margin);
-    var sy = panel_y + 120;
+var total_w = slot_count * card_w + (slot_count - 1) * card_margin;
+var start_x = panel_x + (panel_w - total_w) * 0.5;
+var y_center = panel_y + panel_h * 0.5;
+
+for (var i = 0; i < slot_count; i++) {
+    var sx = start_x + i * (card_w + card_margin);
+    var sy = y_center;
     array_push(slots, { x: sx, y: sy });
 }
 
-/// Build card_objects array with a shuffled visual order
-card_objects = [];
-// Copy cards into a temporary array for shuffling
-var tmp = [];
-for (var i = 0; i < array_length(cards); ++i) array_push(tmp, cards[i]);
-
-// Fisher–Yates shuffle
-for (var i = array_length(tmp) - 1; i > 0; --i) {
+// === Shuffle cards ===
+var tmp = array_create(slot_count);
+for (var i = 0; i < slot_count; i++) tmp[i] = cards[i];
+for (var i = slot_count - 1; i > 0; i--) {
     var j = irandom(i);
-    var t = tmp[j];
-    tmp[j] = tmp[i];
-    tmp[i] = t;
+    var t = tmp[i];
+    tmp[i] = tmp[j];
+    tmp[j] = t;
 }
 
-// Create card structs positioned at slots (shuffled)
-for (var i = 0; i < array_length(tmp); ++i) {
-    var ctext = tmp[i];
+// === Create card objects ===
+card_objects = [];
+for (var i = 0; i < slot_count; i++) {
     var cx = slots[i].x;
-    var cy = slots[i].y;
+    var cy = slots[i].y - 300; // start slightly above
     array_push(card_objects, {
-        text: ctext,
+        text: tmp[i],
         x: cx,
         y: cy,
+        target_x: slots[i].x,
+        target_y: slots[i].y,
         w: card_w,
-        h: card_h
+        h: card_h,
+        slot_index: -1,
+        is_placed: false
     });
 }
-
-/// optional callback
-on_success = undefined;
