@@ -75,7 +75,7 @@ function RefreshMapBG(){
 		
 		getTilemapLayer();
 			with(all){
-				if(object_index != obj_invisible_collision_block && object_index != obj_Invi_Block)
+				if(object_index != obj_invisible_collision_block && object_index != obj_Invi_Block && object_index != obj_ui_backpack && object_index != obj_ui_quest && object_index != obj_ui_button)
 				draw_self();
 			}
 		
