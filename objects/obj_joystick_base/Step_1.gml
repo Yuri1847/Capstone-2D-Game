@@ -1,3 +1,5 @@
+if (!enabledJOY) exit;
+
 if (touchId != -1){
 	if (device_mouse_check_button(touchId, mb_left))
 	{

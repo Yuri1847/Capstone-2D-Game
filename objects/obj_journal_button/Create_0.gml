@@ -1,5 +1,5 @@
 // Create Event
-button_margin = 20; // padding from edges
+button_margin = 0; // padding from edges
 button_size = sprite_get_width(spr_journal_button);
 
 

@@ -1,3 +1,6 @@
+enabledJOY = true;
+
+
 joyX = 0;
 joyY = 0;
 touchId = -1;

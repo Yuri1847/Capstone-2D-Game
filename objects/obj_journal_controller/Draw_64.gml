@@ -43,6 +43,38 @@ if (visible) {
     // --- Example content per tab ---
     draw_set_color(c_black);
     draw_text(100, tab_y + tab_h + 40, "Current Tab: " + string(current_tab));
+	
+	
+	 // Draw Back Button
+    var back_x = back_margin;
+    var back_y = sh - back_h - back_margin;
+
+    var mx = device_mouse_x_to_gui(0);
+    var my = device_mouse_y_to_gui(0);
+	
+
+    var hovered = point_in_rectangle(mx, my, back_x, back_y, back_x + back_w, back_y + back_h);
+
+    draw_set_alpha(hovered ? 0.8 : 1);
+    draw_sprite_stretched(spr_journal_back, 0, back_x, back_y, back_w, back_h);
+    draw_set_alpha(1);
+	
+	// --- Draw "Back" text centered safely ---
+	var prev_halign = draw_get_halign();
+	var prev_valign = draw_get_valign();
+	var prev_color  = draw_get_color();
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_set_color(c_white);
+	draw_text(back_x + back_w / 2, back_y + back_h / 2, "Back");
+	
+	// ✅ Restore original settings (important!)
+	draw_set_halign(prev_halign);
+	draw_set_valign(prev_valign);
+	draw_set_color(prev_color);
+	draw_set_alpha(1);
+	
 }
 
 
