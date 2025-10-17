@@ -30,7 +30,7 @@ if (visible) {
             if (point_in_rectangle(mx, my, back_x, back_y, back_x + back_w, back_y + back_h)) {
                 // Close the journal
                 visible = false;
-                with (obj_joystick_base) enabledJOY = true; // re-enable joystick
+                with (obj_joystick_base) global.enabledJOY = true; // re-enable joystick
                 sc_visible_layer(["right_option_layer", "pause_button_layer"]);
                 global.journal_open = false;
             }

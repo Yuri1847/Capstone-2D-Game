@@ -21,4 +21,4 @@ function quiz_show(_quiz_data, _index) {
         quiz_data = _quiz_data;
     }
 }
-global.quiz_active = true;
+//global.quiz_active = true;

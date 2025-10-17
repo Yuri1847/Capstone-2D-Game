@@ -1,3 +1,4 @@
+/*
 // Hide when quiz is active
 if (global.quiz_active) {
     visible = false;
@@ -5,7 +6,7 @@ if (global.quiz_active) {
 } else {
     visible = true;
 }
-
+*/
 
 
 // Hide in main menu
@@ -37,7 +38,7 @@ for (var i = 0; i < max_fingers; i++) {
         // Toggle journal on touch/click
         if (hovered && device_mouse_check_button_pressed(i, mb_left)) {
             if (!global.journal_open) {
-                with (obj_joystick_base) enabledJOY = false; // disable joystick
+                with (obj_joystick_base) global.enabledJOY = false; // disable joystick
                 sc_invisible_layer(["right_option_layer", "pause_button_layer"]);
                 global.journal_open = true;
 

@@ -1,1 +1,1 @@
-global.quiz_active = false;
+//global.quiz_active = false;

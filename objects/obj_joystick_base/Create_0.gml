@@ -1,4 +1,4 @@
-enabledJOY = true;
+global.enabledJOY = true;
 
 
 joyX = 0;
