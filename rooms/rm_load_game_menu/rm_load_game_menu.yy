@@ -6,14 +6,14 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_60540D5F_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
+    {"name":"inst_7B084861","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
+    {"name":"inst_2FF086D6","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_313CC11A_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
-    {"name":"inst_641F4A2F_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_3E628B8D_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_7E360733_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
+    {"name":"inst_641F4A2F_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
+    {"name":"inst_60540D5F_1","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
     {"name":"inst_48DB1E33","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
-    {"name":"inst_2FF086D6","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
-    {"name":"inst_7B084861","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
