@@ -6,7 +6,7 @@
   "name":"sc_state_slot2_save",
   "parent":{
     "name":"Save Game Resources",
-    "path":"folders/Scripts/Save Game Resources.yy",
+    "path":"folders/FileHandlingSystem/Save Game Resources.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
