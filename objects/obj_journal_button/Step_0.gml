@@ -1,3 +1,13 @@
+// Hide when quiz is active
+if (global.quiz_active) {
+    visible = false;
+    exit;
+} else {
+    visible = true;
+}
+
+
+
 // Hide in main menu
 if ((room == rm_main_menu) || (room == rm_load_game_menu)) {
     visible = false;
