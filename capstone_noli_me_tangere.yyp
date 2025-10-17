@@ -622,6 +622,7 @@
     {"id":{"name":"rm_chapter58_sinumpa","path":"rooms/rm_chapter58_sinumpa/rm_chapter58_sinumpa.yy",},},
     {"id":{"name":"rm_chapter60_kasalNiMariaClara","path":"rooms/rm_chapter60_kasalNiMariaClara/rm_chapter60_kasalNiMariaClara.yy",},},
     {"id":{"name":"rm_chapter61_habulanSaLawa","path":"rooms/rm_chapter61_habulanSaLawa/rm_chapter61_habulanSaLawa.yy",},},
+    {"id":{"name":"rm_chapter7_ligawan_sa_asotea_1","path":"rooms/rm_chapter7_ligawan_sa_asotea_1/rm_chapter7_ligawan_sa_asotea_1.yy",},},
     {"id":{"name":"rm_chapter7_ligawan_sa_asotea","path":"rooms/rm_chapter7_ligawan_sa_asotea/rm_chapter7_ligawan_sa_asotea.yy",},},
     {"id":{"name":"rm_chapter8_alaala","path":"rooms/rm_chapter8_alaala/rm_chapter8_alaala.yy",},},
     {"id":{"name":"rm_fonde_de_lala_market","path":"rooms/rm_fonde_de_lala_market/rm_fonde_de_lala_market.yy",},},
@@ -1183,6 +1184,7 @@
     {"roomId":{"name":"rm_house_tasyo_inside","path":"rooms/rm_house_tasyo_inside/rm_house_tasyo_inside.yy",},},
     {"roomId":{"name":"rm_splash","path":"rooms/rm_splash/rm_splash.yy",},},
     {"roomId":{"name":"rm_settings_menu","path":"rooms/rm_settings_menu/rm_settings_menu.yy",},},
+    {"roomId":{"name":"rm_chapter7_ligawan_sa_asotea_1","path":"rooms/rm_chapter7_ligawan_sa_asotea_1/rm_chapter7_ligawan_sa_asotea_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
