@@ -4,7 +4,7 @@ global.file_handling_data = {
 	last_room: rm_fondeDeLala,
 	player_inventory: [],
 };
-
+/*
 // file_handling_save_game(slot_index)
 function file_handling_save_game(_slot) {
     if (_slot == undefined) _slot = global.current_profile;
@@ -34,9 +34,9 @@ function file_handling_load_game(_slot) {
     global.file_handling_data = json_parse(_json);
     return true;
 }
+*/
 
 
-/*
 function file_handling_save_game(){
 	
 	var _string = json_stringify(global.file_handling_data);
@@ -45,7 +45,7 @@ function file_handling_save_game(){
 
 		buffer_write( _buffer, buffer_string, _string);
 
-		buffer_save( _buffer, "NolimeTaaa.txt");
+		buffer_save( _buffer, "NolimeT.txt");
 
 		buffer_delete( _buffer);
 		
@@ -54,9 +54,9 @@ function file_handling_save_game(){
 
 function file_handling_load_game(){
 	
-	if( file_exists( "NolimeTaaa.txt")) 
+	if( file_exists( "NolimeT.txt")) 
 	{
-		var _buffer = buffer_load( "NolimeTaaa.txt");
+		var _buffer = buffer_load( "NolimeT.txt");
 	
 		var _json = buffer_read(_buffer, buffer_string);
 	
@@ -66,4 +66,3 @@ function file_handling_load_game(){
 	}
 	
 }
-*/
