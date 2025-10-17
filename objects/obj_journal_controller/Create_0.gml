@@ -1,9 +1,10 @@
-visible = false;
+
 depth = -1000;
 
 current_tab = "profile";
 
 journal_controller_id = instance_find(obj_journal_controller, 0);
+visible = false;
 global.journal_open = false;
 
 // Tab data
