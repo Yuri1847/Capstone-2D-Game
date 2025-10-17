@@ -197,7 +197,8 @@ chap3_dial1 = [ // one long conversation in table
 	},
 	{
 		name: "Padre Sibyla",
-		msg: "Don Crisostomo, isang kagalakan na ikaw ay nasa piling naming muli."
+		msg: "Don Crisostomo, isang kagalakan na ikaw ay nasa piling naming muli.",
+		portrait: spr_por_salvi
 	},
 	{
 		name: "Narration",
@@ -205,7 +206,8 @@ chap3_dial1 = [ // one long conversation in table
 	},
 	{
 		name: "Padre Damaso",
-		msg: "Ano’ng kabalastugan ito? Ako ba’y isang hamak upang bigyan ng ganito?!"
+		msg: "Ano’ng kabalastugan ito? Ako ba’y isang hamak upang bigyan ng ganito?!",
+		portrait: spr_por_damaso
 	},
 	{
 		name: "Narration",
@@ -213,23 +215,28 @@ chap3_dial1 = [ // one long conversation in table
 	},
 	{
 		name: "Laruja",
-		msg: "Don Crisostomo, gaano ka katagal nawala sa Pilipinas?"
+		msg: "Don Crisostomo, gaano ka katagal nawala sa Pilipinas?",
+		portrait: spr_por_laruja
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Mahigit pitong taon. Ngunit kailanman, hindi ko nakalimutan ang bayang ito."
+		msg: "Mahigit pitong taon. Ngunit kailanman, hindi ko nakalimutan ang bayang ito.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Ngunit sa aking pagbabalik, tila Pilipinas ang nakalimot sa akin. Walang nagbalita ukol sa sinapit ng aking ama, si Don Rafael."
+		msg: "Ngunit sa aking pagbabalik, tila Pilipinas ang nakalimot sa akin. Walang nagbalita ukol sa sinapit ng aking ama, si Don Rafael.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Donya Victoria",
-		msg: "Kung gayon, bakit hindi ka na lamang tumelegrama? Mas madali sana iyon"
+		msg: "Kung gayon, bakit hindi ka na lamang tumelegrama? Mas madali sana iyon",
+		portrait: spr_por_victoria
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Dalawang taon akong nasa ibang bayan, malayo sa lahat. Walang paraan upang makipag-ugnayan"
+		msg: "Dalawang taon akong nasa ibang bayan, malayo sa lahat. Walang paraan upang makipag-ugnayan",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -244,8 +251,9 @@ chap4_dial1 = [
 		msg: "(Gabi. Lumabas si Ibarra upang makalanghap ng sariwang hangin. Tahimik ang paligid habang binabaybay niya ang daan papuntang plasa ng Binondo.)"
 	},
 	{
-		name: "Crisostomo Ibarra (walang tunog na paghinga)",
-		msg: "Pitong taon akong nawala… ngunit parang isang gabi lang ang lumipas. Walang nagbago. Ang mga tindera pa rin ng prutas at gulay, naroon pa rin. Parang hindi umusad ang siyudad na ito.."
+		name: "Crisostomo Ibarra ",
+		msg: "(walang tunog na paghinga)Pitong taon akong nawala… ngunit parang isang gabi lang ang lumipas. Walang nagbago. Ang mga tindera pa rin ng prutas at gulay, naroon pa rin. Parang hindi umusad ang siyudad na ito..",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -253,11 +261,13 @@ chap4_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Ah! Tinyente Guevarra! Matagal ko na sanang gustong itanong… Alam niyo po ba kung bakit nabilanggo ang aking ama?"
+		msg: "Ah! Tinyente Guevarra! Matagal ko na sanang gustong itanong… Alam niyo po ba kung bakit nabilanggo ang aking ama?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Oo, Don Crisóstomo. Alam ko ang nangyari. Halina, maglakad tayo—at ikukuwento ko sa iyo."
+		msg: "Oo, Don Crisóstomo. Alam ko ang nangyari. Halina, maglakad tayo—at ikukuwento ko sa iyo.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Narration",
@@ -265,23 +275,28 @@ chap4_dial1 = [
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Ang iyong ama, si Don Rafael Ibarra, ang pinakamayaman at pinakagalang sa aming lalawigan. Marami siyang natulungan, ngunit marami ring naiinggit at nagagalit sa kanya. Isa na riyan si Padre Dámaso."
+		msg: "Ang iyong ama, si Don Rafael Ibarra, ang pinakamayaman at pinakagalang sa aming lalawigan. Marami siyang natulungan, ngunit marami ring naiinggit at nagagalit sa kanya. Isa na riyan si Padre Dámaso.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Madalas silang magtalo. Hanggang sa akusahan si Don Rafael na erehe, dahil daw hindi siya nangungumpisal."
+		msg: "Madalas silang magtalo. Hanggang sa akusahan si Don Rafael na erehe, dahil daw hindi siya nangungumpisal.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(halatang naguguluhan)Erehe? Ang aking ama? Hindi ko matanggap iyon."
+		msg: "(halatang naguguluhan)Erehe? Ang aking ama? Hindi ko matanggap iyon.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Pakinggan mo muna. Noong mga panahong iyon, may isang Kastilang artilyero— isang hangal na palaging pinagtatawanan ng mga bata."
+		msg: "Pakinggan mo muna. Noong mga panahong iyon, may isang Kastilang artilyero— isang hangal na palaging pinagtatawanan ng mga bata.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Isang araw, sa tindi ng galit, binato niya ng baston ang mga bata. Tinamaan ang isa sa ulo at natumba. Nang hindi pa nakontento, sinipa pa niya ang bata."
+		msg: "Isang araw, sa tindi ng galit, binato niya ng baston ang mga bata. Tinamaan ang isa sa ulo at natumba. Nang hindi pa nakontento, sinipa pa niya ang bata.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Narration",
@@ -289,31 +304,38 @@ chap4_dial1 = [
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Sakto namang napadaan ang iyong ama. Hinawakan niya ang artilyero sa bisig upang awatin, ngunit inakala ng mga tao na siya ang nananakit."
+		msg: "Sakto namang napadaan ang iyong ama. Hinawakan niya ang artilyero sa bisig upang awatin, ngunit inakala ng mga tao na siya ang nananakit.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Nagpumiglas ang artilyero, nadulas, tumama ang ulo sa bato, at doon namatay."
+		msg: "Nagpumiglas ang artilyero, nadulas, tumama ang ulo sa bato, at doon namatay.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(kitang-kita ang lungkot) Kaya pala… ang kabutihan ng ama ko’y naging dahilan pa ng kanyang pagkasawi."
+		msg: "(kitang-kita ang lungkot) Kaya pala… ang kabutihan ng ama ko’y naging dahilan pa ng kanyang pagkasawi.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Tama ka. Nang mamatay ang artilyero, si Don Rafael ang sinisi. Inimbestigahan siya at ikinulong."
+		msg: "Tama ka. Nang mamatay ang artilyero, si Don Rafael ang sinisi. Inimbestigahan siya at ikinulong.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "oon lumabas ang mga lihim niyang kaaway, at nagsilabasan ang mga huwad na saksi laban sa kanya. Tinawag siyang erehe at pilibustero."
+		msg: "oon lumabas ang mga lihim niyang kaaway, at nagsilabasan ang mga huwad na saksi laban sa kanya. Tinawag siyang erehe at pilibustero.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "At walang tumulong sa kanya?"
+		msg: "At walang tumulong sa kanya?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Sinubukan kong ipagtanggol siya, ngunit walang naglakas-loob. Lahat ay takot na madamay. Hanggang sa tuluyan siyang namatay sa kulungan, walang pamilya o kaibigang nakiramay."
+		msg: "Sinubukan kong ipagtanggol siya, ngunit walang naglakas-loob. Lahat ay takot na madamay. Hanggang sa tuluyan siyang namatay sa kulungan, walang pamilya o kaibigang nakiramay.",
+		portrait: spr_por_guevarra
 	},	
 	{
 		name: "Narration",
@@ -321,7 +343,8 @@ chap4_dial1 = [
 	},
 	{
 		name: "Tiniente Guevarra",
-		msg: "Nakakalungkot, Don Crisóstomo. Nang siya’y patay na, saka lamang napatunayan na siya ay walang sala."
+		msg: "Nakakalungkot, Don Crisóstomo. Nang siya’y patay na, saka lamang napatunayan na siya ay walang sala.",
+		portrait: spr_por_guevarra
 	},
 	{
 		name: "Narration",
@@ -329,7 +352,8 @@ chap4_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Ama… Hindi ako papayag na manatiling madungisan ang iyong pangalan. Babangon ang San Diego, at maririnig muli ang kabutihan mo."
+		msg: "Ama… Hindi ako papayag na manatiling madungisan ang iyong pangalan. Babangon ang San Diego, at maririnig muli ang kabutihan mo.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
