@@ -85,7 +85,7 @@ switch (current_tab) {
         draw_text(100, 240, "Level: 3 Scholar");
         draw_text(100, 280, "XP: 1200 / 1500");
         break;
-    case "quiz":
+    case "challenge":
         draw_text(100, 200, "Chapter 1: 90%");
         draw_text(100, 240, "Chapter 2: 85%");
         break;

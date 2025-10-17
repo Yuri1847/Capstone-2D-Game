@@ -8,8 +8,8 @@ visible = false;
 global.journal_open = false;
 
 // Tab data
-tab_titles = ["Profile", "Quizzes", "Notes", "Inventory"];
-tab_keys   = ["profile", "quiz", "notes", "inventory"];
+tab_titles = ["Profile", "Challenges", "Notes", "Inventory"];
+tab_keys   = ["profile", "challenge", "notes", "inventory"];
 tab_y = 50; // top position
 tab_h = sprite_get_height(spr_tab);
 
