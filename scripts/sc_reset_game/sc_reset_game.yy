@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_reset_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_reset_game",
+  "parent":{
+    "name":"FileHandlingSystem",
+    "path":"folders/FileHandlingSystem.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
