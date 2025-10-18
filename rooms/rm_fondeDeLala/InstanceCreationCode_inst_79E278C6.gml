@@ -1,3 +1,5 @@
+id_key = "fonda_de_lala"; // a human-friendly unique key for this board
+
 info = {
     location: "Binondo, Maynila",
     category: "Mga Lugar sa Nobela / Lipunan ng Kolonyal na Panahon",
@@ -6,5 +8,6 @@ info = {
     relevance: "Ginamit ni Rizal ang Fonda de Lala upang tuyain ang kolonyal na pag-iisip, lalo na sa katauhan ni Doña Victorina, na nagpapanggap bilang tunay na Espanyola upang maramdaman ang kataas-taasang katayuan."
 };
 
-has_been_read = false;     // if you want it unread initially
-destroy_on_read = false;   // set true if you want board removed on read
+// ensure read state can be pre-filled by save/load (optional)
+was_read = false;
+
