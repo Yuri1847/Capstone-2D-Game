@@ -37,10 +37,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ui_loading_frame",
-    "path":"sprites/spr_ui_loading_frame/spr_ui_loading_frame.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

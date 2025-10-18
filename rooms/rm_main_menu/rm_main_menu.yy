@@ -25,6 +25,8 @@
     {"name":"inst_18D4D25D","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_15246868","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_E4CBAF0","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+<<<<<<< HEAD
+=======
     {"name":"inst_28FE2CA5","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_2005EBB8","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_22522AD6","path":"roomui/RoomUI/RoomUI.yy",},
@@ -63,6 +65,10 @@
     {"name":"inst_355CCC1","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1C2EA1E1","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_F924572","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5bc5cd359db5595faa2d936e4064359e4bb75e20
+>>>>>>> Stashed changes
   ],
   "isDnd":false,
   "layers":[
