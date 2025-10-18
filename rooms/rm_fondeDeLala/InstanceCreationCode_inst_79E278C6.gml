@@ -5,3 +5,6 @@ info = {
     background: "Noong panahon ng Espanyol, ang mga fonda ay mga bahay-kainan at tuluyan para sa mga mestiso at Espanyol. Ang Fonda de Lala ay sumasalamin sa mga Pilipinong ginagaya ang asal at kultura ng mga Europeo.",
     relevance: "Ginamit ni Rizal ang Fonda de Lala upang tuyain ang kolonyal na pag-iisip, lalo na sa katauhan ni Doña Victorina, na nagpapanggap bilang tunay na Espanyola upang maramdaman ang kataas-taasang katayuan."
 };
+
+has_been_read = false;     // if you want it unread initially
+destroy_on_read = false;   // set true if you want board removed on read

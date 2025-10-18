@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Bordered_SignBoard",
-    "path":"sprites/spr_Bordered_SignBoard/spr_Bordered_SignBoard.yy",
+    "name":"spr_Bordered_Double_SignBoard",
+    "path":"sprites/spr_Bordered_Double_SignBoard/spr_Bordered_Double_SignBoard.yy",
   },
   "spriteMaskId":null,
   "visible":true,

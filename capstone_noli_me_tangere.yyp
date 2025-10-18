@@ -941,6 +941,7 @@
     {"id":{"name":"spr_quiz_submit","path":"sprites/spr_quiz_submit/spr_quiz_submit.yy",},},
     {"id":{"name":"spr_quiz_wrong","path":"sprites/spr_quiz_wrong/spr_quiz_wrong.yy",},},
     {"id":{"name":"spr_rake","path":"sprites/spr_rake/spr_rake.yy",},},
+    {"id":{"name":"spr_read","path":"sprites/spr_read/spr_read.yy",},},
     {"id":{"name":"spr_ready_use_house","path":"sprites/spr_ready_use_house/spr_ready_use_house.yy",},},
     {"id":{"name":"spr_right_damaso","path":"sprites/spr_right_damaso/spr_right_damaso.yy",},},
     {"id":{"name":"spr_right_gue","path":"sprites/spr_right_gue/spr_right_gue.yy",},},
