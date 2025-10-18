@@ -4,24 +4,72 @@
 global.story_quests = [
     {
         title: "Maglibot libot sa lugar",
-        description: "Kakarating mo lng galing pier. Maglibot libot sa lugar upang maging pamilyar.",
+        description: "Kakarating lng niya galing Europa. Naglibot libot muna.",
         completed: false
     },
+	//chap 2 start
     {
         title: "Handaan",
-        description: "Pumasok sa ginaganap na handaan.",
+        description: "Pumasok siya sa ginaganap na handaan.",
         completed: false
     },
     {
-        title: "Deliver the Message",
-        description: "Bring the Elder’s message to the guard captain.",
+        title: "Lumapit si Ibarra sa Kapitan",
+        description: "Ipapakilala siya niya sa iba pang dumalo.",
         completed: false
     },
     {
-        title: "Enter the Forest",
-        description: "Head east to the forest entrance to begin your journey.",
+        title: "Bumati is Ibarra sa Padre",
+        description: "Nakita niya ang Padre at babatiin ito",
         completed: false
-    }
+    },
+	{
+        title: "Lumapit si Ibarra sa Tiniente",
+        description: "Kinausap naman siya ng isang Tiniente",
+        completed: false
+    },
+	{
+        title: "Kinausap ni Ibarra ang mga dilag.",
+        description: "Bumati siya sa mga hiyas ng pilipinas.",
+        completed: false
+    },
+	{
+        title: "Nagpakilala si Ibarra sa mga kalalakihan",
+        description: "Bumati siya gamit ang kaugaliang Alemanya",
+        completed: false
+    },
+	{
+        title: "Kinausap si Ibarra ng isang Kapitan",
+        description: "Inalok siya ng Kapitan na dumayo sa kaniyang tahanan",
+        completed: false
+    },
+	
+	{// 8 on story script
+        title: "Pumunta si Ibarra sa kainan.",
+        description: "Handa na ang pagkain ani ng Katulong",
+        completed: false
+    },
+	//chapter 3
+	{ //9
+        title: "Hapunan",
+        description: "Kinakausap ka ng mga nasa hapag.",
+        completed: false
+    },
+	{
+        title: "ssss",
+        description: "ssss",
+        completed: false
+    },
+	{
+        title: "ssss",
+        description: "ssss",
+        completed: false
+    },
+	{
+        title: "ssss",
+        description: "ssss",
+        completed: false
+    },
 ];
 
 global.current_story_index = 0; // start at first quest

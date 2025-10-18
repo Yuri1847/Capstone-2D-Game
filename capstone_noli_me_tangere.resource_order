@@ -527,6 +527,7 @@
     {"name":"sc_state_slot3_save","order":4,"path":"scripts/sc_state_slot3_save/sc_state_slot3_save.yy",},
     {"name":"sc_tilemap_converter","order":1,"path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},
     {"name":"sc_visible_layer","order":1,"path":"scripts/sc_visible_layer/sc_visible_layer.yy",},
+    {"name":"scr_dialogue_seq","order":7,"path":"scripts/scr_dialogue_seq/scr_dialogue_seq.yy",},
     {"name":"scr_story_get_current","order":3,"path":"scripts/scr_story_get_current/scr_story_get_current.yy",},
     {"name":"scr_story_next","order":2,"path":"scripts/scr_story_next/scr_story_next.yy",},
     {"name":"submit_quiz","order":7,"path":"scripts/submit_quiz/submit_quiz.yy",},

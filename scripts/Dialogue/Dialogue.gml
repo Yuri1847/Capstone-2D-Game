@@ -172,9 +172,9 @@ chap2_dial6 = [ // then tinong talk to ibarra
 		msg: "Sayang! Kung gayon, sa pagbabalik ninyo na lamang.",
 		portrait: spr_por_tinong
 	},
-	
+/*	
 ]
-chap2_dial7 = [ // katulong talk to audience for hapunan
+chap2_dial7 = [ // katulong talk to audience for hapunan*/
 	{
 		name: "Narration",
 		msg: "(Dumating ang isang lingkod mula sa Café “La Campana.”)"

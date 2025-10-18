@@ -667,6 +667,7 @@
     {"id":{"name":"sc_state_slot3_save","path":"scripts/sc_state_slot3_save/sc_state_slot3_save.yy",},},
     {"id":{"name":"sc_tilemap_converter","path":"scripts/sc_tilemap_converter/sc_tilemap_converter.yy",},},
     {"id":{"name":"sc_visible_layer","path":"scripts/sc_visible_layer/sc_visible_layer.yy",},},
+    {"id":{"name":"scr_dialogue_seq","path":"scripts/scr_dialogue_seq/scr_dialogue_seq.yy",},},
     {"id":{"name":"scr_story_get_current","path":"scripts/scr_story_get_current/scr_story_get_current.yy",},},
     {"id":{"name":"scr_story_init","path":"scripts/scr_story_init/scr_story_init.yy",},},
     {"id":{"name":"scr_story_next","path":"scripts/scr_story_next/scr_story_next.yy",},},
