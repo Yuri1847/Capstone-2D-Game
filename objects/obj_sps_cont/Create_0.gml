@@ -1,0 +1,1 @@
+scr_story_init();
