@@ -14,3 +14,5 @@ dialog_y = display_get_gui_height() / 2;
 btn_yes_x = dialog_x - 60;
 btn_no_x  = dialog_x + 60;
 btn_y     = dialog_y + 50;
+
+isEnabled = false;

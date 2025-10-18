@@ -45,7 +45,7 @@ for (var i = 0; i < 3; i++) {
 									
 									sc_invisible_layer(["load_game_menu_layer"])
 									sc_visible_layer(["load_slot1_main_dialog_layer"])
-									instance_activate_object(obj_dialog_box_shadow)
+									
 									instance_deactivate_object(id)
 								}else {
 								//sfx
@@ -65,7 +65,7 @@ for (var i = 0; i < 3; i++) {
 									
 									sc_invisible_layer(["load_game_menu_layer"])
 									sc_visible_layer(["load_slot2_main_dialog_layer"])
-									instance_activate_object(obj_dialog_box_shadow)
+
 									instance_deactivate_object(id)
 								}else {
 								//sfx
@@ -85,7 +85,7 @@ for (var i = 0; i < 3; i++) {
 									
 									sc_invisible_layer(["load_game_menu_layer"])
 									sc_visible_layer(["load_slot3_main_dialog_layer"])
-									instance_activate_object(obj_dialog_box_shadow)
+								
 									instance_deactivate_object(id)
 								}else {
 								//sfx

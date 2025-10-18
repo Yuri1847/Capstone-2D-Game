@@ -1,6 +1,8 @@
+if(!isEnabled) exit;
 // obj_dialog_box - Step Event
 if (dialog_active)
 {
+	
     var mx = device_mouse_x_to_gui(0);
     var my = device_mouse_y_to_gui(0);
 
@@ -23,7 +25,9 @@ if (dialog_active)
             btn_no_x - btn_width/2, btn_y - btn_height/2,
             btn_no_x + btn_width/2, btn_y + btn_height/2))
         {
-            instance_destroy(); // Close the dialog
+			sc_visible_layer(["pause_layer"])
+			isEnabled = false;
+            if(!isEnabled) exit;
 			//show_debug_message("no")
         }
     }

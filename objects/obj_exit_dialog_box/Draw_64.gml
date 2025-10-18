@@ -1,3 +1,16 @@
+if(!isEnabled) exit;
+// Draw the shadow background
+draw_set_alpha(0.5);
+draw_sprite_stretched(
+    spr_dialog_box_shadow,
+    0,
+    0,
+    0,
+    display_get_gui_width(),
+    display_get_gui_height()
+);
+draw_set_alpha(1);
+
 // obj_dialog_box - Draw GUI Event
 if (dialog_active)
 {

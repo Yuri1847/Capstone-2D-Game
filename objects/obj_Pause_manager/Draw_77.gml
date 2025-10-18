@@ -25,6 +25,7 @@ function update_pause(){
 		instance_activate_object(obj_talk_button)
 		instance_activate_object(obj_slider_bar)
 		instance_activate_object(obj_Background_Music_Manager)
+		instance_activate_object(obj_exit_dialog_box)
 		//NOTE:
 		//If you need to pause anything like animating sprites, tiles, room backgrounds etc
 		//you need to do that separately, unfortunately!
