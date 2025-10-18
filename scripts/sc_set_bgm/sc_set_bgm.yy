@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"sc_set_bgm",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Audio",
+    "path":"folders/Scripts/Audio.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
