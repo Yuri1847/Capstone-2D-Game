@@ -43,14 +43,14 @@ function scr_dialogue_seq(){
 		    }
 			//chapter 3
 			else if (messages == global.chap3_dial1) {
-				if (global.current_story_index == 8) {
+				if (global.current_story_index == 9) {
 				    scr_story_next();
 				}
 		        global.current_dialogue = global.chap4_dial1; 
 		    }
 			//chapter 4
 			else if (messages == global.chap4_dial1) {
-				if (global.current_story_index == 8) {
+				if (global.current_story_index == 11) {
 				    scr_story_next();
 				}
 		        global.current_dialogue = global.chap5_dial1; 
