@@ -535,7 +535,7 @@ chap7_dial2 = [
 ]
 
 //chapter 8 ang mga alala
-chap7_dial1 = [
+chap8_dial1 = [
 	{
 		name: "Narration",
 		msg: "(Ang kalungkutang naramdaman ni Ibarra sa pag-alis niya sa bahay ni Maria Clara ay napalitan ng kagalakan nang libutin niya ang kamaynilaan sakay sa kalesa.)"

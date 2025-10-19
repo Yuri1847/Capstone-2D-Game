@@ -29,6 +29,8 @@ if (instance_exists(obj_player)) {
     // === Trigger dialogue when close enough and tapped anywhere ===
     if (can_talk && !dialogue_active && touched) {
         npc_can_move = false;
+		obj_Pause_manager.pause = true;
+		obj_Pause_manager.update_pause();
         create_dialogue(dialog); // pass self as speaker
     }
 }

@@ -44,10 +44,13 @@ else {
         current_message++;
         if (current_message >= array_length(messages)) {
             with (obj_npc_parent) {
+				
                 npc_can_move = true;
             }
 				// === SIMPLE DIALOGUE SEQUENCE CHECK ===
 			scr_dialogue_seq()
+			obj_Pause_manager.pause = false;
+				obj_Pause_manager.update_pause();
             instance_destroy();
         } else {
             current_char = 0;
