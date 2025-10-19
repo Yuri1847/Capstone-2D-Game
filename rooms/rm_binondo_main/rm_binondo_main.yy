@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_binondo_main",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_binondo_main/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
