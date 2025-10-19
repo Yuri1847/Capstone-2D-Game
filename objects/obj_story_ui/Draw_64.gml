@@ -14,7 +14,7 @@ var line_gap    = gui_h * 0.04;   // vertical spacing between lines
 
 // Draw setup
 draw_set_font(fnt_sps_obj);
-draw_set_color(c_white);
+draw_set_color(c_black);
 draw_set_alpha(1);
 
 // Ensure left alignment

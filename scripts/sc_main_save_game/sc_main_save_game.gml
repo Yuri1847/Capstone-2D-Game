@@ -3,6 +3,7 @@ global.file_handling_data = {
 	player_y: 384,
 	last_room: rm_fondeDeLala,
 	player_inventory: [],
+	player_name: "Crisostomo Ibarra",
 };
 
 

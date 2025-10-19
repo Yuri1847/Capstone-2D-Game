@@ -81,22 +81,26 @@ if (visible) {
 // Draw active tab content
 switch (current_tab) {
     case "profile":
-        draw_text(100, 200, "Name: Don Juan");
-        draw_text(100, 240, "Level: 3 Scholar");
-        draw_text(100, 280, "XP: 1200 / 1500");
+        draw_text(100, 200, "Name: " + global.file_handling_data.player_name);
+        draw_text(100, 240, "Level:");
+        draw_text(100, 280, "Knowledge:");
         break;
     case "challenge":
-        draw_text(100, 200, "Chapter 1: 90%");
-        draw_text(100, 240, "Chapter 2: 85%");
+        draw_text(100, 200, "Chapter 1: Crisostomo Ibarra");
+	   draw_text(100, 240, "Chapter 2: Hapunan");
+	   draw_text(100, 240, "Chapter 3: Erehe at Filibustero");
+	   draw_text(100, 240, "Chapter 4: Liwanag sa Gabing Madilim");
+	   draw_text(100, 240, "Chapter 5: Ligawan sa Asotea");
+	   draw_text(100, 240, "Chapter 6: Ang mga Alala");
         break;
     case "notes":
-        draw_text(100, 200, "Unlocked Notes: 5 / 20");
-        draw_text(100, 240, "- The Friar’s Feast");
-        draw_text(100, 260, "- Letters of Maria Clara");
+        draw_text(100, 200, "Unlocked Notes:");
+        //draw_text(100, 240, "- The Friar’s Feast");
+        //draw_text(100, 260, "- Letters of Maria Clara");
         break;
-    case "inventory":
-        draw_text(100, 200, "Artifacts:");
-        draw_text(120, 240, "- Jose Rizal's Book");
-        draw_text(120, 260, "- Old Map of San Diego");
+    case "Tutorial":
+        //draw_text(100, 200, "Artifacts:");
+        //draw_text(120, 240, "- Jose Rizal's Book");
+        //draw_text(120, 260, "- Old Map of San Diego");
         break;
 }
