@@ -1,3 +1,6 @@
+
+
+
 /*
 if (targetRoom != noone) {
     global.warp_spawn_x = targetX;
@@ -52,6 +55,7 @@ if (!has_quiz) {
     }
     t.fading_out = true;
     t.next_room = targetRoom;
+	
 	
 	
 }
