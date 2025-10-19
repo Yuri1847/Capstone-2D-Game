@@ -14,7 +14,6 @@
     {"name":"Transition","order":13,"path":"folders/Objects/FUNCTIONS/Transition.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_dialog_box_shadow","order":2,"path":"objects/obj_dialog_box_shadow/obj_dialog_box_shadow.yy",},
     {"name":"obj_exit_dialog_box","order":1,"path":"objects/obj_exit_dialog_box/obj_exit_dialog_box.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},
     {"name":"obj_gotoCemetery","order":1,"path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},

@@ -8,7 +8,7 @@ btn_height = sprite_get_height(spr_dialog_box_button);
 
 // Dialog position (centered)
 dialog_x = (display_get_width() / 2 - 700/2);
-dialog_y = (display_get_height() / 2 - 300/2);
+dialog_y = (display_get_height() / 2 - 200/2);
 
 // Button positions
 btn_yes_x = dialog_x + 300;
