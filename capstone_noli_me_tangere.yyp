@@ -688,6 +688,7 @@
     {"id":{"name":"snd_inside_room","path":"sounds/snd_inside_room/snd_inside_room.yy",},},
     {"id":{"name":"snd_outside_room","path":"sounds/snd_outside_room/snd_outside_room.yy",},},
     {"id":{"name":"snd_saved_slot","path":"sounds/snd_saved_slot/snd_saved_slot.yy",},},
+    {"id":{"name":"spr_alert","path":"sprites/spr_alert/spr_alert.yy",},},
     {"id":{"name":"spr_anvil_1","path":"sprites/spr_anvil_1/spr_anvil_1.yy",},},
     {"id":{"name":"spr_anvil_2","path":"sprites/spr_anvil_2/spr_anvil_2.yy",},},
     {"id":{"name":"spr_anvil_3","path":"sprites/spr_anvil_3/spr_anvil_3.yy",},},
