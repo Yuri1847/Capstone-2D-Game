@@ -36,11 +36,11 @@ for (var i = 0; i < array_length(options); i++) {
 }
 
 
-if (showing_result) {
-    draw_set_color(c_white);
+if (!showing_result) {
+    draw_set_color(c_red);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(cx, cy + panel_h/2 - 60, result_text);
+    draw_text(cx, cy + panel_h/2, result_text);
 }
 
 

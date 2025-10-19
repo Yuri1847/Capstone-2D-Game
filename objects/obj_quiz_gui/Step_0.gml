@@ -91,7 +91,7 @@ if (!showing_result) {
                         result_sprite = noone;
                         result_text = "Please select an answer!";
                         result_timer = room_speed * 1;
-                        showing_result = true;
+                        showing_result = false;
                     } else {
                         // ✅ Show correct/wrong sprite depending on answer
                         if (selected == correct_index) {
