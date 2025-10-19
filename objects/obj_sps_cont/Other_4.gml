@@ -8,4 +8,6 @@ if (room == rm_anluwage && global.current_story_index == 0) {
     scr_story_next();
 }else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 12) {
     scr_story_next();
+}else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 13) {
+    scr_story_next();
 }
