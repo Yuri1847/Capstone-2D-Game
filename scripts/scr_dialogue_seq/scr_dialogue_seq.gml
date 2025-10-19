@@ -4,6 +4,7 @@ function scr_dialogue_seq(){
 		    if (messages == global.chap2_dial1) {
 		        if (global.current_story_index == 2) {
 				    scr_story_next();
+					global.current_story_npc = 2;
 				}
 
 		        global.current_dialogue = global.chap2_dial2;
