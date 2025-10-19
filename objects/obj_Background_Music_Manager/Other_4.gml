@@ -21,9 +21,12 @@ switch (room_name) {
 	case "rm_binondo_church_inside":
 	case "rm_maria_clara_house_inside_first_floor":
 	case "rm_maria_clara_house_inside_second_floor":
-		sc_set_bgm(snd_inside_room)
+	case "rm_chapter2_crisostomo_ibarra":
+	case "rm_chapter3_hapunan":
+		sc_set_bgm(snd_inside_room);
 		break;
 	case "rm_splash_screen":
+	case "rm_loading_bar_first_map":
 		audio_sound_gain(global.BM_id, 0, 0);
 		break;
     default:
