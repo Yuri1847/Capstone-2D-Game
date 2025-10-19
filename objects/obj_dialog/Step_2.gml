@@ -49,12 +49,12 @@ else {
             }
 				// === SIMPLE DIALOGUE SEQUENCE CHECK ===
 			scr_dialogue_seq()
-			sc_visible_layer([
-			"pause_button_layer",
-			"right_option_layer",
-			])
 			obj_Pause_manager.pause = false;
 			obj_Pause_manager.update_pause();
+			sc_visible_layer([
+				"pause_button_layer",
+				"right_option_layer",
+			]);
             instance_destroy();
         } else {
             current_char = 0;

@@ -2,7 +2,7 @@
 var max_fingers = 5; // GameMaker supports up to 5 simultaneous touches
 
 for (var i = 0; i < max_fingers; i++) {
-    if (device_mouse_check_button(i, mb_left)) {
+    if (device_mouse_check_button_pressed(i, mb_left)) {
         
         // Convert touch coordinates to GUI layer
         var tx = device_mouse_x_to_gui(i);
