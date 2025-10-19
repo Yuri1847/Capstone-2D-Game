@@ -7,8 +7,7 @@ draw_set_color(c_black);
 draw_set_font(fn_quiz);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(cx, cy - panel_h/2 + 40, "Number of Question: "+string(array_length(quiz_data))+"               Score: "+
-string(quiz_score)+"/"+string(array_length(quiz_data)));
+draw_text(cx, cy - panel_h/2 + 40, "Passing Score: 3                  Score: "+string(quiz_score)+"/"+string(total_questions));
 
 
 // Draw question

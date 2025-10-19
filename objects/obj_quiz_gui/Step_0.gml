@@ -27,26 +27,72 @@ if (showing_result) {
     if (result_timer <= 0) {
         // Move to next question if any left
         if (question_index + 1 < total_questions) {
+			
             quiz_show(quiz_data, question_index + 1);
         } else {
-            // ✅ Finished all questions → trigger warp
-            if (global.quiz_pending_warp) {
+			
+			// ✅ Finished all questions → trigger warp
+	        if (global.quiz_pending_warp) {
                 
-                // ✅ Make sure the spawn coordinates are set FIRST
-                global.warp_spawn_x = global.quiz_target_x;
-                global.warp_spawn_y = global.quiz_target_y;
+				//checking score
+				if (quiz_score >= 3) {
+				    // ✅ Passed
+				    global.warp_spawn_x = global.quiz_target_x;
+				    global.warp_spawn_y = global.quiz_target_y;
 
-                // ✅ Then create the fade transition
-                var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
-                t.fading_out = true;
-                t.next_room = global.quiz_target_room;
+				    var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+				    t.fading_out = true;
+				    t.next_room = global.quiz_target_room;
 
-                // ✅ Finally, clear the warp flag
-                global.quiz_pending_warp = false;
-            }
+				    global.quiz_pending_warp = false;
+				    global.quiz_active = false; // ✅ mark quiz as finished
 
-            // Clean up GUI after finishing quiz
-            instance_destroy();
+				} else {
+					// ❌ Score failed
+					show_toast("Bagsak na pagsusulit, Pakiusap uulitin ang pagsusulit.");
+					
+					var room_name = room_get_name(room);
+
+					switch (room_name) {
+					    case "rm_chapter2_crisostomo_ibarra":
+							// Move player back (adjust coordinates)
+							with (obj_player) {
+								x = 1055;
+								y = 738;
+							}
+							break;
+					    case "rm_chapter3_hapunan": 
+							// Move player back (adjust coordinates)
+							with (obj_player) {
+								x = 884;
+								y = 673;
+							}
+							break;
+					}
+
+					// Reset quiz state so player can retry
+					global.quiz_pending_warp = false;
+					global.quiz_target_room = noone;
+					global.quiz_target_x = 0;
+					global.quiz_target_y = 0;
+
+					// Allow reactivation on next collision
+					with (obj_warp) {
+					    quiz_active = false;
+					}
+
+					// Reset quiz variables
+					with (obj_quiz_controller) {
+					    quiz_done = false;
+					}
+
+					// Destroy GUI so it can be recreated next time
+					instance_destroy();
+				}
+
+	            // ✅ Finally, clear the warp flag
+	            global.quiz_pending_warp = false;
+	        }
         }
     }
 }
@@ -97,6 +143,12 @@ if (!showing_result) {
                         if (selected == correct_index) {
                             result_sprite = spr_quiz_correct;
 							quiz_score += 1;
+							
+							if(quiz_score >= 5){
+								show_toast("Galing nakakuha ka ng perfect score!!")
+							}
+							
+							
                         } else {
                             result_sprite = spr_quiz_wrong;
                         }
