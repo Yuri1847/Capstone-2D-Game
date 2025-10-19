@@ -3,6 +3,7 @@
   "%Name":"obj_victoria_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_victoria_2",
@@ -11,10 +12,7 @@
     "name":"Part_2",
     "path":"folders/Objects/NPC/Level_1/Part_2.yy",
   },
-  "parentObjectId":{
-    "name":"obj_npc_parent",
-    "path":"objects/obj_npc_parent/obj_npc_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
