@@ -72,6 +72,40 @@ global.story_quests = [
 	    description: "Ipagpatuloy ang paglalakad patungo sa iyong tinutuluyan.",
 	    completed: false
 	},
+	//chapter 5
+	{//13
+	    title: "Liwanag sa Gabing Madilim",
+	    description: "Nagmuni muni si Ibarra mga nalaman tungkol sa ama.",
+	    completed: false
+	},
+	//chapter 6
+	{//14
+	    title: "Pumunta sa bahay ni Kapitan Tiago",
+	    description: "Bumalik si Ibarra upang bisitahin si Maria Clara.",
+	    completed: false
+	},
+	//chapter 7
+	{//15
+	    title: "Ligawan sa Asotea",
+	    description: "Bumalik si Ibarra upang bisitahin si Maria Clara.",
+	    completed: false
+	},
+	{//16
+	    title: "Lumapit sa Kapitan",
+	    description: "Tinanong ni Ibarra kung nasaan and dilag.",
+	    completed: false
+	},
+	{//17
+	    title: "Kausapin ang dilag",
+	    description: "Nag usap ng masinsinan and dalawa.",
+	    completed: false
+	},
+	//chapter 8
+	{//18
+	    title: "Ang mga ala ala",
+	    description: "Nagpaalam at umalis na si Ibarra patungong San Diego.",
+	    completed: false
+	},
 
 ];
 

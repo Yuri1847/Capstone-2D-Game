@@ -1,5 +1,8 @@
 {
   "FolderOrderSettings":[
+    {"name":"object with dialogues","order":12,"path":"folders/Dialogue_System/object with dialogues.yy",},
+    {"name":"Portraits","order":10,"path":"folders/Dialogue_System/Portraits.yy",},
+    {"name":"setPort","order":11,"path":"folders/Dialogue_System/Portraits/setPort.yy",},
     {"name":"Audio","order":3,"path":"folders/Objects/FUNCTIONS/Audio.yy",},
     {"name":"Inventory System","order":4,"path":"folders/Objects/FUNCTIONS/Inventory System.yy",},
     {"name":"Joystick","order":5,"path":"folders/Objects/FUNCTIONS/Joystick.yy",},
@@ -12,10 +15,43 @@
     {"name":"Splash Screen and Exit Dialog Box","order":12,"path":"folders/Objects/FUNCTIONS/Splash Screen and Exit Dialog Box.yy",},
     {"name":"State Slots","order":14,"path":"folders/Objects/FUNCTIONS/State Slots.yy",},
     {"name":"Transition","order":13,"path":"folders/Objects/FUNCTIONS/Transition.yy",},
+    {"name":"chapter 7 Ligawan sa Asotea","order":1,"path":"folders/Rooms/Main_Rooms/chapter 7 Ligawan sa Asotea.yy",},
+    {"name":"mariaclara","order":1,"path":"folders/Sprites/NPC/mariaclara.yy",},
+    {"name":"idle","order":1,"path":"folders/Sprites/NPC/mariaclara/idle.yy",},
   ],
   "ResourceOrderSettings":[
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    {"name":"obj_dialog_box_shadow","order":2,"path":"objects/obj_dialog_box_shadow/obj_dialog_box_shadow.yy",},
+    {"name":"obj_dialog","order":9,"path":"objects/obj_dialog/obj_dialog.yy",},
+    {"name":"obj_dialTest","order":3,"path":"objects/obj_dialTest/obj_dialTest.yy",},
+=======
+>>>>>>> 989a5bc7c5e1586b24adf55f465eb6c7edf01848
+>>>>>>> Stashed changes
     {"name":"obj_exit_dialog_box","order":1,"path":"objects/obj_exit_dialog_box/obj_exit_dialog_box.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},
     {"name":"obj_gotoCemetery","order":1,"path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},
+    {"name":"obj_npc_parent","order":4,"path":"objects/obj_npc_parent/obj_npc_parent.yy",},
+    {"name":"obj_single_chair_front_with_dialogue","order":1,"path":"objects/obj_single_chair_front_with_dialogue/obj_single_chair_front_with_dialogue.yy",},
+    {"name":"obj_talk_button","order":5,"path":"objects/obj_talk_button/obj_talk_button.yy",},
+    {"name":"obj_triggerCont","order":2,"path":"objects/obj_triggerCont/obj_triggerCont.yy",},
+    {"name":"rm_maria_clara_house_inside_first_floor","order":1,"path":"rooms/rm_maria_clara_house_inside_first_floor/rm_maria_clara_house_inside_first_floor.yy",},
+    {"name":"rm_maria_clara_house_inside_second_floor","order":2,"path":"rooms/rm_maria_clara_house_inside_second_floor/rm_maria_clara_house_inside_second_floor.yy",},
+    {"name":"Dialogue","order":1,"path":"scripts/Dialogue/Dialogue.yy",},
+    {"name":"spr_dialog_box","order":7,"path":"sprites/spr_dialog_box/spr_dialog_box.yy",},
+    {"name":"spr_por_damaso","order":9,"path":"sprites/spr_por_damaso/spr_por_damaso.yy",},
+    {"name":"spr_por_ibarra","order":8,"path":"sprites/spr_por_ibarra/spr_por_ibarra.yy",},
+    {"name":"spr_por_kababaihan_1","order":1,"path":"sprites/spr_por_kababaihan_1/spr_por_kababaihan_1.yy",},
+    {"name":"spr_por_kalalakihan_1","order":5,"path":"sprites/spr_por_kalalakihan_1/spr_por_kalalakihan_1.yy",},
+    {"name":"spr_por_laruja","order":6,"path":"sprites/spr_por_laruja/spr_por_laruja.yy",},
+    {"name":"spr_por_makata","order":2,"path":"sprites/spr_por_makata/spr_por_makata.yy",},
+    {"name":"spr_por_mariaclara","order":12,"path":"sprites/spr_por_mariaclara/spr_por_mariaclara.yy",},
+    {"name":"spr_por_salvi","order":10,"path":"sprites/spr_por_salvi/spr_por_salvi.yy",},
+    {"name":"spr_por_tiago","order":7,"path":"sprites/spr_por_tiago/spr_por_tiago.yy",},
+    {"name":"spr_por_tinong","order":4,"path":"sprites/spr_por_tinong/spr_por_tinong.yy",},
+    {"name":"spr_por_victoria","order":3,"path":"sprites/spr_por_victoria/spr_por_victoria.yy",},
+    {"name":"spr_talk_button","order":6,"path":"sprites/spr_talk_button/spr_talk_button.yy",},
+    {"name":"spr_talk","order":8,"path":"sprites/spr_talk/spr_talk.yy",},
   ],
 }

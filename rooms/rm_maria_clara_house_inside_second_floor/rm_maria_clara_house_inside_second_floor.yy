@@ -318,8 +318,8 @@
   ],
   "name":"rm_maria_clara_house_inside_second_floor",
   "parent":{
-    "name":"Anluwage",
-    "path":"folders/Rooms/Main_Rooms/Anluwage.yy",
+    "name":"chapter 7 Ligawan sa Asotea",
+    "path":"folders/Rooms/Main_Rooms/chapter 7 Ligawan sa Asotea.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

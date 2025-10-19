@@ -369,7 +369,8 @@ chap5_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(umupo sa silya, nagbuntong-hininga) Kay tagal kong nawala… ngunit tila mas mabigat pa rin ang lahat nang aking pagbalik. Ama… bakit kayo ginanito ng tadhana?"
+		msg: "(umupo sa silya, nagbuntong-hininga) Kay tagal kong nawala… ngunit tila mas mabigat pa rin ang lahat nang aking pagbalik. Ama… bakit kayo ginanito ng tadhana?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -377,7 +378,8 @@ chap5_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(mahina ang tinig) Ang ilog ay payapa, subalit sa kabila’y may kasayahan. Mga tugtugan, tawanan, at liwanag… Ngunit sa puso ko, tanging dilim at dalamhati ang nangingibabaw."
+		msg: "(mahina ang tinig) Ang ilog ay payapa, subalit sa kabila’y may kasayahan. Mga tugtugan, tawanan, at liwanag… Ngunit sa puso ko, tanging dilim at dalamhati ang nangingibabaw.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -385,7 +387,8 @@ chap5_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra ",
-		msg: "(mahina ang tinig) Isang piging… at—(napahinto) Sino yaong dilag? Liwanag sa gitna ng gabi… tila siya lamang ang nagbibigay-buhay sa madilim kong pag-iisip."
+		msg: "(mahina ang tinig) Isang piging… at—(napahinto) Sino yaong dilag? Liwanag sa gitna ng gabi… tila siya lamang ang nagbibigay-buhay sa madilim kong pag-iisip.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -393,7 +396,8 @@ chap5_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(mahina ang tinig) Maria Clara… Ang aking alaala, ang aking inspirasyon. Kay ganda mong tumanaw, tila pinapawi mo ang lahat ng sakit na iniwan ng nakaraan."
+		msg: "(mahina ang tinig) Maria Clara… Ang aking alaala, ang aking inspirasyon. Kay ganda mong tumanaw, tila pinapawi mo ang lahat ng sakit na iniwan ng nakaraan.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -401,7 +405,8 @@ chap5_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(mahina) Sa piling ng iyong alaala, Maria… magtatamo ako ng kapahingahan."
+		msg: "(mahina) Sa piling ng iyong alaala, Maria… magtatamo ako ng kapahingahan.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -419,11 +424,13 @@ chap7_dial1 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Nasaan si Maria Clara, Kapitan Tiyago?"
+		msg: "Nasaan si Maria Clara, Kapitan Tiyago?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "Naroon sa itaas, sa asotea. Tila ikaw na nga ang hinihintay niya maghapon."
+		msg: "Naroon sa itaas, sa asotea. Tila ikaw na nga ang hinihintay niya maghapon.",
+		portrait: spr_por_tiago
 	},
 	{
 		name: "Narration",
@@ -433,15 +440,18 @@ chap7_dial1 = [
 chap7_dial2 = [
 	{
 		name: "Maria Clara",
-		msg: "(namutla, nangingiti) Crisóstomo!"
+		msg: "(namutla, nangingiti) Crisóstomo!",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(lumapit, nagalak)Maria Clara… sa wakas! Matagal kong hinintay ang sandaling ito."
+		msg: "(lumapit, nagalak)Maria Clara… sa wakas! Matagal kong hinintay ang sandaling ito.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Maria Clara",
-		msg: "(namutla, nangingiti)At ako naman, hindi mapakali sa bawat oras ng paghihintay."
+		msg: "(namutla, nangingiti)At ako naman, hindi mapakali sa bawat oras ng paghihintay.",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Narration",
@@ -449,23 +459,28 @@ chap7_dial2 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Naalala mo pa ba ang ating kabataan? Ang ating mga larong walang malisya, ang ating mga tampuhan?"
+		msg: "Naalala mo pa ba ang ating kabataan? Ang ating mga larong walang malisya, ang ating mga tampuhan?",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Maria Clara",
-		msg: "(ngumiti)Paanong di ko malilimutan? May taglay pa ako ng mga dahong iyong ibinigay noon."
+		msg: "(ngumiti)Paanong di ko malilimutan? May taglay pa ako ng mga dahong iyong ibinigay noon.",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "(naglabas ng pitaka)At ito naman ang tuyong dahon ng sambong na iniwan mo sa akin. Araw-araw kong kasama."
+		msg: "(naglabas ng pitaka)At ito naman ang tuyong dahon ng sambong na iniwan mo sa akin. Araw-araw kong kasama.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Maria Clara",
-		msg: "(ngumiti) At ito? (iniabot ni Ibarra ang sulat) Ang liham mo bago ka tumulak sa Europa…"
+		msg: "(ngumiti) At ito? (iniabot ni Ibarra ang sulat) Ang liham mo bago ka tumulak sa Europa…",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Oo. Noon ay puno ako ng pag-asa—ngunit ngayon, pag-ibig ko na ang aking baon."
+		msg: "Oo. Noon ay puno ako ng pag-asa—ngunit ngayon, pag-ibig ko na ang aking baon.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -473,15 +488,18 @@ chap7_dial2 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Maria, kailangan kong magtungo sa San Diego. Marami pa akong kailangang ayusin para sa aking ama."
+		msg: "Maria, kailangan kong magtungo sa San Diego. Marami pa akong kailangang ayusin para sa aking ama.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Maria Clara",
-		msg: "(malungkot)Ganun ba… kailan ka babalik?"
+		msg: "(malungkot)Ganun ba… kailan ka babalik?",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Bukas Todos los Santos na. Babalik agad ako, iyan ang aking pangako."
+		msg: "Bukas Todos los Santos na. Babalik agad ako, iyan ang aking pangako.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
@@ -489,7 +507,8 @@ chap7_dial2 = [
 	},
 	{
 		name: "Maria Clara",
-		msg: "(malungkot) Mahal kong Crisóstomo, mag-ingat ka. Napakarami raw tulisan sa daan, sabi ni Ama."
+		msg: "(malungkot) Mahal kong Crisóstomo, mag-ingat ka. Napakarami raw tulisan sa daan, sabi ni Ama.",
+		portrait: spr_por_mariaclara
 	},
 	{
 		name: "Narration",
@@ -497,7 +516,8 @@ chap7_dial2 = [
 	},
 	{
 		name: "Kapitan Tiago",
-		msg: "Anak, huwag kang malungkot. Tirik mo ang pinakamahal na kandila kay San Roque at San Rafael, upang ligtas ang paglalakbay ni Ibarra."
+		msg: "Anak, huwag kang malungkot. Tirik mo ang pinakamahal na kandila kay San Roque at San Rafael, upang ligtas ang paglalakbay ni Ibarra.",
+		portrait: spr_por_tiago
 	},
 	{
 		name: "Narration",
@@ -505,13 +525,117 @@ chap7_dial2 = [
 	},
 	{
 		name: "Crisostomo Ibarra",
-		msg: "Hanggang sa muli, Maria Clara. Sa pagbalik ko, dala ko ang liwanag ng iyong mga mata."
+		msg: "Hanggang sa muli, Maria Clara. Sa pagbalik ko, dala ko ang liwanag ng iyong mga mata.",
+		portrait: spr_por_ibarra
 	},
 	{
 		name: "Narration",
 		msg: "(Dahan-dahan siyang lumakad palayo. Naiwan si Maria Clara sa asotea, pinagmamasdan ang papalayong karwahe, habang unti-unting dumidilim ang langit.)"
 	},
 ]
+
+//chapter 8 ang mga alala
+chap7_dial1 = [
+	{
+		name: "Narration",
+		msg: "(Ang kalungkutang naramdaman ni Ibarra sa pag-alis niya sa bahay ni Maria Clara ay napalitan ng kagalakan nang libutin niya ang kamaynilaan sakay sa kalesa.)"
+	},
+	{
+		name: "Narration",
+		msg: "(Nandoon pa rin ang ingay at gulo ng maraming karwahe, kalesa, at kareta. Ikinalungkot ni Ibarra ang kawalan ng pagbabago sa lalawigan.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Parang walang pinagbago ang Maynila... ganito pa rin ang mga kalsada, maalikabok at lubak-lubak.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Baku-bako pa rin ang mga kalsada, at nandoon pa rin ang makapal na alikabok na pumupuwing sa lahat ng nagdaraan.)"
+	},
+	{
+		name: "Narration",
+		msg: "(Kapag umuulan, ang mga alikabok ay nagiging malagkit na putik na tumatalsik sa mga taong naglalakad.)"
+	},
+	{
+		name: "Narration",
+		msg: "(Pagkatuyo ng daan, sapilitang pinagtatambak ito ng mga bilanggo habang nakakadena ang mga paa.)"
+	},
+	{
+		name: "Narration",
+		msg: "(Ang palo ng mga gwardiya sibil ay lumalatay sa mga bilanggo dahil sa kanilang mabagal na pagkilos.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Nakakaawa sila... hanggang ngayon, ganito pa rin ang pagtrato sa mga kababayan natin.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Natanaw ng binata ang pagbabago sa Escolta; ang dating hilera ng mga bodega ay napalitan na ng magagarang gusali.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "May mga bagong gusali na... ngunit tila wala pa ring tunay na pag-unlad para sa mga tao.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Nakita rin ni Ibarra ang pagawaan ng tabako sa Arroceros. Nandoon pa rin ang mga kababaihang abala sa pagpapatuyo ng dahon ng tabako.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Masipag pa rin ang mga kababaihan... sila ang tunay na haligi ng kabuhayan dito.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Habang patuloy na nagmamasid si Ibarra, may natanaw siyang isang karwaheng papalapit. Nakasakay doon si Padre Damaso, nakakunot ang noo at tila malalim ang iniisip.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Si Padre Damaso... hanggang ngayon ay hindi pa rin nagbabago ang kanyang anyo, laging may bigat ang loob.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Sa pagdaan ng karwaheng sinasakyan ni Ibarra sa Hardin ng Botaniko, naalala niya ang mga magagandang halaman sa Europa.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Kay gandang alalahanin ng mga hardin sa Europa... ngunit iba pa rin ang ganda ng sariling lupain.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Naparam sa isip ng binata ang maririkit at makukulay na bulaklak nang mapadaan siya sa Bagumbayan, na kilala bilang lugar ng kamatayan.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Nakakalungkot isipin... dito rin ibinubuwis ng ilan ang kanilang buhay para sa bayan.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Nanariwa sa kanya ang payo ng kanyang gurong pari — na ang karunungan ang siyang liwanag sa kamangmangan.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Tama ang sabi ni Guro... ang karunungan ang magbibigay ng liwanag sa ating bayan.",
+		portrait: spr_por_ibarra
+	},
+	{
+		name: "Narration",
+		msg: "(Naalala rin ni Ibarra ang payo: kung may pagkakataon mang mangibang-bansa, gamitin ito sa pagpapaunlad ng sarili upang makapag-ambag sa ikauunlad ng bayan.)"
+	},
+	{
+		name: "Crisostomo Ibarra",
+		msg: "Hindi ko dapat sayangin ang mga natutunan ko sa Europa. Iuukol ko ito para sa ikabubuti ng ating bansa.",
+		portrait: spr_por_ibarra
+	}
+
+]
+
 
 /*
 // level 3 

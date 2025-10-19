@@ -55,4 +55,31 @@ function scr_dialogue_seq(){
 				}
 		        global.current_dialogue = global.chap5_dial1; 
 		    }
+			//chapter 5
+			else if (messages == global.chap5_dial1) {
+				if (global.current_story_index == 11) {
+				    scr_story_next();
+				}
+		        global.current_dialogue = global.chap6_dial1; 
+		    }
+			//chapter 7
+			else if (messages == global.chap6_dial1) {
+				if (global.current_story_index == 16) {
+				    scr_story_next();
+				}
+		        global.current_dialogue = global.chap7_dial1; 
+		    }
+			else if (messages == global.chap7_dial1) {
+				if (global.current_story_index == 17) {
+				    scr_story_next();
+				}
+		        global.current_dialogue = global.chap7_dial2; 
+		    }
+			//chapter 8
+			else if (messages == global.chap7_dial2) {
+				if (global.current_story_index == 11) {
+				    scr_story_next();
+				}
+		        global.current_dialogue = global.chap8_dial1; 
+		    }
 }
