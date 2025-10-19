@@ -102,7 +102,7 @@ global.story_quests = [
 	},
 	//chapter 8
 	{//18
-	    title: "Ang mga ala ala",
+	    title: "Ang mga alaala",
 	    description: "Nagpaalam at umalis na si Ibarra patungong San Diego.",
 	    completed: false
 	},
