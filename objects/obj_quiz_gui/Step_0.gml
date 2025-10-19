@@ -96,6 +96,7 @@ if (!showing_result) {
                         // ✅ Show correct/wrong sprite depending on answer
                         if (selected == correct_index) {
                             result_sprite = spr_quiz_correct;
+							quiz_score += 1;
                         } else {
                             result_sprite = spr_quiz_wrong;
                         }

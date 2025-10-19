@@ -38,6 +38,8 @@ start_y = cy - (panel_h * 0.5) + 150;
 selected = -1;
 showing_result = false;
 
+quiz_score = 0;
+
 
 // --- Submit button setup ---
 var spr_w = sprite_get_width(spr_quiz_submit);

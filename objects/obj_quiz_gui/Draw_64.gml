@@ -2,6 +2,15 @@ if (!visible) exit;
 
 draw_sprite_stretched(spr_quiz_bg, 0, 0, 0, gui_w, gui_h);
 
+//Draw number of question
+draw_set_color(c_black);
+draw_set_font(fn_quiz);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(cx, cy - panel_h/2 + 40, "Number of Question: "+string(array_length(quiz_data))+"               Score: "+
+string(quiz_score)+"/"+string(array_length(quiz_data)));
+
+
 // Draw question
 draw_set_color(c_black);
 draw_set_font(fn_quiz);
