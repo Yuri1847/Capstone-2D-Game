@@ -2,7 +2,7 @@ targetRoom = rm_chapter4_erehe_at_filibustero;
 targetX = 382;
 targetY = 761;
 
-
+/*
 //mini quiz observation
 has_quiz = true;
 quiz_data = [
@@ -32,3 +32,4 @@ quiz_data = [
         correct: 0
     },
 ];
+*/
