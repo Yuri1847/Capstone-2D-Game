@@ -10,8 +10,8 @@
   "name":"obj_room_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"Transition",
-    "path":"folders/Objects/FUNCTIONS/Transition.yy",
+    "name":"Room Names",
+    "path":"folders/Objects/Room Names.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,8 +9,8 @@
   "name":"obj_room_title_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Transition",
-    "path":"folders/Objects/FUNCTIONS/Transition.yy",
+    "name":"Room Names",
+    "path":"folders/Objects/Room Names.yy",
   },
   "parentObjectId":null,
   "persistent":true,
