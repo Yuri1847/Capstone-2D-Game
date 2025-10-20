@@ -3,6 +3,8 @@
     {"name":"smooth","order":1,"path":"folders/Sprites/PLAYER/smooth.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_room_title_controller","order":2,"path":"objects/obj_room_title_controller/obj_room_title_controller.yy",},
+    {"name":"obj_room_title","order":1,"path":"objects/obj_room_title/obj_room_title.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
   ],
 }

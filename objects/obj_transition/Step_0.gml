@@ -7,10 +7,12 @@ if (fading_out) {
         fade_alpha = 1;
         fading_out = false;
 
-        // When fully faded, go to next room
+        // When fully faded, go to the next room
         if (next_room != noone) {
             room_goto(next_room);
-            fading_in = true; // start fading in automatically after room change
+            fading_in = true; // start fade-in after change
+
+            
         }
     }
 }
@@ -22,3 +24,4 @@ else if (fading_in) {
         fading_in = false;
     }
 }
+

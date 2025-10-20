@@ -55,9 +55,6 @@ if (!has_quiz) {
     }
     t.fading_out = true;
     t.next_room = targetRoom;
-	
-	
-	
 }
 
 

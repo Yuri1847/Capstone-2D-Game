@@ -529,6 +529,8 @@
     {"id":{"name":"obj_room_door_left","path":"objects/obj_room_door_left/obj_room_door_left.yy",},},
     {"id":{"name":"obj_room_door_right","path":"objects/obj_room_door_right/obj_room_door_right.yy",},},
     {"id":{"name":"obj_room_timer","path":"objects/obj_room_timer/obj_room_timer.yy",},},
+    {"id":{"name":"obj_room_title_controller","path":"objects/obj_room_title_controller/obj_room_title_controller.yy",},},
+    {"id":{"name":"obj_room_title","path":"objects/obj_room_title/obj_room_title.yy",},},
     {"id":{"name":"obj_roomSplashCaller","path":"objects/obj_roomSplashCaller/obj_roomSplashCaller.yy",},},
     {"id":{"name":"obj_sack_rice","path":"objects/obj_sack_rice/obj_sack_rice.yy",},},
     {"id":{"name":"obj_salvi_1","path":"objects/obj_salvi_1/obj_salvi_1.yy",},},
