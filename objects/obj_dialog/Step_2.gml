@@ -55,6 +55,7 @@ else {
 				"pause_button_layer",
 				"right_option_layer",
 			]);
+			obj_talk_button.isEnabled = true;
             instance_destroy();
         } else {
             current_char = 0;

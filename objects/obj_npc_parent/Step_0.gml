@@ -1,4 +1,4 @@
-
+/*
 // === Always update depth ===
 depth = -y;
 
@@ -37,6 +37,27 @@ if (instance_exists(obj_player)) {
 		])
         create_dialogue(dialog); // pass self as speaker
     }
+}*/
+
+
+depth =-y;
+
+if (instance_exists(obj_player) && distance_to_object(obj_player) < 16) {
+	obj_talk_button.isEnabled = true;
+	
+    if (global.talk_button_pressed) {
+        global.talk_button_pressed = false;
+		obj_Pause_manager.pause = true;
+		obj_Pause_manager.update_pause();
+		sc_invisible_layer([
+			"pause_button_layer",
+			"right_option_layer",
+		])
+        create_dialogue(dialog);
+    }
+} else if (distance_to_object(obj_player) > 16) {
+	global.talk_button_pressed = false;
+	obj_talk_button.isEnabled = false;
 }
 
 

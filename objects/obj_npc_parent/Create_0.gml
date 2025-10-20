@@ -1,6 +1,3 @@
-
-
-
 // for npc auto path direction
 last_dir = 270;
 last_x = x;

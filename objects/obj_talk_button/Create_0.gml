@@ -3,8 +3,8 @@ y = (display_get_height() / 2 + 94);
 btn_x = x;
 btn_y = y;
 
-isEnabled = false;
-
 global.talk_button_pressed = false;
 
 image_speed = 4 / room_speed;
+
+isEnabled = false;
