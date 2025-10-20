@@ -288,6 +288,7 @@
     {"$GMFolder":"","%Name":"victoria","folderPath":"folders/Sprites/NPC/victoria.yy","name":"victoria","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"idle","folderPath":"folders/Sprites/NPC/victoria/idle.yy","name":"idle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PLAYER","folderPath":"folders/Sprites/PLAYER.yy","name":"PLAYER","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"smooth","folderPath":"folders/Sprites/PLAYER/smooth.yy","name":"smooth","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Idle","folderPath":"folders/Sprites/PLAYER/Idle.yy","name":"Idle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Walk","folderPath":"folders/Sprites/PLAYER/Walk.yy","name":"Walk","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"TITLE_SCREEN","folderPath":"folders/Sprites/TITLE_SCREEN.yy","name":"TITLE_SCREEN","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -796,6 +797,7 @@
     {"id":{"name":"spr_floor_decoration","path":"sprites/spr_floor_decoration/spr_floor_decoration.yy",},},
     {"id":{"name":"spr_floor_furniture","path":"sprites/spr_floor_furniture/spr_floor_furniture.yy",},},
     {"id":{"name":"spr_free","path":"sprites/spr_free/spr_free.yy",},},
+    {"id":{"name":"spr_front_1","path":"sprites/spr_front_1/spr_front_1.yy",},},
     {"id":{"name":"spr_front_damaso","path":"sprites/spr_front_damaso/spr_front_damaso.yy",},},
     {"id":{"name":"spr_front_gue","path":"sprites/spr_front_gue/spr_front_gue.yy",},},
     {"id":{"name":"spr_front_kab1","path":"sprites/spr_front_kab1/spr_front_kab1.yy",},},
@@ -1145,8 +1147,8 @@
   "RoomOrderNodes":[
     {"children":[
         {"children":[
-            {"roomId":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
             {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+            {"roomId":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
             {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
             {"roomId":{"name":"rm_splash","path":"rooms/rm_splash/rm_splash.yy",},},
             {"roomId":{"name":"rm_settings_menu","path":"rooms/rm_settings_menu/rm_settings_menu.yy",},},

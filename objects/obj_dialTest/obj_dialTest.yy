@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_front_tiago",
-    "path":"sprites/spr_front_tiago/spr_front_tiago.yy",
+    "name":"spr_front_1",
+    "path":"sprites/spr_front_1/spr_front_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
