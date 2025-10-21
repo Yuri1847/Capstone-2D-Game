@@ -1,3 +1,34 @@
+/*
+// obj_landscapeandroidview - Create Event
+if (os_type == os_android || os_type == os_ios) {
+    window_set_fullscreen(true);
+}
+
+var dw = 1280;
+var dh = 720;
+
+// --- CAMERA VIEW ---
+var cam_w = 640;
+var cam_h = 360;
+var cam = camera_create_view(0, 0, cam_w, cam_h, 0, noone, -1, -1, -1, -1);
+
+// --- VIEWPORT ---
+view_enabled = true;
+view_visible[0] = true;
+view_camera[0] = cam;
+view_wport[0] = dw;
+view_hport[0] = dh;
+
+// --- SURFACE ---
+surface_resize(application_surface, dw, dh);
+
+// --- GUI SCALING ---
+display_set_gui_maximize();
+
+// --- Prevent duplicates ---
+if (instance_number(obj_Landscape_Android_View) > 1) instance_destroy();
+*/
+
 
 
 /*

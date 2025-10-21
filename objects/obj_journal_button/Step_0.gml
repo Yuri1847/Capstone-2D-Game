@@ -17,13 +17,9 @@ if ((room == rm_main_menu) || (room == rm_load_game_menu)) {
     visible = true;
 }
 
-// Step Event
-var sw = display_get_gui_width();
-var sh = display_get_gui_height();
 
-// ✅ Top-right corner placement
-button_x = sw - button_size - button_margin;
-button_y = button_margin;
+
+
 
 // Touch/mouse handling
 var max_fingers = 5;
