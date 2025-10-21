@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_get_camera_gui_area",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_camera_gui_area",
+  "parent":{
+    "name":"GLOBAL",
+    "path":"folders/GLOBAL.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

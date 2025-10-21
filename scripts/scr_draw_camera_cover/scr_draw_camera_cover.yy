@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_camera_cover",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_camera_cover",
+  "parent":{
+    "name":"GLOBAL",
+    "path":"folders/GLOBAL.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

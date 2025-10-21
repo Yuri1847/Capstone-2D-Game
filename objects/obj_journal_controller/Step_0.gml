@@ -1,3 +1,4 @@
+
 /// @description Handle input for journal UI
 if (!visible) exit;
 
