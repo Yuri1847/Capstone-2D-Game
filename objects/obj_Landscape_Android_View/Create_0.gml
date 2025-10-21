@@ -1,4 +1,4 @@
-/*
+
 // obj_landscapeandroidview - Create Event
 if (os_type == os_android || os_type == os_ios) {
     window_set_fullscreen(true);
@@ -27,7 +27,7 @@ display_set_gui_maximize();
 
 // --- Prevent duplicates ---
 if (instance_number(obj_Landscape_Android_View) > 1) instance_destroy();
-*/
+
 
 
 
@@ -89,7 +89,7 @@ show_debug_message("Screen ratio: " + string(display_ratio));
 
 */
 
-
+/*
 //original
 
 if (os_type == os_android || os_type == os_ios) {
@@ -118,4 +118,4 @@ surface_resize(application_surface, global.design_width, global.design_height);
 
 // Make GUI scale correctly (for UI objects like joystick, inventory, quest)
 display_set_gui_maximize();
-
+*/

@@ -203,7 +203,6 @@
     {"name":"inst_1905F3FA","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_3295AA8","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_68809E0D","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
-    {"name":"inst_9DC23C0","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -238,7 +237,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"propertyId":{"name":"item_quantity","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"propertyId":{"name":"item_sprite","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_trivia_card",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":384.0,},
-        {"$GMRInstance":"v2","%Name":"inst_9DC23C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9DC23C0","objectId":{"name":"obj_camtest","path":"objects/obj_camtest/obj_camtest.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":320.0,},
       ],"layers":[],"name":"ins_loot","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_transition","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"ins_transition","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_gui","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

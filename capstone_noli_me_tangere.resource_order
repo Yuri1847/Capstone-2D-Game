@@ -20,7 +20,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
-    {"name":"obj_camtest","order":1,"path":"objects/obj_camtest/obj_camtest.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},
     {"name":"obj_gotoCemetery","order":1,"path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},
     {"name":"obj_key_drop","order":2,"path":"objects/obj_key_drop/obj_key_drop.yy",},
