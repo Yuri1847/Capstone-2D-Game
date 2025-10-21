@@ -485,6 +485,7 @@
     {"id":{"name":"obj_log_pile_5","path":"objects/obj_log_pile_5/obj_log_pile_5.yy",},},
     {"id":{"name":"obj_log_pile_6","path":"objects/obj_log_pile_6/obj_log_pile_6.yy",},},
     {"id":{"name":"obj_loot_button","path":"objects/obj_loot_button/obj_loot_button.yy",},},
+    {"id":{"name":"obj_loot_controller","path":"objects/obj_loot_controller/obj_loot_controller.yy",},},
     {"id":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},},
     {"id":{"name":"obj_LR_Arrow_SignBoard","path":"objects/obj_LR_Arrow_SignBoard/obj_LR_Arrow_SignBoard.yy",},},
     {"id":{"name":"obj_LR_Backview_gray_house_Binondo5","path":"objects/obj_LR_Backview_gray_house_Binondo5/obj_LR_Backview_gray_house_Binondo5.yy",},},

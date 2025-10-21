@@ -3,10 +3,15 @@
   "%Name":"obj_key_drop",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_key_drop",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Key",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"propertyId":{"name":"item_quantity","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_loot_item_parent","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"propertyId":{"name":"item_sprite","path":"objects/obj_loot_item_parent/obj_loot_item_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_key",},
+  ],
   "parent":{
     "name":"Find hidden Item Quest",
     "path":"folders/Find hidden Item Quest.yy",

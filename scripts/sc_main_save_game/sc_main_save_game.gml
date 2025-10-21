@@ -4,6 +4,13 @@ global.file_handling_data = {
 	last_room: rm_fondeDeLala,
 	player_inventory: [],
 	player_name: "Crisostomo Ibarra",
+	items : {
+		key: {
+				isKey_looted: false,
+				key_x: 0,
+				key_y: 0,
+			}
+	},
 };
 
 
