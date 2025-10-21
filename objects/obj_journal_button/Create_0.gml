@@ -12,9 +12,8 @@ var gui_h = display_get_gui_height();
 var scale_x = gui_w / cam_w;
 var scale_y = gui_h / cam_h;
 
-// Setup
-button_margin = 32;
 button_size = sprite_get_width(spr_journal_button);
+button_margin = 32;
 hovered = false;
 
 // ✅ Position using camera size, scaled to GUI space

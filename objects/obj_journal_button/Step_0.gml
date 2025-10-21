@@ -1,3 +1,4 @@
+var area = scr_get_camera_gui_area();
 /*
 // Hide when quiz is active
 if (global.quiz_active) {
@@ -30,7 +31,7 @@ for (var i = 0; i < max_fingers; i++) {
         var mx = device_mouse_x_to_gui(i);
         var my = device_mouse_y_to_gui(i);
 
-        if (point_in_rectangle(mx, my, button_x, button_y, button_x + button_size, button_y + button_size)) {
+        if (point_in_rectangle(mx, my, area.x + area.w - button_size - button_margin, area.y + button_margin, area.x + area.w - button_size - button_margin + button_size, area.y + button_margin + button_size)) {
             hovered = true;
 
             if (device_mouse_check_button_pressed(i, mb_left)) {

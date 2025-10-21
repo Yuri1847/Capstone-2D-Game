@@ -1,24 +1,27 @@
 /// @description Draw Journal UI
 if (!visible) exit;
 
+// --- Safe visible area (excludes black bars) ---
+var area = scr_get_camera_gui_area();
 draw_set_font(fnt_journal);
 
-var sw = display_get_gui_width();
-var sh = display_get_gui_height();
+// --- Layout based on the safe visible area ---
+var sw = area.w;
+var sh = area.h;
 var num_tabs = array_length(tab_titles);
 
 // --- Layout ---
 var top_space_h = sh * 0.10; // 10% top margin
 var total_tab_width = (sw * 0.5) * 0.92; // tabs occupy right half (92% padding)
-var margin_x = sw * 0.5 + (sw * 0.5 - total_tab_width) / 2;
+var margin_x = area.x + sw * 0.5 + (sw * 0.5 - total_tab_width) / 2;
 var tab_w = total_tab_width / num_tabs;
 
 // --- Background (journal page) ---
-draw_sprite_stretched(spr_journal_bg, 0, 0, top_space_h, sw, sh - top_space_h);
-
+draw_sprite_stretched(spr_journal_bg, 0, area.x, area.y, area.w, area.h);
 
 // --- Tabs (on right half of top space) ---
-var tab_y = (top_space_h - tab_h) / 2;
+var tab_h = 48; // define your tab height if not set elsewhere
+var tab_y = area.y + (top_space_h - tab_h) / 2;
 
 for (var i = 0; i < num_tabs; i++) {
     var xq = margin_x + (i * tab_w);
@@ -37,11 +40,15 @@ draw_set_alpha(1);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_text(100, top_space_h + 40, "Current Tab: " + string(current_tab));
+draw_text(area.x + 100, area.y + top_space_h + 40, "Current Tab: " + string(current_tab));
 
 // --- Back Button ---
-var back_x = back_margin;
-var back_y = sh - back_h - back_margin;
+var back_margin = 32;
+var back_w = 160;
+var back_h = 48;
+
+var back_x = area.x + back_margin;
+var back_y = area.y + sh - back_h - back_margin;
 
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
@@ -64,13 +71,13 @@ draw_set_color(c_black);
 
 switch (current_tab) {
     case "profile":
-        draw_text(100, top_space_h + 120, "Name: " + string(global.file_handling_data.player_name));
-        draw_text(100, top_space_h + 160, "Level:");
-        draw_text(100, top_space_h + 200, "Knowledge:");
+        draw_text(area.x + 100, area.y + top_space_h + 120, "Name: " + string(global.file_handling_data.player_name));
+        draw_text(area.x + 100, area.y + top_space_h + 160, "Level:");
+        draw_text(area.x + 100, area.y + top_space_h + 200, "Knowledge:");
         break;
 
     case "challenge":
-        var y_start = top_space_h + 120;
+        var y_start = area.y + top_space_h + 120;
         var chapters = [
             "Chapter 1: Crisostomo Ibarra",
             "Chapter 2: Hapunan",
@@ -80,17 +87,17 @@ switch (current_tab) {
             "Chapter 6: Ang mga Alaala"
         ];
         for (var c = 0; c < array_length(chapters); c++) {
-            draw_text(100, y_start + c * 40, chapters[c]);
+            draw_text(area.x + 100, y_start + c * 40, chapters[c]);
         }
         break;
 
     case "notes":
-        draw_text(100, top_space_h + 120, "Unlocked Notes:");
+        draw_text(area.x + 100, area.y + top_space_h + 120, "Unlocked Notes:");
         break;
 
     case "inventory":
-        draw_text(100, top_space_h + 120, "Artifacts:");
-        draw_text(120, top_space_h + 160, "- Jose Rizal's Book");
-        draw_text(120, top_space_h + 200, "- Old Map of San Diego");
+        draw_text(area.x + 100, area.y + top_space_h + 120, "Artifacts:");
+        draw_text(area.x + 120, area.y + top_space_h + 160, "- Jose Rizal's Book");
+        draw_text(area.x + 120, area.y + top_space_h + 200, "- Old Map of San Diego");
         break;
 }
