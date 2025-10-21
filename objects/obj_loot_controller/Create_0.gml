@@ -1,4 +1,3 @@
-if (instance_number(obj_loot_controller) > 1) instance_destroy();
-
-
-file_handling_load_game();
+iskey_loot = false;
+xx = 0;
+yy = 0;
