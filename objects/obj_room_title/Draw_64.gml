@@ -1,5 +1,5 @@
 draw_set_alpha(alpha);
-draw_set_font(fnt_sps_title);
+draw_set_font(fnt_rn);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
