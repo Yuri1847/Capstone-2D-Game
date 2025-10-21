@@ -1,8 +1,8 @@
 
 
-
-//streched littul bit
 /*
+//streched littul bit
+
 /// CREATE EVENT — obj_landscape_android_view
 /// Purpose: Auto-adjusts camera to fill any landscape screen (no black bars)
 
@@ -55,7 +55,9 @@ global.main_camera = cam;
 show_debug_message("Camera set to: " + string(cam_w) + "x" + string(cam_h));
 show_debug_message("Screen ratio: " + string(display_ratio));
 
+
 */
+
 
 //original
 
