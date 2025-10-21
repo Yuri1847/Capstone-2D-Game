@@ -13,10 +13,12 @@ journal_controller_id = instance_find(obj_journal_controller, 0);
 // --- Tabs ---
 tab_titles = ["Profile", "Challenges", "Notes", "Inventory"];
 tab_keys   = ["profile", "challenge", "notes", "inventory"];
-tab_y = 50;
-tab_h = sprite_get_height(spr_tab);
+tab_h = sprite_get_height(spr_tab) * 2; 
+tab_w = sprite_get_width(spr_tab);
 
-// --- Back Button ---
-back_margin = 50;
-back_w = sprite_get_width(spr_journal_back) * 2;
-back_h = sprite_get_height(spr_journal_back);
+
+
+// --- Back Button Setup ---
+back_w = sprite_get_width(spr_journal_back) * 4;
+back_h = sprite_get_height(spr_journal_back) * 2;
+

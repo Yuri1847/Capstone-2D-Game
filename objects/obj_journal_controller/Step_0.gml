@@ -10,16 +10,15 @@ var num_tabs = array_length(tab_titles);
 
 // --- Layout (EXACTLY same as draw) ---
 var top_space_h = sh * 0.10;
-var tab_h = 64;
 var tab_y = area.y + (top_space_h - tab_h) / 2;
-var tab_w = area.w / num_tabs;
+tab_w = area.w / num_tabs;
 
-// --- Back Button (same as draw) ---
-var back_margin = 32;
-var back_w = 160;
-var back_h = 48;
-var back_x = area.x + back_margin;
-var back_y = area.y + sh - back_h - back_margin;
+
+
+// --- Back Button Position (no margin) ---
+var back_x = area.x;
+var back_y = area.y + sh - back_h;
+
 
 // --- Input loop ---
 var max_fingers = 5;

@@ -31,6 +31,7 @@
     {"name":"sc_nolidex","order":6,"path":"scripts/sc_nolidex/sc_nolidex.yy",},
     {"name":"scr_draw_camera_cover","order":1,"path":"scripts/scr_draw_camera_cover/scr_draw_camera_cover.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
+    {"name":"spr_journal_back","order":1,"path":"sprites/spr_journal_back/spr_journal_back.yy",},
     {"name":"spr_key_drop","order":1,"path":"sprites/spr_key_drop/spr_key_drop.yy",},
     {"name":"spr_key","order":11,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"spr_loot_button","order":10,"path":"sprites/spr_loot_button/spr_loot_button.yy",},

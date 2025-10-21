@@ -11,15 +11,15 @@ var sh = area.h;
 var num_tabs = array_length(tab_titles);
 
 // --- Basic spacing ---
-var top_space_h = sh * 0.10; // 10% top margin
+//var top_space_h = sh * 0.10; // 10% top margin
 
 // --- BACKGROUND: cover entire visible area ---
 draw_sprite_stretched(spr_journal_bg, 0, area.x, area.y, area.w, area.h);
 
-// --- TABS: stretch horizontally across the top area ---
-var tab_h = 64; // height of your tab bar
+// --- TAB LAYOUT ---
+var top_space_h = sh * 0.10;
 var tab_y = area.y + (top_space_h - tab_h) / 2;
-var tab_w = area.w / num_tabs; // evenly divided across the width
+tab_w = area.w / num_tabs; // evenly divided across width
 
 for (var i = 0; i < num_tabs; i++) {
     var xq = area.x + (i * tab_w);
@@ -40,20 +40,19 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text(area.x + 100, area.y + top_space_h + 40, "Current Tab: " + string(current_tab));
 
-// --- BACK BUTTON: bottom-left corner ---
-var back_margin = 32;
-var back_w = 160;
-var back_h = 48;
 
-var back_x = area.x + back_margin;
-var back_y = area.y + sh - back_h - back_margin;
+
+var back_x = area.x;
+var back_y = area.y + sh - back_h;
 
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 var hovered = point_in_rectangle(mx, my, back_x, back_y, back_x + back_w, back_y + back_h);
 
 draw_set_alpha(hovered ? 0.8 : 1);
+// --- BACK BUTTON: bottom-left corner (no margin) ---
 draw_sprite_stretched(spr_journal_back, 0, back_x, back_y, back_w, back_h);
+
 draw_set_alpha(1);
 
 // --- "Back" label ---
