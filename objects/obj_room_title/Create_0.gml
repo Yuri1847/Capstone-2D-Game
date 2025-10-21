@@ -49,9 +49,12 @@ switch (room) {
 	case rm_chapter8_alaala:
         title_text = "Fonde de Lala Sleeping Quarters";
         break;
+	default:
+		//For main menu room, settings room, lead room, loaing room, splash screen room
+		title_text = "";
+	break
 	
-
-
+	
     // Add more as needed
 }
 

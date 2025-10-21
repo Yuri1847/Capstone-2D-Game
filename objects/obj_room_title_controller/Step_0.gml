@@ -6,6 +6,7 @@ if (room != last_room) {
     if (layer_exists("ins_gui")) {
         instance_create_layer(0, 0, "ins_gui", obj_room_title);
     } else {
-        instance_create_layer(0, 0, layer_get_id("Instances"), obj_room_title);
+		//Because contain errors when i got to rooms (main menu room, settings room, lead room, loaing room, splash screen room)
+        //instance_create_layer(0, 0, layer_get_id("Instances"), obj_room_title);
     }
 }

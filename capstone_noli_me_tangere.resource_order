@@ -7,5 +7,6 @@
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
     {"name":"obj_room_title_controller","order":1,"path":"objects/obj_room_title_controller/obj_room_title_controller.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
+    {"name":"spr_talk_quest","order":2,"path":"sprites/spr_talk_quest/spr_talk_quest.yy",},
   ],
 }
