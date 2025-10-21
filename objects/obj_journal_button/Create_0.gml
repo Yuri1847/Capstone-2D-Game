@@ -1,10 +1,9 @@
 
 // Create Event
-button_margin = 0; // padding from edges
+button_margin = 20; // add some padding from screen edge
 button_size = sprite_get_width(spr_journal_button);
-
-
 hovered = false;
+
 
 // Find the journal controller
 journal_controller_id = instance_find(obj_journal_controller, 0);
