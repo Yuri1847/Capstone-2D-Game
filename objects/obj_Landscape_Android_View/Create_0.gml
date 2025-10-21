@@ -3,9 +3,6 @@ if (os_type == os_android || os_type == os_ios) {
     window_set_fullscreen(true);
 }
 
-// --- DESIGN RESOLUTION ---
-//var dw = global.design_width;
-//var dh = global.design_height;
 var dw = 1280;
 var dh = 720;
 

@@ -3,10 +3,8 @@ if (!visible) exit;
 
 draw_set_font(fnt_journal);
 
-//var sw = display_get_gui_width();
-//var sh = display_get_gui_height();
-var sw = global.design_width;
-var sh = global.design_height;
+var sw = display_get_gui_width();
+var sh = display_get_gui_height();
 var num_tabs = array_length(tab_titles);
 
 // --- Layout ---
