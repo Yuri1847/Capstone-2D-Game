@@ -26,7 +26,7 @@ inventory.addItem("Eraser", 10, spr_stone);
 inventory.addItem("Apple", 10, spr_stone);
 inventory.addItem("Coin", 5, spr_stone);
 
-inventory.addItem("trivia card", 5, spr_trivia_card);
+inventory.addItem("Trivia_card", 5, spr_trivia_card);
 
 isEnabled = false;
 

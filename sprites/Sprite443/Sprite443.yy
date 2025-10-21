@@ -21,6 +21,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f55f1517-50b1-46ab-bf61-90cee651b93e","blendMode":0,"displayName":"default","isLocked":false,"name":"f55f1517-50b1-46ab-bf61-90cee651b93e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"eeb8725f-6c47-4972-bcae-2bf8b9af38c6","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"eeb8725f-6c47-4972-bcae-2bf8b9af38c6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Sprite443",
   "nineSlice":null,
