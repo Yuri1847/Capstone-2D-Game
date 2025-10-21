@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"spr_trivia_card",
   "bboxMode":0,
-  "bbox_bottom":70,
-  "bbox_left":8,
-  "bbox_right":71,
-  "bbox_top":0,
+  "bbox_bottom":59,
+  "bbox_left":29,
+  "bbox_right":53,
+  "bbox_top":19,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,8 +13,6 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"0451f912-0ea3-444d-bd85-b6be929528d2","name":"0451f912-0ea3-444d-bd85-b6be929528d2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6bd6db64-c60b-4e3a-9c53-71661b62fb2a","name":"6bd6db64-c60b-4e3a-9c53-71661b62fb2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"662d770e-c6b2-49a8-a398-aecfd631ab78","name":"662d770e-c6b2-49a8-a398-aecfd631ab78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -52,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":1.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -76,12 +74,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0451f912-0ea3-444d-bd85-b6be929528d2","path":"sprites/spr_trivia_card/spr_trivia_card.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d241fa16-ee0c-471f-852a-5ff2139b2f7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bd6db64-c60b-4e3a-9c53-71661b62fb2a","path":"sprites/spr_trivia_card/spr_trivia_card.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"76371997-7e56-43cf-8f5d-3dd1897e490b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"662d770e-c6b2-49a8-a398-aecfd631ab78","path":"sprites/spr_trivia_card/spr_trivia_card.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"07bfaf91-c4f3-4459-9e80-e4203cd91f3f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
