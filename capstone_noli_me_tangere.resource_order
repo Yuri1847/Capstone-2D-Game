@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Find hidden Item Quest","order":1,"path":"folders/Find hidden Item Quest.yy",},
     {"name":"Audio","order":3,"path":"folders/Objects/FUNCTIONS/Audio.yy",},
     {"name":"daynightcycle","order":16,"path":"folders/Objects/FUNCTIONS/daynightcycle.yy",},
     {"name":"Inventory System","order":4,"path":"folders/Objects/FUNCTIONS/Inventory System.yy",},
@@ -20,8 +21,14 @@
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},
     {"name":"obj_gotoCemetery","order":1,"path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},
+    {"name":"obj_key_drop","order":2,"path":"objects/obj_key_drop/obj_key_drop.yy",},
     {"name":"obj_room_title_controller","order":1,"path":"objects/obj_room_title_controller/obj_room_title_controller.yy",},
+    {"name":"obj_trivia_card_drop","order":3,"path":"objects/obj_trivia_card_drop/obj_trivia_card_drop.yy",},
+    {"name":"sc_nolidex","order":6,"path":"scripts/sc_nolidex/sc_nolidex.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
+    {"name":"spr_key_drop","order":1,"path":"sprites/spr_key_drop/spr_key_drop.yy",},
     {"name":"spr_talk_quest","order":2,"path":"sprites/spr_talk_quest/spr_talk_quest.yy",},
+    {"name":"spr_trivia_card_drop","order":4,"path":"sprites/spr_trivia_card_drop/spr_trivia_card_drop.yy",},
+    {"name":"spr_trivia_card","order":5,"path":"sprites/spr_trivia_card/spr_trivia_card.yy",},
   ],
 }
