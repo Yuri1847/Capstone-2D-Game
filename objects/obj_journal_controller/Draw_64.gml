@@ -1,30 +1,28 @@
 /// @description Draw Journal UI
 if (!visible) exit;
 
-// --- Safe visible area (excludes black bars) ---
+// --- Get safe visible area (no black bars) ---
 var area = scr_get_camera_gui_area();
 draw_set_font(fnt_journal);
 
-// --- Layout based on the safe visible area ---
+// --- Layout based on safe visible area ---
 var sw = area.w;
 var sh = area.h;
 var num_tabs = array_length(tab_titles);
 
-// --- Layout ---
+// --- Basic spacing ---
 var top_space_h = sh * 0.10; // 10% top margin
-var total_tab_width = (sw * 0.5) * 0.92; // tabs occupy right half (92% padding)
-var margin_x = area.x + sw * 0.5 + (sw * 0.5 - total_tab_width) / 2;
-var tab_w = total_tab_width / num_tabs;
 
-// --- Background (journal page) ---
+// --- BACKGROUND: cover entire visible area ---
 draw_sprite_stretched(spr_journal_bg, 0, area.x, area.y, area.w, area.h);
 
-// --- Tabs (on right half of top space) ---
-var tab_h = 48; // define your tab height if not set elsewhere
+// --- TABS: stretch horizontally across the top area ---
+var tab_h = 64; // height of your tab bar
 var tab_y = area.y + (top_space_h - tab_h) / 2;
+var tab_w = area.w / num_tabs; // evenly divided across the width
 
 for (var i = 0; i < num_tabs; i++) {
-    var xq = margin_x + (i * tab_w);
+    var xq = area.x + (i * tab_w);
 
     draw_set_alpha(current_tab == tab_keys[i] ? 1 : 0.6);
     draw_sprite_stretched(spr_tab, 0, xq, tab_y, tab_w, tab_h);
@@ -42,7 +40,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text(area.x + 100, area.y + top_space_h + 40, "Current Tab: " + string(current_tab));
 
-// --- Back Button ---
+// --- BACK BUTTON: bottom-left corner ---
 var back_margin = 32;
 var back_w = 160;
 var back_h = 48;
@@ -64,7 +62,7 @@ draw_set_valign(fa_middle);
 draw_set_color(c_white);
 draw_text(back_x + back_w / 2, back_y + back_h / 2, "Back");
 
-// --- Tab Content ---
+// --- TAB CONTENT ---
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_black);

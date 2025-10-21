@@ -18,10 +18,6 @@ if ((room == rm_main_menu) || (room == rm_load_game_menu)) {
     visible = true;
 }
 
-
-
-
-
 // Touch/mouse handling
 var max_fingers = 5;
 hovered = false;
