@@ -24,6 +24,7 @@
     {"$GMFolder":"","%Name":"Find hidden Item Quest","folderPath":"folders/Find hidden Item Quest.yy","name":"Find hidden Item Quest","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"State Slot Font","folderPath":"folders/Fonts/State Slot Font.yy","name":"State Slot Font","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"GLOBAL","folderPath":"folders/GLOBAL.yy","name":"GLOBAL","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"HistoricalNoteSystem","folderPath":"folders/HistoricalNoteSystem.yy","name":"HistoricalNoteSystem","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Journal","folderPath":"folders/Journal.yy","name":"Journal","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},

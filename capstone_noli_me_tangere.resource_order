@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Find hidden Item Quest","order":1,"path":"folders/Find hidden Item Quest.yy",},
+    {"name":"GLOBAL","order":2,"path":"folders/GLOBAL.yy",},
     {"name":"Audio","order":3,"path":"folders/Objects/FUNCTIONS/Audio.yy",},
     {"name":"daynightcycle","order":16,"path":"folders/Objects/FUNCTIONS/daynightcycle.yy",},
     {"name":"Inventory System","order":4,"path":"folders/Objects/FUNCTIONS/Inventory System.yy",},
