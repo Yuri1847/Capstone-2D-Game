@@ -29,6 +29,7 @@
     {"name":"spr_key_drop","order":1,"path":"sprites/spr_key_drop/spr_key_drop.yy",},
     {"name":"spr_talk_quest","order":2,"path":"sprites/spr_talk_quest/spr_talk_quest.yy",},
     {"name":"spr_trivia_card_drop","order":4,"path":"sprites/spr_trivia_card_drop/spr_trivia_card_drop.yy",},
-    {"name":"spr_trivia_card","order":5,"path":"sprites/spr_trivia_card/spr_trivia_card.yy",},
+    {"name":"spr_trivia_card_item_list","order":5,"path":"sprites/spr_trivia_card_item_list/spr_trivia_card_item_list.yy",},
+    {"name":"spr_trivia_card","order":7,"path":"sprites/spr_trivia_card/spr_trivia_card.yy",},
   ],
 }
