@@ -209,7 +209,7 @@
   "name":"fnt_rn",
   "parent":{
     "name":"Room Names",
-    "path":"folders/Objects/Room Names.yy",
+    "path":"folders/Objects/FUNCTIONS/Room Names.yy",
   },
   "pointRounding":0,
   "ranges":[
