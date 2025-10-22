@@ -5,17 +5,24 @@ if (current_message < 0) exit;
 var _str = messages[current_message].msg;
 var next = false;
 
-// === Detect touch input anywhere on screen ===
+// === Detect touch input anywhere on GUI area ===
 var tapped = false;
 var max_fingers = 5;
+
+// Get camera GUI area
+var area = scr_get_camera_gui_area();
+var gui_x1 = area.x;
+var gui_y1 = area.y;
+var gui_x2 = area.x + area.w;
+var gui_y2 = area.y + area.h;
 
 for (var i = 0; i < max_fingers; i++) {
     if (device_mouse_check_button_pressed(i, mb_left)) {
         var tx = device_mouse_x_to_gui(i);
         var ty = device_mouse_y_to_gui(i);
 
-        // Whole screen (1280x720)
-        if (point_in_rectangle(tx, ty, 0, 0, 1280, 720)) {
+        // Use camera GUI area instead of hardcoded 1280x720
+        if (point_in_rectangle(tx, ty, gui_x1, gui_y1, gui_x2, gui_y2)) {
             tapped = true;
         }
     }
@@ -32,8 +39,7 @@ if (current_char < string_length(_str)) {
         current_char += char_speed;
     }
     draw_message = string_copy(_str, 0, current_char);
-}
-else {
+} else {
     // Text fully displayed — wait for next tap to continue
     if (tapped) {
         next = true;
@@ -44,18 +50,17 @@ else {
         current_message++;
         if (current_message >= array_length(messages)) {
             with (obj_npc_parent) {
-				
                 npc_can_move = true;
             }
-				// === SIMPLE DIALOGUE SEQUENCE CHECK ===
-			scr_dialogue_seq()
-			obj_Pause_manager.pause = false;
-			obj_Pause_manager.update_pause();
-			sc_visible_layer([
-				"pause_button_layer",
-				"right_option_layer",
-			]);
-			obj_talk_button.isEnabled = true;
+            // === SIMPLE DIALOGUE SEQUENCE CHECK ===
+            scr_dialogue_seq();
+            obj_Pause_manager.pause = false;
+            obj_Pause_manager.update_pause();
+            sc_visible_layer([
+                "pause_button_layer",
+                "right_option_layer",
+            ]);
+            if (instance_exists(obj_talk_button)) obj_talk_button.isEnabled = true;
             instance_destroy();
         } else {
             current_char = 0;

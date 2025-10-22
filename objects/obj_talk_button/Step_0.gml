@@ -17,3 +17,5 @@ if(!place_meeting(obj_player.x, obj_player.y, obj_npc_parent)){
 
 
 */
+
+

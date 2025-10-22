@@ -2,6 +2,86 @@
 // === Always update depth ===
 depth = -y;
 
+
+// === Check distance to player ===
+if (instance_exists(obj_player)) {
+    var dist = distance_to_object(obj_player);
+    can_talk = (dist < 16);
+
+    // === GUI camera area & button margin ===
+    var area = scr_get_camera_gui_area();
+    var margin_x = 32;
+    var margin_y = 32;
+    var btn_w = sprite_get_width(spr_talk_button);
+    var btn_h = sprite_get_height(spr_talk_button);
+
+    // Button coordinates (bottom-right inside camera area)
+    var btn_x1 = area.x + area.w - margin_x - btn_w;
+    var btn_y1 = area.y + area.h - margin_y - btn_h;
+    var btn_x2 = btn_x1 + btn_w;
+    var btn_y2 = btn_y1 + btn_h;
+
+    // === Show/Hide Talk Button ===
+    if (instance_exists(obj_talk_button)) {
+        obj_talk_button.visible = (can_talk && !instance_exists(obj_dialog));
+        obj_talk_button.x = btn_x1 + btn_w/2;
+        obj_talk_button.y = btn_y1 + btn_h/2;
+    }
+
+    // === Detect touch/click ===
+    var touched = false;
+
+    if (!dialogue_active && can_talk) {
+        // Only clickable area over the button triggers dialogue
+        var max_fingers = 5;
+        for (var i = 0; i < max_fingers; i++) {
+            if (device_mouse_check_button_pressed(i, mb_left)) {
+                var mx = device_mouse_x_to_gui(i);
+                var my = device_mouse_y_to_gui(i);
+
+                if (mx > btn_x1 && mx < btn_x2 && my > btn_y1 && my < btn_y2) {
+                    touched = true;
+                }
+            }
+        }
+    } else if (dialogue_active) {
+        // Once dialogue is active, any click anywhere in GUI advances
+        var max_fingers = 5;
+        for (var i = 0; i < max_fingers; i++) {
+            if (device_mouse_check_button_pressed(i, mb_left)) {
+                touched = true;
+            }
+        }
+    }
+
+    // === Start or advance dialogue ===
+    if (touched) {
+        if (!dialogue_active) {
+            // Start dialogue
+            npc_can_move = false;
+            obj_Pause_manager.pause = true;
+            obj_Pause_manager.update_pause();
+            sc_invisible_layer([
+                "pause_button_layer",
+                "right_option_layer",
+            ]);
+            create_dialogue(dialog);
+        } else {
+            // Advance dialogue
+            advance_dialogue();
+        }
+    }
+
+    // === Reset when dialogue ends ===
+    if (!instance_exists(obj_dialog)) {
+        npc_can_move = true;
+        obj_Pause_manager.pause = false;
+        if (instance_exists(obj_talk_button)) obj_talk_button.visible = false;
+    }
+}
+
+
+/*
 // === Check distance to player ===
 if (instance_exists(obj_player)) {
     var dist = distance_to_object(obj_player);
@@ -52,11 +132,11 @@ if (instance_exists(obj_player)) {
 
 
 
-//depth =-y;
+depth =-y;
 
 
 
-
+*/
 
 
 

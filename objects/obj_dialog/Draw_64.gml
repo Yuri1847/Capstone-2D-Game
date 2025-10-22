@@ -1,11 +1,14 @@
-// === GUI dimensions ===
-var gui_w = display_get_gui_width();
-var gui_h = display_get_gui_height();
+// === GUI dimensions from camera area ===
+var area = scr_get_camera_gui_area();
+var gui_x = area.x;
+var gui_y = area.y;
+var gui_w = area.w;
+var gui_h = area.h;
 
 // === Dialogue layout settings ===
 var portrait_size = 256; // height of portrait
 var _boxh = portrait_size; // make box same height as portrait
-var _dy = gui_h - _boxh; // bottom-aligned
+var _dy = gui_h - _boxh; // bottom-aligned within camera area
 var padding = 32;
 
 // === Current message ===
@@ -36,16 +39,16 @@ var _dx = left_margin;
 var _boxw = gui_w - left_margin - right_margin;
 
 // === Draw dialogue box ===
-draw_sprite_stretched(spr_dialog_box, 0, _dx, _dy, _boxw, _boxh);
+draw_sprite_stretched(spr_dialog_box, 0, gui_x + _dx, gui_y + _dy, _boxw, _boxh);
 
 // === Draw portraits (aligned bottom with box) ===
 if (has_portrait && sprite_exists(_portrait) && !is_narration) {
     if (is_player) {
         // Player portrait on LEFT edge
-        draw_sprite_stretched(_portrait, 0, 0, _dy, portrait_size, portrait_size);
+        draw_sprite_stretched(_portrait, 0, gui_x, gui_y + _dy, portrait_size, portrait_size);
     } else {
         // NPC portrait on RIGHT edge
-        draw_sprite_stretched(_portrait, 0, gui_w - portrait_size, _dy, portrait_size, portrait_size);
+        draw_sprite_stretched(_portrait, 0, gui_x + gui_w - portrait_size, gui_y + _dy, portrait_size, portrait_size);
     }
 }
 
@@ -59,17 +62,17 @@ if (is_narration) {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     
-    var text_x = gui_w * 0.5;          // horizontal center
-    var text_y = _dy + _boxh * 0.5;    // vertical center of the box
+    var text_x = gui_x + gui_w * 0.5;          // horizontal center within camera area
+    var text_y = gui_y + _dy + _boxh * 0.5;    // vertical center of the box
     var text_w = gui_w - (padding * 4);
     
     draw_text_ext(text_x, text_y, _text, -1, text_w);
-}else {
+} else {
     // === Dialogue Mode ===
     draw_set_halign(fa_left);
 
-    var text_x = _dx + padding;
-    var name_y = _dy + padding;
+    var text_x = gui_x + _dx + padding;
+    var name_y = gui_y + _dy + padding;
     var text_y = name_y + string_height(_name) + padding * 0.5;
     var text_w = _boxw - (padding * 2);
 
@@ -79,48 +82,3 @@ if (is_narration) {
     // Dialogue text
     draw_text_ext(text_x, text_y, _text, -1, text_w);
 }
-
-
-
-
-
-
-
-/*
-
-var _dx = 0;
-var _dy = gui_h * 0.7;
-var _boxw = gui_w;
-var _boxh = gui_h - _dy;
-
-// draw box
-draw_sprite_stretched(spr_dialog_box, 0, _dx, _dy, _boxw, _boxh);
-
-// padding inside the box
-var _pad = 32;
-var _line_sep = 32;
-
-_dx += _pad;
-_dy += _pad;
-
-draw_set_font(fn_dial);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
-// draw name
-var _name = messages[current_message].name;
-//draw_set_color(global.char_colors[$ _name]);
-draw_set_color(c_black);
-draw_text(_dx, _dy, _name);
-//draw_set_color(c_silver);
-
-
-// move down for message
-_dy += string_height(_name) + _pad;
-
-// max text width inside box
-var usable_width = _boxw - (_pad * 4);
-
-// draw message
-draw_text_ext(_dx, _dy, draw_message, -1, usable_width);
-*/
