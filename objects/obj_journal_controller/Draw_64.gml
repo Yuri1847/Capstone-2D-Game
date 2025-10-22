@@ -1,6 +1,8 @@
 /// @description Draw Journal UI
 if (!visible) exit;
 
+draw_set_font(fnt_journal);
+
 // --- Safe visible GUI area ---
 var area = scr_get_camera_gui_area();
 var sw = area.w;
@@ -18,7 +20,7 @@ draw_sprite_stretched(spr_journal_bg, 0, area.x, area.y, area.w, area.h);
 // TOP: TABS (10%)
 // --------------------------------------------------------------------
 var num_tabs = array_length(tab_titles);
-var tab_h = top_h * 0.8; // slightly smaller than full 10%
+var tab_h = top_h * 0.8; // slightly smaller than top area
 var tab_y = area.y + (top_h - tab_h) / 2;
 var tab_w = area.w / num_tabs;
 
@@ -46,16 +48,11 @@ var content_h = mid_h;
 draw_set_color(c_white);
 draw_rectangle(content_x, content_y, content_x + content_w, content_y + content_h, false);
 
-// Example: draw some content inside content area
-// Only draw if inside content area
-var text_x = content_x + 20;
-var text_y = content_y + 20;
-if (text_y >= content_y && text_y <= content_y + content_h) {
-    draw_set_color(c_black);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_text(text_x, text_y, "Current Tab: " + string(current_tab));
-}
+// Horizontal padding inside content area
+var padding_x = 20;  
+
+// Starting Y offset for content
+var y_start = content_y + 20;  
 
 // --------------------------------------------------------------------
 // BOTTOM: BACK BUTTON (10%)
@@ -78,16 +75,21 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(back_x + back_w / 2, back_y + back_h / 2, "Back");
 
-/*
+// --------------------------------------------------------------------
+// TAB CONTENT DRAWING (inside content area)
+// --------------------------------------------------------------------
+draw_set_color(c_black);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
 switch (current_tab) {
     case "profile":
-        draw_text(area.x + 100, area.y + top_space_h + 120, "Name: " + string(global.file_handling_data.player_name));
-        draw_text(area.x + 100, area.y + top_space_h + 160, "Level:");
-        draw_text(area.x + 100, area.y + top_space_h + 200, "Knowledge:");
+        draw_text(content_x + padding_x, y_start, "Name: " + string(global.file_handling_data.player_name));
+        draw_text(content_x + padding_x, y_start + 40, "Level:");
+        draw_text(content_x + padding_x, y_start + 80, "Knowledge:");
         break;
 
     case "challenge":
-        var y_start = area.y + top_space_h + 120;
         var chapters = [
             "Chapter 1: Crisostomo Ibarra",
             "Chapter 2: Hapunan",
@@ -97,18 +99,21 @@ switch (current_tab) {
             "Chapter 6: Ang mga Alaala"
         ];
         for (var c = 0; c < array_length(chapters); c++) {
-            draw_text(area.x + 100, y_start + c * 40, chapters[c]);
+            var item_y = y_start + c * 40;
+            // Only draw if inside content area
+            if (item_y >= content_y && item_y <= content_y + content_h - 20) {
+                draw_text(content_x + padding_x, item_y, chapters[c]);
+            }
         }
         break;
 
     case "notes":
-        draw_text(area.x + 100, area.y + top_space_h + 120, "Unlocked Notes:");
+        draw_text(content_x + padding_x, y_start, "Unlocked Notes:");
         break;
 
     case "inventory":
-        draw_text(area.x + 100, area.y + top_space_h + 120, "Artifacts:");
-        draw_text(area.x + 120, area.y + top_space_h + 160, "- Jose Rizal's Book");
-        draw_text(area.x + 120, area.y + top_space_h + 200, "- Old Map of San Diego");
+        draw_text(content_x + padding_x, y_start, "Artifacts:");
+        draw_text(content_x + padding_x + 20, y_start + 40, "- Jose Rizal's Book");
+        draw_text(content_x + padding_x + 20, y_start + 80, "- Old Map of San Diego");
         break;
 }
-*/
