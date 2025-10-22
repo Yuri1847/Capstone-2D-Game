@@ -1,12 +1,23 @@
+/// STEP EVENT
 // Detect if player entered a new room
 if (room != last_room) {
     last_room = room;
 
-    // Create the title display for this room
-    if (layer_exists("ins_gui")) {
+    // Skip certain rooms (no title display)
+    var skip_rooms = [
+        rm_main_menu,
+    ];
+
+    var show_title = true;
+    for (var i = 0; i < array_length(skip_rooms); i++) {
+        if (room == skip_rooms[i]) {
+            show_title = false;
+            break;
+        }
+    }
+
+    // Create the title display for allowed rooms only
+    if (show_title && layer_exists("ins_gui")) {
         instance_create_layer(0, 0, "ins_gui", obj_room_title);
-    } else {
-		//Because contain errors when i got to rooms (main menu room, settings room, lead room, loaing room, splash screen room)
-        //instance_create_layer(0, 0, layer_get_id("Instances"), obj_room_title);
     }
 }

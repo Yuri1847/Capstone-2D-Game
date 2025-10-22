@@ -983,6 +983,7 @@
     {"id":{"name":"spr_pillar_church","path":"sprites/spr_pillar_church/spr_pillar_church.yy",},},
     {"id":{"name":"spr_plate_cabinet","path":"sprites/spr_plate_cabinet/spr_plate_cabinet.yy",},},
     {"id":{"name":"spr_plate","path":"sprites/spr_plate/spr_plate.yy",},},
+    {"id":{"name":"spr_popRN","path":"sprites/spr_popRN/spr_popRN.yy",},},
     {"id":{"name":"spr_popup","path":"sprites/spr_popup/spr_popup.yy",},},
     {"id":{"name":"spr_por_damaso","path":"sprites/spr_por_damaso/spr_por_damaso.yy",},},
     {"id":{"name":"spr_por_guevarra","path":"sprites/spr_por_guevarra/spr_por_guevarra.yy",},},

@@ -59,9 +59,22 @@ switch (room) {
 }
 
 
-// Animation
+// Animation + layout config
 alpha = 0;
 state = "fade_in";
 fade_speed = 0.05;
 hold_time = room_speed * 2;
 timer = 0;
+
+// horizontal "stretch from center" progress (0..1)
+width_scale = 0;           // 0 = collapsed, 1 = fully expanded
+target_width_scale = 1;
+transition_speed = 0.12;   // tweak for faster/slower expansion
+
+// padding & margin
+pad_x = 28;    // horizontal padding inside bg
+pad_y = 12;    // vertical padding
+margin_top = 32; // distance from top of GUI area to top of popup
+
+// font to be used for measuring/drawing (set your font resource)
+popup_font = fnt_rn; // change if needed
