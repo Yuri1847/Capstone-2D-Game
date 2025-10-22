@@ -8,6 +8,7 @@ function scr_story_next_objective(){
 
 	// Mark current objective complete
 	chapter.objectives[obj].completed = true;
+	scr_show_popup("Objective Complete");
 
 	// Move to next objective or finish chapter
 	if (obj < array_length(chapter.objectives) - 1) {

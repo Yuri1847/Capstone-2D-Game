@@ -1,4 +1,4 @@
-//npc_id = "testnpc";
+//npc_id = "chap2Tiago";
 /*
 function npc_interact(){
 	
