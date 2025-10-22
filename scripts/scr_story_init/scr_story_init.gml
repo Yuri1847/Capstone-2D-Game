@@ -8,7 +8,7 @@
 global.story_chapters = [
     {
         chapter_title: "Kabanata 2: Handaan sa Bahay ni Kapitan Tiago",
-		summary: "sumarry",
+		summary: "Nagulat sina Padre Sibyla at Padre Damaso ng makita nila ang kasamang panauhin ni Kapitan Tiyago. Siya ang anak ng yumaong kaibigan ni Kapitan Tiago, si Don Crisostomo Ibarra, na galing pang Europa.",
         objectives: [
             {
                 title: "Dumalo sa Handaan ni Kapitan Tiago",

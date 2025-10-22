@@ -1048,6 +1048,7 @@
     {"id":{"name":"spr_sofa_others","path":"sprites/spr_sofa_others/spr_sofa_others.yy",},},
     {"id":{"name":"spr_sofa_right","path":"sprites/spr_sofa_right/spr_sofa_right.yy",},},
     {"id":{"name":"spr_splash_logo","path":"sprites/spr_splash_logo/spr_splash_logo.yy",},},
+    {"id":{"name":"spr_sps_panel","path":"sprites/spr_sps_panel/spr_sps_panel.yy",},},
     {"id":{"name":"spr_staff_station_tile","path":"sprites/spr_staff_station_tile/spr_staff_station_tile.yy",},},
     {"id":{"name":"spr_stick","path":"sprites/spr_stick/spr_stick.yy",},},
     {"id":{"name":"spr_Stone_Hat_House_XL_1Open_Window","path":"sprites/spr_Stone_Hat_House_XL_1Open_Window/spr_Stone_Hat_House_XL_1Open_Window.yy",},},
