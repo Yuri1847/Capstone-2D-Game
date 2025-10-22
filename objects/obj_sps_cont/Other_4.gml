@@ -1,13 +1,10 @@
-if (room == rm_anluwage && global.current_story_index == 0) {
-    scr_story_next();
-} else if (room == rm_chapter2_crisostomo_ibarra && global.current_story_index == 1) {
-    scr_story_next();
-}else if (room == rm_chapter3_hapunan && global.current_story_index == 8) {
-    scr_story_next();
-}else if (room == rm_chapter4_erehe_at_filibustero && global.current_story_index == 10) {
-    scr_story_next();
-}else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 12) {
-    scr_story_next();
-}else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 13) {
-    scr_story_next();
+// === Room Start Story Progress ===
+var ch = global.current_chapter;
+var obj = global.current_objective;
+var chapter = global.story_chapters[ch];
+var current_obj = chapter.objectives[obj];
+
+// Example: Only trigger when entering rm_anluwage at specific story point
+if (room == rm_fonde_de_lala_market && ch == 0 && obj == 0 && !current_obj.completed) {
+    scr_story_next_objective();
 }

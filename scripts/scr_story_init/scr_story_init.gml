@@ -13,11 +13,13 @@ global.story_chapters = [
             {
                 title: "Dumalo sa Handaan ni Kapitan Tiago",
                 description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+				npc_id: "testnpc",
                 completed: false
             },
             {
                 title: "Batiin si Padre Damaso",
                 description: "Lapitan at kamayan si Padre Damaso.",
+				npc_id: "test2",
                 completed: false
             },
             {

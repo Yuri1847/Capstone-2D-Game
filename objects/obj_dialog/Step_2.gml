@@ -47,25 +47,27 @@ if (current_char < string_length(_str)) {
 
     // Go to next message or close dialogue
     if (next) {
-        current_message++;
-        if (current_message >= array_length(messages)) {
-            with (obj_npc_parent) {
-                npc_can_move = true;
-            }
-            // === SIMPLE DIALOGUE SEQUENCE CHECK ===
-            //scr_dialogue_seq();
-            obj_Pause_manager.pause = false;
-            obj_Pause_manager.update_pause();
-            sc_visible_layer([
-                "pause_button_layer",
-                "right_option_layer",
-            ]);
-            if (instance_exists(obj_talk_button)) obj_talk_button.isEnabled = true;
-            instance_destroy();
-        } else {
-            current_char = 0;
-        }
-    }
+	    current_message++;
+	    if (current_message >= array_length(messages)) {
+	        with (obj_npc_parent) {
+	            npc_can_move = true;
+	        }
+			scr_dialogue_seq();
+
+	        obj_Pause_manager.pause = false;
+	        obj_Pause_manager.update_pause();
+	        sc_visible_layer([
+	            "pause_button_layer",
+	            "right_option_layer",
+	        ]);
+	        if (instance_exists(obj_talk_button)) obj_talk_button.isEnabled = true;
+	        
+			instance_destroy();
+	    } else {
+	        current_char = 0;
+	    }
+	}
+
 }
 
 

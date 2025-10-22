@@ -1,3 +1,5 @@
+npc_id = "testnpc";
+/*
 function npc_interact(){
 	
 	
@@ -22,4 +24,4 @@ if (!variable_struct_exists(global.file_handling_data.npc_dialog, "tiago")) glob
 		}]);
 	}
 	
-}
+}*/
