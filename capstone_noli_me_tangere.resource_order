@@ -22,6 +22,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
+    {"name":"obj_global_controller","order":2,"path":"objects/obj_global_controller/obj_global_controller.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},
     {"name":"obj_gotoCemetery","order":1,"path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},
     {"name":"obj_item_receive_popup","order":14,"path":"objects/obj_item_receive_popup/obj_item_receive_popup.yy",},

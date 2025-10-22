@@ -1,3 +1,4 @@
+/*
 if(!isEnabled) exit;
 // obj_talk_button Step Event
 if (mouse_check_button_pressed(mb_left)) {
@@ -13,3 +14,6 @@ if(!place_meeting(obj_player.x, obj_player.y, obj_npc_parent)){
 	obj_npc_parent.can_talk = false;
 	isEnabled = false;
 }
+
+
+*/
