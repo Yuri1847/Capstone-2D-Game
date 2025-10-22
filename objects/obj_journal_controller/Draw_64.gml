@@ -1,7 +1,7 @@
 /// @description Draw Journal UI
 if (!visible) exit;
 
-draw_set_font(fnt_journal);
+draw_set_font(fnt_global_reg);
 
 
 // --- Safe visible GUI area ---
@@ -108,8 +108,8 @@ switch (current_tab) {
 	    var text_width = content_w - (padding_x * 2) - (panel_inner_pad * 2) - 20;
 	    var obj_panel_h = sprite_get_height(spr_obj_panel);
 
-	    draw_set_font(fnt_journal);
-	    draw_set_color(c_black);
+	    //draw_set_font(fnt_journal);
+	    draw_set_color(c_white);
 
 	    //------------------------------------------
 	    // LOOP THROUGH CHAPTERS
@@ -156,17 +156,17 @@ switch (current_tab) {
 	        text_y = chapter_y + panel_inner_pad;
 
 	        // Title
-	        draw_set_color(c_black);
+	        draw_set_color(c_white);
 	        draw_text(text_x, text_y, chapter.chapter_title);
 	        text_y += 28;
 
 	        // Summary
-	        draw_set_color(c_dkgray);
+	        draw_set_color(c_white);
 	        draw_text_ext(text_x, text_y, summary_text, text_width, 26);
 	        text_y += summary_height + 20;
 
 	        // "Objectives:"
-	        draw_set_color(c_black);
+	        draw_set_color(c_white);
 	        draw_text(text_x, text_y, "Objectives:");
 	        text_y += 28;
 			
@@ -186,7 +186,7 @@ switch (current_tab) {
 					var obj_panel_w = content_w - (padding_x * 2) - 60;
 					var obj_panel_x = text_x;
 					var obj_panel_y = obj_y;
-
+					
 					// Draw the background panel
 					draw_sprite_stretched(
 					    spr_obj_panel,
@@ -200,9 +200,9 @@ switch (current_tab) {
 					// Objective text inside with padding
 					var text_pad_x = obj_panel_x + obj_inner_pad;
 					var text_pad_y = obj_panel_y + obj_inner_pad;
-
+					
 					var status = obj.completed ? "[✓]" : "[ ]";
-					draw_set_color(obj.completed ? make_color_rgb(0, 180, 0) : c_dkgray);
+					draw_set_color(obj.completed ? make_color_rgb(0, 180, 0) : c_white);
 					draw_text(text_pad_x, text_pad_y, status + " " + obj.title);
 	            }
 	        }

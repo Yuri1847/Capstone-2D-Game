@@ -1,11 +1,11 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_sps_obj",
+  "%Name":"fnt_global_dialogue",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":26,
   "ascenderOffset":0,
-  "bold":false,
+  "bold":true,
   "canGenerateBitmap":true,
   "charset":0,
   "first":0,
@@ -117,10 +117,10 @@
   "last":0,
   "lineHeight":32,
   "maintainGms1Font":false,
-  "name":"fnt_sps_obj",
+  "name":"fnt_global_dialogue",
   "parent":{
-    "name":"SPS fonts",
-    "path":"folders/Storyline Progression System/SPS fonts.yy",
+    "name":"Global Font",
+    "path":"folders/Fonts/Global Font.yy",
   },
   "pointRounding":0,
   "ranges":[

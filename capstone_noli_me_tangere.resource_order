@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Find hidden Item Quest","order":1,"path":"folders/Find hidden Item Quest.yy",},
+    {"name":"Global Font","order":2,"path":"folders/Fonts/Global Font.yy",},
     {"name":"GLOBAL","order":2,"path":"folders/GLOBAL.yy",},
     {"name":"Audio","order":3,"path":"folders/Objects/FUNCTIONS/Audio.yy",},
     {"name":"daynightcycle","order":16,"path":"folders/Objects/FUNCTIONS/daynightcycle.yy",},
@@ -21,6 +22,8 @@
     {"name":"SPS fonts","order":4,"path":"folders/Storyline Progression System/SPS fonts.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_global_dialogue","order":1,"path":"fonts/fnt_global_dialogue/fnt_global_dialogue.yy",},
+    {"name":"fnt_global_extraBoldDisplay","order":2,"path":"fonts/fnt_global_extraBoldDisplay/fnt_global_extraBoldDisplay.yy",},
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
     {"name":"obj_global_controller","order":2,"path":"objects/obj_global_controller/obj_global_controller.yy",},
     {"name":"obj_goto_ibarra_inside","order":2,"path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},

@@ -53,7 +53,7 @@ if (current_char < string_length(_str)) {
                 npc_can_move = true;
             }
             // === SIMPLE DIALOGUE SEQUENCE CHECK ===
-            scr_dialogue_seq();
+            //scr_dialogue_seq();
             obj_Pause_manager.pause = false;
             obj_Pause_manager.update_pause();
             sc_visible_layer([

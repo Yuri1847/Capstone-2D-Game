@@ -26,7 +26,7 @@ var text_desc    = string(q.description);
 var line_gap = 32;
 
 // Measure widest text
-draw_set_font(fnt_sps_title);
+draw_set_font(fnt_global_reg);
 var w1 = string_width(text_chapter);
 var w2 = string_width(text_gawain);
 var w3 = string_width(text_title);
@@ -67,12 +67,12 @@ var text_x = margin_left + panel_pad_x;
 var text_y = margin_top + panel_pad_y;
 
 // Chapter + label
-draw_set_font(fnt_sps_obj);
+draw_set_font(fnt_sps_title);
 draw_text(text_x, text_y, text_chapter);
 draw_text(text_x, text_y + line_gap, text_gawain);
 
 // Title
-draw_set_font(fnt_sps_title);
+draw_set_font(fnt_sps_obj);
 draw_text(text_x, text_y + line_gap * 2, text_title);
 
 // Description

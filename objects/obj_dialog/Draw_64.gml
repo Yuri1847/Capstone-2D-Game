@@ -53,7 +53,7 @@ if (has_portrait && sprite_exists(_portrait) && !is_narration) {
 }
 
 // === Text styling ===
-draw_set_font(fn_dial);
+draw_set_font(fnt_global_dialogue);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
 
@@ -77,8 +77,10 @@ if (is_narration) {
     var text_w = _boxw - (padding * 2);
 
     // Speaker name
+	draw_set_font(fnt_global_extraBoldDisplay);
     draw_text(text_x, name_y, _name);
 
     // Dialogue text
+	draw_set_font(fnt_global_dialogue);
     draw_text_ext(text_x, text_y, _text, -1, text_w);
 }
