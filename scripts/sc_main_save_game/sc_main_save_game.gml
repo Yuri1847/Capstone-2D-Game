@@ -11,7 +11,9 @@ global.file_handling_data = {
 				key_y: 0,
 			},
 	},
-	dialogue_state : false,
+	npc_dialog: {
+		tiago: false,
+	}
 };
 
 

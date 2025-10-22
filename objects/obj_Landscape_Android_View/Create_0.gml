@@ -28,6 +28,22 @@ display_set_gui_maximize();
 // --- Prevent duplicates ---
 if (instance_number(obj_Landscape_Android_View) > 1) instance_destroy();
 
+// Make sure global.file_handling_data exists
+if (!variable_global_exists("file_handling_data")) {
+    global.file_handling_data = {}; // create an empty struct
+}
+
+// Make sure npc_dialog exists inside it
+if (!variable_struct_exists(global.file_handling_data, "npc_dialog")) {
+    global.file_handling_data.npc_dialog = {}; // create a sub-struct for NPC dialogues
+}
+
+// Example: create default data for specific NPCs
+if (!variable_struct_exists(global.file_handling_data.npc_dialog, "tiago")) {
+    global.file_handling_data.npc_dialog.tiago = false; // default: not yet talked
+}
+
+
 /*
 //streched littul bit
 

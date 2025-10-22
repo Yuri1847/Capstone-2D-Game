@@ -10,5 +10,7 @@ if (obj_talk_button.talk_button_pressed) {
 		"pause_button_layer",
 		"right_option_layer",
 	])
-	create_dialogue(dialog);
+	
+	npc_interact();
+	
 }
