@@ -1,3 +1,4 @@
+/*
 obj_talk_button.isEnabled = true;
 can_talk = true;
 	
@@ -12,4 +13,4 @@ if (obj_talk_button.talk_button_pressed) {
 	])
 	npc_interact();
 	
-}
+}*/
