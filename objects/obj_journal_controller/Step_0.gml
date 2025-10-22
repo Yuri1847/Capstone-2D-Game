@@ -23,12 +23,18 @@ var back_h = bot_h * 0.8;
 var back_x = area.x + 40;
 var back_y = area.y + sh - back_h - ((bot_h - back_h) / 2);
 
-// --- Input loop ---
+// ====================================
+// JOURNAL CONTROLLER STEP EVENT
+// ====================================
+
 var max_fingers = 5;
+var mx, my;
+
 for (var i = 0; i < max_fingers; i++) {
+    // --- Pressed ---
     if (device_mouse_check_button_pressed(i, mb_left)) {
-        var mx = device_mouse_x_to_gui(i);
-        var my = device_mouse_y_to_gui(i);
+        mx = device_mouse_x_to_gui(i);
+        my = device_mouse_y_to_gui(i);
 
         // === TAB SELECTION ===
         for (var t = 0; t < num_tabs; t++) {
@@ -42,12 +48,46 @@ for (var i = 0; i < max_fingers; i++) {
         if (point_in_rectangle(mx, my, back_x, back_y, back_x + back_w, back_y + back_h)) {
             visible = false;
             global.journal_open = false;
-
-            with (obj_joystick_base) {
-                global.enabledJOY = true;
-            }
-
+            with (obj_joystick_base) global.enabledJOY = true;
             sc_visible_layer(["right_option_layer", "pause_button_layer"]);
         }
+
+        // === SCROLL BEGIN ===
+        var content_x = area.x;
+        var content_y = area.y + top_h;
+        var content_w = area.w;
+        var content_h = mid_h;
+
+        if (point_in_rectangle(mx, my, content_x, content_y, content_x + content_w, content_y + content_h)) {
+            scroll_dragging = true;
+            scroll_drag_start = my;
+            scroll_drag_prev = my;
+        }
+    }
+
+    // --- Dragging ---
+    if (device_mouse_check_button(i, mb_left) && scroll_dragging) {
+        my = device_mouse_y_to_gui(i);
+        var delta = my - scroll_drag_prev;
+        scroll_drag_prev = my;
+        scroll_target_y += delta; // scroll with finger drag
+    }
+
+    // --- Released ---
+    if (device_mouse_check_button_released(i, mb_left)) {
+        scroll_dragging = false;
     }
 }
+
+// === Mouse Wheel (desktop) ===
+scroll_target_y -= mouse_wheel_up() * 40;
+scroll_target_y += mouse_wheel_down() * 40;
+
+// === Smooth scroll movement ===
+scroll_y = lerp(scroll_y, scroll_target_y, scroll_speed);
+
+// === Clamp to prevent over-scrolling ===
+if (scroll_y > 0) scroll_y = 0;
+var max_scroll = -max(0, scroll_content_height - (mid_h - 40));
+if (scroll_y < max_scroll) scroll_y = max_scroll;
+scroll_target_y = scroll_y; // lock target if out of bounds

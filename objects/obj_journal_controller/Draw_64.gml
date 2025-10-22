@@ -82,6 +82,8 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
+
+
 switch (current_tab) {
     case "profile":
         draw_text(content_x + padding_x, y_start, "Name: " + string(global.file_handling_data.player_name));
@@ -90,21 +92,48 @@ switch (current_tab) {
         break;
 
     case "challenge":
-        var chapters = [
-            "Chapter 1: Crisostomo Ibarra",
-            "Chapter 2: Hapunan",
-            "Chapter 3: Erehe at Filibustero",
-            "Chapter 4: Liwanag sa Gabing Madilim",
-            "Chapter 5: Ligawan sa Asotea",
-            "Chapter 6: Ang mga Alaala"
-        ];
-        for (var c = 0; c < array_length(chapters); c++) {
-            var item_y = y_start + c * 40;
-            // Only draw if inside content area
-            if (item_y >= content_y && item_y <= content_y + content_h - 20) {
-                draw_text(content_x + padding_x, item_y, chapters[c]);
-            }
-        }
+        // --- SCROLLABLE AREA CLIP BEGIN ---
+		var _surf = surface_create(content_w, content_h);
+		surface_set_target(_surf);
+		draw_clear_alpha(c_black, 0);
+
+		// Draw everything inside the scroll area to this surface
+		var padding_x = 20;
+		var y_start = 20 + scroll_y;
+		var y_offset = 0;
+
+		draw_set_font(fnt_journal);
+		draw_set_color(c_white);
+
+		for (var c = 0; c < array_length(global.story_chapters); c++) {
+		    var chapter = global.story_chapters[c];
+		    var chapter_y = y_start + y_offset;
+		    draw_text(padding_x, chapter_y, chapter.chapter_title);
+		    y_offset += 30;
+
+		    for (var i = 0; i < array_length(chapter.objectives); i++) {
+		        var obj = chapter.objectives[i];
+		        var obj_y = y_start + y_offset;
+		        if (obj_y >= -40 && obj_y <= content_h - 20) {
+		            var status = obj.completed ? "[✓]" : "[ ]";
+		            draw_set_color(obj.completed ? make_color_rgb(150, 255, 150) : c_gray);
+		            draw_text(padding_x + 20, obj_y, status + " " + obj.title);
+		        }
+		        y_offset += 22;
+		    }
+		    y_offset += 16;
+		}
+
+		scroll_content_height = y_offset + 100;
+
+		surface_reset_target();
+
+		// --- DRAW THE SURFACE MASKED IN JOURNAL AREA ---
+		draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
+
+		// Free surface
+		surface_free(_surf);
+
         break;
 
     case "notes":
@@ -117,3 +146,4 @@ switch (current_tab) {
         draw_text(content_x + padding_x + 20, y_start + 80, "- Old Map of San Diego");
         break;
 }
+
