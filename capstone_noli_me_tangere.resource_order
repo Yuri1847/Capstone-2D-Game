@@ -17,6 +17,7 @@
     {"name":"State Slots","order":13,"path":"folders/Objects/FUNCTIONS/State Slots.yy",},
     {"name":"Transition","order":14,"path":"folders/Objects/FUNCTIONS/Transition.yy",},
     {"name":"smooth","order":1,"path":"folders/Sprites/PLAYER/smooth.yy",},
+    {"name":"notUse","order":4,"path":"folders/Storyline Progression System/notUse.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_rn","order":2,"path":"fonts/fnt_rn/fnt_rn.yy",},
@@ -30,6 +31,9 @@
     {"name":"obj_trivia_card_drop","order":3,"path":"objects/obj_trivia_card_drop/obj_trivia_card_drop.yy",},
     {"name":"sc_nolidex","order":6,"path":"scripts/sc_nolidex/sc_nolidex.yy",},
     {"name":"scr_draw_camera_cover","order":1,"path":"scripts/scr_draw_camera_cover/scr_draw_camera_cover.yy",},
+    {"name":"scr_story_next_chapter","order":2,"path":"scripts/scr_story_next_chapter/scr_story_next_chapter.yy",},
+    {"name":"scr_story_next_objective","order":1,"path":"scripts/scr_story_next_objective/scr_story_next_objective.yy",},
+    {"name":"scr_story_reset","order":3,"path":"scripts/scr_story_reset/scr_story_reset.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
     {"name":"spr_journal_back","order":1,"path":"sprites/spr_journal_back/spr_journal_back.yy",},
     {"name":"spr_key_drop","order":1,"path":"sprites/spr_key_drop/spr_key_drop.yy",},
