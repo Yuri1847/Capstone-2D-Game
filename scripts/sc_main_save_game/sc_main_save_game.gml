@@ -9,8 +9,9 @@ global.file_handling_data = {
 				isKey_looted: false,
 				key_x: 0,
 				key_y: 0,
-			}
+			},
 	},
+	dialogue_state : false,
 };
 
 

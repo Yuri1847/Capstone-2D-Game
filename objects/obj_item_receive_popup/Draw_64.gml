@@ -23,7 +23,7 @@ draw_sprite_ext(item_sprite, 0, icon_x, icon_y-20, 1, 1, 0, c_white, alpha);
 draw_set_font(fn_ui_state_slot_descripton);
 draw_set_halign(fa_left);
 draw_set_color(#FFFFFF);
-draw_text(xx + 80, yy + 22, "You receive: " + string(item_name));
+draw_text(xx + 80, yy+22, "You receive: " + string(item_name));
 
 // Reset alpha
 draw_set_alpha(1);

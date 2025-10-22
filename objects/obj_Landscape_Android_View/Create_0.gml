@@ -28,9 +28,6 @@ display_set_gui_maximize();
 // --- Prevent duplicates ---
 if (instance_number(obj_Landscape_Android_View) > 1) instance_destroy();
 
-
-
-
 /*
 //streched littul bit
 

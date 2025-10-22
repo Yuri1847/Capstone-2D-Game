@@ -16,7 +16,7 @@ if (obj_loot_button.loot_button_pressed) {
 
 
 		var popup = instance_create_layer(x, y, _layer, obj_item_receive_popup);
-		popup.item_name = item_name;
+		popup.item_name = "Key";
 		popup.item_sprite = spr_key;
 
 		instance_destroy()
