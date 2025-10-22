@@ -6,7 +6,7 @@ var aw = area.w;
 
 // Center X, top margin offset
 var cx = ax + aw * 0.5;
-var margin_top = 32;
+var margin_top = 96;
 
 // Font and text setup
 draw_set_font(popup_font);

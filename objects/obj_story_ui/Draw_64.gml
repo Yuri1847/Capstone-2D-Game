@@ -1,4 +1,6 @@
-/// obj_story_ui - Draw GUI
+/// obj_story_ui - Draw GUI (Objectives panel, one-line description, dynamic size)
+
+// Safety checks
 if (!variable_global_exists("story_chapters")) exit;
 if (!variable_global_exists("current_chapter")) exit;
 if (!variable_global_exists("current_objective")) exit;
@@ -6,47 +8,61 @@ if (!variable_global_exists("current_objective")) exit;
 var q = scr_story_get_current();
 if (q == undefined) exit;
 
-// === Get GUI visible area ===
+// === GUI visible area ===
 var area = scr_get_camera_gui_area();
+var ax = area.x;
+var ay = area.y;
+var aw = area.w;
+var ah = area.h;
 
-// === Margins relative to GUI area ===
-var margin_left = area.x + 32;
-var margin_top  = area.y + 32;
+// === Margins ===
+var margin_left = ax + 32;
+var margin_top  = ay + 32;
 
-// === Story data ===
-var current_chap = global.story_chapters[global.current_chapter];
-var chap_title   = current_chap.chapter_title;
+// === Text content ===
+var text_label = "Objectives:";
+var text_obj   = string(q.title);
+var text_desc  = string(q.description);
 
-var text_chapter = string(chap_title);
-var text_gawain  = "Gawain:";
-var text_title   = string(q.title);
-var text_desc    = string(q.description);
+// === Fonts ===
+var font_label = fnt_sps_obj;
+var font_text  = fnt_sps_desc;
 
-// === Font + spacing ===
-var line_gap = 32;
+// === Padding & spacing ===
+var pad_x = 32;
+var pad_y = 24;
+var spacing = 6;
 
-// Measure widest text
-draw_set_font(fnt_global_reg);
-var w1 = string_width(text_chapter);
-var w2 = string_width(text_gawain);
-var w3 = string_width(text_title);
-var w4 = string_width(text_desc);
-var text_w = max(w1, w2, w3, w4);
-var text_h = line_gap * 4;
+// === Measure text widths ===
+draw_set_font(font_label);
+var w_label = string_width(text_label);
+var w_obj   = string_width(text_obj);
+draw_set_font(font_text);
+var w_desc  = string_width(text_desc);
 
-// === Panel settings ===
-var panel_pad_x = 32;
-var panel_pad_y = 24;
-var panel_w = text_w + (panel_pad_x * 2);
-var panel_h = text_h + (panel_pad_y * 2);
+// === Measure text heights ===
+draw_set_font(font_label);
+var h_label = string_height(text_label);
 
-// Clamp panel to stay inside visible GUI area
-if (margin_left + panel_w > area.x + area.w)
-    margin_left = (area.x + area.w) - panel_w - 16;
-if (margin_top + panel_h > area.y + area.h)
-    margin_top = (area.y + area.h) - panel_h - 16;
+var h_obj   = string_height(text_obj);
+draw_set_font(font_text);
+var h_desc  = string_height(text_desc);
 
-// === Draw semi-transparent panel ===
+// === Compute final inner dimensions ===
+var text_w = max(w_label, w_obj, w_desc);
+var text_h = h_label + spacing + h_obj + spacing + h_desc;
+
+// === Panel size (dynamic) ===
+var panel_w = text_w + (pad_x * 2);
+var panel_h = text_h + (pad_y * 2);
+
+// Keep inside visible area
+if (margin_left + panel_w > ax + aw)
+    margin_left = (ax + aw) - panel_w - 16;
+if (margin_top + panel_h > ay + ah)
+    margin_top = (ay + ah) - panel_h - 16;
+
+// === Draw background panel ===
 draw_set_alpha(0.5);
 draw_set_color(c_white);
 draw_sprite_stretched(
@@ -57,24 +73,31 @@ draw_sprite_stretched(
     panel_h
 );
 
-// === Draw text inside panel ===
+// === Draw text ===
+var text_x = margin_left + pad_x;
+var text_y = margin_top + pad_y;
+
 draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-var text_x = margin_left + panel_pad_x;
-var text_y = margin_top + panel_pad_y;
+// Label
+draw_set_font(font_label);
+draw_text(text_x, text_y, text_label);
+text_y += h_label + spacing;
 
-// Chapter + label
-draw_set_font(fnt_sps_title);
-draw_text(text_x, text_y, text_chapter);
-draw_text(text_x, text_y + line_gap, text_gawain);
+// Objective
 
-// Title
-draw_set_font(fnt_sps_obj);
-draw_text(text_x, text_y + line_gap * 2, text_title);
+draw_text(text_x, text_y, text_obj);
+text_y += h_obj + spacing;
 
-// Description
-draw_set_font(fnt_sps_desc);
-draw_text(text_x, text_y + line_gap * 3, text_desc);
+// Description (one line only)
+draw_set_font(font_text);
+draw_text(text_x, text_y, text_desc);
+
+// Reset draw state
+draw_set_alpha(1);
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
