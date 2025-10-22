@@ -1,4 +1,4 @@
-obj_talk_button.isEnabled = true;
+/*obj_talk_button.isEnabled = true;
 can_talk = true;
 	
 if (obj_talk_button.talk_button_pressed) {
@@ -11,4 +11,4 @@ if (obj_talk_button.talk_button_pressed) {
 		"right_option_layer",
 	])
 	create_dialogue(dialog);
-}
+}*/

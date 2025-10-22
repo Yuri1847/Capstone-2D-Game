@@ -1,46 +1,58 @@
-/*
+
 // === Always update depth ===
 depth = -y;
-
-// === Check if dialogue is already active ===
-dialogue_active = instance_exists(obj_dialog);
 
 // === Check distance to player ===
 if (instance_exists(obj_player)) {
     var dist = distance_to_object(obj_player);
     can_talk = (dist < 16);
 
-    // === Touch or Click Anywhere ===
-    var max_fingers = 5;
+    // === Show/Hide Talk Button ===
+    if (instance_exists(obj_talk_button)) {
+        obj_talk_button.visible = (can_talk && !instance_exists(obj_dialog));
+    }
+
+    // === Handle Touch/Click ===
     var touched = false;
+    if (can_talk && !dialogue_active) {
+        var max_fingers = 5;
+        for (var i = 0; i < max_fingers; i++) {
+            if (device_mouse_check_button_pressed(i, mb_left)) {
+                var tx = device_mouse_x_to_gui(i);
+                var ty = device_mouse_y_to_gui(i);
 
-    for (var i = 0; i < max_fingers; i++) {
-        if (device_mouse_check_button_pressed(i, mb_left)) {
-            var tx = device_mouse_x_to_gui(i);
-            var ty = device_mouse_y_to_gui(i);
-
-            // Whole screen (1280x720)
-            if (point_in_rectangle(tx, ty, 0, 0, 1280, 720)) {
-                touched = true;
+                // Safe GUI area
+                var area = scr_get_camera_gui_area();
+                if (point_in_rectangle(tx, ty, area.x, area.y, area.x + area.w, area.y + area.h)) {
+                    touched = true;
+                }
             }
         }
     }
 
-    // === Trigger dialogue when close enough and tapped anywhere ===
+    // === Start Dialogue ===
     if (can_talk && !dialogue_active && touched) {
         npc_can_move = false;
-		obj_Pause_manager.pause = true;
-		obj_Pause_manager.update_pause();
-		sc_invisible_layer([
-			"pause_button_layer",
-			"right_option_layer",
-		])
-        create_dialogue(dialog); // pass self as speaker
+        obj_Pause_manager.pause = true;
+        obj_Pause_manager.update_pause();
+        sc_invisible_layer([
+            "pause_button_layer",
+            "right_option_layer",
+        ]);
+        create_dialogue(dialog); // starts dialogue
     }
-}*/
+
+    // === When dialogue ends, reset ===
+    if (!instance_exists(obj_dialog)) {
+        npc_can_move = true;
+        obj_Pause_manager.pause = false;
+        if (instance_exists(obj_talk_button)) obj_talk_button.visible = false;
+    }
+}
 
 
-depth =-y;
+
+//depth =-y;
 
 
 

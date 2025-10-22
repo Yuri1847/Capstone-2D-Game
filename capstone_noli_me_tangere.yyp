@@ -425,6 +425,7 @@
     {"id":{"name":"obj_fullScreen","path":"objects/obj_fullScreen/obj_fullScreen.yy",},},
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},},
     {"id":{"name":"obj_garden_fork","path":"objects/obj_garden_fork/obj_garden_fork.yy",},},
+    {"id":{"name":"obj_global_controller","path":"objects/obj_global_controller/obj_global_controller.yy",},},
     {"id":{"name":"obj_goto_ibarra_inside","path":"objects/obj_goto_ibarra_inside/obj_goto_ibarra_inside.yy",},},
     {"id":{"name":"obj_goto_ibarra_outside","path":"objects/obj_goto_ibarra_outside/obj_goto_ibarra_outside.yy",},},
     {"id":{"name":"obj_gotoCemetery","path":"objects/obj_gotoCemetery/obj_gotoCemetery.yy",},},
