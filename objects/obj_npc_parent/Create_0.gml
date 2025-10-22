@@ -12,9 +12,6 @@ input_key = vk_space;      // key to trigger dialogue
 
 mask_index = spr_Well;
 
-/// obj_npc_parent – Create Event
-
-/// obj_npc_parent – Create Event
 
 if (variable_instance_exists(id, "name")) {
     npc_id = name;

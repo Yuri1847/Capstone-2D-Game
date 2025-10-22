@@ -963,6 +963,7 @@
     {"id":{"name":"spr_mirror_cabinet","path":"sprites/spr_mirror_cabinet/spr_mirror_cabinet.yy",},},
     {"id":{"name":"spr_mug","path":"sprites/spr_mug/spr_mug.yy",},},
     {"id":{"name":"spr_nature_other","path":"sprites/spr_nature_other/spr_nature_other.yy",},},
+    {"id":{"name":"spr_obj_icon","path":"sprites/spr_obj_icon/spr_obj_icon.yy",},},
     {"id":{"name":"spr_obj_panel","path":"sprites/spr_obj_panel/spr_obj_panel.yy",},},
     {"id":{"name":"spr_old_cart_1","path":"sprites/spr_old_cart_1/spr_old_cart_1.yy",},},
     {"id":{"name":"spr_old_cart_2","path":"sprites/spr_old_cart_2/spr_old_cart_2.yy",},},

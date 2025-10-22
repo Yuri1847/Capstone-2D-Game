@@ -7,45 +7,55 @@
 /// scr_story_init
 global.story_chapters = [
     {
-        chapter_title: "Kabanata 2: Handaan sa Bahay ni Kapitan Tiago",
+        chapter_title: "Kabanata 1: Handaan sa Bahay ni Kapitan Tiago",
 		summary: "Nagulat sina Padre Sibyla at Padre Damaso ng makita nila ang kasamang panauhin ni Kapitan Tiyago. Siya ang anak ng yumaong kaibigan ni Kapitan Tiago, si Don Crisostomo Ibarra, na galing pang Europa.",
         objectives: [
             {
                 title: "Dumalo sa Handaan ni Kapitan Tiago",
                 description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
-				npc_id: "testnpc",
+				npc_id: "chap1Tiago",
                 completed: false
             },
             {
                 title: "Batiin si Padre Damaso",
                 description: "Lapitan at kamayan si Padre Damaso.",
-				npc_id: "test2",
+				npc_id: "chap1Damaso",
                 completed: false
             },
             {
                 title: "Pakinggan ang Kuwento Tungkol sa Ama",
                 description: "Makinig sa pag-uusap tungkol sa kabutihan ng iyong ama.",
+				npc_id: "chap1Guevarra",
                 completed: false
             },
             {
-                title: "Magpakilala sa mga Panauhin",
+                title: "Magpakilala sa mga Kababaihan",
                 description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong).",
+				npc_id: "chap1Binibini",
+                completed: false
+            },
+			{
+                title: "Magpakilala sa mga Kalalakihan",
+                description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong).",
+				npc_id: "chap1Kalalakihan",
                 completed: false
             },
             {
                 title: "Tanggapin o Tanggihan ang Imbitasyon ni Kapitan Tinong",
                 description: "Pumili kung sasama sa hapunan kinabukasan.",
+				npc_id: "chap1Tinong",
                 completed: false
             }
         ]
     },
     {
-        chapter_title: "Kabanata 3: Ang Hapunan",
+        chapter_title: "Kabanata 2: Ang Hapunan",
 		summary: "sumarry",
         objectives: [
             {
                 title: "Dumalo sa Hapunan",
                 description: "Umupo sa kabisera at makibahagi sa pagtitipon.",
+				npc_id: "chap2Chair",
                 completed: false
             },
             {
@@ -81,7 +91,7 @@ global.story_chapters = [
         ]
     },
     {
-        chapter_title: "Kabanata 4: Sa Plasa ng Binondo",
+        chapter_title: "Kabanata 3: Sa Plasa ng Binondo",
 		summary: "sumarry",
         objectives: [
             {
@@ -112,7 +122,7 @@ global.story_chapters = [
         ]
     },
     {
-        chapter_title: "Kabanata 5: Fonda de Lala",
+        chapter_title: "Kabanata 4: Fonda de Lala",
 		summary: "sumarry",
         objectives: [
             {
@@ -143,7 +153,7 @@ global.story_chapters = [
         ]
     },
     {
-        chapter_title: "Kabanata 7: Ang Pagdalaw kay Maria Clara",
+        chapter_title: "Kabanata 5: Ang Pagdalaw kay Maria Clara",
 		summary: "sumarry",
         objectives: [
             {
@@ -179,7 +189,7 @@ global.story_chapters = [
         ]
     },
     {
-        chapter_title: "Kabanata 8: Ang mga Alaala",
+        chapter_title: "Kabanata 6: Ang mga Alaala",
 		summary: "sumarry",
         objectives: [
             {

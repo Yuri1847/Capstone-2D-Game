@@ -11,29 +11,27 @@ function scr_dialogue_seq() {
     if (npc_ref != noone) {
         var npc_id = npc_ref.npc_id;
 
-        show_debug_message("🧩 Checking Chapter " + string(ch) + ", Objective " + string(obj) + ", NPC: " + npc_id);
-
         // === CHAPTER 0 ===
         if (ch == 0) {
 
-            // Objective 0: Dumalo sa Handaan ni Kapitan Tiago
-            if (obj == 0 && npc_id == "testnpc") {
-                show_debug_message("✅ Matched Objective 0 (testnpc)");
+            if (obj == 0 && npc_id == "chap1Tiago") {
                 scr_story_next_objective();
             }
-
-            // Objective 1: Batiin si Padre Damaso
-            else if (obj == 1 && npc_id == "test2") {
-                show_debug_message("✅ Matched Objective 1 (test2)");
+            else if (obj == 1 && npc_id == "chap1Damaso") {
                 scr_story_next_objective();
             }
-
-            // Objective 2: Pakinggan ang Kuwento Tungkol sa Ama
-            else if (obj == 2 && npc_id == "padre_sibyla") {
-                show_debug_message("✅ Matched Objective 2 (padre_sibyla)");
+            else if (obj == 2 && npc_id == "chap1Guevarra") {
                 scr_story_next_objective();
             }
-
+            else if (obj == 3 && npc_id == "chap1Binibini") {
+                scr_story_next_objective();
+            }
+			else if (obj == 4 && npc_id == "chap1Kalalakihan") {
+                scr_story_next_objective();
+            }
+			else if (obj == 5 && npc_id == "chap1Tinong") {
+                scr_story_next_objective();
+            }
             else {
                 show_debug_message("❌ No matching NPC for Chapter 0 objectives.");
             }
@@ -44,13 +42,11 @@ function scr_dialogue_seq() {
 
             // Objective 0: Talk to the Guard
             if (obj == 0 && npc_id == "guard") {
-                show_debug_message("✅ Matched Objective 0 (guard)");
                 scr_story_next_objective();
             }
 
             // Objective 1: Meet the Captain
             else if (obj == 1 && npc_id == "captain") {
-                show_debug_message("✅ Matched Objective 1 (captain)");
                 scr_story_next_objective();
             }
 

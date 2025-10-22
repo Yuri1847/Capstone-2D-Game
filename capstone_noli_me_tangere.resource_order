@@ -51,6 +51,7 @@
     {"name":"spr_key_drop","order":1,"path":"sprites/spr_key_drop/spr_key_drop.yy",},
     {"name":"spr_key","order":11,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"spr_loot_button","order":10,"path":"sprites/spr_loot_button/spr_loot_button.yy",},
+    {"name":"spr_obj_icon","order":11,"path":"sprites/spr_obj_icon/spr_obj_icon.yy",},
     {"name":"spr_obj_panel","order":3,"path":"sprites/spr_obj_panel/spr_obj_panel.yy",},
     {"name":"spr_sps_panel","order":9,"path":"sprites/spr_sps_panel/spr_sps_panel.yy",},
     {"name":"spr_talk_quest","order":2,"path":"sprites/spr_talk_quest/spr_talk_quest.yy",},

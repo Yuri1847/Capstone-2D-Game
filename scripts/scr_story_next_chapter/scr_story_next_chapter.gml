@@ -7,7 +7,6 @@ function scr_story_next_chapter(){
 	    global.current_objective = 0;
 
 	    var new_chapter = global.story_chapters[global.current_chapter];
-	    show_debug_message("Next Chapter: " + new_chapter.title);
 	} else {
 	    show_debug_message("All chapters complete!");
 	}

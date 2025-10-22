@@ -8,17 +8,20 @@ function scr_story_next_objective(){
 
 	// Mark current objective complete
 	chapter.objectives[obj].completed = true;
-	show_debug_message("Objective complete: " + chapter.objectives[obj].title);
 
 	// Move to next objective or finish chapter
 	if (obj < array_length(chapter.objectives) - 1) {
 	    global.current_objective += 1;
-	    show_debug_message("Next Objective: " + chapter.objectives[global.current_objective].title);
 	} else {
 	    // Chapter complete
 	    chapter.completed = true;
-	    show_debug_message("Chapter complete: " + chapter.title);
-	    scr_story_next_chapter();
+	    // Proceed to next chapter if available
+        if (ch < array_length(global.story_chapters) - 1) {
+            global.current_chapter += 1;
+            global.current_objective = 0;
+        } else {
+            show_debug_message("🏁 All chapters complete!");
+        }
 	}
 																
 }

@@ -1,1 +1,1 @@
-npc_id = "test2";
+//npc_id = "test2";

@@ -1,4 +1,4 @@
-npc_id = "testnpc";
+//npc_id = "testnpc";
 /*
 function npc_interact(){
 	
