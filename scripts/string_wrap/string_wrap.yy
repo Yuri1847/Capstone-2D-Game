@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_dialogue_seq",
+  "%Name":"string_wrap",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_dialogue_seq",
+  "name":"string_wrap",
   "parent":{
-    "name":"notUse",
-    "path":"folders/Storyline Progression System/notUse.yy",
+    "name":"Journal",
+    "path":"folders/Journal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

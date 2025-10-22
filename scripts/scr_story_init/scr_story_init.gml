@@ -8,6 +8,7 @@
 global.story_chapters = [
     {
         chapter_title: "Kabanata 2: Handaan sa Bahay ni Kapitan Tiago",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Dumalo sa Handaan ni Kapitan Tiago",
@@ -38,6 +39,7 @@ global.story_chapters = [
     },
     {
         chapter_title: "Kabanata 3: Ang Hapunan",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Dumalo sa Hapunan",
@@ -78,6 +80,7 @@ global.story_chapters = [
     },
     {
         chapter_title: "Kabanata 4: Sa Plasa ng Binondo",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Lumabas ng Bahay ni Kapitan Tiago",
@@ -108,6 +111,7 @@ global.story_chapters = [
     },
     {
         chapter_title: "Kabanata 5: Fonda de Lala",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Dumating sa Fonda de Lala",
@@ -138,6 +142,7 @@ global.story_chapters = [
     },
     {
         chapter_title: "Kabanata 7: Ang Pagdalaw kay Maria Clara",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Dumating sa Bahay ni Kapitan Tiago",
@@ -173,6 +178,7 @@ global.story_chapters = [
     },
     {
         chapter_title: "Kabanata 8: Ang mga Alaala",
+		summary: "sumarry",
         objectives: [
             {
                 title: "Sumakay ng Kalesa",

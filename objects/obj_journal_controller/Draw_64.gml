@@ -3,6 +3,7 @@ if (!visible) exit;
 
 draw_set_font(fnt_journal);
 
+
 // --- Safe visible GUI area ---
 var area = scr_get_camera_gui_area();
 var sw = area.w;
@@ -70,7 +71,7 @@ draw_set_alpha(hovered ? 0.8 : 1);
 draw_sprite_stretched(spr_journal_back, 0, back_x, back_y, back_w, back_h);
 draw_set_alpha(1);
 
-draw_set_color(c_white);
+draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(back_x + back_w / 2, back_y + back_h / 2, "Back");
@@ -92,49 +93,143 @@ switch (current_tab) {
         break;
 
     case "challenge":
-        // --- SCROLLABLE AREA CLIP BEGIN ---
-		var _surf = surface_create(content_w, content_h);
-		surface_set_target(_surf);
-		draw_clear_alpha(c_black, 0);
+	    //------------------------------------------
+	    // PREP SCROLLABLE SURFACE
+	    //------------------------------------------
+	    var _surf = surface_create(content_w, content_h);
+	    surface_set_target(_surf);
+	    draw_clear_alpha(c_black, 0);
 
-		// Draw everything inside the scroll area to this surface
-		var padding_x = 20;
-		var y_start = 20 + scroll_y;
-		var y_offset = 0;
+	    var padding_x = 20;
+	    var y_start = 20 + scroll_y;
+	    var y_offset = 0;
 
-		draw_set_font(fnt_journal);
-		draw_set_color(c_white);
+	    var panel_inner_pad = 32; // inner padding for inside panel
+	    var text_width = content_w - (padding_x * 2) - (panel_inner_pad * 2) - 20;
+	    var obj_panel_h = sprite_get_height(spr_obj_panel);
 
-		for (var c = 0; c < array_length(global.story_chapters); c++) {
-		    var chapter = global.story_chapters[c];
-		    var chapter_y = y_start + y_offset;
-		    draw_text(padding_x, chapter_y, chapter.chapter_title);
-		    y_offset += 30;
+	    draw_set_font(fnt_journal);
+	    draw_set_color(c_black);
 
-		    for (var i = 0; i < array_length(chapter.objectives); i++) {
-		        var obj = chapter.objectives[i];
-		        var obj_y = y_start + y_offset;
-		        if (obj_y >= -40 && obj_y <= content_h - 20) {
-		            var status = obj.completed ? "[✓]" : "[ ]";
-		            draw_set_color(obj.completed ? make_color_rgb(150, 255, 150) : c_gray);
-		            draw_text(padding_x + 20, obj_y, status + " " + obj.title);
-		        }
-		        y_offset += 22;
-		    }
-		    y_offset += 16;
-		}
+	    //------------------------------------------
+	    // LOOP THROUGH CHAPTERS
+	    //------------------------------------------
+	    for (var c = 0; c < array_length(global.story_chapters); c++) {
+	        var chapter = global.story_chapters[c];
 
-		scroll_content_height = y_offset + 100;
+	        //------------------------------------------
+	        // CALCULATE PANEL HEIGHT DYNAMICALLY
+	        //------------------------------------------
+	        var text_y = 0;
+	        var summary_text = "";
 
-		surface_reset_target();
+	        // Wrap summary text safely
+	        if (variable_instance_exists(chapter, "summary")) {
+	            summary_text = string(chapter.summary);
+	        }
 
-		// --- DRAW THE SURFACE MASKED IN JOURNAL AREA ---
-		draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
+	        var summary_lines = string_wrap(summary_text, text_width);
+	        var summary_height = string_height(summary_lines);
 
-		// Free surface
-		surface_free(_surf);
+	        var objectives_h = array_length(chapter.objectives) * (obj_panel_h + 10);
+	        var static_text_h = 80; // title + "Objectives:" label spacing
 
-        break;
+	        var chap_panel_h = static_text_h + summary_height + objectives_h + (panel_inner_pad * 2);
+
+	        //------------------------------------------
+	        // DRAW CHAPTER PANEL BACKGROUND
+	        //------------------------------------------
+	        var chapter_y = y_start + y_offset;
+	        draw_sprite_stretched(
+	            spr_chap_panel,
+	            0,
+	            padding_x - 10,
+	            chapter_y - 10,
+	            content_w - (padding_x * 2) + 20,
+	            chap_panel_h
+	        );
+
+	        //------------------------------------------
+	        // DRAW CHAPTER TEXT CONTENT
+	        //------------------------------------------
+	        var text_x = padding_x + panel_inner_pad;
+	        text_y = chapter_y + panel_inner_pad;
+
+	        // Title
+	        draw_set_color(c_black);
+	        draw_text(text_x, text_y, chapter.chapter_title);
+	        text_y += 28;
+
+	        // Summary
+	        draw_set_color(c_dkgray);
+	        draw_text_ext(text_x, text_y, summary_text, text_width, 26);
+	        text_y += summary_height + 20;
+
+	        // "Objectives:"
+	        draw_set_color(c_black);
+	        draw_text(text_x, text_y, "Objectives:");
+	        text_y += 28;
+			
+			// Add gap between "Objectives:" and list
+			text_y += 10; // 👈 adjust this value (10–20) to your preference
+
+	        //------------------------------------------
+	        // OBJECTIVES LIST
+	        //------------------------------------------
+	        for (var i = 0; i < array_length(chapter.objectives); i++) {
+	            var obj = chapter.objectives[i];
+	            var obj_y = text_y + (i * (obj_panel_h + 10));
+
+	            if (obj_y >= -60 && obj_y <= content_h - 20) {
+	                // Background for objective
+	                var obj_inner_pad = 8; // 👈 adjust this (8–12 usually looks good)
+					var obj_panel_w = content_w - (padding_x * 2) - 60;
+					var obj_panel_x = text_x;
+					var obj_panel_y = obj_y;
+
+					// Draw the background panel
+					draw_sprite_stretched(
+					    spr_obj_panel,
+					    0,
+					    obj_panel_x,
+					    obj_panel_y,
+					    obj_panel_w,
+					    obj_panel_h
+					);
+
+					// Objective text inside with padding
+					var text_pad_x = obj_panel_x + obj_inner_pad;
+					var text_pad_y = obj_panel_y + obj_inner_pad;
+
+					var status = obj.completed ? "[✓]" : "[ ]";
+					draw_set_color(obj.completed ? make_color_rgb(0, 180, 0) : c_dkgray);
+					draw_text(text_pad_x, text_pad_y, status + " " + obj.title);
+	            }
+	        }
+
+	        //------------------------------------------
+	        // GAP BETWEEN CHAPTER PANELS
+	        //------------------------------------------
+	        y_offset += chap_panel_h + 40;
+	    }
+
+	    //------------------------------------------
+	    // SCROLL AREA
+	    //------------------------------------------
+	    scroll_content_height = y_offset + 100;
+	    surface_reset_target();
+
+	    //------------------------------------------
+	    // DRAW SCROLLED CONTENT
+	    //------------------------------------------
+	    draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
+	    surface_free(_surf);
+	break;
+
+
+
+
+
 
     case "notes":
         draw_text(content_x + padding_x, y_start, "Unlocked Notes:");
