@@ -41,12 +41,12 @@ isEnabled = false;
 //Center inside Viewport
 
 //for mobile resolution
-//ui_padding_x = (display_get_width() / 2 - 464/2);
-//ui_padding_y = (display_get_height() / 2 - 304/2);
+ui_padding_x = (display_get_width() / 2 - 464/2);
+ui_padding_y = (display_get_height() / 2 - 304/2);
 
 //for pc resolution
-ui_padding_x = (display_get_gui_width() / 2 - 464/2);
-ui_padding_y = (display_get_gui_height() / 2 - 304/2);
+//ui_padding_x = (display_get_gui_width() / 2 - 464/2);
+//ui_padding_y = (display_get_gui_height() / 2 - 304/2);
 
 
 

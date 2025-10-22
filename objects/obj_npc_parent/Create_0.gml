@@ -10,4 +10,4 @@ dialogue_active = false;   // whether dialogue is currently running
 input_key = vk_space;      // key to trigger dialogue
 
 
-mask_index = spr_Large_Bush1;
+mask_index = spr_Well;

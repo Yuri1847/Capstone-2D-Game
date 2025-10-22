@@ -452,6 +452,7 @@
     {"id":{"name":"obj_Inventory","path":"objects/obj_Inventory/obj_Inventory.yy",},},
     {"id":{"name":"obj_Invi_Block","path":"objects/obj_Invi_Block/obj_Invi_Block.yy",},},
     {"id":{"name":"obj_invisible_collision_block","path":"objects/obj_invisible_collision_block/obj_invisible_collision_block.yy",},},
+    {"id":{"name":"obj_item_receive_popup","path":"objects/obj_item_receive_popup/obj_item_receive_popup.yy",},},
     {"id":{"name":"obj_journal_button","path":"objects/obj_journal_button/obj_journal_button.yy",},},
     {"id":{"name":"obj_journal_controller","path":"objects/obj_journal_controller/obj_journal_controller.yy",},},
     {"id":{"name":"obj_joystick_base","path":"objects/obj_joystick_base/obj_joystick_base.yy",},},
