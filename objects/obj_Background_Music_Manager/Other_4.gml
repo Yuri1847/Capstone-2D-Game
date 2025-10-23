@@ -14,7 +14,7 @@ switch (room_name) {
     case "rm_main_menu":
 	case "rm_settings_menu":
 	case "rm_load_game_menu": 
-        sc_set_bgm(snd_background_music);
+        sc_set_bgm(snd_main_music);
         break;
 	case "rm_Hotel_Fonda_First_Floor":
 	case "rm_Hotel_Fonda_Second_Floor":

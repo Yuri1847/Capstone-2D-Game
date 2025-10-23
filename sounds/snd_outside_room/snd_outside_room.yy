@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":137.28247,
   "name":"snd_outside_room",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_outside_room.mp3",
+  "soundFile":"snd_outside_room.wav",
   "type":0,
   "volume":1.0,
 }

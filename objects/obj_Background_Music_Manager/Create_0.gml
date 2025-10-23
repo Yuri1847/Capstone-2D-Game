@@ -1,4 +1,4 @@
-current_bgm = snd_background_music; // default at start (main menu)
+current_bgm = snd_main_music; // default at start (main menu)
 target_bgm = current_bgm;
 fade_speed = 0.02; // fade speed per step (adjust to taste)
 is_fading_out = false;
