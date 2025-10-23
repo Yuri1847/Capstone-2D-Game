@@ -27,6 +27,7 @@ inventory.addItem("Apple", 10, spr_stone);
 inventory.addItem("Coin", 5, spr_stone);
 
 inventory.addItem("Trivia_card", 5, spr_trivia_card);
+inventory.addItem("Rosary", 5, spr_rosary);
 
 isEnabled = false;
 
