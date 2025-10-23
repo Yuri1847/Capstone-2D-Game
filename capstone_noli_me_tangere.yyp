@@ -714,7 +714,6 @@
     {"id":{"name":"scr_story_reset","path":"scripts/scr_story_reset/scr_story_reset.yy",},},
     {"id":{"name":"string_wrap","path":"scripts/string_wrap/string_wrap.yy",},},
     {"id":{"name":"submit_quiz","path":"scripts/submit_quiz/submit_quiz.yy",},},
-    {"id":{"name":"sq_first","path":"sequences/sq_first/sq_first.yy",},},
     {"id":{"name":"snd_button_clicked","path":"sounds/snd_button_clicked/snd_button_clicked.yy",},},
     {"id":{"name":"snd_empty_slot","path":"sounds/snd_empty_slot/snd_empty_slot.yy",},},
     {"id":{"name":"snd_inside_room","path":"sounds/snd_inside_room/snd_inside_room.yy",},},
