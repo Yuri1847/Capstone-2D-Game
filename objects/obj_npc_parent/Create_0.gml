@@ -20,3 +20,7 @@ if (variable_instance_exists(id, "name")) {
 }
 
 
+icon_frame = 0;
+icon_speed = 0.25; // how fast it animates (0.25 = slower, 1 = normal speed)
+
+

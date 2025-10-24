@@ -9,7 +9,7 @@ if (visible) {
         } else {
             alpha = 1;
         }
-    } else {	
+    } else {
         // hidden once timer <= 0
         visible = false;
         alpha = 0;

@@ -81,6 +81,13 @@ if (instance_exists(obj_player)) {
     }
 }
 
+icon_frame += icon_speed;
+
+var frame_count = sprite_get_number(spr_obj_icon);
+if (icon_frame >= frame_count) {
+    icon_frame = 0; // loop
+}
+
 
 /*
 // === Check distance to player ===
