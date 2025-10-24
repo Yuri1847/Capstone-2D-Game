@@ -1,8 +1,16 @@
 //Draw background
+
+var area = scr_get_camera_gui_area();
+
+xx = area.x + minimap_margin;
+yy = area.y + (area.h - h)/2;
+
+
+
 if (!surface_exists(surfMinimapBg)){
 	RefreshMapBG();
 }
-draw_surface(surfMinimapBg, x, y);
+draw_surface(surfMinimapBg, xx, yy);
 
 //Draw entities
 if (!surface_exists(surfMinimapEntities)){
@@ -48,7 +56,7 @@ var current_obj = global.story_chapters[global.current_chapter].objectives[globa
 }
 
 surface_reset_target();
-draw_surface(surfMinimapEntities, x, y);
+draw_surface(surfMinimapEntities, xx, yy);
 
 //Draw Border
-draw_sprite_stretched(spr_Minimap_Border, 0, x, y, w, h);
+draw_sprite_stretched(spr_Minimap_Border, 0, xx, yy, w, h);

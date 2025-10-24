@@ -13,7 +13,6 @@ if ((room_width >= 640 && room_width < 1280) && (room_height >= 360 && room_heig
 	w = room_width/global.tile_size;
 } 
 
-
 /*//by height
 else if ((room_width >= 360 && room_width < 720) && (room_height >= 640 && room_height < 1280 )){
 	global.tile_size = 3;
@@ -61,10 +60,6 @@ else if ((room_width >= 1110 && room_width < 3200 ) && (room_height >= 1920 && r
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
 } */
-
-
-x = 20;
-y = 200;
 
 tilemap_array = [];
 
