@@ -1,11 +1,20 @@
 //Small to Medium Map size
-//by width
-if ((room_width >= 640 && room_width < 1280) && (room_height >= 360 && room_height < 720 )){
+if ((room_width >= 640 && room_width < 1280) && (room_height >= 360 && room_height < 1280 )){
 	global.tile_size = 3;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
+} else if ((room_width >= 720 && room_width <= 1500) && (room_height >= 720 && room_height <= 1500 )){
+	global.tile_size = 6;
+	h = room_height/global.tile_size;
+	w = room_width/global.tile_size;
+} else if ((room_width >= 1080 && room_width <= 1700) && (room_height >= 1080 && room_height <= 1700 )){
+	global.tile_size = 5;
+	h = room_height/global.tile_size;
+	w = room_width/global.tile_size;
 } 
-//by height
+
+
+/*//by height
 else if ((room_width >= 360 && room_width < 720) && (room_height >= 640 && room_height < 1280 )){
 	global.tile_size = 3;
 	h = room_height/global.tile_size;
@@ -51,11 +60,11 @@ else if ((room_width >= 1110 && room_width < 3200 ) && (room_height >= 1920 && r
 	global.tile_size = 10;
 	h = room_height/global.tile_size;
 	w = room_width/global.tile_size;
-} 
+} */
 
 
 x = 20;
-y = 20;
+y = 200;
 
 tilemap_array = [];
 
