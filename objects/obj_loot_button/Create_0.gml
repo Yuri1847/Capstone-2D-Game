@@ -1,7 +1,6 @@
-x = ((display_get_width() / 2) - ((display_get_width() / 2) / 2)+1052);
-y = (display_get_height() / 2 + 94);
-btn_x = x;
-btn_y = y;
+/*x = ((display_get_width() / 2) - ((display_get_width() / 2) / 2)+1052);
+y = (display_get_height() / 2 + 94);*/
+
 
 loot_button_pressed = false;
 
