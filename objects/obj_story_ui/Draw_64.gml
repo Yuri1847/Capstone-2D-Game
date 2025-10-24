@@ -1,9 +1,8 @@
 /// obj_story_ui - Draw GUI (Objectives panel, one-line description, dynamic size)
 
-// Safety checks
-if (!variable_global_exists("story_chapters")) exit;
-if (!variable_global_exists("current_chapter")) exit;
-if (!variable_global_exists("current_objective")) exit;
+// === Safety checks ===
+if (!variable_global_exists("story_quests")) exit;
+if (!variable_global_exists("current_story_index")) exit;
 
 var q = scr_story_get_current();
 if (q == undefined) exit;
@@ -20,7 +19,7 @@ var margin_left = ax + 32;
 var margin_top  = ay + 32;
 
 // === Text content ===
-var text_label = "Objectives:";
+var text_label = "Objective:";
 var text_obj   = string(q.title);
 var text_desc  = string(q.description);
 
@@ -43,7 +42,6 @@ var w_desc  = string_width(text_desc);
 // === Measure text heights ===
 draw_set_font(font_label);
 var h_label = string_height(text_label);
-
 var h_obj   = string_height(text_obj);
 draw_set_font(font_text);
 var h_desc  = string_height(text_desc);
@@ -88,7 +86,6 @@ draw_text(text_x, text_y, text_label);
 text_y += h_label + spacing;
 
 // Objective
-
 draw_text(text_x, text_y, text_obj);
 text_y += h_obj + spacing;
 
@@ -96,7 +93,7 @@ text_y += h_obj + spacing;
 draw_set_font(font_text);
 draw_text(text_x, text_y, text_desc);
 
-// Reset draw state
+// === Reset draw state ===
 draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_halign(fa_left);

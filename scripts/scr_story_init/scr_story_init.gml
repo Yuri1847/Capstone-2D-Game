@@ -1,272 +1,44 @@
-/// @function scr_story_init()
-/// @description Initialize linear story quest list
-//redo storyline
-/// @function scr_story_init()
-/// @description Initializes the full story structure and progress tracking
 
-/// scr_story_init
-global.story_chapters = [
-    {
-        chapter_title: "Kabanata 1: Handaan sa Bahay ni Kapitan Tiago",
-		summary: "Nagulat sina Padre Sibyla at Padre Damaso ng makita nila ang kasamang panauhin ni Kapitan Tiyago. Siya ang anak ng yumaong kaibigan ni Kapitan Tiago, si Don Crisostomo Ibarra, na galing pang Europa.",
-        objectives: [
-            {
-                title: "Dumalo sa Handaan ni Kapitan Tiago",
-                description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
-				npc_id: "chap1Tiago",
-                completed: false
-            },
-            {
-                title: "Batiin si Padre Damaso",
-                description: "Lapitan at kamayan si Padre Damaso.",
-				npc_id: "chap1Damaso",
-                completed: false
-            },
-            {
-                title: "Pakinggan ang Kuwento Tungkol sa Ama",
-                description: "Makinig sa pag-uusap tungkol sa kabutihan ng iyong ama.",
-				npc_id: "chap1Guevarra",
-                completed: false
-            },
-            {
-                title: "Magpakilala sa mga Kababaihan",
-                description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong).",
-				npc_id: "chap1Binibini",
-                completed: false
-            },
-			{
-                title: "Magpakilala sa mga Kalalakihan",
-                description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong).",
-				npc_id: "chap1Kalalakihan",
-                completed: false
-            },
-            {
-                title: "Tanggapin o Tanggihan ang Imbitasyon ni Kapitan Tinong",
-                description: "Pumili kung sasama sa hapunan kinabukasan.",
-				npc_id: "chap1Tinong",
-                completed: false
-            }
-        ]
-    },
-    {
-        chapter_title: "Kabanata 2: Ang Hapunan",
-		summary: "sumarry",
-        objectives: [
-            {
-                title: "Dumalo sa Hapunan",
-                description: "Umupo sa kabisera at makibahagi sa pagtitipon.",
-				npc_id: "chap2Chair",
-                completed: false
-            },
-            {
-                title: "Obserbahan ang Alitan ng mga Pari",
-                description: "Pakinggan sina Padre Damaso at Padre Sibyla habang nagtatalo.",
-                completed: false
-            },
-            {
-                title: "Makipag-usap sa Tinyente o Don Tiburcio",
-                description: "Lapitan sila upang marinig ang iba’t ibang pananaw.",
-                completed: false
-            },
-            {
-                title: "Kaunting Insidente: Natapakan si Donya Victorina",
-                description: "Pumili kung makikialam ba o mananatiling tahimik.",
-                completed: false
-            },
-            {
-                title: "Tanggapin ang Tinola",
-                description: "Kumain ng tinolang inihanda para sa iyo.",
-                completed: false
-            },
-            {
-                title: "Sagutin ang mga Tanong ng mga Panauhin",
-                description: "Makipag-usap sa grupo nina Laruja at Donya Victorina.",
-                completed: false
-            },
-            {
-                title: "Ipahayag ang Damdamin Tungkol sa Ama",
-                description: "Sabihin ang saloobin mo sa pagkawala ng iyong ama.",
-                completed: false
-            }
-        ]
-    },
-    {
-        chapter_title: "Kabanata 3: Sa Plasa ng Binondo",
-		summary: "sumarry",
-        objectives: [
-            {
-                title: "Lumabas ng Bahay ni Kapitan Tiago",
-                description: "Umalis upang maglakad-lakad at makahinga ng sariwang hangin.",
-                completed: false
-            },
-            {
-                title: "Maglakad sa Plasa ng Binondo",
-                description: "Obserbahan ang paligid at makausap ang mga tindera.",
-                completed: false
-            },
-            {
-                title: "Makita si Tinyente Guevarra",
-                description: "Lapitan si Tinyente na nasa gilid ng plasa.",
-                completed: false
-            },
-            {
-                title: "Pakinggan ang Salaysay ng Tinyente",
-                description: "Pakinggan ang kuwento ng pagkamatay ni Don Rafael.",
-                completed: false
-            },
-            {
-                title: "Matapos ang Salaysay",
-                description: "Makinig hanggang dulo ng kuwento at magmuni-muni.",
-                completed: false
-            }
-        ]
-    },
-    {
-        chapter_title: "Kabanata 4: Fonda de Lala",
-		summary: "sumarry",
-        objectives: [
-            {
-                title: "Dumating sa Fonda de Lala",
-                description: "Ipatuloy ang biyahe at pumasok sa tinutuluyan ni Ibarra.",
-                completed: false
-            },
-            {
-                title: "Magmasid sa Silid at Kapaligiran",
-                description: "Obserbahan ang mga gamit at tanawin sa labas ng bintana.",
-                completed: false
-            },
-            {
-                title: "Tumingin sa Bintana",
-                description: "Lapitan ang bintana upang simulan ang cutscene.",
-                completed: false
-            },
-            {
-                title: "Matunghayan si Maria Clara",
-                description: "Obserbahan ang babaeng nagliliwanag sa kasuotan ng ginto’t diyamante.",
-                completed: false
-            },
-            {
-                title: "Magpahinga",
-                description: "Matulog upang tapusin ang gabi.",
-                completed: false
-            }
-        ]
-    },
-    {
-        chapter_title: "Kabanata 5: Ang Pagdalaw kay Maria Clara",
-		summary: "sumarry",
-        objectives: [
-            {
-                title: "Dumating sa Bahay ni Kapitan Tiago",
-                description: "Pumunta sa bahay matapos ang misa upang dalawin si Maria Clara.",
-                completed: false
-            },
-            {
-                title: "Makipag-usap kay Tiya Isabel",
-                description: "Humingi ng pahintulot na makausap si Maria Clara.",
-                completed: false
-            },
-            {
-                title: "Hintayin si Maria Clara sa Asotea",
-                description: "Maghintay habang nag-aayos si Maria Clara.",
-                completed: false
-            },
-            {
-                title: "Makipag-usap kay Maria Clara",
-                description: "Simulan ang diyalogo sa asotea.",
-                completed: false
-            },
-            {
-                title: "Ipakita ang Liham",
-                description: "Ibigay at ipabasa kay Maria Clara ang liham.",
-                completed: false
-            },
-            {
-                title: "Magpaalam kay Maria Clara",
-                description: "Tapusin ang pag-uusap at magpaalam nang magalang.",
-                completed: false
-            }
-        ]
-    },
-    {
-        chapter_title: "Kabanata 6: Ang mga Alaala",
-		summary: "sumarry",
-        objectives: [
-            {
-                title: "Sumakay ng Kalesa",
-                description: "Umalis mula sa bahay ni Maria Clara at maglibot sa Maynila.",
-                completed: false
-            },
-            {
-                title: "Libutin ang Kamaynilaan",
-                description: "Pagmasdan ang paligid habang bumibiyahe.",
-                completed: false
-            },
-            {
-                title: "Magmasid at Mag-reflect sa Bawat Lokasyon",
-                description: "I-trigger ang mga monologo ni Ibarra sa bawat lugar.",
-                completed: false
-            },
-            {
-                title: "Makita si Padre Damaso sa Kalesa",
-                description: "I-trigger ang maikling cutscene ng pagdaan ni Padre Damaso.",
-                completed: false
-            },
-            {
-                title: "Bumisita sa Hardin ng Botaniko",
-                description: "Ihambing ang tanawin sa mga hardin ng Europa.",
-                completed: false
-            },
-            {
-                title: "Pag-ninilay sa Bagumbayan",
-                description: "Magkaroon ng eksenang pagmumuni tungkol sa karunungan.",
-                completed: false
-            }
-        ]
-    }
-];
-
-global.current_chapter = 0;
-global.current_objective = 0;
-
-//show_debug_message("Story initialized. Current chapter: " + global.story_chapters[0].title);
-
-
-/*
 global.story_quests = [
-	//chapter 2
+	//chapter 1
     {//trigger Cutscene o diyalogo ng pagbati sa mga panauhin.
 	    title: "Dumalo sa Handaan ni Kapitan Tiago",
 	    description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+		npc_id: "chap1Tiago",
 	    completed: false
 	},
 	{//Tatanggihan ang iyong pagbati — magbubukas ng emosyonal na reaksyon o pagpipilian ng tugon.
 	    title: "Batiin si Padre Damaso",
 	    description: "Lapitan at kamayan si Padre Damaso.",
+		npc_id: "chap1Damaso",
 	    completed: false
 	},
 	{//Gantimpala: Nagbubukas ng tala sa “Kwento ng Ama ni Ibarra” sa iyong talaarawan o journal.
 	    title: "Pakinggan ang kuwento tungkol sa kabutihan ng iyong ama.",
 	    description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+		npc_id: "chap1Guevarra",
 	    completed: false
 	},
 	{//Mekaniko: Pumili kung anong paraan ng pagpapakilala — tradisyonal o Europeo. -- Epekto: Tataas o bababa ang respeto ng mga panauhin depende sa pagpili.
 	    title: "Magpakilala sa mga Panauhin",
 	    description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong)..",
+		npc_id: "chap1Binibini",
+	    completed: false
+	},
+	{//Mekaniko: Pumili kung anong paraan ng pagpapakilala — tradisyonal o Europeo. -- Epekto: Tataas o bababa ang respeto ng mga panauhin depende sa pagpili.
+	    title: "Magpakilala sa mga Panauhin",
+	    description: "Lapitan ang tatlong grupo (mga babae, mga lalaki, at si Kapitan Tinong)..",
+		npc_id: "chap1Kalalakihan",
 	    completed: false
 	},
 	{//Kinalabasan: Maaaring magbukas ng karagdagang side quest sa susunod na kabanata.
 	    title: "Tanggapin o Tanggihan ang Imbitasyon ni Kapitan Tinong",
 	    description: "Pumili kung sasama sa hapunan kinabukasan.",
-	    completed: false
-	},
-	{//trigger Cutscene o diyalogo ng pagbati sa mga panauhin.
-	    title: "Dumalo sa Handaan ni Kapitan Tiago",
-	    description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+		npc_id: "chap1Tinong",
 	    completed: false
 	},
 	
-	//chapter 3
+	//chapter 2
 	{//Trigger: Cutscene kung saan makikita ang pagtatalo ng mga pari sa upuan. -- Kinalabasan: Simula ng eksenang sosyal na puno ng tensyon.
 	    title: "Dumalo sa Hapunan",
 	    description: "Umupo sa kabisera at makibahagi sa pagtitipon..",
@@ -303,7 +75,7 @@ global.story_quests = [
 	    completed: false
 	},
 	
-	//chapter 4
+	//chapter 3
 	{//Trigger: Matapos ang eksena ng hapunan. - Resulta: Bubukas ang exploration scene sa Binondo Plaza.
 	    title: "Lumabas ng Bahay ni Kapitan Tiago",
 	    description: "Umalis upang maglakad-lakad at makahinga ng sariwang hangin.",
@@ -330,7 +102,7 @@ global.story_quests = [
 	    completed: false
 	},
 	
-		//chapter 5
+		//chapter 4
 		{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
 		    title: "Dumating sa Fonda de Lala",
 		    description: "Ipatuloy ang biyahe at pumasok sa tinutuluyan ni Ibarra.",
@@ -358,7 +130,7 @@ global.story_quests = [
 		},
 
 	
-	//chapter 7
+	//chapter 5
 	{//Trigger: Cutscene ng pagdating ni Ibarra sa bahay.
 	    title: "Dumating sa Bahay ni Kapitan Tiago",
 	    description: "Pumunta sa bahay matapos ang misa upang dalawin si Maria Clara.",
@@ -390,7 +162,7 @@ global.story_quests = [
 	    completed: false
 	},
 	
-	//chapter 8
+	//chapter 6
 	{//Trigger: Cutscene matapos ang kabanata 7 (Ligawan sa Asotea). ➤ Epekto: Bubukas ang map o on-rails sequence na nagpapakita ng mga tanawin.
 	    title: "Sumakay ng Kalesa",
 	    description: "Umalis mula sa bahay ni Maria Clara at maglibot sa Maynila.",
@@ -431,7 +203,7 @@ global.story_quests = [
 
 global.current_story_index = 0; // start at first quest
 
-*/
+
 
 
 

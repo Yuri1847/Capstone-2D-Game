@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_story_next",
   "parent":{
-    "name":"notUse",
-    "path":"folders/Storyline Progression System/notUse.yy",
+    "name":"Storyline Progression System",
+    "path":"folders/Storyline Progression System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

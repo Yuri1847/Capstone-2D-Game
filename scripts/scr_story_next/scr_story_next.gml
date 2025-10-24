@@ -1,9 +1,5 @@
 
-
-
-
-
-/*function scr_story_next(){
+function scr_story_next(){
 	/// @function scr_story_next()
 	/// @description Move to next story quest
 
@@ -20,4 +16,4 @@
 	    show_debug_message("Storyline complete!");
 	}
 
-}*/
+}
