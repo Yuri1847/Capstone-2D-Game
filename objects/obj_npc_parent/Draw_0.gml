@@ -10,7 +10,12 @@ if (can_talk && !instance_exists(obj_dialog)) {
 // === Draw Objective Icon if Active ===
 var current_obj = scr_story_get_current();
 
-if (current_obj.npc_id == npc_id && !current_obj.completed) {
-	var icon_y = y - sprite_height;
-	draw_sprite(spr_obj_icon, 0, x, icon_y);
+// === Draw objective icon safely ===
+if (!current_obj.completed) {
+    // Only check npc_id if both exist
+    if (!variable_instance_exists(id, "npc_id") || !variable_struct_exists(current_obj, "npc_id") || current_obj.npc_id == npc_id) {
+        var icon_y = y - sprite_height;
+        draw_sprite(spr_obj_icon, 0, x, icon_y);
+    }
 }
+

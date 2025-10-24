@@ -39,22 +39,30 @@ with (obj_npc_parent)
     // === Draw Objective Icon if Active ===
     var current_obj = scr_story_get_current();
 
-    // Draw icon if this NPC matches the active quest target
-    if (entityNPC && current_obj.npc_id == npc_id && !current_obj.completed)
+    if (entityNPC && !current_obj.completed)
     {
-        draw_sprite_ext(
-            spr_obj_icon,
-            0,
-            x / global.tile_size,
-            y / global.tile_size,
-            1.0,
-            1.0,
-            0.0,
-            c_white,
-            1.0
-        );
+        // Check npc_id safely — draw even if npc_id not defined
+        if (
+            (!variable_instance_exists(id, "npc_id")) ||
+            (!variable_struct_exists(current_obj, "npc_id")) ||
+            (current_obj.npc_id == npc_id)
+        )
+        {
+            draw_sprite_ext(
+                spr_obj_icon,
+                0,
+                x / global.tile_size,
+                y / global.tile_size,
+                1.0,
+                1.0,
+                0.0,
+                c_white,
+                1.0
+            );
+        }
     }
 }
+
 
 
 surface_reset_target();

@@ -4,6 +4,11 @@ global.story_quests = [
     {//trigger Cutscene o diyalogo ng pagbati sa mga panauhin.
 	    title: "Dumalo sa Handaan ni Kapitan Tiago",
 	    description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+	    completed: false
+	},
+	{//Tatanggihan ang iyong pagbati — magbubukas ng emosyonal na reaksyon o pagpipilian ng tugon.
+	    title: "Kapitan Tiago",
+	    description: "Lapitan si Kapitan Tiago",
 		npc_id: "chap1Tiago",
 	    completed: false
 	},
@@ -37,6 +42,7 @@ global.story_quests = [
 		npc_id: "chap1Tinong",
 	    completed: false
 	},
+	
 	
 	//chapter 2
 	{//Trigger: Cutscene kung saan makikita ang pagtatalo ng mga pari sa upuan. -- Kinalabasan: Simula ng eksenang sosyal na puno ng tensyon.
@@ -201,7 +207,7 @@ global.story_quests = [
 ]
 
 
-global.current_story_index = 0; // start at first quest
+global.current_story_index = 0;
 
 
 

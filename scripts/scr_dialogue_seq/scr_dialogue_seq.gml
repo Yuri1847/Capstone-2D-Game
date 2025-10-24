@@ -3,35 +3,35 @@ function scr_dialogue_seq(){
 	// === SIMPLE DIALOGUE SEQUENCE CHECK ===
 	//chapter 2
 		    if (messages == global.chap2_dial1) {
-		        if (global.current_story_index == 2) {
+		        if (global.current_story_index == 1) {
 				    scr_story_next();
 				}
 
 		        global.current_dialogue = global.chap2_dial2;
 		    }
 		    else if (messages == global.chap2_dial2) {
-				if (global.current_story_index == 3) {
+				if (global.current_story_index == 2) {
 				    scr_story_next();
 				}
 		       
 		        global.current_dialogue = global.chap2_dial3; 
 		    }
 			else if (messages == global.chap2_dial3) {
-				if (global.current_story_index == 4) {
+				if (global.current_story_index == 3) {
 				    scr_story_next();
 				}
 		        
 		        global.current_dialogue = global.chap2_dial4; 
 		    }
 			else if (messages == global.chap2_dial4) {
-				if (global.current_story_index == 5) {
+				if (global.current_story_index == 4) {
 				    scr_story_next();
 				}
 		        
 		        global.current_dialogue = global.chap2_dial5; 
 		    }
 			else if (messages == global.chap2_dial5) {
-				if (global.current_story_index == 6) {
+				if (global.current_story_index == 5) {
 				    scr_story_next();
 				}
 		        global.current_dialogue = global.chap2_dial6; 
