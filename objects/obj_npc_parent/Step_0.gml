@@ -66,8 +66,6 @@ if (instance_exists(obj_player)) {
 	        if (instance_exists(d)) {
 	            d.npc_ref = id; // ✅ Now this will actually work!
 	        }
-	    } else {
-	        advance_dialogue();
 	    }
 	}
 
@@ -79,6 +77,13 @@ if (instance_exists(obj_player)) {
         obj_Pause_manager.pause = false;
         if (instance_exists(obj_talk_button)) obj_talk_button.visible = false;
     }
+}
+
+icon_frame += icon_speed;
+
+var frame_count = sprite_get_number(spr_obj_icon);
+if (icon_frame >= frame_count) {
+    icon_frame = 0; // loop
 }
 
 

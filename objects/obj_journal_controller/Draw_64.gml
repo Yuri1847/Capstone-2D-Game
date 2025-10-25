@@ -108,33 +108,42 @@ switch (current_tab) {
 	    var text_width = content_w - (padding_x * 2) - (panel_inner_pad * 2) - 20;
 	    var obj_panel_h = sprite_get_height(spr_obj_panel);
 
-	    //draw_set_font(fnt_journal);
 	    draw_set_color(c_white);
+
+	    //------------------------------------------
+	    // AUTO GROUP QUESTS PER CHAPTER
+	    //------------------------------------------
+	    var quests_per_chapter = [];
+	    var current_chapter = 0;
+	    var total_quests = array_length(global.story_quests);
+
+	    // Detect chapters automatically based on gaps or manual grouping
+	    var chapter_sizes = [6, 7, 5, 5, 6, 6]; // chapter 1–6
+	    var quest_index = 0;
+
+	    for (var ch = 0; ch < array_length(chapter_sizes); ch++) {
+	        var chapter_array = [];
+	        for (var i = 0; i < chapter_sizes[ch]; i++) {
+	            if (quest_index >= total_quests) break;
+	            array_push(chapter_array, global.story_quests[quest_index]);
+	            quest_index++;
+	        }
+	        array_push(quests_per_chapter, chapter_array);
+	    }
 
 	    //------------------------------------------
 	    // LOOP THROUGH CHAPTERS
 	    //------------------------------------------
-	    for (var c = 0; c < array_length(global.story_chapters); c++) {
-	        var chapter = global.story_chapters[c];
+	    for (var c = 0; c < array_length(quests_per_chapter); c++) {
+	        var chapter = quests_per_chapter[c];
+	        if (array_length(chapter) == 0) continue;
 
 	        //------------------------------------------
-	        // CALCULATE PANEL HEIGHT DYNAMICALLY
+	        // COMPUTE PANEL HEIGHT
 	        //------------------------------------------
-	        var text_y = 0;
-	        var summary_text = "";
-
-	        // Wrap summary text safely
-	        if (variable_instance_exists(chapter, "summary")) {
-	            summary_text = string(chapter.summary);
-	        }
-
-	        var summary_lines = string_wrap(summary_text, text_width);
-	        var summary_height = string_height(summary_lines);
-
-	        var objectives_h = array_length(chapter.objectives) * (obj_panel_h + 10);
-	        var static_text_h = 80; // title + "Objectives:" label spacing
-
-	        var chap_panel_h = static_text_h + summary_height + objectives_h + (panel_inner_pad * 2);
+	        var objectives_h = array_length(chapter) * (obj_panel_h + 10);
+	        var static_text_h = 60; // title height
+	        var chap_panel_h = static_text_h + objectives_h + (panel_inner_pad * 2);
 
 	        //------------------------------------------
 	        // DRAW CHAPTER PANEL BACKGROUND
@@ -153,57 +162,43 @@ switch (current_tab) {
 	        // DRAW CHAPTER TEXT CONTENT
 	        //------------------------------------------
 	        var text_x = padding_x + panel_inner_pad;
-	        text_y = chapter_y + panel_inner_pad;
+	        var text_y = chapter_y + panel_inner_pad;
 
-	        // Title
+	        // Chapter title
 	        draw_set_color(c_white);
-	        draw_text(text_x, text_y, chapter.chapter_title);
-	        text_y += 28;
-
-	        // Summary
-	        draw_set_color(c_white);
-	        draw_text_ext(text_x, text_y, summary_text, text_width, 26);
-	        text_y += summary_height + 20;
-
-	        // "Objectives:"
-	        draw_set_color(c_white);
-	        draw_text(text_x, text_y, "Objectives:");
-	        text_y += 28;
-			
-			// Add gap between "Objectives:" and list
-			text_y += 10; // 👈 adjust this value (10–20) to your preference
+	        draw_text(text_x, text_y, "Kabanata " + string(c + 1));
+	        text_y += 40;
 
 	        //------------------------------------------
 	        // OBJECTIVES LIST
 	        //------------------------------------------
-	        for (var i = 0; i < array_length(chapter.objectives); i++) {
-	            var obj = chapter.objectives[i];
+	        for (var i = 0; i < array_length(chapter); i++) {
+	            var obj = chapter[i];
 	            var obj_y = text_y + (i * (obj_panel_h + 10));
 
 	            if (obj_y >= -60 && obj_y <= content_h - 20) {
-	                // Background for objective
-	                var obj_inner_pad = 8; // 👈 adjust this (8–12 usually looks good)
-					var obj_panel_w = content_w - (padding_x * 2) - 60;
-					var obj_panel_x = text_x;
-					var obj_panel_y = obj_y;
-					
-					// Draw the background panel
-					draw_sprite_stretched(
-					    spr_obj_panel,
-					    0,
-					    obj_panel_x,
-					    obj_panel_y,
-					    obj_panel_w,
-					    obj_panel_h
-					);
+	                var obj_inner_pad = 8;
+	                var obj_panel_w = content_w - (padding_x * 2) - 60;
+	                var obj_panel_x = text_x;
+	                var obj_panel_y = obj_y;
 
-					// Objective text inside with padding
-					var text_pad_x = obj_panel_x + obj_inner_pad;
-					var text_pad_y = obj_panel_y + obj_inner_pad;
-					
-					var status = obj.completed ? "[✓]" : "[ ]";
-					draw_set_color(obj.completed ? make_color_rgb(0, 180, 0) : c_white);
-					draw_text(text_pad_x, text_pad_y, status + " " + obj.title);
+	                // Draw objective panel background
+	                draw_sprite_stretched(
+	                    spr_obj_panel,
+	                    0,
+	                    obj_panel_x,
+	                    obj_panel_y,
+	                    obj_panel_w,
+	                    obj_panel_h
+	                );
+
+	                // Draw objective text with completion box
+	                var text_pad_x = obj_panel_x + obj_inner_pad;
+	                var text_pad_y = obj_panel_y + obj_inner_pad;
+	                var status = obj.completed ? "[✓]" : "[ ]";
+
+	                draw_set_color(obj.completed ? make_color_rgb(0, 200, 0) : c_white);
+	                draw_text(text_pad_x, text_pad_y, status + " " + obj.title);
 	            }
 	        }
 
@@ -225,6 +220,8 @@ switch (current_tab) {
 	    draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
 	    surface_free(_surf);
 	break;
+
+
 
 
 

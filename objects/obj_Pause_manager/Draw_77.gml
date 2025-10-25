@@ -13,6 +13,7 @@ if (pause) //draw frozen image to screen while paused
 	surface_reset_target();
 }
 
+
 function update_pause(){
 	
 	if(pause){
@@ -39,10 +40,12 @@ function update_pause(){
 		buffer_get_surface(pauseSurfBuffer, pauseSurf, 0);
 		
 	} else{
+		
 		instance_activate_all();
 		instance_deactivate_object(obj_ui_button)
 		if (surface_exists(pauseSurf)) surface_free(pauseSurf);
 		if (buffer_exists(pauseSurfBuffer)) buffer_delete(pauseSurfBuffer);
+		
 	}
 }
 

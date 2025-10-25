@@ -26,7 +26,7 @@ function file_handling_save_game(){
 
 		buffer_write( _buffer, buffer_string, _string);
 
-		buffer_save( _buffer, "Noli.txt");
+		buffer_save( _buffer, "Nolia.txt");
 
 		buffer_delete( _buffer);
 		
@@ -35,9 +35,9 @@ function file_handling_save_game(){
 
 function file_handling_load_game(){
 	
-	if( file_exists( "Noli.txt")) 
+	if( file_exists( "Nolia.txt")) 
 	{
-		var _buffer = buffer_load( "Noli.txt");
+		var _buffer = buffer_load( "Nolia.txt");
 	
 		var _json = buffer_read(_buffer, buffer_string);
 	

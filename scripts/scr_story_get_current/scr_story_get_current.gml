@@ -1,10 +1,9 @@
-function scr_story_get_current(){
-	/// @function scr_story_get_current()
-	/// @description Returns the current objective struct
+function scr_story_get_current() {
+    if (!variable_global_exists("story_quests")) return undefined;
+    if (!variable_global_exists("current_story_index")) return undefined;
 
-	var ch = global.current_chapter;
-	var obj = global.current_objective;
-	return global.story_chapters[ch].objectives[obj];
+    var i = global.current_story_index;
+    if (i < 0 || i >= array_length(global.story_quests)) return undefined;
 
-
-}	
+    return global.story_quests[i];
+}

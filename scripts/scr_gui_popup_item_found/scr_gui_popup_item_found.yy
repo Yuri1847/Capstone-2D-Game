@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_gui_popup_item_found",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_gui_popup_item_found",
+  "parent":{
+    "name":"Dialogue_System",
+    "path":"folders/Dialogue_System.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
