@@ -84,3 +84,15 @@ if (is_narration) {
 	draw_set_font(fnt_global_dialogue);
     draw_text_ext(text_x, text_y, _text, -1, text_w);
 }
+
+
+
+
+
+
+
+
+
+
+
+

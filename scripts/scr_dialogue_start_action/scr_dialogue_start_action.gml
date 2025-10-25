@@ -41,6 +41,10 @@ function scr_dialogue_start_action(action_struct, dialog_inst){
 	        scr_dialogue_action_complete(_dialog);
 	    }
 	    break;
+		
+	case "npc_info":
+	    scr_dialogue_show_npc_info(_dialog, _action.name, _action.desc, _action.portrait);
+	    break;
 
 	default:
 	    // unknown -> complete immediately
