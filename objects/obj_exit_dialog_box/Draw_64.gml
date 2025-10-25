@@ -11,6 +11,9 @@ draw_sprite_stretched(
 );
 draw_set_alpha(1);
 
+var spr_height = sprite_get_height(spr_dialog_box_button);
+var spr_width = sprite_get_width(spr_dialog_box_button);
+
 // obj_dialog_box - Draw GUI Event
 if (dialog_active)
 {
@@ -22,9 +25,9 @@ if (dialog_active)
     draw_set_valign(fa_middle);
     draw_set_color(c_white);
     // Draw buttons
-    draw_sprite(spr_dialog_box_button, 0, btn_yes_x, btn_y);
-    draw_sprite(spr_dialog_box_button, 0, btn_no_x, btn_y);
-    
+    draw_sprite_stretched(spr_dialog_box_button, 0, (btn_yes_x-btn_width), (btn_y-btn_height), 50, spr_height);
+    draw_sprite_stretched(spr_dialog_box_button, 0, (btn_no_x-btn_width), (btn_y-btn_height), 50, spr_height);
+	
     // Draw button text
     draw_text(btn_yes_x, btn_y, "Yes");
     draw_text(btn_no_x, btn_y, "No");
