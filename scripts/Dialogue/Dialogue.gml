@@ -61,6 +61,40 @@ welcome_dialog = [
 	}
 ]
 
+chap2_find_hidden_quest_start = [
+	  {
+	    "name": "Kapitan Tiago",
+	    "msg": "Ibarra, may maliit akong pakiusap. Naiwan ko ang rosaryong regalo ni Padre Dámaso sa may hardin sa likod ng bahay."
+	  },
+	  {
+	    "name": "Kapitan Tiago",
+	    "msg": "Baka maaari mong hanapin ito bago dumating ang iba. Isang tanda iyon ng aking pananampalataya."
+	  },
+	  {
+	    "name": "Ibarra",
+	    "msg": "Walang anuman, Kapitan. Hahanapin ko po agad."
+	  }
+]
+
+chap2_find_hidden_quest_complete = [
+	 {
+    "name": "Ibarra",
+    "msg": "Kapitan, narito na po ang rosaryong hinahanap ninyo."
+  },
+  {
+    "name": "Kapitan Tiago",
+    "msg": "Maraming salamat, Ibarra! Pasensya na sa abala..."
+  },
+  {
+    "name": "Kapitan Tiago",
+    "msg": "Narito ang susi ng lumang silid sa itaas. Buksan mo iyon, baka may mahahanap kang mahalagang gamit ng iyong ama."
+  },
+  {
+    "name": "Narration",
+    "msg": "(Nakakuha ka ng “Old Room Key”)"
+  }
+]
+
 
 
 //level 1
