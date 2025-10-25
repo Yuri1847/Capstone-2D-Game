@@ -66,8 +66,6 @@ if (instance_exists(obj_player)) {
 	        if (instance_exists(d)) {
 	            d.npc_ref = id; // ✅ Now this will actually work!
 	        }
-	    } else {
-	        advance_dialogue();
 	    }
 	}
 

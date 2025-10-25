@@ -1,5 +1,17 @@
+function create_dialogue(_messages) {
+    if (instance_exists(obj_dialog)) return noone;
+    var _inst = instance_create_depth(0, 0, 0, obj_dialog);
+    _inst.messages = _messages;
+    _inst.current_message = 0;
+    _inst.current_char = 0;
+    _inst.char_speed = 1; // or your value
+    _inst._action_running = false;
+    dialogue_active = true;    // global or a place where your code checks
+    return _inst;
+}
 
 
+/*
 function create_dialogue(_messages) {
     if (instance_exists(obj_dialog)) return noone;
     
@@ -9,7 +21,7 @@ function create_dialogue(_messages) {
     
     return _inst; // ✅ Return the created instance
 }
-
+*/
 
 /*
 // color for names ....
