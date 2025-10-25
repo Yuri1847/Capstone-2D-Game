@@ -46,7 +46,8 @@ welcome_dialog = [
 	{
 		name: "Crisostomo Ibarra",
 		msg: "Kamusta ka na kapitan tiago",
-		portrait: spr_por_ibarra
+		portrait: spr_por_ibarra,
+		action: "gui_popup"
 	},
 	{
 		name: "Kapitan Tiago",
@@ -56,13 +57,7 @@ welcome_dialog = [
 	{
 		name: "Narration",
 		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)",
-		actions: [
-        { 
-			type: "npc_info", 
-			name: "Kapitan Tiago", 
-			desc: "Isang mayamang tao sa Maynila na kilala sa kanyang mga piging.", 
-			portrait: spr_por_tiago }
-		]
+		
 	}
 ]
 

@@ -1,3 +1,4 @@
+if (_action_running) exit;
 // === GUI dimensions from camera area ===
 var area = scr_get_camera_gui_area();
 var gui_x = area.x;
@@ -84,8 +85,6 @@ if (is_narration) {
 	draw_set_font(fnt_global_dialogue);
     draw_text_ext(text_x, text_y, _text, -1, text_w);
 }
-
-
 
 
 

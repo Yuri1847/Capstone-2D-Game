@@ -57,13 +57,13 @@ if (current_char < string_length(_str)) {
             if (!variable_struct_exists(msg_struct, "action_done") || !msg_struct.action_done) {
                 messages[current_message].action_done = true;
 
-                // Run the action
                 scr_dialogue_start_action(_a, id);
 
-                // If required, stop dialogue until action completes
-                if (_a.required) {
-                    exit; // wait for scr_dialogue_action_complete() to resume
-                }
+				// Always stop advancing while an action is running
+				if (_action_running) exit;
+
+				// (Optional safety: also check required flag if defined)
+				if (is_struct(_a) && variable_struct_exists(_a, "required") && _a.required) exit;
             }
         }
 
