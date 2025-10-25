@@ -1,3 +1,11 @@
+if(room == rm_fondeDeLala){
+	global.nextRoom = targetRoom;
+	global.nextX = targetX;
+	global.nextY = targetY;
+
+	room_goto(rm_cut_chap1);
+}
+
 
 
 

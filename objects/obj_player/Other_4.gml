@@ -6,3 +6,4 @@ if (variable_global_exists("warp_spawn_x") && global.warp_spawn_x != undefined) 
     global.warp_spawn_x = undefined;
     global.warp_spawn_y = undefined;
 }
+

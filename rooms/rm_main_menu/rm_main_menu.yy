@@ -32,6 +32,7 @@
     {"name":"inst_22233C79","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_9A5E903","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_55FBF507","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_66BDBF2E","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_28FE2CA5","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_2005EBB8","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_22522AD6","path":"roomui/RoomUI/RoomUI.yy",},
@@ -67,7 +68,6 @@
     {"name":"inst_6A9738A8","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_355CCC1","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1C2EA1E1","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_66BDBF2E","path":"rooms/rm_main_menu/rm_main_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -78,7 +78,7 @@
         {"$GMRInstance":"v2","%Name":"inst_E4CBAF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E4CBAF0","objectId":{"name":"obj_reset_button","path":"objects/obj_reset_button/obj_reset_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":64.0,},
         {"$GMRInstance":"v2","%Name":"inst_6EFAB96","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EFAB96","objectId":{"name":"obj_room_title_controller","path":"objects/obj_room_title_controller/obj_room_title_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":64.0,},
         {"$GMRInstance":"v2","%Name":"inst_55FBF507","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55FBF507","objectId":{"name":"obj_global_controller","path":"objects/obj_global_controller/obj_global_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":96.0,},
-        {"$GMRInstance":"v2","%Name":"inst_66BDBF2E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66BDBF2E","objectId":{"name":"obj_warp_dialog","path":"objects/obj_warp_dialog/obj_warp_dialog.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":45.0,"y":367.0,},
+        {"$GMRInstance":"v2","%Name":"inst_66BDBF2E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66BDBF2E","objectId":{"name":"obj_warp_dialog","path":"objects/obj_warp_dialog/obj_warp_dialog.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":45.0,"y":367.0,},
       ],"layers":[],"name":"ins_controllers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_loot","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_22233C79","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22233C79","objectId":{"name":"obj_loot_button","path":"objects/obj_loot_button/obj_loot_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":38.0,"y":232.0,},

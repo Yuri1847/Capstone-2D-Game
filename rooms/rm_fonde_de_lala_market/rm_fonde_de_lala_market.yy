@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_fonde_de_lala_market",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_fonde_de_lala_market/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
