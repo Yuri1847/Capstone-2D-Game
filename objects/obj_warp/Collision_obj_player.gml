@@ -1,4 +1,4 @@
-if(room == rm_fondeDeLala){
+if(room == rm_anluwage){
 	global.nextRoom = targetRoom;
 	global.nextX = targetX;
 	global.nextY = targetY;
