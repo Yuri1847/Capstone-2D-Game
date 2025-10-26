@@ -14,7 +14,7 @@ function scr_dialogue_start_action(action_struct, dialog_inst) {
     if (is_string(_action)) {
         switch (_action) {
             case "letter_system":
-                scr_letter_system(_dialog);
+                scr_letter_system(_dialog, _action.id);
                 break;
             default:
                 scr_dialogue_action_complete(_dialog);

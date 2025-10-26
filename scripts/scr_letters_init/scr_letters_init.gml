@@ -64,32 +64,6 @@ global.reflection_system = {
         }
         return s;
     },
-
-    // JSON save/load helpers
-    save_json: function(filename) {
-        var j = {
-            entries: self.entries,
-            stats: self.stats
-        };
-        var str = json_encode(j);
-        var f = file_text_open_write(filename);
-        file_text_write_string(f, str);
-        file_text_close(f);
-    },
-
-    load_json: function(filename) {
-        if (!file_exists(filename)) return false;
-        var f = file_text_open_read(filename);
-        var s = file_text_read_string(f);
-        file_text_close(f);
-        var j = json_parse(s);
-        if (j != undefined) {
-            self.entries = j.entries;
-            self.stats = j.stats;
-            return true;
-        }
-        return false;
-    }
-};
 	
+}
 }
