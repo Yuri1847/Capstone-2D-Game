@@ -1,10 +1,12 @@
+/*
+//for cutscene
 if(room == rm_anluwage){
 	global.nextRoom = targetRoom;
 	global.nextX = targetX;
 	global.nextY = targetY;
 
 	room_goto(rm_cut_chap1);
-}
+}*/
 
 
 

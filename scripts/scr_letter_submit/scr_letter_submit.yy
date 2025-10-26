@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_letter_submit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_letter_submit",
+  "parent":{
+    "name":"ReflectionSystem",
+    "path":"folders/ReflectionSystem.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

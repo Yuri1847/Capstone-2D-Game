@@ -12,17 +12,10 @@ function scr_dialogue_start_action(action_struct, dialog_inst) {
 	
     if (is_string(_action)) {
         switch (_action) {
-            case "gui_popup":
-                scr_gui_popup_item_found(_dialog);
+            case "letter_system":
+                scr_letter_system(_dialog);
                 break;
 
-            case "quiz_intro":
-                scr_quiz_intro(_dialog);
-                break;
-
-            case "cutscene_intro":
-                scr_cutscene_intro(_dialog);
-                break;
 
             default:
                 scr_dialogue_action_complete(_dialog);
@@ -31,41 +24,32 @@ function scr_dialogue_start_action(action_struct, dialog_inst) {
         exit; 
     }
     if (is_struct(_action)) {
-        switch (_action.type) {
-        case "quiz":
-            if (script_exists(_action.id)) {
-                script_execute(_action.id, _action.params, _dialog);
-            } else {
-                scr_dialogue_action_complete(_dialog);
-            }
-            break;
+	    switch (_action.type) {
+	        case "letter_system":
+	            var _script_ref = undefined;
 
-        case "cutscene":
-            if (script_exists(_action.id)) {
-                script_execute(_action.id, _action.params, _dialog);
-            } else {
-                scr_dialogue_action_complete(_dialog);
-            }
-            break;
+	            if (is_string(_action.id)) {
+	                if (variable_global_exists(_action.id)) {
+	                    _script_ref = variable_global_get(_action.id);
+	                }
+	            } else {
+	                _script_ref = _action.id;
+	            }
 
-        case "script":
-            if (script_exists(_action.id)) {
-                script_execute(_action.id, _action.params, _dialog);
-            } else {
-                scr_dialogue_action_complete(_dialog);
-            }
-            break;
+	            if (is_callable(_script_ref)) {
+	                _script_ref(_dialog);
+	            } else {
+	                show_debug_message("⚠️ Invalid letter script: " + string(_action.id));
+	                scr_dialogue_action_complete(_dialog);
+	            }
+	            break;
 
-        case "gui_popup":
-            scr_gui_popup_item_found(_dialog);
-            break;
+	        default:
+	            scr_dialogue_action_complete(_dialog);
+	            break;
+	    }
+	} else {
+	    scr_dialogue_action_complete(_dialog);
+	}
 
-        default:
-            scr_dialogue_action_complete(_dialog);
-            break;
-        }
-    } else {
-        // safety fallback
-        scr_dialogue_action_complete(_dialog);
-    }
 }

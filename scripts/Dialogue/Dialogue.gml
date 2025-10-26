@@ -47,12 +47,13 @@ welcome_dialog = [
 		name: "Crisostomo Ibarra",
 		msg: "Kamusta ka na kapitan tiago",
 		portrait: spr_por_ibarra,
-		action: "gui_popup"
+			
 	},
 	{
 		name: "Kapitan Tiago",
 		msg: "Mabuti naman ibarra, May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya.",
-		portrait: spr_por_tiago
+		portrait: spr_por_tiago,
+		action: { type: "letter_system", id: "elias_cry" }
 	},
 	{
 		name: "Narration",
