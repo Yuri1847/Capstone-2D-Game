@@ -1,16 +1,23 @@
-/// scr_letter_system(dialog_inst)
-// dialog_inst = the dialogue instance passed from scr_dialogue_start_action
+/// scr_letter_system(dialog_inst, letter_id)
+function scr_letter_system(_dialog, _letter_id) {
 
-function scr_letter_system(_dialog) {
     // Safety
     if (!instance_exists(_dialog)) {
         // nothing to do; ensure dialogue resumes if needed
         return scr_dialogue_action_complete(_dialog);
     }
 
-    // determine letter id and npc name
-    var letter_id = undefined;
-    var npc_name = "";
+    var letter_id = _letter_id;
+	var npc_name = "Unknown";
+	// try fallback only if not provided
+	if (is_undefined(letter_id)) {
+	    if (variable_struct_exists(_dialog, "_current_entry") && is_struct(_dialog._current_entry)) {
+	        var act = _dialog._current_entry.action;
+	        if (is_struct(act) && act.type == "letter" && act.id != undefined) {
+	            letter_id = act.id;
+	        }
+	    }
+	}
     // try extract from the current entry of the dialog (best effort)
     if (variable_struct_exists(_dialog, "_current_entry") && is_struct(_dialog._current_entry)) {
         var act = _dialog._current_entry.action;
