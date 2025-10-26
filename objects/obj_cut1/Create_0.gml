@@ -1,7 +1,7 @@
 var area = scr_get_camera_gui_area();
 seq_inst = layer_sequence_create("ins_cutscene", area.x, area.y, seq_chap1);
 cutscene_start_time = current_time;
-cutscene_duration = 10000; 
+cutscene_duration = 15000; //rule when windows = 15sec same with seq duration but on android and 5 sec more
 if (variable_global_exists("nextRoom")) {
     next_room = global.nextRoom;
 } else {

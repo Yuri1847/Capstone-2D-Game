@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"seq_chap1_Events31",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"seq_chap1_Events31",
+  "parent":{
+    "name":"capstone_noli_me_tangere",
+    "path":"capstone_noli_me_tangere.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
