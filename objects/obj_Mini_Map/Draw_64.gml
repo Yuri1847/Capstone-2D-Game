@@ -38,7 +38,7 @@ with (obj_npc_parent)
 {
     // === Draw Objective Icon if Active ===
     var current_obj = scr_story_get_current();
-
+/*
     if (entityNPC && !current_obj.completed)
     {
         // Check npc_id safely — draw even if npc_id not defined
@@ -60,7 +60,7 @@ with (obj_npc_parent)
                 1.0
             );
         }
-    }
+    }*/
 }
 
 

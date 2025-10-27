@@ -1,17 +1,23 @@
-if (is_undefined(letter_data)) exit;
+/// obj_letter_ui - Draw GUI Event
 
-var title = letter_data.title;
-var pages = letter_data.pages;
-var page_text = pages[current_page];
+var area = scr_get_camera_gui_area();
 
-draw_set_font(font);
+// === Background Panel ===
+draw_set_color(c_black);
+draw_set_alpha(0.75);
+draw_rectangle(area.x, area.y, area.x + area.w, area.y + area.h, false);
+draw_set_alpha(1);
+
+// === Placeholder Content ===
 draw_set_color(c_white);
+draw_text(area.x + 64, area.y + 64, "📜 Letter / Reflection Content Here");
 
-var margin = 64;
-var text_x = margin;
-var text_y = margin + 40;
-var text_w = display_get_gui_width() - margin * 2;
-var text_h = display_get_gui_height() - margin * 2;
+// === Close Button ===
+var bx1 = close_x;
+var by1 = close_y;
+var bx2 = close_x + close_w;
+var by2 = close_y + close_h;
 
-draw_text_ext(text_x, text_y, page_text, text_w, text_h); // now correct: 5 arguments
-draw_text(text_x, margin, title);
+draw_set_color(c_white);
+draw_rectangle(bx1, by1, bx2, by2, false);
+draw_text(bx1 + 40, by1 + 20, "Close");

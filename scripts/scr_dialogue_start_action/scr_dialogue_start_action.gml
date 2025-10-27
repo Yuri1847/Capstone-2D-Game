@@ -1,6 +1,7 @@
 /// scr_dialogue_start_action(_action, _dialog)
 function scr_dialogue_start_action(_action, _dialog)
 {
+    // --- Safety ---
     if (is_undefined(_action) || !instance_exists(_dialog)) {
         if (instance_exists(_dialog)) scr_dialogue_action_complete(_dialog);
         return;
@@ -8,7 +9,7 @@ function scr_dialogue_start_action(_action, _dialog)
 
     _dialog._action_running = true;
 
-    // disable talk button
+    // Disable talk button while action runs
     if (instance_exists(obj_talk_button)) {
         with (obj_talk_button) {
             isEnabled = false;
@@ -16,17 +17,14 @@ function scr_dialogue_start_action(_action, _dialog)
         }
     }
 
-    // ✅ Struct-based reflection action
-    if (is_struct(_action)) {
-        if (variable_struct_exists(_action, "type")) {
-            switch (_action.type) {
-                case "reflection":
-                    scr_letter_system(_dialog, _action);
-                    return;
-            }
-        }
+    // --- Match string actions ---
+    switch (_action)
+    {
+        case "lettersystem":
+            scr_letter_system(_dialog);
+            return;
     }
 
-    // fallback
+    // --- Default fallback ---
     scr_dialogue_action_complete(_dialog);
 }

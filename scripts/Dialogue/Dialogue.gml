@@ -55,12 +55,7 @@ welcome_dialog = [
         name: "Kapitan Tiago",
         msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
         portrait: spr_por_tiago,
-        action: {
-            type: "reflection",
-            npc_id: "kap_tiago",
-            letter_id: "tiago_intro",
-            required: true
-        }
+        action: "lettersystem"
     },
     {
         name: "Narration",
