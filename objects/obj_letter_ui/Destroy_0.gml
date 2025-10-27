@@ -1,8 +1,9 @@
-/// obj_letter_ui Destroy
+// --------------------------------------------------
+// obj_letter_ui — Destroy Event
+// --------------------------------------------------
 global.letter_open = false;
 global.letter_current_dialog = noone;
 
-// re-enable talk button if exists
 if (instance_exists(obj_talk_button)) {
     with (obj_talk_button) {
         isEnabled = true;
