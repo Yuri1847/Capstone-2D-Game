@@ -1,20 +1,14 @@
-// --------------------------------------------------
-// Dialogue helper: scr_dialogue_start_action(action_struct, dialog_inst)
-// --------------------------------------------------
-function scr_dialogue_start_action(action_struct, dialog_inst)
+/// scr_dialogue_start_action(_action, _dialog)
+function scr_dialogue_start_action(_action, _dialog)
 {
-    // ✅ Safety first — make sure parameters are valid
-    if (is_undefined(action_struct) || !instance_exists(dialog_inst)) {
-        if (instance_exists(dialog_inst)) scr_dialogue_action_complete(dialog_inst);
+    if (is_undefined(_action) || !instance_exists(_dialog)) {
+        if (instance_exists(_dialog)) scr_dialogue_action_complete(_dialog);
         return;
     }
 
-    var _action = action_struct;
-    var _dialog = dialog_inst;
-
     _dialog._action_running = true;
 
-    // ✅ Disable talk button while an action is running
+    // disable talk button
     if (instance_exists(obj_talk_button)) {
         with (obj_talk_button) {
             isEnabled = false;
@@ -22,46 +16,17 @@ function scr_dialogue_start_action(action_struct, dialog_inst)
         }
     }
 
-    // ============================================================
-    // 🧩 CASE 1: STRUCT-based actions (preferred)
-    // e.g. action: { type: "letter", id: "elias_cry" }
-    // ============================================================
+    // ✅ Struct-based reflection action
     if (is_struct(_action)) {
         if (variable_struct_exists(_action, "type")) {
             switch (_action.type) {
-                case "letter":
-                    scr_letter_system(_dialog, _action.id);
+                case "reflection":
+                    scr_letter_system(_dialog, _action);
                     return;
             }
         }
-
-        // Unknown struct type → complete immediately
-        scr_dialogue_action_complete(_dialog);
-        return;
     }
 
-    // ============================================================
-    // 🧩 CASE 2: String-based actions (legacy)
-    // e.g. action: "letter:elias_cry"
-    // ============================================================
-    if (is_string(_action)) {
-        // check if it follows "letter:" format
-        if (string_pos("letter:", _action) > 0) {
-            var ida = string_copy(_action, string_pos("letter:", _action) + 7, 999);
-            scr_letter_system(_dialog, ida);
-            return;
-        }
-
-        // Add more string action types here if needed
-        // e.g. "warp:town", "quest:begin_intro", etc.
-
-        // Otherwise complete immediately
-        scr_dialogue_action_complete(_dialog);
-        return;
-    }
-
-    // ============================================================
-    // 🧩 CASE 3: Fallback for any other type
-    // ============================================================
+    // fallback
     scr_dialogue_action_complete(_dialog);
 }

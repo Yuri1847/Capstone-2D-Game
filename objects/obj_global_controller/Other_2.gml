@@ -3,4 +3,7 @@ if (!instance_exists(obj_talk_button)) {
 }
 
 //letter system
-scr_letters_init();
+scr_register_letter("kap_tiago", "tiago_intro", "Tala ni Kapitan Tiago", [
+    "Napakaraming salita ang dumaloy kapag may mahalagang bisita.",
+    "Ang alaala ni Don Rafael ay buhay pa rin sa puso ng marami."
+]);

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_letter_apply_consequences",
+  "%Name":"scr_register_letter",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_letter_apply_consequences",
+  "name":"scr_register_letter",
   "parent":{
     "name":"ReflectionSystem",
     "path":"folders/ReflectionSystem.yy",

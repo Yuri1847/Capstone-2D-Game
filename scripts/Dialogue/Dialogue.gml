@@ -46,24 +46,29 @@ char_colors = {
 
 //testing dialogue
 welcome_dialog = [
-	{
-		name: "Crisostomo Ibarra",
-		msg: "Kamusta ka na kapitan tiago",
-		portrait: spr_por_ibarra,
-			
-	},
-	{
-		name: "Kapitan Tiago",
-		msg: "Mabuti naman ibarra, May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya.",
-		portrait: spr_por_tiago,
-		action: { type: "letter", id: "elias_cry" }
-	},
-	{
-		name: "Narration",
-		msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiyago. Nagulat ang lahat, lalo na sina Padre Sibyla at Padre Dámaso.)",
-		
-	}
-]
+    {
+        name: "Crisostomo Ibarra",
+        msg: "Kamusta ka na Kapitan Tiago.",
+        portrait: spr_por_ibarra
+    },
+    {
+        name: "Kapitan Tiago",
+        msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
+        portrait: spr_por_tiago,
+        action: {
+            type: "reflection",
+            npc_id: "kap_tiago",
+            letter_id: "tiago_intro",
+            required: true
+        }
+    },
+    {
+        name: "Narration",
+        msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"
+    }
+];
+
+
 
 chap2_find_hidden_quest_start = [
 	  {
