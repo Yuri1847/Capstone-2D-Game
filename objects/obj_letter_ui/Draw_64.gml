@@ -75,6 +75,7 @@ draw_set_halign(fa_left);
 var stat_y = y_mid2_end + h_bottom * 0.25;
 draw_text(text_x, stat_y, stat_text);
 
+
 // === Confirm Button ===
 var confirm_w = 200;
 var confirm_h = 48;

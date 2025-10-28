@@ -8,9 +8,9 @@ global.reflection_data = {
             "🟦 [B] Answer calmly with composure and reason. (Wisdom)",
             "🟩 [C] Hold your silence to keep the peace. (Humility)"
         ],
-        stats: "⚖️ Justice: ▓▓▓▓▓░░░ (5)   🧠 Wisdom: ▓▓░░░░░ (2)   🙇 Humility: ▓░░░░░░ (1)"
+        stat_text: "️ Justice: (5)   Wisdom:  (2)   Humility:  (1)",
+		stats: { justice: 5, wisdom: 2, humility: 1 }
     },
-
     elias_guard: {
         header: "✦ REFLECTION ✦",
         question: "“If you were Elias, what would you do?”",
@@ -20,6 +20,7 @@ global.reflection_data = {
             "🟦 [B] Try to reason with the guards peacefully. (Wisdom)",
             "🟩 [C] Flee to fight another day. (Humility)"
         ],
-        stats: "⚖️ Justice: ▓▓▓░░░░ (3)   🧠 Wisdom: ▓▓▓▓░░░ (4)   🙇 Humility: ▓▓░░░░ (2)"
+        stat_text: "️ Justice:  (3)    Wisdom:  (4)   Humility:  (2)",
+		stats: { justice: 3, wisdom: 4, humility: 2 }
     }
 };

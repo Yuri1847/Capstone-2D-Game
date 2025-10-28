@@ -87,26 +87,54 @@ draw_set_valign(fa_top);
 
 switch (current_tab) {
     case "profile":
-        draw_text(content_x + padding_x, y_start, "Name: " + string(global.file_handling_data.player_name));
-        draw_text(content_x + padding_x, y_start + 40, "Level:");
-        draw_text(content_x + padding_x, y_start + 80, "Knowledge:");
-		
-		
-		if (variable_global_exists("file_handling_data")) {
-		    var reflections = global.file_handling_data.reflections;
+	    var base_x = content_x + padding_x;
+	    var base_y = y_start;
 
-		    if (is_undefined(reflections)) reflections = {};
+	    draw_text(base_x, base_y, "Name: " + string(global.file_handling_data.player_name));
+	    //draw_text(base_x, base_y + 40, "Level: " + string(global.file_handling_data.player_level));
+	    draw_text(base_x, base_y + 80, "Knowledge:");
 
-		    var keys = variable_struct_get_names(reflections);
-		    for (var i = 0; i < array_length(keys); i++) {
-		        var key = keys[i];
-		        var entry = reflections[$ key];
-		        draw_text(x, y + i * 40, key + ": " + entry.virtue + " — " + entry.choice_text);
-		    }
-		}
+	    // --- Reflection Stats Section ---
+	    var total_justice = 0;
+	    var total_wisdom = 0;
+	    var total_humility = 0;
 
+	    if (variable_global_exists("file_handling_data")) {
+	        var reflections = global.file_handling_data.reflections;
+	        if (is_undefined(reflections)) reflections = {};
 
-        break;
+	        var keys = variable_struct_get_names(reflections);
+
+	        // Draw section title
+	        var y_offset = base_y + 160;
+	        draw_text(base_x, y_offset, "✦ Reflection Journal ✦");
+	        y_offset += 40;
+
+	        for (var i = 0; i < array_length(keys); i++) {
+	            var key = keys[i];
+	            var entry = reflections[$ key];
+
+	            // --- Draw reflection record ---
+	            var log_text = key + ": " + entry.virtue + " — " + entry.choice_text;
+	            draw_text(base_x, y_offset + i * 40, log_text);
+
+	            // --- Add stats if stored ---
+	            if (variable_struct_exists(entry, "stats")) {
+	                var s = entry.stats;
+	                total_justice += s.justice;
+	                total_wisdom += s.wisdom;
+	                total_humility += s.humility;
+	            }
+	        }
+
+	        // --- Draw totals at bottom ---
+	        y_offset += array_length(keys) * 40 + 60;
+	        draw_text(base_x, y_offset, "⚖️ Justice: " + string(total_justice));
+	        draw_text(base_x, y_offset + 40, "🧠 Wisdom: " + string(total_wisdom));
+	        draw_text(base_x, y_offset + 80, "🙇 Humility: " + string(total_humility));
+	    }
+	break;
+
 
     case "challenge":
 	    //------------------------------------------

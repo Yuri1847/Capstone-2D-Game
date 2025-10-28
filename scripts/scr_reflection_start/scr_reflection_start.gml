@@ -10,13 +10,16 @@ function scr_reflection_start(_dialog, _id)
         ui.dialog_ref = _dialog; // <-- add this
 
         with (ui) {
-            scr_letter_prompt_setup(
-                data.header,
-                data.question,
-                data.scenario,
-                data.choices,
-                data.stats
-            );
-        }
+		    scr_letter_prompt_setup(
+		        data.header,
+		        data.question,
+		        data.scenario,
+		        data.choices,
+		        data.stat_text, // ← add this
+		        data.stats
+		    );
+		}
+
+
     }
 }

@@ -74,22 +74,37 @@ for (var i = 0; i < max_fingers; i++)
 				        case 2: virtue = "Humility"; break;
 				    }
 
-				    // Safety: ensure reflections is a struct
+				    // Ensure global and sub-struct exist
+				    if (!variable_global_exists("file_handling_data")) global.file_handling_data = {};
 				    if (is_array(global.file_handling_data.reflections) || is_undefined(global.file_handling_data.reflections)) {
 				        global.file_handling_data.reflections = {};
 				    }
 
-				    // Save data properly
-				    global.file_handling_data.reflections[$ reflection_id] = {
-					    choice_index: selected_choice,
-					    virtue: virtue,
-					    choice_text: result_text,
-					};
+				    // --- Get reflection stats from global.reflection_data ---
+				    var stats_struct = undefined;
+				    if (variable_global_exists("reflection_data")) {
+				        if (variable_struct_exists(global.reflection_data, reflection_id)) {
+				            var ref_data = global.reflection_data[$ reflection_id];
+				            if (variable_struct_exists(ref_data, "stats")) {
+				                stats_struct = ref_data.stats;
+				            }
+				        }
+				    }
 
+				    // --- Build save entry ---
+				    var save_entry = {
+				        choice_index: selected_choice,
+				        virtue: virtue,
+				        choice_text: result_text,
+				        stats: stats_struct
+				    };
 
+				    // --- Save into file_handling_data ---
+				    global.file_handling_data.reflections[$ reflection_id] = save_entry;
 
 				    show_debug_message("✅ Saved reflection: " + string(reflection_id) + " → " + virtue);
 				}
+
 
 
                 // === Close UI and continue ===

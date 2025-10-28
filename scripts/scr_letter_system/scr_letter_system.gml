@@ -1,5 +1,3 @@
-/// scr_letter_system(_dialog, _id)
-/// Opens the reflection letter UI safely
 
 function scr_letter_system(_dialog, _id)
 {
@@ -61,12 +59,14 @@ function scr_letter_system(_dialog, _id)
 
     // Initialize prompt data
     with (ui) {
-        scr_letter_prompt_setup(
-            data.header,
-            data.question,
-            data.scenario,
-            data.choices,
-            data.stats
-        );
-    }
+	    scr_letter_prompt_setup(
+	        data.header,
+	        data.question,
+	        data.scenario,
+	        data.choices,
+	        data.stat_text, // ← add this
+	        data.stats      // ← keep this
+	    );
+	}
+
 }
