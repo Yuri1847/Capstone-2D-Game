@@ -15,16 +15,16 @@ function scr_dialogue_start_action(_action, _dialog)
         }
     }
 
-    // --- Match string actions ---
-    switch (_action)
+    // --- Parse compound actions ---
+    var parts = string_split(_action, ":");
+    var main_action = parts[0];
+    var sub_id = array_length(parts) > 1 ? parts[1] : "";
+
+    switch (main_action)
     {
         case "lettersystem":
-
-	    scr_letter_system(_dialog);
-	    return;
-
-
-
+            scr_letter_system(_dialog, sub_id);
+            return;
     }
 
     scr_dialogue_action_complete(_dialog);

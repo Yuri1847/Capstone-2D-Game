@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_reflection_start",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_reflection_start",
+  "parent":{
+    "name":"ReflectionSystem",
+    "path":"folders/ReflectionSystem.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
