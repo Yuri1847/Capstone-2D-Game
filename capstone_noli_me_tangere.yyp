@@ -717,6 +717,7 @@
     {"id":{"name":"scr_letter_prompt_setup","path":"scripts/scr_letter_prompt_setup/scr_letter_prompt_setup.yy",},},
     {"id":{"name":"scr_letter_system","path":"scripts/scr_letter_system/scr_letter_system.yy",},},
     {"id":{"name":"scr_reflection_get_data","path":"scripts/scr_reflection_get_data/scr_reflection_get_data.yy",},},
+    {"id":{"name":"scr_reflection_init","path":"scripts/scr_reflection_init/scr_reflection_init.yy",},},
     {"id":{"name":"scr_reflection_start","path":"scripts/scr_reflection_start/scr_reflection_start.yy",},},
     {"id":{"name":"scr_story_get_current","path":"scripts/scr_story_get_current/scr_story_get_current.yy",},},
     {"id":{"name":"scr_story_init","path":"scripts/scr_story_init/scr_story_init.yy",},},

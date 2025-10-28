@@ -1,4 +1,4 @@
-/// scr_letter_system(_dialog, _id)
+
 function scr_letter_system(_dialog, _id)
 {
     if (string_length(_id) == 0) {
@@ -16,6 +16,7 @@ function scr_letter_system(_dialog, _id)
     var ui = instance_create_layer(0, 0, "ins_gui", obj_letter_ui);
     if (ui != noone) {
         ui.dialog_ref = _dialog; // ✅ <— important fix
+		 ui.reflection_id = _id;
         with (ui) {
             scr_letter_prompt_setup(
                 data.header,

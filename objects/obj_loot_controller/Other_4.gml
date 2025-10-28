@@ -1,5 +1,5 @@
 file_handling_load_game();
-iskey_loot = global.file_handling_data.items.key.isKey_looted;
+//iskey_loot = global.file_handling_data.items.key.isKey_looted;
 // Remove any existing keys before creating a new one
 
 var _layer = layer_get_id("GUI");

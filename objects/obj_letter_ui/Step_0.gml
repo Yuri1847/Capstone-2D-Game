@@ -1,5 +1,5 @@
+/// Step Event
 var area = scr_get_camera_gui_area();
-
 hover_confirm = false;
 
 var max_fingers = 5;
@@ -23,15 +23,14 @@ for (var i = 0; i < max_fingers; i++)
         var y_rect2 = y_rect1 + choice_h;
 
         // Detect click for selection
-        if (mx > choice_x1 && mx < choice_x2 &&
-            my > y_rect1 && my < y_rect2)
+        if (mx > choice_x1 && mx < choice_x2 && my > y_rect1 && my < y_rect2)
         {
             if (device_mouse_check_button_pressed(i, mb_left))
                 selected_choice = c;
         }
     }
 
-    // === Confirm button region (same as Draw GUI) ===
+    // === Confirm button region ===
     var h_total = area.h;
     var h_top    = h_total * 0.20;
     var h_mid1   = h_total * 0.20;
@@ -47,18 +46,56 @@ for (var i = 0; i < max_fingers; i++)
     var confirm_x = area.x + area.w - confirm_w - 100;
     var confirm_y = stat_y + 20;
 
-    if (mx > confirm_x && mx < confirm_x + confirm_w &&
-        my > confirm_y && my < confirm_y + confirm_h)
+    if (mx > confirm_x && mx < confirm_x + confirm_w && my > confirm_y && my < confirm_y + confirm_h)
     {
         hover_confirm = true;
 
         if (device_mouse_check_button_pressed(i, mb_left))
         {
-            // Only confirm if something is selected
             if (selected_choice != -1)
             {
+                // === Ensure global struct exists ===
+                if (is_undefined(global.file_handling_data))
+                    global.file_handling_data = {};
+
+                if (is_undefined(global.file_handling_data.reflections))
+                    global.file_handling_data.reflections = {};
+
+                // === Save result ===
+				if (!is_undefined(reflection_id))
+				{
+				    var result_text = choice_list[selected_choice];
+				    var virtue = "";
+
+				    switch (selected_choice)
+				    {
+				        case 0: virtue = "Justice"; break;
+				        case 1: virtue = "Wisdom"; break;
+				        case 2: virtue = "Humility"; break;
+				    }
+
+				    // Safety: ensure reflections is a struct
+				    if (is_array(global.file_handling_data.reflections) || is_undefined(global.file_handling_data.reflections)) {
+				        global.file_handling_data.reflections = {};
+				    }
+
+				    // Save data properly
+				    global.file_handling_data.reflections[reflection_id] = {
+					    choice_index: selected_choice,
+					    virtue: virtue,
+					    choice_text: result_text,
+					};
+
+
+
+				    show_debug_message("✅ Saved reflection: " + string(reflection_id) + " → " + virtue);
+				}
+
+
+                // === Close UI and continue ===
                 if (instance_exists(dialog_ref))
                     scr_dialogue_action_complete(dialog_ref);
+
                 instance_destroy();
                 break;
             }

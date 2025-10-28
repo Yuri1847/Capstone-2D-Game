@@ -3,6 +3,8 @@ global.state_slot1_data = {
 	player_y: 0,
 	last_room: room_get_name(room),
 	player_inventory: [],
+	player_name: "Crisostomo Ibarra",
+	reflections: {},
 };
 
 

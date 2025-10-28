@@ -90,6 +90,22 @@ switch (current_tab) {
         draw_text(content_x + padding_x, y_start, "Name: " + string(global.file_handling_data.player_name));
         draw_text(content_x + padding_x, y_start + 40, "Level:");
         draw_text(content_x + padding_x, y_start + 80, "Knowledge:");
+		
+		
+		if (variable_global_exists("file_handling_data")) {
+		    var reflections = global.file_handling_data.reflections;
+
+		    if (is_undefined(reflections)) reflections = {};
+
+		    var keys = variable_struct_get_names(reflections);
+		    for (var i = 0; i < array_length(keys); i++) {
+		        var key = keys[i];
+		        var entry = reflections[? key];
+		        draw_text(x, y + i * 40, key + ": " + entry.virtue + " — " + entry.choice_text);
+		    }
+		}
+
+
         break;
 
     case "challenge":

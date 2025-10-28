@@ -4,6 +4,14 @@ global.file_handling_data = {
 	last_room: rm_fondeDeLala,
 	player_inventory: [],
 	player_name: "Crisostomo Ibarra",
+	reflections: {},
+};
+/*global.file_handling_data = {
+	player_x: 320,
+	player_y: 384,
+	last_room: rm_fondeDeLala,
+	player_inventory: [],
+	player_name: "Crisostomo Ibarra",
 	items : {
 		key: {
 				isKey_looted: false,
@@ -14,7 +22,7 @@ global.file_handling_data = {
 	npc_dialog: {
 		tiago: false,
 	}
-};
+};*/
 
 
 
@@ -26,7 +34,7 @@ function file_handling_save_game(){
 
 		buffer_write( _buffer, buffer_string, _string);
 
-		buffer_save( _buffer, "Nolia.txt");
+		buffer_save( _buffer, "Nolisass.txt");
 
 		buffer_delete( _buffer);
 		
@@ -35,9 +43,9 @@ function file_handling_save_game(){
 
 function file_handling_load_game(){
 	
-	if( file_exists( "Nolia.txt")) 
+	if( file_exists( "Nolisass.txt")) 
 	{
-		var _buffer = buffer_load( "Nolia.txt");
+		var _buffer = buffer_load( "Nolisass.txt");
 	
 		var _json = buffer_read(_buffer, buffer_string);
 	
