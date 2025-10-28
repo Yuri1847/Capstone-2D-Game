@@ -13,7 +13,6 @@
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Challenges","folderPath":"folders/Challenges.yy","name":"Challenges","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Mini Observation Quiz","folderPath":"folders/Challenges/Mini Observation Quiz.yy","name":"Mini Observation Quiz","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Timeline of Encounters","folderPath":"folders/Challenges/Timeline of Encounters.yy","name":"Timeline of Encounters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"ChapterVisuals","folderPath":"folders/ChapterVisuals.yy","name":"ChapterVisuals","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Dialogue_System","folderPath":"folders/Dialogue_System.yy","name":"Dialogue_System","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"object with dialogues","folderPath":"folders/Dialogue_System/object with dialogues.yy","name":"object with dialogues","resourceType":"GMFolder","resourceVersion":"2.0",},

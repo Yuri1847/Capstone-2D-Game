@@ -46,7 +46,7 @@ var content_y = area.y + top_h;
 var content_w = area.w;
 var content_h = mid_h;
 
-draw_set_color(c_black);
+draw_set_color(c_grey);
 draw_rectangle(content_x, content_y, content_x + content_w, content_y + content_h, false);
 
 // Horizontal padding inside content area
@@ -92,7 +92,7 @@ switch (current_tab) {
 	    //------------------------------------------
 	    var _surf = surface_create(content_w, content_h);
 	    surface_set_target(_surf);
-	    draw_clear_alpha(c_black, 0);
+	    draw_clear_alpha(c_black, 1);
 
 	    var padding_x = 20;
 	    var y_start = 20 + scroll_y;
