@@ -62,6 +62,9 @@ for (var i = 0; i < max_fingers; i++)
                     global.file_handling_data.reflections = {};
 
                 // === Save result ===
+				//------------------------------------------
+				// WHEN PLAYER MAKES A REFLECTION CHOICE
+				//------------------------------------------
 				if (!is_undefined(reflection_id))
 				{
 				    var result_text = choice_list[selected_choice];
@@ -86,6 +89,11 @@ for (var i = 0; i < max_fingers; i++)
 				    if (!variable_struct_exists(global.file_handling_data, "wisdom_tickets")) global.file_handling_data.wisdom_tickets = 0;
 				    if (!variable_struct_exists(global.file_handling_data, "humility_tickets")) global.file_handling_data.humility_tickets = 0;
 
+				    // --- Totals setup (for UI tracking) ---
+				    if (!variable_struct_exists(global.file_handling_data, "total_justice")) global.file_handling_data.total_justice = 0;
+				    if (!variable_struct_exists(global.file_handling_data, "total_wisdom")) global.file_handling_data.total_wisdom = 0;
+				    if (!variable_struct_exists(global.file_handling_data, "total_humility")) global.file_handling_data.total_humility = 0;
+
 				    // === Get reflection stats from global.reflection_data ===
 				    var stats_struct = undefined;
 				    if (variable_global_exists("reflection_data")) {
@@ -109,7 +117,6 @@ for (var i = 0; i < max_fingers; i++)
 				    global.file_handling_data.reflections[$ reflection_id] = save_entry;
 
 				    // === MILESTONE & TICKET SYSTEM ===
-				    // Count total virtue points
 				    var total_justice = 0;
 				    var total_wisdom = 0;
 				    var total_humility = 0;
@@ -141,7 +148,21 @@ for (var i = 0; i < max_fingers; i++)
 				        total_humility -= 5;
 				    }
 
+				    // === SAVE RUNNING TOTALS FOR UI DISPLAY ===
+				    global.file_handling_data.total_justice  = 0;
+				    global.file_handling_data.total_wisdom   = 0;
+				    global.file_handling_data.total_humility = 0;
+
+				    for (var i = 0; i < array_length(keys); i++) {
+				        var entry = global.file_handling_data.reflections[$ keys[i]];
+				        if (variable_struct_exists(entry, "stats")) {
+				            global.file_handling_data.total_justice  += entry.stats.justice;
+				            global.file_handling_data.total_wisdom   += entry.stats.wisdom;
+				            global.file_handling_data.total_humility += entry.stats.humility;
+				        }
+				    }
 				}
+
 
 
 

@@ -46,7 +46,7 @@ var content_y = area.y + top_h;
 var content_w = area.w;
 var content_h = mid_h;
 
-draw_set_color(c_white);
+draw_set_color(c_black);
 draw_rectangle(content_x, content_y, content_x + content_w, content_y + content_h, false);
 
 // Horizontal padding inside content area
@@ -100,134 +100,149 @@ switch (current_tab) {
 
 	    var panel_inner_pad = 32;
 	    var line_gap = 40;
-	    var text_width = content_w - (padding_x * 2) - (panel_inner_pad * 2) - 20;
+	    var gap = 40;
 
 	    draw_set_color(c_white);
 
 	    //------------------------------------------
-	    // PROFILE HEADER
+	    // 1️⃣ PROFILE HEADER
 	    //------------------------------------------
-	    var base_x = content_x + padding_x;
-	    var base_y = y_start;
+	    var text_x = padding_x + panel_inner_pad;
+	    var text_y = y_start + panel_inner_pad;
+
+	    var por_x = text_x;
+	    var por_y = text_y;
+	    var por_size = 160;
+	    draw_sprite_stretched(spr_por_ibarra, 0, por_x, por_y, por_size, por_size);
+
+	    // Align name text at portrait bottom
+	    var name_x = por_x + por_size + 20;
+	    var text_height = string_height("A");
+	    var name_y = por_y + por_size - text_height;
+	    draw_text(name_x, name_y, string(global.file_handling_data.player_name));
 
 	    var header_h = 140;
-	    draw_sprite_stretched(spr_chap_panel, 0,
-	        padding_x - 10,
-	        base_y - 10,
-	        content_w - (padding_x * 2) + 20,
-	        header_h
-	    );
-
-	    var text_x = padding_x + panel_inner_pad;
-	    var text_y = base_y + panel_inner_pad;
-
-	    draw_text(text_x, text_y, "👤 Name: " + string(global.file_handling_data.player_name));
-	    //draw_text(text_x, text_y + line_gap, "⭐ Level: " + string(global.file_handling_data.player_level));
-	    draw_text(text_x, text_y + line_gap * 2, "🎓 Knowledge:");
-
-	    y_offset += header_h + 40; // gap below header
+	    y_offset += header_h + gap;
 
 	    //------------------------------------------
-	    // REFLECTION JOURNAL
+	    // 2️⃣ TOTALS SECTION (Virtue Progress)
 	    //------------------------------------------
-	    if (variable_global_exists("file_handling_data")) {
-	        var reflections = global.file_handling_data.reflections;
-	        if (is_undefined(reflections)) reflections = {};
-	        var keys = variable_struct_get_names(reflections);
+	    var tx = padding_x + panel_inner_pad;
+	    var ty = y_start + y_offset + panel_inner_pad;
 
-	        var total_justice = 0;
-	        var total_wisdom = 0;
-	        var total_humility = 0;
+	    // --- Ensure totals exist ---
+	    if (!variable_struct_exists(global.file_handling_data, "total_justice"))  global.file_handling_data.total_justice  = 0;
+	    if (!variable_struct_exists(global.file_handling_data, "total_wisdom"))   global.file_handling_data.total_wisdom   = 0;
+	    if (!variable_struct_exists(global.file_handling_data, "total_humility")) global.file_handling_data.total_humility = 0;
 
-	        // === Background panel for reflections ===
-	        var reflection_y = y_start + y_offset;
-	        var reflection_panel_h = (array_length(keys) * 40) + 200;
-	        draw_sprite_stretched(spr_chap_panel, 0,
-	            padding_x - 10,
-	            reflection_y - 10,
-	            content_w - (padding_x * 2) + 20,
-	            reflection_panel_h
-	        );
+	    var total_justice  = global.file_handling_data.total_justice;
+	    var total_wisdom   = global.file_handling_data.total_wisdom;
+	    var total_humility = global.file_handling_data.total_humility;
 
-	        var text_x2 = padding_x + panel_inner_pad;
-	        var text_y2 = reflection_y + panel_inner_pad;
+	    var max_value = 5;
+	    var justice_ratio  = clamp(total_justice  / max_value, 0, 1);
+	    var wisdom_ratio   = clamp(total_wisdom   / max_value, 0, 1);
+	    var humility_ratio = clamp(total_humility / max_value, 0, 1);
 
-	        draw_text(text_x2, text_y2, "✦ Reflection Journal ✦");
-	        text_y2 += 40;
+	    // --- Alignment Fixes ---
+	    var label_w = string_width("Humility:"); // widest label
+	    var number_w = string_width(string(max_value)); // max number width
+	    var label_gap = 20;
+	    var num_gap = 20;
 
-	        for (var i = 0; i < array_length(keys); i++) {
-	            var key = keys[i];
-	            var entry = reflections[$ key];
-	            var log_text = key + ": " + entry.virtue + " — " + entry.choice_text;
-	            draw_text(text_x2, text_y2 + (i * 40), log_text);
+	    var bar_x = tx + label_w + label_gap + number_w + num_gap;
+	    var bar_w = (content_w - padding_x * 2 - panel_inner_pad * 2) - (label_w + label_gap + number_w + num_gap);
+	    var bar_h = 20;
 
-	            if (variable_struct_exists(entry, "stats")) {
-	                var s = entry.stats;
-	                total_justice += s.justice;
-	                total_wisdom += s.wisdom;
-	                total_humility += s.humility;
-	            }
-	        }
+	    // --- Justice ---
+	    draw_set_color(c_white);
+	    draw_text(tx, ty, "Justice:");
+	    draw_text(tx + label_w + label_gap, ty, string(total_justice));
+	    draw_set_color(make_color_rgb(60, 60, 60));
+	    draw_rectangle(bar_x, ty + 4, bar_x + bar_w, ty + 4 + bar_h, false);
+	    draw_set_color(make_color_rgb(255, 215, 0));
+	    draw_rectangle(bar_x, ty + 4, bar_x + (bar_w * justice_ratio), ty + 4 + bar_h, false);
 
-	        y_offset += reflection_panel_h + 40;
+	    // --- Wisdom ---
+	    draw_set_color(c_white);
+	    draw_text(tx, ty + 40, "Wisdom:");
+	    draw_text(tx + label_w + label_gap, ty + 40, string(total_wisdom));
+	    draw_set_color(make_color_rgb(60, 60, 60));
+	    draw_rectangle(bar_x, ty + 44, bar_x + bar_w, ty + 44 + bar_h, false);
+	    draw_set_color(make_color_rgb(100, 200, 255));
+	    draw_rectangle(bar_x, ty + 44, bar_x + (bar_w * wisdom_ratio), ty + 44 + bar_h, false);
 
-	        //------------------------------------------
-	        // TOTALS PANEL
-	        //------------------------------------------
-	        var totals_y = y_start + y_offset;
-	        var totals_h = 140;
-	        draw_sprite_stretched(spr_chap_panel, 0,
-	            padding_x - 10,
-	            totals_y - 10,
-	            content_w - (padding_x * 2) + 20,
-	            totals_h
-	        );
+	    // --- Humility ---
+	    draw_set_color(c_white);
+	    draw_text(tx, ty + 80, "Humility:");
+	    draw_text(tx + label_w + label_gap, ty + 80, string(total_humility));
+	    draw_set_color(make_color_rgb(60, 60, 60));
+	    draw_rectangle(bar_x, ty + 84, bar_x + bar_w, ty + 84 + bar_h, false);
+	    draw_set_color(make_color_rgb(180, 255, 180));
+	    draw_rectangle(bar_x, ty + 84, bar_x + (bar_w * humility_ratio), ty + 84 + bar_h, false);
 
-	        var tx = padding_x + panel_inner_pad;
-	        var ty = totals_y + panel_inner_pad;
-
-	        draw_text(tx, ty, "⚖️ Justice: " + string(total_justice));
-	        draw_text(tx, ty + 40, "🧠 Wisdom: " + string(total_wisdom));
-	        draw_text(tx, ty + 80, "🙇 Humility: " + string(total_humility));
-
-	        y_offset += totals_h + 40;
-
-	        //------------------------------------------
-	        // TICKETS PANEL
-	        //------------------------------------------
-	        var ticket_y = y_start + y_offset;
-	        var ticket_h = 200;
-	        draw_sprite_stretched(spr_chap_panel, 0,
-	            padding_x - 10,
-	            ticket_y - 10,
-	            content_w - (padding_x * 2) + 20,
-	            ticket_h
-	        );
-
-	        var tx2 = padding_x + panel_inner_pad;
-	        var ty2 = ticket_y + panel_inner_pad;
-
-	        draw_text(tx2, ty2, "🎟 Tickets Summary:");
-	        draw_text(tx2, ty2 + 40, "⚖️ Justice Tickets: " + string(global.file_handling_data.justice_tickets));
-	        draw_text(tx2, ty2 + 80, "🧠 Wisdom Tickets: " + string(global.file_handling_data.wisdom_tickets));
-	        draw_text(tx2, ty2 + 120, "🙇 Humility Tickets: " + string(global.file_handling_data.humility_tickets));
-	        draw_text(tx2, ty2 + 160, "⭐ Total Tickets: " + string(global.file_handling_data.tickets));
-
-	        y_offset += ticket_h + 60;
+	    // --- Milestone ticks ---
+	    draw_set_color(c_white);
+	    for (var i = 1; i < max_value; i++) {
+	        var tick_x = bar_x + (bar_w * (i / max_value));
+	        draw_line(tick_x, ty + 4, tick_x, ty + 4 + bar_h);
+	        draw_line(tick_x, ty + 44, tick_x, ty + 44 + bar_h);
+	        draw_line(tick_x, ty + 84, tick_x, ty + 84 + bar_h);
 	    }
+
+	    // --- Auto-reset at 5 ---
+	    if (total_justice >= max_value)  global.file_handling_data.total_justice  = 0;
+	    if (total_wisdom  >= max_value)  global.file_handling_data.total_wisdom   = 0;
+	    if (total_humility>= max_value)  global.file_handling_data.total_humility = 0;
+
+	    var totals_h = 140;
+	    y_offset += totals_h + gap;
+
+	    //------------------------------------------
+	    // 3️⃣ TICKETS SECTION
+	    //------------------------------------------
+	    var tx2 = padding_x + panel_inner_pad;
+	    var ty2 = y_start + y_offset + panel_inner_pad;
+
+	    draw_text(tx2, ty2, "Tickets Summary:");
+	    draw_text(tx2, ty2 + 40, "Justice Tickets: " + string(global.file_handling_data.justice_tickets));
+	    draw_text(tx2, ty2 + 80, "Wisdom Tickets: " + string(global.file_handling_data.wisdom_tickets));
+	    draw_text(tx2, ty2 + 120, "Humility Tickets: " + string(global.file_handling_data.humility_tickets));
+	    draw_text(tx2, ty2 + 160, "Total Tickets: " + string(global.file_handling_data.tickets));
+
+	    var ticket_h = 200;
+	    y_offset += ticket_h + gap;
+
+	    //------------------------------------------
+	    // 4️⃣ REFLECTION JOURNAL
+	    //------------------------------------------
+	    var reflections = global.file_handling_data.reflections;
+	    var keys = variable_struct_get_names(reflections);
+
+	    var text_x2 = padding_x + panel_inner_pad;
+	    var text_y2 = y_start + y_offset + panel_inner_pad;
+	    draw_text(text_x2, text_y2, "✦ Reflection Journal ✦");
+	    text_y2 += 40;
+
+	    for (var i = 0; i < array_length(keys); i++) {
+	        var key = keys[i];
+	        var entry = reflections[$ key];
+	        var log_text = key + ": " + entry.virtue + " — " + entry.choice_text;
+	        draw_text(text_x2, text_y2 + (i * 40), log_text);
+	    }
+
+	    var reflection_h = (array_length(keys) * 40) + 200;
+	    y_offset += reflection_h + gap;
 
 	    //------------------------------------------
 	    // SCROLL AREA END
 	    //------------------------------------------
 	    scroll_content_height = y_offset + 100;
 	    surface_reset_target();
-
-	    //------------------------------------------
-	    // DRAW SCROLLED CONTENT
-	    //------------------------------------------
 	    draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
 	    surface_free(_surf);
 	break;
+
 
 
 
