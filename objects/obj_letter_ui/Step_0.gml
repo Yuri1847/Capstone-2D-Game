@@ -80,7 +80,7 @@ for (var i = 0; i < max_fingers; i++)
 				    }
 
 				    // Save data properly
-				    global.file_handling_data.reflections[reflection_id] = {
+				    global.file_handling_data.reflections[$ reflection_id] = {
 					    choice_index: selected_choice,
 					    virtue: virtue,
 					    choice_text: result_text,

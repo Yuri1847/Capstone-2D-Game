@@ -100,7 +100,7 @@ switch (current_tab) {
 		    var keys = variable_struct_get_names(reflections);
 		    for (var i = 0; i < array_length(keys); i++) {
 		        var key = keys[i];
-		        var entry = reflections[? key];
+		        var entry = reflections[$ key];
 		        draw_text(x, y + i * 40, key + ": " + entry.virtue + " — " + entry.choice_text);
 		    }
 		}

@@ -2,7 +2,7 @@ global.reflection_data = {
     ibarra_damaso: {
         header: "✦ REFLECTION ✦",
         question: "“If you were Ibarra, what would you do?”",
-        scenario: "❝ Padre Dámaso insults your late father in front of everyone.\nSilence fills the room. ❞",
+        scenario: "❝ Padre Dámaso insults your late father in front of everyone. ❞",
         choices: [
             "🟥 [A] Speak up and defend your father’s honor. (Justice)",
             "🟦 [B] Answer calmly with composure and reason. (Wisdom)",
