@@ -5,6 +5,10 @@ global.file_handling_data = {
 	player_inventory: [],
 	player_name: "Crisostomo Ibarra",
 	reflections: {},
+	justice_tickets: 0,
+	wisdom_tickets: 0,
+	humility_tickets: 0,
+	tickets: 0,
 };
 /*global.file_handling_data = {
 	player_x: 320,
@@ -34,7 +38,7 @@ function file_handling_save_game(){
 
 		buffer_write( _buffer, buffer_string, _string);
 
-		buffer_save( _buffer, "Nolisass.txt");
+		buffer_save( _buffer, "Nolss.txt");
 
 		buffer_delete( _buffer);
 		
@@ -43,9 +47,9 @@ function file_handling_save_game(){
 
 function file_handling_load_game(){
 	
-	if( file_exists( "Nolisass.txt")) 
+	if( file_exists( "Nolss.txt")) 
 	{
-		var _buffer = buffer_load( "Nolisass.txt");
+		var _buffer = buffer_load( "Nolss.txt");
 	
 		var _json = buffer_read(_buffer, buffer_string);
 	

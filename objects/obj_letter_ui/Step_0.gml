@@ -74,13 +74,19 @@ for (var i = 0; i < max_fingers; i++)
 				        case 2: virtue = "Humility"; break;
 				    }
 
-				    // Ensure global and sub-struct exist
+				    // === Ensure global data exists ===
 				    if (!variable_global_exists("file_handling_data")) global.file_handling_data = {};
 				    if (is_array(global.file_handling_data.reflections) || is_undefined(global.file_handling_data.reflections)) {
 				        global.file_handling_data.reflections = {};
 				    }
 
-				    // --- Get reflection stats from global.reflection_data ---
+				    // --- Ticket counters setup ---
+				    if (!variable_struct_exists(global.file_handling_data, "tickets")) global.file_handling_data.tickets = 0;
+				    if (!variable_struct_exists(global.file_handling_data, "justice_tickets")) global.file_handling_data.justice_tickets = 0;
+				    if (!variable_struct_exists(global.file_handling_data, "wisdom_tickets")) global.file_handling_data.wisdom_tickets = 0;
+				    if (!variable_struct_exists(global.file_handling_data, "humility_tickets")) global.file_handling_data.humility_tickets = 0;
+
+				    // === Get reflection stats from global.reflection_data ===
 				    var stats_struct = undefined;
 				    if (variable_global_exists("reflection_data")) {
 				        if (variable_struct_exists(global.reflection_data, reflection_id)) {
@@ -91,7 +97,7 @@ for (var i = 0; i < max_fingers; i++)
 				        }
 				    }
 
-				    // --- Build save entry ---
+				    // === Build save entry ===
 				    var save_entry = {
 				        choice_index: selected_choice,
 				        virtue: virtue,
@@ -99,11 +105,45 @@ for (var i = 0; i < max_fingers; i++)
 				        stats: stats_struct
 				    };
 
-				    // --- Save into file_handling_data ---
+				    // === Save reflection ===
 				    global.file_handling_data.reflections[$ reflection_id] = save_entry;
 
-				    show_debug_message("✅ Saved reflection: " + string(reflection_id) + " → " + virtue);
+				    // === MILESTONE & TICKET SYSTEM ===
+				    // Count total virtue points
+				    var total_justice = 0;
+				    var total_wisdom = 0;
+				    var total_humility = 0;
+
+				    var keys = variable_struct_get_names(global.file_handling_data.reflections);
+				    for (var i = 0; i < array_length(keys); i++) {
+				        var entry = global.file_handling_data.reflections[$ keys[i]];
+				        if (variable_struct_exists(entry, "stats")) {
+				            total_justice += entry.stats.justice;
+				            total_wisdom += entry.stats.wisdom;
+				            total_humility += entry.stats.humility;
+				        }
+				    }
+
+				    // === Virtue milestones (5 points = 1 ticket) ===
+				    while (total_justice >= 5) {
+				        global.file_handling_data.justice_tickets += 1;
+				        global.file_handling_data.tickets += 1;
+				        total_justice -= 5;
+				    }
+				    while (total_wisdom >= 5) {
+				        global.file_handling_data.wisdom_tickets += 1;
+				        global.file_handling_data.tickets += 1;
+				        total_wisdom -= 5;
+				    }
+				    while (total_humility >= 5) {
+				        global.file_handling_data.humility_tickets += 1;
+				        global.file_handling_data.tickets += 1;
+				        total_humility -= 5;
+				    }
+
 				}
+
+
 
 
 

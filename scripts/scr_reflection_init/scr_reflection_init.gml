@@ -9,7 +9,7 @@ global.reflection_data = {
             "🟩 [C] Hold your silence to keep the peace. (Humility)"
         ],
         stat_text: "️ Justice: (5)   Wisdom:  (2)   Humility:  (1)",
-		stats: { justice: 5, wisdom: 2, humility: 1 }
+		stats: { justice: 5, wisdom: 2, humility: 1 },
     },
     elias_guard: {
         header: "✦ REFLECTION ✦",
@@ -21,6 +21,6 @@ global.reflection_data = {
             "🟩 [C] Flee to fight another day. (Humility)"
         ],
         stat_text: "️ Justice:  (3)    Wisdom:  (4)   Humility:  (2)",
-		stats: { justice: 3, wisdom: 4, humility: 2 }
+		stats: { justice: 3, wisdom: 4, humility: 2 },
     }
 };

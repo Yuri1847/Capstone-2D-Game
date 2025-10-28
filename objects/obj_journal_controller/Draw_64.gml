@@ -87,38 +87,80 @@ draw_set_valign(fa_top);
 
 switch (current_tab) {
     case "profile":
+	    //------------------------------------------
+	    // PREP SCROLLABLE SURFACE
+	    //------------------------------------------
+	    var _surf = surface_create(content_w, content_h);
+	    surface_set_target(_surf);
+	    draw_clear_alpha(c_black, 0);
+
+	    var padding_x = 20;
+	    var y_start = 20 + scroll_y;
+	    var y_offset = 0;
+
+	    var panel_inner_pad = 32;
+	    var line_gap = 40;
+	    var text_width = content_w - (padding_x * 2) - (panel_inner_pad * 2) - 20;
+
+	    draw_set_color(c_white);
+
+	    //------------------------------------------
+	    // PROFILE HEADER
+	    //------------------------------------------
 	    var base_x = content_x + padding_x;
 	    var base_y = y_start;
 
-	    draw_text(base_x, base_y, "Name: " + string(global.file_handling_data.player_name));
-	    //draw_text(base_x, base_y + 40, "Level: " + string(global.file_handling_data.player_level));
-	    draw_text(base_x, base_y + 80, "Knowledge:");
+	    var header_h = 140;
+	    draw_sprite_stretched(spr_chap_panel, 0,
+	        padding_x - 10,
+	        base_y - 10,
+	        content_w - (padding_x * 2) + 20,
+	        header_h
+	    );
 
-	    // --- Reflection Stats Section ---
-	    var total_justice = 0;
-	    var total_wisdom = 0;
-	    var total_humility = 0;
+	    var text_x = padding_x + panel_inner_pad;
+	    var text_y = base_y + panel_inner_pad;
 
+	    draw_text(text_x, text_y, "👤 Name: " + string(global.file_handling_data.player_name));
+	    //draw_text(text_x, text_y + line_gap, "⭐ Level: " + string(global.file_handling_data.player_level));
+	    draw_text(text_x, text_y + line_gap * 2, "🎓 Knowledge:");
+
+	    y_offset += header_h + 40; // gap below header
+
+	    //------------------------------------------
+	    // REFLECTION JOURNAL
+	    //------------------------------------------
 	    if (variable_global_exists("file_handling_data")) {
 	        var reflections = global.file_handling_data.reflections;
 	        if (is_undefined(reflections)) reflections = {};
-
 	        var keys = variable_struct_get_names(reflections);
 
-	        // Draw section title
-	        var y_offset = base_y + 160;
-	        draw_text(base_x, y_offset, "✦ Reflection Journal ✦");
-	        y_offset += 40;
+	        var total_justice = 0;
+	        var total_wisdom = 0;
+	        var total_humility = 0;
+
+	        // === Background panel for reflections ===
+	        var reflection_y = y_start + y_offset;
+	        var reflection_panel_h = (array_length(keys) * 40) + 200;
+	        draw_sprite_stretched(spr_chap_panel, 0,
+	            padding_x - 10,
+	            reflection_y - 10,
+	            content_w - (padding_x * 2) + 20,
+	            reflection_panel_h
+	        );
+
+	        var text_x2 = padding_x + panel_inner_pad;
+	        var text_y2 = reflection_y + panel_inner_pad;
+
+	        draw_text(text_x2, text_y2, "✦ Reflection Journal ✦");
+	        text_y2 += 40;
 
 	        for (var i = 0; i < array_length(keys); i++) {
 	            var key = keys[i];
 	            var entry = reflections[$ key];
-
-	            // --- Draw reflection record ---
 	            var log_text = key + ": " + entry.virtue + " — " + entry.choice_text;
-	            draw_text(base_x, y_offset + i * 40, log_text);
+	            draw_text(text_x2, text_y2 + (i * 40), log_text);
 
-	            // --- Add stats if stored ---
 	            if (variable_struct_exists(entry, "stats")) {
 	                var s = entry.stats;
 	                total_justice += s.justice;
@@ -127,13 +169,67 @@ switch (current_tab) {
 	            }
 	        }
 
-	        // --- Draw totals at bottom ---
-	        y_offset += array_length(keys) * 40 + 60;
-	        draw_text(base_x, y_offset, "⚖️ Justice: " + string(total_justice));
-	        draw_text(base_x, y_offset + 40, "🧠 Wisdom: " + string(total_wisdom));
-	        draw_text(base_x, y_offset + 80, "🙇 Humility: " + string(total_humility));
+	        y_offset += reflection_panel_h + 40;
+
+	        //------------------------------------------
+	        // TOTALS PANEL
+	        //------------------------------------------
+	        var totals_y = y_start + y_offset;
+	        var totals_h = 140;
+	        draw_sprite_stretched(spr_chap_panel, 0,
+	            padding_x - 10,
+	            totals_y - 10,
+	            content_w - (padding_x * 2) + 20,
+	            totals_h
+	        );
+
+	        var tx = padding_x + panel_inner_pad;
+	        var ty = totals_y + panel_inner_pad;
+
+	        draw_text(tx, ty, "⚖️ Justice: " + string(total_justice));
+	        draw_text(tx, ty + 40, "🧠 Wisdom: " + string(total_wisdom));
+	        draw_text(tx, ty + 80, "🙇 Humility: " + string(total_humility));
+
+	        y_offset += totals_h + 40;
+
+	        //------------------------------------------
+	        // TICKETS PANEL
+	        //------------------------------------------
+	        var ticket_y = y_start + y_offset;
+	        var ticket_h = 200;
+	        draw_sprite_stretched(spr_chap_panel, 0,
+	            padding_x - 10,
+	            ticket_y - 10,
+	            content_w - (padding_x * 2) + 20,
+	            ticket_h
+	        );
+
+	        var tx2 = padding_x + panel_inner_pad;
+	        var ty2 = ticket_y + panel_inner_pad;
+
+	        draw_text(tx2, ty2, "🎟 Tickets Summary:");
+	        draw_text(tx2, ty2 + 40, "⚖️ Justice Tickets: " + string(global.file_handling_data.justice_tickets));
+	        draw_text(tx2, ty2 + 80, "🧠 Wisdom Tickets: " + string(global.file_handling_data.wisdom_tickets));
+	        draw_text(tx2, ty2 + 120, "🙇 Humility Tickets: " + string(global.file_handling_data.humility_tickets));
+	        draw_text(tx2, ty2 + 160, "⭐ Total Tickets: " + string(global.file_handling_data.tickets));
+
+	        y_offset += ticket_h + 60;
 	    }
+
+	    //------------------------------------------
+	    // SCROLL AREA END
+	    //------------------------------------------
+	    scroll_content_height = y_offset + 100;
+	    surface_reset_target();
+
+	    //------------------------------------------
+	    // DRAW SCROLLED CONTENT
+	    //------------------------------------------
+	    draw_surface_part(_surf, 0, 0, content_w, content_h, content_x, content_y);
+	    surface_free(_surf);
 	break;
+
+
 
 
     case "challenge":
