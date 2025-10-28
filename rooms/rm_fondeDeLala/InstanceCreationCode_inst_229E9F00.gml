@@ -1,1 +1,0 @@
-npc_id = "kap_tiago";

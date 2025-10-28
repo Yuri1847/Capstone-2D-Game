@@ -56,7 +56,7 @@ welcome_dialog = [
         msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
         portrait: spr_por_tiago,
         action: "lettersystem"
-    },
+    },	
     {
         name: "Narration",
         msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"

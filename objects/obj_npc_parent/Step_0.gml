@@ -57,22 +57,25 @@ if (instance_exists(obj_player)) {
     // === Start or advance dialogue ===
 	if (touched) {
 	    if (!dialogue_active) {
+			 
+			
 	        npc_can_move = false;
 	        obj_Pause_manager.pause = true;
 	        obj_Pause_manager.update_pause();
 	        sc_invisible_layer(["pause_button_layer", "right_option_layer"]);
-
-	        var d = create_dialogue(dialog);
-	        if (instance_exists(d)) {
-	            d.npc_ref = id; // ✅ Now this will actually work!
-	        }
+			
+			var d = create_dialogue(dialog);
+		        if (instance_exists(d)) {
+		            d.npc_ref = id; // ✅ attach NPC reference to the dialogue
+		        }
+	       
 	    }
 	}
 
 
 
     // === Reset when dialogue ends ===
-    if (!instance_exists(obj_dialog)) {
+    if (!dialogue_active) {
         npc_can_move = true;
         obj_Pause_manager.pause = false;
         if (instance_exists(obj_talk_button)) obj_talk_button.visible = false;

@@ -52,7 +52,6 @@
     {"name":"scr_dialogue_seq","order":8,"path":"scripts/scr_dialogue_seq/scr_dialogue_seq.yy",},
     {"name":"scr_dialogue_start_action","order":3,"path":"scripts/scr_dialogue_start_action/scr_dialogue_start_action.yy",},
     {"name":"scr_draw_camera_cover","order":1,"path":"scripts/scr_draw_camera_cover/scr_draw_camera_cover.yy",},
-    {"name":"scr_get_letter","order":3,"path":"scripts/scr_get_letter/scr_get_letter.yy",},
     {"name":"scr_letter_system","order":1,"path":"scripts/scr_letter_system/scr_letter_system.yy",},
     {"name":"scr_story_get_current","order":3,"path":"scripts/scr_story_get_current/scr_story_get_current.yy",},
     {"name":"scr_story_init","order":2,"path":"scripts/scr_story_init/scr_story_init.yy",},

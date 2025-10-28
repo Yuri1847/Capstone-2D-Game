@@ -205,7 +205,7 @@
     {"name":"inst_4E630373","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_76E0376F","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
     {"name":"inst_C0F50BF","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
-    {"name":"inst_229E9F00","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
+    {"name":"test","path":"rooms/rm_fondeDeLala/rm_fondeDeLala.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -219,9 +219,9 @@
         {"$GMRInstance":"v2","%Name":"inst_76E0376F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76E0376F","objectId":{"name":"obj_dialTest","path":"objects/obj_dialTest/obj_dialTest.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"dialog","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.chap2_dial5",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.065,"scaleY":0.065,"x":822.0,"y":421.0,},
-        {"$GMRInstance":"v2","%Name":"inst_229E9F00","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_229E9F00","objectId":{"name":"obj_dialTest","path":"objects/obj_dialTest/obj_dialTest.yy",},"properties":[
+        {"$GMRInstance":"v2","%Name":"test","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"test","objectId":{"name":"obj_dialTest","path":"objects/obj_dialTest/obj_dialTest.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"dialog","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.welcome_dialog",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.06,"scaleY":0.06,"x":289.0,"y":392.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.06,"scaleY":0.06,"x":288.0,"y":384.0,},
       ],"layers":[],"name":"ins_gui","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ins_loot","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_321AAD39","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_321AAD39","objectId":{"name":"obj_key_drop","path":"objects/obj_key_drop/obj_key_drop.yy",},"properties":[
