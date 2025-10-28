@@ -20,11 +20,7 @@ function scr_dialogue_start_action(_action, _dialog)
     {
         case "lettersystem":
 
-	    if (variable_instance_exists(_dialog, "npc_ref") && instance_exists(_dialog.npc_ref)) {
-	        scr_letter_system(_dialog, _dialog.npc_ref);
-	    } else {
-	        //scr_letter_system(_dialog, "unknown");
-	    }
+	    scr_letter_system(_dialog);
 	    return;
 
 
