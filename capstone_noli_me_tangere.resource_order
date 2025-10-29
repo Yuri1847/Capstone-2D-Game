@@ -63,6 +63,7 @@
     {"name":"seq_chap1_Events31","order":4,"path":"scripts/seq_chap1_Events31/seq_chap1_Events31.yy",},
     {"name":"show_popup","order":13,"path":"scripts/show_popup/show_popup.yy",},
     {"name":"string_wrap","order":4,"path":"scripts/string_wrap/string_wrap.yy",},
+    {"name":"snd_dialog_button","order":1,"path":"sounds/snd_dialog_button/snd_dialog_button.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
     {"name":"spr_anluwage","order":5,"path":"sprites/spr_anluwage/spr_anluwage.yy",},
     {"name":"spr_ballons","order":1,"path":"sprites/spr_ballons/spr_ballons.yy",},
