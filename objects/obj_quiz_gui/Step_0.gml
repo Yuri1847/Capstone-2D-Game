@@ -9,6 +9,10 @@ if (keyboard_check_pressed(vk_space)) {
     instance_destroy(); // remove quiz GUI
 }*/
 
+// ------------------------------------------------------
+// STEP EVENT - QUIZ LOGIC + BUTTON HANDLING
+// ------------------------------------------------------
+
 // Handle submit press flash timer
 if (submit_press_timer > 0) {
     submit_press_timer -= 1;
@@ -63,8 +67,7 @@ if (keyboard_check_pressed(ord("H")) && !showing_result) {
     }
 }
 
-//showting result
-// --- handle result + warp transition ---
+// --- Handle result + warp transition ---
 if (showing_result) {
     result_timer -= 1;
 
@@ -81,7 +84,7 @@ if (showing_result) {
             // ✅ Finished all questions → trigger warp
             if (global.quiz_pending_warp) {
 
-                //checking score
+                // Checking score
                 if (quiz_score >= 3) {
                     // ✅ Passed
                     global.warp_spawn_x = global.quiz_target_x;
@@ -92,7 +95,7 @@ if (showing_result) {
                     t.next_room = global.quiz_target_room;
 
                     global.quiz_pending_warp = false;
-                    global.quiz_active = false; // ✅ mark quiz as finished
+                    global.quiz_active = false;
 
                 } else {
                     // ❌ Score failed
@@ -177,11 +180,38 @@ if (!showing_result) {
                     }
                 }
             }
+
+            // --- ⚡ NEW: Check Close button ---
+            if (point_in_rectangle(tx, ty, close_x, close_y, close_x + close_w, close_y + close_h)) {
+                close_pressed = true;
+
+                // Return to previous room
+                global.quiz_active = false;
+                global.quiz_pending_warp = false;
+
+                var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+                t.fading_out = true;
+
+                // You can store these globals when quiz starts
+                if (variable_global_exists("prev_room")) {
+                    t.next_room = global.prev_room;
+                    global.warp_spawn_x = global.prev_x;
+                    global.warp_spawn_y = global.prev_y;
+                } else {
+                    t.next_room = room; // fallback to same room
+                }
+
+                instance_destroy(); // close quiz GUI
+            }
         }
     }
 }
 
-
+// Release state reset
+if (mouse_check_button_released(mb_left)) {
+    submit_pressed = false;
+    close_pressed = false;
+}
 
 
 

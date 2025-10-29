@@ -62,5 +62,13 @@ virtue = "";
 hint_text = "";
 hint_revealed = false;
 hint_button_y = start_y + (btn_height + btn_spacing) * 3 + 60; // position below options
+// --- Close button pressed flag ---
+close_pressed = false;
+
+// --- Close button setup ---
+close_w = 120;
+close_h = 48;
+close_x = gui_w - close_w - 40; // top-right corner, 40px from edge
+close_y = 40;
 
 
