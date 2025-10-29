@@ -8,14 +8,7 @@ question = "";
 options = [];
 correct_index = -1;
 selected = -1;
-/*
-btn_height = 60;
-btn_spacing = 15;
 
-font_size = 28;
-panel_w = 800;
-panel_h = 400;
-*/
 // new variables to avoid undefined errors
 showing_result = false;
 result_text = "";
@@ -57,5 +50,17 @@ submit_pressed = false;
 
 //result 
 result_sprite = noone;
+
+
+
+
+
+submit_pressed = false;
+
+// ✅ NEW: for hints
+virtue = "";
+hint_text = "";
+hint_revealed = false;
+hint_button_y = start_y + (btn_height + btn_spacing) * 3 + 60; // position below options
 
 
