@@ -58,15 +58,17 @@ function scr_letter_system(_dialog, _id)
     }
 
     // Initialize prompt data
-    with (ui) {
+	    with (ui) {
 	    scr_letter_prompt_setup(
 	        data.header,
 	        data.question,
 	        data.scenario,
 	        data.choices,
-	        data.stat_text, // ← add this
-	        data.stats      // ← keep this
+	        data.stat_text,
+	        data.stats,
+	        data.choice_stats 
 	    );
 	}
+
 
 }

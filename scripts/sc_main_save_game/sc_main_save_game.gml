@@ -4,15 +4,20 @@ global.file_handling_data = {
 	last_room: rm_fondeDeLala,
 	player_inventory: [],
 	player_name: "Crisostomo Ibarra",
-	reflections: {},
-	total_justice  : 0,
-	total_wisdom   : 0,
-	total_humility : 0,
-	justice_tickets: 0,
-	wisdom_tickets: 0,
-	humility_tickets: 0,
-	tickets: 0,
+
+	// === Reflection System ===
+	reflections: {},          // stores player reflection choices
+	total_justice: 0,          // running total of all Justice points
+	total_wisdom: 0,           // running total of all Wisdom points
+	total_humility: 0,         // running total of all Humility points
+
+	// === Ticket Milestones ===
+	justice_tickets: 0,        // tickets from Justice milestones
+	wisdom_tickets: 0,         // tickets from Wisdom milestones
+	humility_tickets: 0,       // tickets from Humility milestones
+	tickets: 0,                // total combined tickets
 };
+
 /*global.file_handling_data = {
 	player_x: 320,
 	player_y: 384,
