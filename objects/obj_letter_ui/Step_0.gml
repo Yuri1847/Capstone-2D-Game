@@ -95,15 +95,25 @@ for (var i = 0; i < max_fingers; i++)
 				    if (!variable_struct_exists(global.file_handling_data, "total_humility")) global.file_handling_data.total_humility = 0;
 
 				    // === Get reflection stats from global.reflection_data ===
-				    var stats_struct = undefined;
-				    if (variable_global_exists("reflection_data")) {
-				        if (variable_struct_exists(global.reflection_data, reflection_id)) {
-				            var ref_data = global.reflection_data[$ reflection_id];
-				            if (variable_struct_exists(ref_data, "stats")) {
-				                stats_struct = ref_data.stats;
-				            }
-				        }
-				    }
+					var stats_struct = undefined;
+					if (variable_global_exists("reflection_data")) {
+					    if (variable_struct_exists(global.reflection_data, reflection_id)) {
+					        var ref_data = global.reflection_data[$ reflection_id];
+
+					        // Prefer per-choice stats if available
+					        if (variable_struct_exists(ref_data, "choice_stats") && is_array(ref_data.choice_stats)) {
+					            if (selected_choice >= 0 && selected_choice < array_length(ref_data.choice_stats)) {
+					                stats_struct = ref_data.choice_stats[selected_choice];
+					            }
+					        }
+
+					        // Fallback to base stats if no per-choice defined
+					        if (is_undefined(stats_struct) && variable_struct_exists(ref_data, "stats")) {
+					            stats_struct = ref_data.stats;
+					        }
+					    }
+					}
+
 
 				    // === Build save entry ===
 				    var save_entry = {

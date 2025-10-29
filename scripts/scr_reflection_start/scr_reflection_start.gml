@@ -15,10 +15,12 @@ function scr_reflection_start(_dialog, _id)
 		        data.question,
 		        data.scenario,
 		        data.choices,
-		        data.stat_text, // ← add this
-		        data.stats
+		        data.stat_text,
+		        data.stats,
+		        data.choice_stats 
 		    );
 		}
+
 
 
     }

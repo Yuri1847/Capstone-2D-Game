@@ -225,11 +225,31 @@ switch (current_tab) {
 	    text_y2 += 40;
 
 	    for (var i = 0; i < array_length(keys); i++) {
-	        var key = keys[i];
-	        var entry = reflections[$ key];
-	        var log_text = key + ": " + entry.virtue + " — " + entry.choice_text;
-	        draw_text(text_x2, text_y2 + (i * 40), log_text);
-	    }
+		    var key   = keys[i];
+		    var entry = reflections[$ key];
+
+		    // --- Safety Checks ---
+		    if (!is_struct(entry)) continue;
+
+		    var virtue_name  = (variable_struct_exists(entry, "virtue"))      ? entry.virtue      : "Unknown";
+		    var choice_text  = (variable_struct_exists(entry, "choice_text")) ? entry.choice_text : "—";
+		    var stats_struct = (variable_struct_exists(entry, "stats"))       ? entry.stats       : undefined;
+
+		    var stat_text = "";
+		    if (is_struct(stats_struct)) {
+		        stat_text = string_format(stats_struct.justice, 1, 0) + "/" +
+		                    string_format(stats_struct.wisdom, 1, 0) + "/" +
+		                    string_format(stats_struct.humility, 1, 0);
+		    }
+
+		    // Example output:
+		    // ibarra_damaso: Justice — 🟥 [A] Speak up...  (5/2/1)
+		    var log_text = key + ": " + virtue_name + " — " + choice_text;
+		    if (stat_text != "") log_text += "   (" + stat_text + ")";
+
+		    draw_text(text_x2, text_y2 + (i * 40), log_text);
+		}
+
 
 	    var reflection_h = (array_length(keys) * 40) + 200;
 	    y_offset += reflection_h + gap;
