@@ -50,47 +50,10 @@ global.story_quests = [
 	    description: "Umupo sa kabisera at makibahagi sa pagtitipon..",
 	    completed: false
 	},
-	/*
-	{//Resulta: Magbubukas ng journal entry — “Karangalan at Posisyon sa Simbahan.”
-	    title: "Obserbahan ang Alitan ng mga Pari",
-	    description: "Pakinggan o lapitan sina Padre Damaso at Padre Sibyla habang nagtatalo sa sentrong upuan..",
-	    completed: false
-	},
-	{//Epekto: +Kaalaman o insight points (nagpapalawak sa pananaw ni Ibarra).
-	    title: "Makipag-usap sa Tinyente o Don Tiburcio",
-	    description: "Lapitan sila upang marinig ang iba’t ibang pananaw tungkol sa mga pari.",
-	    completed: false
-	},
-	{//Pipiliin ng manlalaro kung: [Makialam] → +Empatiya - [Manahimik] → Neutral - [Tawanan] → -Respeto
-	    title: "Kaunting Insidente: Natapakan si Donya Victorina",
-	    description: "Pumili kung makikialam ba o mananatiling tahimik.",
-	    completed: false
-	},
-	{//Event: Mapapansin mong galit si Padre Damaso dahil puro leeg at upo ang sa kanya. - Epekto: +Observation Entry: “Galit sa Hapag.”
-	    title: "Tanggapin ang Tinola",
-	    description: "Kumain ng tinolang inihanda para sa iyo.",
-	    completed: false
-	},
-	{//Mini dialogue choices: “Nalimutan ko man ang Europa, ang Pilipinas ay di ko nalimutan.” → +Patriotismo - “Sa Europa, mas mabilis ang pag-unlad.” → +Katalinuhan pero -Pakikisama - “Ang Pilipinas ay tulad ng aking tahanan.” → Balanced response
-	    title: "Sagutin ang mga Tanong ng mga Panauhin",
-	    description: "Makipag-usap sa grupo nina Laruja at Donya Victorina..",
-	    completed: false
-	},
-	{//Resulta: Magbubukas ng journal entry — “Ang Katahimikan ni Don Rafael.”
-	    title: "Ipahayag ang Damdamin Tungkol sa Ama",
-	    description: "Sabihin kung ano ang iyong saloobin sa pagkawala ng iyong ama.",
-	    completed: false
-	},*/
-	
 	//chapter 3
 	{//Trigger: Matapos ang eksena ng hapunan. - Resulta: Bubukas ang exploration scene sa Binondo Plaza.
 	    title: "Lumabas ng Bahay ni Kapitan Tiago",
 	    description: "Umalis upang maglakad-lakad at makahinga ng sariwang hangin.",
-	    completed: false
-	},
-	{//Mekaniko: Pindutin o lapitan ang mga tindera upang marinig ang mga linya gaya ng - “Ganyan pa rin dito, ginoo.” antimpala: +Reflection Points (“Walang Pagbabago sa Bayan”).
-	    title: "Maglakad sa Plasa ng Binondo",
-	    description: "Obserbahan ang paligid at makausap ang mga tindera.",
 	    completed: false
 	},
 	{//Trigger: Automatic dialogue cutscene. - Resulta: Bubukas ang “Kwento ng Ama.”
@@ -98,18 +61,12 @@ global.story_quests = [
 	    description: "Lapitan si Tinyente na nasa gilid ng plasa.",
 	    completed: false
 	},
-	/*
-	{//Cutscene: Habang naglalakad, isinasalaysay ng Tinyente ang kaso ni Don Rafael. - Resulta: +Knowledge Entry — “Ang Katotohanan sa Pagkamatay ni Don Rafael.”
-	    title: "Pakinggan ang Salaysay ng Tinyente",
-	    description: "Pakinggan ang Salaysay ng Tinyente",
+	{//Mekaniko: Pindutin o lapitan ang mga tindera upang marinig ang mga linya gaya ng - “Ganyan pa rin dito, ginoo.” antimpala: +Reflection Points (“Walang Pagbabago sa Bayan”).
+	    title: "Maglakad sa Plasa ng Binondo",
+	    description: "Obserbahan ang paligid at makausap ang mga tindera.",
 	    completed: false
 	},
-	{//Trigger: Huling dialogue ng Tinyente: “Napatunayan siyang walang sala, ngunit huli na.”  Resulta: Cinematic / Reflection Scene ni Ibarra (internal dialogue o monologo). ➤ Gantimpala: +Emotional Insight, bubukas ang bagong misyon: “Ang Lihim ni San Diego.”
-	    title: "Matapos ang Salaysay",
-	    description: "Makinig hanggang dulo ng kwento ng pagkakulong at pagkamatay ng ama.",
-	    completed: false
-	},
-	*/
+	
 		//chapter 4
 		{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
 		    title: "Dumating sa Fonda de Lala",
