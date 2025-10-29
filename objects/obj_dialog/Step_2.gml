@@ -22,6 +22,16 @@ for (var i = 0; i < max_fingers; i++) {
         var ty = device_mouse_y_to_gui(i);
         if (point_in_rectangle(tx, ty, gui_x1, gui_y1, gui_x2, gui_y2)) {
             tapped = true;
+			
+			//tapped sound effect
+			var sfx_id = audio_play_sound(snd_dialog_button, 1, false);
+			// apply slider’s volume immediately
+			if (instance_exists(obj_slider_bar)) {
+				audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+			}
+			// random pitch
+			audio_sound_pitch(sfx_id, random_range(0.95, 1.05));
+			
         }
     }
 }
@@ -38,6 +48,7 @@ if (current_char < string_length(_str)) {
     if (tapped) {
         // Instantly complete the line
         current_char = string_length(_str);
+		
     } else {
         current_char += char_speed;
     }
