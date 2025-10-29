@@ -3,34 +3,31 @@ targetRoom = rm_chapter3_hapunan;
 targetX = 884;
 targetY = 673;
 
-/*
+
 //mini quiz observation
 has_quiz = true;
 quiz_data = [
     {
-        question: "Ano ang naging reaksiyon ni Padre Dámaso nang makita si Ibarra?",
-        options: ["Niyakap niya ito nang masigla", "Namutla at hindi kumilos agad", "Ngumiti at nagbigay ng bendisyon"],
-        correct: 1
+        question: "Sino ang uminsulto kay Don Rafael sa pagtitipon bago siya pumasok sa pamilihan?",
+        options: ["Padre Damaso", "Padre Sibyla", "Tiniente Guevarra"],
+        correct: 0,
+        virtue: "justice", // Katarungan — pag-alam sa tama at mali
+        hint: "Isa siyang pari na kilala sa pagiging bastos at mapangmata."
     },
     {
-        question: "Ano ang tugon ni Ibarra kay Kapitan Tinong tungkol sa imbitasyon?",
-        options: ["Tumanggi dahil pupunta siya sa San Diego", "Tinanggap agad niya ito", "Hindi siya sumagot"],
-        correct: 0
+        question: "Ano ang pangalan ng anak ni Don Rafael?",
+        options: ["Ibarra", "Elias", "Maria Clara"],
+        correct: 0,
+        virtue: "wisdom", // Karunungan — pag-unawa at pag-aaral sa karanasan
+        hint: "Siya ang pangunahing tauhan na nag-aral sa Europa."
     },
-	{
-        question: "Ayon sa makata, bakit siya tumigil sa pagsusulat?",
-        options: ["Dahil nawalan siya ng inspirasyon", "Dahil hinatulan siya sa pagsasabi ng katotohanan", "Dahil ipinagbawal ng pamahalaan"],
-        correct: 1
-    },
-	{
-        question: "Sino ang nagpakilala kay Ibarra sa mga panauhin?",
-        options: ["Padre Dámaso", "Tiniente Guevarra", "Kapitan Tiago"],
-        correct: 2
-    },
-	{
-        question: "Ano ang sinabi ni Tiniente Guevarra tungkol kay Don Rafael Ibarra?",
-        options: ["Isa siyang makata at manunulat", "Isa siyang marangal at kagalang-galang na tao", "Isa siyang mahigpit na kaaway ng simbahan"],
-        correct: 1
-    },
+    {
+        question: "Sino ang opisyal na nagpahayag ng paggalang sa ama ni Ibarra at sa kanya?",
+        options: ["Tiniente Guevarra", "Padre Sibyla", "Kapitan Tinong"],
+        correct: 0,
+        virtue: "humility", // Kababaang-loob — paggalang at pagpapakumbaba
+        hint: "Isa siyang teniente na iginagalang si Don Rafael bilang marangal na tao."
+    }
 ];
-*/
+
+
