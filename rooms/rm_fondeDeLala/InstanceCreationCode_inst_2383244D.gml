@@ -11,7 +11,7 @@ targetY = 282;
 
 // --- quiz trigger setup ---
 has_quiz = true;
-
+	
 quiz_data = [
     {
         question: "Before entering the market, who insulted Don Rafael during the gathering?",
