@@ -70,17 +70,14 @@ for (var i = 0; i < array_length(choice_list); i++)
     draw_text(choice_x1 + 12, y_rect1 + choice_h * 0.5, choice_list[i]);
 }
 
-// === Stats ===
-draw_set_halign(fa_left);
-var stat_y = y_mid2_end + h_bottom * 0.25;
-draw_text(text_x, stat_y, stat_text);
 
 
 // === Confirm Button ===
 var confirm_w = 200;
 var confirm_h = 48;
 var confirm_x = area.x + area.w - confirm_w - 100;
-var confirm_y = stat_y + 20;
+var confirm_y = area.y + area.h - confirm_h - 20;
+
 
 // Hover highlight
 if (hover_confirm)

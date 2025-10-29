@@ -1,7 +1,5 @@
-
 function scr_letter_system(_dialog, _id)
 {
-    // Validate types
     if (!instance_exists(_dialog)) {
         show_debug_message("⚠️ scr_letter_system: Dialog instance missing");
         return;
@@ -13,7 +11,6 @@ function scr_letter_system(_dialog, _id)
         return;
     }
 
-    // Get reflection data struct
     var data = scr_reflection_get_data(_id);
     if (!is_struct(data)) {
         show_debug_message("⚠️ scr_letter_system: Reflection data not found or invalid: " + _id);
@@ -21,33 +18,28 @@ function scr_letter_system(_dialog, _id)
         return;
     }
 
-    // Ensure no duplicate UI open
     if (instance_exists(obj_letter_ui)) {
         show_debug_message("⚠️ scr_letter_system: Letter UI already exists");
         scr_dialogue_action_complete(_dialog);
         return;
     }
 
-    // Create UI instance
     var ui = instance_create_layer(0, 0, "ins_gui", obj_letter_ui);
-
     if (ui == noone) {
         show_debug_message("⚠️ scr_letter_system: Failed to create obj_letter_ui");
         scr_dialogue_action_complete(_dialog);
         return;
     }
 
-    // Pass data
     ui.dialog_ref = _dialog;
     ui.reflection_id = _id;
 
-    // Validate data fields
     var has_fields = (
         variable_struct_exists(data, "header") &&
         variable_struct_exists(data, "question") &&
         variable_struct_exists(data, "scenario") &&
         variable_struct_exists(data, "choices") &&
-        variable_struct_exists(data, "stats")
+        variable_struct_exists(data, "choice_stats")
     );
 
     if (!has_fields) {
@@ -57,18 +49,13 @@ function scr_letter_system(_dialog, _id)
         return;
     }
 
-    // Initialize prompt data
-	    with (ui) {
-	    scr_letter_prompt_setup(
-	        data.header,
-	        data.question,
-	        data.scenario,
-	        data.choices,
-	        data.stat_text,
-	        data.stats,
-	        data.choice_stats 
-	    );
-	}
-
-
+    with (ui) {
+        scr_letter_prompt_setup(
+            data.header,
+            data.question,
+            data.scenario,
+            data.choices,
+            data.choice_stats
+        );
+    }
 }
