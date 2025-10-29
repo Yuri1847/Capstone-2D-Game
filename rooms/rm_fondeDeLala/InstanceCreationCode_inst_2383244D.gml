@@ -8,7 +8,7 @@ targetY = 282;
 
 
 
-
+/*
 // --- quiz trigger setup ---
 has_quiz = true;
 	
@@ -35,5 +35,5 @@ quiz_data = [
         hint: "He helped Ibarra escape danger more than once."
     }
 ];
-
+*/
 

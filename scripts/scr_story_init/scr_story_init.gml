@@ -50,6 +50,7 @@ global.story_quests = [
 	    description: "Umupo sa kabisera at makibahagi sa pagtitipon..",
 	    completed: false
 	},
+	/*
 	{//Resulta: Magbubukas ng journal entry — “Karangalan at Posisyon sa Simbahan.”
 	    title: "Obserbahan ang Alitan ng mga Pari",
 	    description: "Pakinggan o lapitan sina Padre Damaso at Padre Sibyla habang nagtatalo sa sentrong upuan..",
@@ -79,7 +80,7 @@ global.story_quests = [
 	    title: "Ipahayag ang Damdamin Tungkol sa Ama",
 	    description: "Sabihin kung ano ang iyong saloobin sa pagkawala ng iyong ama.",
 	    completed: false
-	},
+	},*/
 	
 	//chapter 3
 	{//Trigger: Matapos ang eksena ng hapunan. - Resulta: Bubukas ang exploration scene sa Binondo Plaza.
@@ -97,6 +98,7 @@ global.story_quests = [
 	    description: "Lapitan si Tinyente na nasa gilid ng plasa.",
 	    completed: false
 	},
+	/*
 	{//Cutscene: Habang naglalakad, isinasalaysay ng Tinyente ang kaso ni Don Rafael. - Resulta: +Knowledge Entry — “Ang Katotohanan sa Pagkamatay ni Don Rafael.”
 	    title: "Pakinggan ang Salaysay ng Tinyente",
 	    description: "Pakinggan ang Salaysay ng Tinyente",
@@ -107,7 +109,7 @@ global.story_quests = [
 	    description: "Makinig hanggang dulo ng kwento ng pagkakulong at pagkamatay ng ama.",
 	    completed: false
 	},
-	
+	*/
 		//chapter 4
 		{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
 		    title: "Dumating sa Fonda de Lala",

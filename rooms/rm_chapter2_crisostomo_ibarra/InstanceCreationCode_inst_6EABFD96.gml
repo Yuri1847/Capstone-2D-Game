@@ -3,7 +3,7 @@ targetRoom = rm_chapter3_hapunan;
 targetX = 884;
 targetY = 673;
 
-
+/*
 //mini quiz observation
 has_quiz = true;
 quiz_data = [
@@ -29,5 +29,5 @@ quiz_data = [
         hint: "Isa siyang teniente na iginagalang si Don Rafael bilang marangal na tao."
     }
 ];
-
+*/
 
