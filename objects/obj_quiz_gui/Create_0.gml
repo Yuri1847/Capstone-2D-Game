@@ -72,3 +72,8 @@ close_x = gui_w - close_w - 40; // top-right corner, 40px from edge
 close_y = 40;
 
 
+hint_pressed = false;
+
+
+hint_display_text = "";
+

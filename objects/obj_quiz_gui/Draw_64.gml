@@ -17,22 +17,44 @@ draw_set_color(make_color_rgb(240, 240, 240));
 draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
 
 // ================================================================
-// === TOP HUD: SCORE + TICKETS ===
-draw_set_color(c_black);
+// === TOP HUD: HINT BUTTON + SCORE ===
 draw_set_font(fn_quiz);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+draw_set_valign(fa_middle);
 
-// Tickets (Top-left)
-draw_text(gui_x + 40, gui_y + 40,
-    "🎟 Tickets  ⚖️" + string(global.file_handling_data.justice_tickets)
+// --- Hint Button (TOP-LEFT) ---
+hint_w = 160;
+hint_h = 48;
+hint_x = gui_x + 40;
+hint_y = gui_y + 40;
+
+// Button background
+draw_set_color(make_color_rgb(255, 193, 7)); // yellow
+draw_rectangle(hint_x, hint_y, hint_x + hint_w, hint_y + hint_h, false);
+
+// Pressed highlight
+if (hint_pressed) {
+    draw_set_alpha(0.4);
+    draw_set_color(c_white);
+    draw_rectangle(hint_x, hint_y, hint_x + hint_w, hint_y + hint_h, false);
+    draw_set_alpha(1);
+}
+
+// Text inside button (shows all ticket counts)
+draw_set_color(c_black);
+draw_set_halign(fa_center);
+draw_text(
+    hint_x + hint_w * 0.5,
+    hint_y + hint_h * 0.5,
+    "🧠 Hint  ⚖️" + string(global.file_handling_data.justice_tickets)
     + "  🧠" + string(global.file_handling_data.wisdom_tickets)
     + "  🙇" + string(global.file_handling_data.humility_tickets)
 );
 
-// Score (Top-right)
+// --- Score text (TOP-RIGHT) ---
 draw_set_halign(fa_right);
-draw_text(gui_x + gui_w - 40, gui_y + 40,
+draw_set_valign(fa_top);
+draw_set_color(c_black);
+draw_text(gui_x + gui_w - 40, gui_y + 48,
     "Passing: 3    Score: " + string(quiz_score) + "/" + string(total_questions)
 );
 
@@ -48,23 +70,13 @@ draw_text(cx, question_y, question);
 
 // ================================================================
 // === HINT DISPLAY ===
-if (!showing_result && variable_instance_exists(id, "hint_display_text") && hint_display_text != "") {
+if (!showing_result && hint_display_text != "") {
     draw_set_color(c_black);
     draw_text(cx, question_y + 50, hint_display_text);
 }
 
-// === Hint instruction ===
-if (!showing_result && (!variable_instance_exists(id, "hint_revealed") || !hint_revealed)) {
-    draw_set_color(c_gray);
-    draw_text(cx, question_y + 80, "Press [H] to use 1 virtue ticket for a hint");
-}
-
 // ================================================================
 // === OPTIONS ===
-draw_set_font(fn_quiz);
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
 var opt_w = gui_w * 0.8;
 var opt_x = cx - opt_w * 0.5;
 var opt_start_y = cy - gui_h * 0.05;
@@ -119,7 +131,7 @@ if (!showing_result) {
 }
 
 // ================================================================
-// === SUBMIT / NEXT BUTTON (below last option) ===
+// === SUBMIT / NEXT BUTTON (aligned with choices) ===
 submit_w = opt_w * 0.6;
 submit_h = btn_height;
 submit_x = cx - submit_w * 0.5;
@@ -142,7 +154,7 @@ var button_label = (question_index + 1 < total_questions) ? "Next" : "Submit";
 draw_text(submit_x + submit_w * 0.5, submit_y + submit_h * 0.5, button_label);
 
 // ================================================================
-// === CLOSE BUTTON (bottom-right corner) ===
+// === CLOSE BUTTON (BOTTOM-RIGHT) ===
 close_w = 120;
 close_h = 48;
 close_x = gui_x + gui_w - close_w - 40;
