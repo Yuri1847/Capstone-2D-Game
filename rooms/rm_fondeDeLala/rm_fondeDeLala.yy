@@ -479,7 +479,7 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_main_tileset","path":"tilesets/ts_main_tileset/ts_main_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ts_Background","depth":1500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ts_Background","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":65,"SerialiseWidth":55,"TileCompressedData":[
           984,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,17,18,
-          19,20,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,18,19,20,17,18,19,20,17,18,19,20,
+          19,20,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,18,19,20,17,34,19,20,17,18,19,20,
           17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,20,17,18,19,33,34,35,36,20,17,18,19,20,17,18,19,20,17,18,
           19,20,17,18,19,20,36,33,34,35,34,35,36,33,34,35,36,33,34,35,36,33,34,35,36,33,34,35,36,33,34,35,36,33,
           34,35,36,33,34,35,49,50,51,52,36,33,34,35,36,33,34,35,36,33,34,35,36,33,34,35,36,52,49,50,51,50,23,215,

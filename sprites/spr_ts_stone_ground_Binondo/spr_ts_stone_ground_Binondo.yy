@@ -13,12 +13,15 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"9cbbbdd1-399c-4ad5-b887-f6745ce82862","name":"9cbbbdd1-399c-4ad5-b887-f6745ce82862","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d919690d-5790-4d6b-821a-9022ab7d1aa4","name":"d919690d-5790-4d6b-821a-9022ab7d1aa4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e91c476d-1750-4a62-b8cf-14eb2fa21748","name":"e91c476d-1750-4a62-b8cf-14eb2fa21748","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":256,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"8930d6a1-72fb-410f-884d-611833d2458a","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"8930d6a1-72fb-410f-884d-611833d2458a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"45b21ba9-a96c-4fba-92c4-d9364112f84b","blendMode":0,"displayName":"default","isLocked":false,"name":"45b21ba9-a96c-4fba-92c4-d9364112f84b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ts_stone_ground_Binondo",
@@ -49,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -73,6 +76,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9cbbbdd1-399c-4ad5-b887-f6745ce82862","path":"sprites/spr_ts_stone_ground_Binondo/spr_ts_stone_ground_Binondo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"aa8390de-0f32-409c-8d02-72f78117b261","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d919690d-5790-4d6b-821a-9022ab7d1aa4","path":"sprites/spr_ts_stone_ground_Binondo/spr_ts_stone_ground_Binondo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fbcbaf73-cbfe-40fb-886f-29ad165bcc66","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e91c476d-1750-4a62-b8cf-14eb2fa21748","path":"sprites/spr_ts_stone_ground_Binondo/spr_ts_stone_ground_Binondo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"56a8c634-211d-4980-b2fd-dbc297b51ebf","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

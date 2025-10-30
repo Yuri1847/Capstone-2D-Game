@@ -23,6 +23,7 @@
     {"name":"CUTSCENES","order":1,"path":"folders/Sprites/CUTSCENES.yy",},
     {"name":"smooth","order":1,"path":"folders/Sprites/PLAYER/smooth.yy",},
     {"name":"SPS fonts","order":4,"path":"folders/Storyline Progression System/SPS fonts.yy",},
+    {"name":"Escolta","order":1,"path":"folders/Tile Sets/Environment/Escolta.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_global_dialogue","order":1,"path":"fonts/fnt_global_dialogue/fnt_global_dialogue.yy",},
@@ -47,6 +48,7 @@
     {"name":"obj_warp_dialog","order":18,"path":"objects/obj_warp_dialog/obj_warp_dialog.yy",},
     {"name":"obj_Well2","order":1,"path":"objects/obj_Well2/obj_Well2.yy",},
     {"name":"rm_cut_chap1","order":1,"path":"rooms/rm_cut_chap1/rm_cut_chap1.yy",},
+    {"name":"rm_escolta","order":1,"path":"rooms/rm_escolta/rm_escolta.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"sc_nolidex","order":6,"path":"scripts/sc_nolidex/sc_nolidex.yy",},
     {"name":"scr_dialogue_action_complete","order":4,"path":"scripts/scr_dialogue_action_complete/scr_dialogue_action_complete.yy",},
@@ -97,5 +99,6 @@
     {"name":"spr_water","order":1,"path":"sprites/spr_water/spr_water.yy",},
     {"name":"spr_Well2","order":1,"path":"sprites/spr_Well2/spr_Well2.yy",},
     {"name":"Sprite450","order":12,"path":"sprites/Sprite450/Sprite450.yy",},
+    {"name":"ts_escolta_ground","order":1,"path":"tilesets/ts_escolta_ground/ts_escolta_ground.yy",},
   ],
 }
