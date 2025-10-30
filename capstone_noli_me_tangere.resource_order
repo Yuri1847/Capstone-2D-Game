@@ -45,6 +45,7 @@
     {"name":"obj_sps_popup","order":12,"path":"objects/obj_sps_popup/obj_sps_popup.yy",},
     {"name":"obj_trivia_card_drop","order":3,"path":"objects/obj_trivia_card_drop/obj_trivia_card_drop.yy",},
     {"name":"obj_warp_dialog","order":18,"path":"objects/obj_warp_dialog/obj_warp_dialog.yy",},
+    {"name":"obj_Well2","order":1,"path":"objects/obj_Well2/obj_Well2.yy",},
     {"name":"rm_cut_chap1","order":1,"path":"rooms/rm_cut_chap1/rm_cut_chap1.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
     {"name":"sc_nolidex","order":6,"path":"scripts/sc_nolidex/sc_nolidex.yy",},
@@ -94,6 +95,7 @@
     {"name":"spr_ui_setting","order":7,"path":"sprites/spr_ui_setting/spr_ui_setting.yy",},
     {"name":"spr_warp_dialog_board","order":19,"path":"sprites/spr_warp_dialog_board/spr_warp_dialog_board.yy",},
     {"name":"spr_water","order":1,"path":"sprites/spr_water/spr_water.yy",},
+    {"name":"spr_Well2","order":1,"path":"sprites/spr_Well2/spr_Well2.yy",},
     {"name":"Sprite450","order":12,"path":"sprites/Sprite450/Sprite450.yy",},
   ],
 }
