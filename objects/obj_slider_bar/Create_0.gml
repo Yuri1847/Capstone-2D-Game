@@ -3,12 +3,12 @@ slider_height = sprite_get_height(spr_slider_bar);
 
 //Background Music
 //for mobile resolution
-//slider_bm_x = (display_get_width() / 2 - 320/2);
-//slider_bm_y = (display_get_height() / 2 - 47/2);
+slider_bm_x = (display_get_width() / 2 - 320/2);
+slider_bm_y = (display_get_height() / 2 - 47/2);
 
 //for pc resolution
-slider_bm_x = (display_get_gui_width() / 2 - 320/2);
-slider_bm_y = (display_get_gui_height() / 2 - 47/2);
+//slider_bm_x = (display_get_gui_width() / 2 - 320/2);
+//slider_bm_y = (display_get_gui_height() / 2 - 47/2);
 
 settings_load_game();
 

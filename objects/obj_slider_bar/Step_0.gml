@@ -7,7 +7,12 @@ if (mouse_check_button_pressed(mb_left)) {
     // check if clicked near the slider icon
     var icon_bm_x = slider_bm_x + (slider_bm_value * slider_width);
     var icon_bm_y = slider_bm_y + slider_height/2;
-    if (point_in_rectangle(mx_bm, my_bm, icon_bm_x-16, icon_bm_y-16, icon_bm_x+16, icon_bm_y+16)) {
+	
+	// check if clicked near the slider width
+	var left_rec_bm_x = (slider_bm_value * slider_width);
+	var right_rec_bm_x = slider_width - (slider_bm_value * slider_width);
+	
+    if (point_in_rectangle(mx_bm, my_bm, icon_bm_x-left_rec_bm_x, icon_bm_y-20, icon_bm_x+right_rec_bm_x, icon_bm_y+20)) {
         is_bm_dragging = true;
     }
 }
@@ -43,7 +48,12 @@ if (mouse_check_button_pressed(mb_left)) {
     // check if clicked near the slider icon
     var icon_sfx_x = slider_sfx_x + (slider_sfx_value * slider_width);
     var icon_sfx_y = slider_sfx_y + slider_height/2;
-    if (point_in_rectangle(mx_sfx, my_sfx, icon_sfx_x-16, icon_sfx_y-16, icon_sfx_x+16, icon_sfx_y+16)) {
+	
+	// check if clicked near the slider width
+	var left_rec_sfx_x = (slider_sfx_value * slider_width);
+	var right_rec_sfx_x = slider_width - (slider_sfx_value * slider_width);
+	
+    if (point_in_rectangle(mx_sfx, my_sfx, icon_sfx_x-left_rec_sfx_x, icon_sfx_y-20, icon_sfx_x+right_rec_sfx_x, icon_sfx_y+20)) {
         is_sfx_dragging = true;
     }
 }

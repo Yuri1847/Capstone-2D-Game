@@ -9,7 +9,7 @@ draw_sprite_stretched(spr_slider_progress, 0 ,slider_bm_x,slider_bm_y-5, slider_
 var icon_bm_x = slider_bm_x + (slider_bm_value * slider_width);
 var icon_bm_y = slider_bm_y + (slider_height/2) - sprite_get_height(spr_slider_icon)/2;
 
-draw_sprite(spr_slider_icon, 0, icon_bm_x-18, icon_bm_y-18);
+draw_sprite(spr_slider_icon, 0, icon_bm_x, icon_bm_y-1);
 
 // draw percent text above or beside the slider
 var percent_bm = round(slider_bm_value * 100);
@@ -26,7 +26,7 @@ draw_sprite_stretched(spr_slider_progress, 0 ,slider_sfx_x,slider_sfx_y-5, slide
 var icon_sfx_x = slider_sfx_x + (slider_sfx_value * slider_width);
 var icon_sfx_y = slider_sfx_y + (slider_height/2) - sprite_get_height(spr_slider_icon)/2;
 
-draw_sprite(spr_slider_icon, 0, icon_sfx_x-18, icon_sfx_y-18);
+draw_sprite(spr_slider_icon, 0, icon_sfx_x, icon_sfx_y-1);
 
 // draw percent text above or beside the slider
 var percent_sfx = round(slider_sfx_value * 100);
