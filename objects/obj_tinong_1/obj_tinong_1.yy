@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_front_tinong",
-    "path":"sprites/spr_front_tinong/spr_front_tinong.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
