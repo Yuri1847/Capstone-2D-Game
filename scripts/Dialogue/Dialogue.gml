@@ -135,7 +135,7 @@ chap2_dial1 = [ //ibarra talk to kapitan tiago
 		name: "Kapitan Tiago",
 		msg: "May karangalan akong ipakilala sa inyo si Don Crisóstomo Ibarra, anak ng yumaong kaibigan kong si Don Rafael. Bagong galing siya sa Europa, at ako mismo ang sumalubong sa kanya.",
 		portrait: spr_por_tiago,
-		//action: "lettersystem:ibarra_tiago"
+		action: "lettersystem:ibarra_tiago"
 	},
 	{
 		name: "Narration",
@@ -162,7 +162,7 @@ chap2_dial2 = [ // ibarra talk to damaso after talking to tiago
 		name: "Padre Damaso",
 		msg: "(paos) Hindi ka nagkamali… Ngunit kailanma’y hindi ako naging matalik na kaibigan ng iyong ama.",
 		portrait: spr_por_damaso,
-		//action: "lettersystem:ibarra_damaso"
+		action: "lettersystem:ibarra_damaso"
 	},
 	{
 		name: "Narration",
@@ -188,7 +188,7 @@ chap2_dial3 = [ // after that guevarra talk to ibarra
 		name: "Crisostomo Ibarra",
 		msg: "(nababagbag ang damdamin)Ginoo, ang inyong papuri ay nagpapawi ng aking lungkot tungkol sa sinapit ng aking ama, na hanggang ngayon ay hindi ko pa lubos na nauunawaan.",
 		portrait: spr_por_ibarra,
-		//action: "lettersystem:ibarra_guevarra"
+		action: "lettersystem:ibarra_guevarra"
 	},
 	{
 		name: "Narration",
@@ -204,7 +204,7 @@ chap2_dial4 = [ //then ibarra talk to binibini
 	{
 		name: "Narration",
 		msg: "(Tahimik ang mga dalaga, walang tumugon. Lumipat siya sa grupo ng mga ginoo.)",
-		//action: "lettersystem:ibarra_binibini"
+		action: "lettersystem:ibarra_binibini"
 	},
 ]
 chap2_dial5 = [ //then ibarra talks to kalalakihan
@@ -227,7 +227,7 @@ chap2_dial5 = [ //then ibarra talks to kalalakihan
 		name: "Makata",
 		msg: "Dahil ang dakilang diwa ng isip ay hindi para ipilit sa kasinungalingan. Hinatulan ako dahil isinulat ko ang katotohanang hindi nila matanggap. Sinabi ko lamang na “ang anak ng leon ay leon din naman.” Dahil doon, muntik na akong ipatapon.",
 		portrait: spr_por_makata,
-		//action: "lettersystem:ibarra_makata"
+		action: "lettersystem:ibarra_makata"
 	},
 	{
 		name: "Narration",
@@ -249,7 +249,7 @@ chap2_dial6 = [ // then tinong talk to ibarra
 		name: "Kapitan Tinong",
 		msg: "Sayang! Kung gayon, sa pagbabalik ninyo na lamang.",
 		portrait: spr_por_tinong,
-		//action: "lettersystem:ibarra_tinong"
+		action: "lettersystem:ibarra_tinong"
 	},
 /*	
 ]
@@ -297,7 +297,7 @@ chap3_dial1 = [ // one long conversation in table
 		name: "Laruja",
 		msg: "Don Crisostomo, gaano ka katagal nawala sa Pilipinas?",
 		portrait: spr_por_laruja,
-		//action: "lettersystem:ibarra_laruja3"
+		action: "lettersystem:ibarra_laruja3"
 	},
 	{
 		name: "Crisostomo Ibarra",
@@ -382,7 +382,7 @@ chap4_dial1 = [
 	{
 		name: "Narration",
 		msg: "(Bahagyang natahimik si Ibarra.)",
-		//action: "lettersystem:ibarra_erehe4"
+		action: "lettersystem:ibarra_erehe4"
 	},
 	{
 		name: "Tiniente Guevarra",
@@ -422,7 +422,7 @@ chap4_dial1 = [
 	{
 		name: "Narration",
 		msg: "(Matagal na katahimikan. Yumuko si Ibarra, halatang pinipigil ang luha.)",
-		//action: "lettersystem:ibarra_abandonment4"
+		action: "lettersystem:ibarra_abandonment4"
 	},
 	{
 		name: "Tiniente Guevarra",
@@ -437,7 +437,7 @@ chap4_dial1 = [
 		name: "Crisostomo Ibarra",
 		msg: "Ama… Hindi ako papayag na manatiling madungisan ang iyong pangalan. Babangon ang San Diego, at maririnig muli ang kabutihan mo.",
 		portrait: spr_por_ibarra,
-		//action: "lettersystem:ibarra_vow4"
+		action: "lettersystem:ibarra_vow4"
 	},
 	{
 		name: "Narration",
