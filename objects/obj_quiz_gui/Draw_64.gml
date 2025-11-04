@@ -14,7 +14,8 @@ var cy = gui_y + gui_h * 0.5;
 // ================================================================
 // === BACKGROUND ===
 draw_set_color(make_color_rgb(240, 240, 240));
-draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
+//draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
+draw_sprite_stretched(spr_quiz_bg, 0, gui_x, gui_y, gui_w, gui_h)
 
 // ================================================================
 // === TOP HUD: HINT BUTTON + SCORE ===
@@ -86,6 +87,7 @@ for (var i = 0; i < array_length(options); i++) {
     var opt_y = opt_start_y + i * (btn_height + btn_spacing);
     last_opt_y = opt_y;
 
+	/*
     // Background
     draw_set_color(c_white);
     draw_rectangle(opt_x, opt_y, opt_x + opt_w, opt_y + btn_height, false);
@@ -93,6 +95,10 @@ for (var i = 0; i < array_length(options); i++) {
     // Border
     draw_set_color(c_black);
     draw_rectangle(opt_x, opt_y, opt_x + opt_w, opt_y + btn_height, true);
+	*/
+	
+	//sprite button
+	draw_sprite_stretched(spr_quiz_opt, 0 ,opt_x, opt_y, opt_w,btn_height)
 
     // Selected highlight
     if (i == selected) {
@@ -115,11 +121,13 @@ if (showing_result && result_sprite != noone) {
     var result_x = cx - box_w / 2;
     var result_y = cy - area.h * 0.35;
 
-    if (result_sprite == spr_quiz_correct) draw_set_color(c_green);
-    else if (result_sprite == spr_quiz_wrong) draw_set_color(c_red);
+    //if (result_sprite == spr_quiz_correct) draw_set_color(c_green);
+	if (result_sprite == spr_quiz_correct) draw_sprite(result_sprite, 0 ,result_x,result_y);
+    //else if (result_sprite == spr_quiz_wrong) draw_set_color(c_red);
+	else if (result_sprite == spr_quiz_wrong) draw_sprite(result_sprite, 0 ,result_x,result_y);
     else draw_set_color(c_yellow);
 
-    draw_rectangle(result_x, result_y, result_x + box_w, result_y + box_h, false);
+    //draw_rectangle(result_x, result_y, result_x + box_w, result_y + box_h, false);
 }
 
 // ================================================================
@@ -132,18 +140,22 @@ if (!showing_result) {
 
 // ================================================================
 // === SUBMIT / NEXT BUTTON (aligned with choices) ===
-submit_w = opt_w * 0.6;
+submit_w = opt_w * 0.4;
 submit_h = btn_height;
 submit_x = cx - submit_w * 0.5;
 submit_y = last_opt_y + btn_height + btn_spacing * 2;
 
-draw_set_color(make_color_rgb(30, 144, 255));
-draw_rectangle(submit_x, submit_y, submit_x + submit_w, submit_y + submit_h, false);
+//draw_set_color(make_color_rgb(30, 144, 255));
+//draw_rectangle(submit_x, submit_y, submit_x + submit_w, submit_y + submit_h, false);
+
+//sprite button
+draw_sprite_stretched(spr_quiz_submit, 0, submit_x, submit_y, submit_w, submit_h);
 
 if (submit_pressed) {
     draw_set_alpha(0.4);
     draw_set_color(c_white);
-    draw_rectangle(submit_x, submit_y, submit_x + submit_w, submit_y + submit_h, false);
+    //draw_rectangle(submit_x, submit_y, submit_x + submit_w, submit_y + submit_h, false);
+	draw_sprite_stretched(spr_quiz_submit, 0, submit_x, submit_y, submit_w, submit_h);
     draw_set_alpha(1);
 }
 

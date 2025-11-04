@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":15.17279,
   "name":"snd_chapter2_room",
   "parent":{
     "name":"Sounds",
