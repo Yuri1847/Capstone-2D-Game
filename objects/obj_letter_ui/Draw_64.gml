@@ -21,15 +21,15 @@ var y_mid2_end   = y_mid1_end + h_mid2;
 var y_bottom_end = area.y + area.h;
 
 // === Dividers ===
-draw_set_color(c_black);
-draw_line(area.x, y_top_end,  area.x + area.w, y_top_end);
-draw_line(area.x, y_mid1_end, area.x + area.w, y_mid1_end);
-draw_line(area.x, y_mid2_end, area.x + area.w, y_mid2_end);
+//draw_set_color(c_black);
+//draw_line(area.x, y_top_end,  area.x + area.w, y_top_end);
+//draw_line(area.x, y_mid1_end, area.x + area.w, y_mid1_end);
+//draw_line(area.x, y_mid2_end, area.x + area.w, y_mid2_end);
 
 // Draw different panels depending on state
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_font(-1);
+draw_set_font(fnt_global_dialogue);
 draw_set_color(c_black);
 
 if (state == "title")
