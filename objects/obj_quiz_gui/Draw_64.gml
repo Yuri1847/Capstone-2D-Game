@@ -25,8 +25,8 @@ draw_set_valign(fa_middle);
 // --- Hint Button (TOP-LEFT) ---
 hint_w = 160;
 hint_h = 48;
-hint_x = gui_x + 40;
-hint_y = gui_y + 40;
+hint_x = gui_x + 80;
+hint_y = gui_y + 80;
 
 // Button background
 draw_set_color(make_color_rgb(255, 193, 7)); // yellow
@@ -55,7 +55,7 @@ draw_text(
 draw_set_halign(fa_right);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
-draw_text(gui_x + gui_w - 40, gui_y + 48,
+draw_text(gui_x + gui_w - 80, gui_y + 88,
     "Passing: 3    Score: " + string(quiz_score) + "/" + string(total_questions)
 );
 
@@ -140,7 +140,7 @@ if (!showing_result) {
 
 // ================================================================
 // === SUBMIT / NEXT BUTTON (aligned with choices) ===
-submit_w = opt_w * 0.4;
+submit_w = opt_w * 0.2;
 submit_h = btn_height;
 submit_x = cx - submit_w * 0.5;
 submit_y = last_opt_y + btn_height + btn_spacing * 2;
@@ -169,8 +169,8 @@ draw_text(submit_x + submit_w * 0.5, submit_y + submit_h * 0.5, button_label);
 // === CLOSE BUTTON (BOTTOM-RIGHT) ===
 close_w = 120;
 close_h = 48;
-close_x = gui_x + gui_w - close_w - 40;
-close_y = gui_y + gui_h - close_h - 40;
+close_x = gui_x + gui_w - close_w - 80;
+close_y = gui_y + gui_h - close_h - 80;
 
 draw_set_color(make_color_rgb(220, 53, 69));
 draw_rectangle(close_x, close_y, close_x + close_w, close_y + close_h, false);
