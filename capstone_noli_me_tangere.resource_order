@@ -22,7 +22,6 @@
     {"name":"ReflectionSystem","order":5,"path":"folders/ReflectionSystem.yy",},
     {"name":"chap1","order":4,"path":"folders/Sequences/chap1.yy",},
     {"name":"CUTSCENES","order":1,"path":"folders/Sprites/CUTSCENES.yy",},
-    {"name":"smooth","order":1,"path":"folders/Sprites/PLAYER/smooth.yy",},
     {"name":"SPS fonts","order":4,"path":"folders/Storyline Progression System/SPS fonts.yy",},
     {"name":"Escolta","order":1,"path":"folders/Tile Sets/Environment/Escolta.yy",},
   ],

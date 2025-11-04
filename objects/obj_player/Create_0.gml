@@ -1,5 +1,9 @@
 
 
+// Create Event of your object
+image_xscale = 0.45; // 150% width
+image_yscale = 0.45; // 80% height
+
 // Variables
 walkSpeed = 8;
 vx = 0;

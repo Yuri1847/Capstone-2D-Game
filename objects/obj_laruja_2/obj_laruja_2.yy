@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_front_laruja",
+    "path":"sprites/spr_front_laruja/spr_front_laruja.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
