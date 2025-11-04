@@ -77,3 +77,6 @@ hint_pressed = false;
 
 hint_display_text = "";
 
+summary_visible = false;
+continue_pressed = false;
+

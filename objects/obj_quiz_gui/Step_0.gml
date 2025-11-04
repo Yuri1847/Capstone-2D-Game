@@ -27,7 +27,7 @@ var close_h = 48;
 var close_x = gui_x + gui_w - close_w - 40;
 var close_y = gui_y + gui_h - close_h - 40;
 
-// --- Hint Button (TOP-LEFT now) ---
+// --- Hint Button (TOP-LEFT) ---
 var hint_w = 160;
 var hint_h = 48;
 var hint_x = gui_x + 40;
@@ -59,7 +59,7 @@ for (var i = 0; i < max_fingers; i++) {
         }
 
         // === SUBMIT / NEXT ===
-        if (point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
+        if (!summary_visible && point_in_rectangle(tx, ty, submit_x, submit_y, submit_x + submit_w, submit_y + submit_h)) {
             submit_pressed = true;
             submit_press_timer = room_speed * 0.1;
 
@@ -135,6 +135,36 @@ for (var i = 0; i < max_fingers; i++) {
                 }
             }
         }
+
+        // === SUMMARY CONTINUE BUTTON ===
+        if (summary_visible) {
+            var cont_w = 240;
+            var cont_h = 60;
+            var cont_x = cx - cont_w * 0.5;
+            var cont_y = cy + 120;
+
+            if (point_in_rectangle(tx, ty, cont_x, cont_y, cont_x + cont_w, cont_y + cont_h)) {
+                continue_pressed = true;
+
+                if (quiz_score >= 3) {
+                    // PASS: warp to next
+                    global.warp_spawn_x = global.quiz_target_x;
+                    global.warp_spawn_y = global.quiz_target_y;
+                    var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+                    t.fading_out = true;
+                    t.next_room = global.quiz_target_room;
+                    global.quiz_pending_warp = false;
+                    global.quiz_active = false;
+                } else {
+                    // FAIL: retry
+                    show_toast("Bagsak na pagsusulit, ulitin ang pagsusulit.");
+                    global.quiz_pending_warp = false;
+                    global.quiz_target_room = noone;
+                    with (obj_quiz_controller) quiz_done = false;
+                    instance_destroy();
+                }
+            }
+        }
     }
 }
 
@@ -143,6 +173,7 @@ if (mouse_check_button_released(mb_left)) {
     submit_pressed = false;
     close_pressed = false;
     hint_pressed = false;
+    continue_pressed = false;
 }
 
 
@@ -156,69 +187,10 @@ if (showing_result) {
             hint_revealed = false;
             hint_display_text = "";
             quiz_show(quiz_data, question_index + 1);
-        } else if (global.quiz_pending_warp) {
-            if (quiz_score >= 3) {
-                global.warp_spawn_x = global.quiz_target_x;
-                global.warp_spawn_y = global.quiz_target_y;
-                var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
-                t.fading_out = true;
-                t.next_room = global.quiz_target_room;
-                global.quiz_pending_warp = false;
-                global.quiz_active = false;
-            } else {
-                show_toast("Bagsak na pagsusulit, Pakiusap uulitin ang pagsusulit.");
-
-                var room_name = room_get_name(room);
-                switch (room_name) {
-                    case "rm_chapter2_crisostomo_ibarra":
-                        with (obj_player) { x = 1055; y = 738; }
-                        break;
-                    case "rm_chapter3_hapunan":
-                        with (obj_player) { x = 884; y = 673; }
-                        break;
-                }
-
-                global.quiz_pending_warp = false;
-                global.quiz_target_room = noone;
-                global.quiz_target_x = 0;
-                global.quiz_target_y = 0;
-
-                with (obj_warp) quiz_active = false;
-                with (obj_quiz_controller) quiz_done = false;
-                instance_destroy();
-            }
+        } else {
+            // ✅ Finished all questions — show summary instead of warp
+            showing_result = false;
+            summary_visible = true;
         }
     }
 }
-
-
-
-
-/*
-// --- handle result + warp transition ---
-if (showing_result) {
-    result_timer -= 1;
-
-    if (result_timer <= 0) {
-        // If there’s a pending warp, fade to next room
-        if (global.quiz_pending_warp) {
-
-            // ✅ Make sure the spawn coordinates are set FIRST
-            global.warp_spawn_x = global.quiz_target_x;
-            global.warp_spawn_y = global.quiz_target_y;
-
-            // ✅ Then create the fade transition
-            var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
-            t.fading_out = true;
-            t.next_room = global.quiz_target_room;
-
-            // ✅ Finally, clear the warp flag
-            global.quiz_pending_warp = false;
-        }
-
-        // Clean up GUI after result display
-        instance_destroy();
-    }
-}*/
-
-

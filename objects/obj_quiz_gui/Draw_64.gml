@@ -174,3 +174,43 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(close_x + close_w * 0.5, close_y + close_h * 0.5, "Close");
+
+// ================================================================
+// === SUMMARY SCREEN ===
+if (summary_visible) {
+    draw_set_color(make_color_rgb(240, 240, 240));
+    draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
+
+    draw_set_color(c_black);
+    draw_set_font(fn_quiz);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+
+    draw_text(cx, cy - 150, "Quiz Summary");
+    draw_text(cx, cy - 60, "Your Score: " + string(quiz_score) + " / " + string(total_questions));
+
+    var remark = "";
+    if (quiz_score == total_questions) remark = "Perfect! Excellent work!";
+    else if (quiz_score >= 3) remark = "Good job! You passed!";
+    else remark = "You didn’t pass. Try again!";
+    draw_text(cx, cy, remark);
+
+    // Continue button
+    var cont_w = 240;
+    var cont_h = 60;
+    var cont_x = cx - cont_w * 0.5;
+    var cont_y = cy + 120;
+
+    draw_set_color(make_color_rgb(30, 144, 255));
+    draw_rectangle(cont_x, cont_y, cont_x + cont_w, cont_y + cont_h, false);
+
+    if (continue_pressed) {
+        draw_set_alpha(0.4);
+        draw_set_color(c_white);
+        draw_rectangle(cont_x, cont_y, cont_x + cont_w, cont_y + cont_h, false);
+        draw_set_alpha(1);
+    }
+
+    draw_set_color(c_white);
+    draw_text(cx, cont_y + cont_h * 0.5, "Continue");
+}
