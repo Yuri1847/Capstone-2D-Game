@@ -1,5 +1,5 @@
 switch (state) {
-    case 0: // Fade in
+    case 0: // Fade In
         alpha += 0.04;
         if (alpha >= 1) {
             alpha = 1;
@@ -12,7 +12,7 @@ switch (state) {
         if (timer <= 0) state = 2;
     break;
 
-    case 2: // Fade out
+    case 2: // Fade Out
         alpha -= 0.02;
         if (alpha <= 0) instance_destroy();
     break;

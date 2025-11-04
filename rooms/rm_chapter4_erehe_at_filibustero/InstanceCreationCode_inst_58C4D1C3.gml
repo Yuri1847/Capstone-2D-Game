@@ -2,7 +2,7 @@ targetRoom = rm_binondo_main;
 targetX = 170;
 targetY = 1038;
 
-
+/*
 has_quiz = true;
 quiz_data = [
     {
@@ -39,3 +39,4 @@ quiz_data = [
         hint: "Nang siya’y patay na lamang napatunayan ang kanyang kawalang-sala."
     }
 ];
+*/
