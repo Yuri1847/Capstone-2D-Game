@@ -33,32 +33,33 @@ switch (tutorial_stage)
 
 
 
+//-----------------------------------
+// 2️⃣ TAP ANYWHERE TO TALK
+//-----------------------------------
 case 1:
     if (!tutorial_shown)
     {
-        show_tutorial("Tap the NPC to talk");
+        show_tutorial("Tap anywhere to talk to the NPC");
         global.highlight_talk_button = true;
+        global.highlight_npc = true;
         tutorial_shown = true;
     }
 
+    // detect any tap/click anywhere
     var max_fingers = 5;
-    for (var i = 0; i < max_fingers; i++) {
-        if (device_mouse_check_button_pressed(i, mb_left)) {
-            var tx = device_mouse_x_to_gui(i);
-            var ty = device_mouse_y_to_gui(i);
-
-            with (obj_talk_button) {
-                var bw = sprite_get_width(spr_talk_button);
-                var bh = sprite_get_height(spr_talk_button);
-
-                if (point_in_rectangle(tx, ty, bx, by, bx + bw, by + bh)) {
-                    global.highlight_talk_button = false;
-                    other.next_tutorial();
-                }
-            }
+    for (var i = 0; i < max_fingers; i++)
+    {
+        if (device_mouse_check_button_pressed(i, mb_left))
+        {
+            // ✅ progress immediately
+            global.highlight_talk_button = false;
+            global.highlight_npc = false;
+            with (obj_tutorial) next_tutorial();
         }
     }
 break;
+
+
 
 
 
