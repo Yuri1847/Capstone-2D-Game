@@ -33,31 +33,62 @@ switch (tutorial_stage)
 
 
 
+
 //-----------------------------------
-// 2️⃣ TAP ANYWHERE TO TALK
+// 2️⃣ TAP TALK BUTTON TO TALK
 //-----------------------------------
 case 1:
     if (!tutorial_shown)
     {
-        show_tutorial("Tap anywhere to talk to the NPC");
+        show_tutorial("Tap the talk button to talk to the NPC");
+
         global.highlight_talk_button = true;
         global.highlight_npc = true;
+
         tutorial_shown = true;
     }
 
-    // detect any tap/click anywhere
-    var max_fingers = 5;
-    for (var i = 0; i < max_fingers; i++)
+    // detect tap/click on talk button
+    if (device_mouse_check_button_pressed(0, mb_left))
     {
-        if (device_mouse_check_button_pressed(i, mb_left))
+        var tx = device_mouse_x_to_gui(0);
+        var ty = device_mouse_y_to_gui(0);
+
+        // check if clicked inside actual talk button
+        with (obj_talk_button)
         {
-            // ✅ progress immediately
-            global.highlight_talk_button = false;
-            global.highlight_npc = false;
-            with (obj_tutorial) next_tutorial();
+            var bw = (sprite_index != -1) ? sprite_get_width(sprite_index) : 64;
+            var bh = (sprite_index != -1) ? sprite_get_height(sprite_index) : 64;
+            var bx = x - bw * 0.5;
+            var by = y - bh * 0.5;
+
+            if (point_in_rectangle(tx, ty, bx, by, bx + bw, by + bh))
+            {
+                // ✅ store button position for highlight later
+                global.talk_button_x = bx;
+                global.talk_button_y = by;
+                global.talk_button_w = bw;
+                global.talk_button_h = bh;
+
+                // ✅ remove highlights
+                global.highlight_talk_button = false;
+                global.highlight_npc = false;
+
+                // ✅ immediately continue tutorial
+                with (obj_tutorial) next_tutorial();
+
+                // (optional) trigger dialogue if not auto-handled
+                // scr_start_dialogue();
+            }
         }
     }
 break;
+
+
+
+
+
+
 
 
 
