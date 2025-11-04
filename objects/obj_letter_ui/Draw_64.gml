@@ -4,7 +4,8 @@ var area = scr_get_camera_gui_area();
 // === Background ===
 draw_set_color(c_white);
 draw_set_alpha(0.95);
-draw_rectangle(area.x, area.y, area.x + area.w, area.y + area.h, false);
+//draw_rectangle(area.x, area.y, area.x + area.w, area.y + area.h, false);
+draw_sprite_stretched(spr_quiz_bg, 0, area.x, area.y, area.x + area.w, area.y + area.h)
 draw_set_alpha(1);
 
 // === Section ratios ===

@@ -125,6 +125,11 @@ break;
             show_tutorial("Well done! Tutorial complete.");
             tutorial_shown = true;
             tutorial_done = true;
+			
+			alarm[0] = room_speed * 2;
         }
     break;
 }
+
+
+

@@ -194,7 +194,8 @@ draw_text(close_x + close_w * 0.5, close_y + close_h * 0.5, "Close");
 if (summary_visible) {
     // Background
     draw_set_color(make_color_rgb(240, 240, 240));
-    draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
+    //draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
+	draw_sprite_stretched(spr_quiz_bg, 0, gui_x, gui_y, gui_w, gui_h);
 
     // Setup
     draw_set_color(c_black);
