@@ -188,6 +188,7 @@ draw_set_valign(fa_middle);
 draw_text(close_x + close_w * 0.5, close_y + close_h * 0.5, "Close");
 
 // ================================================================
+// ================================================================
 // === SUMMARY SCREEN ===
 if (summary_visible) {
     draw_set_color(make_color_rgb(240, 240, 240));
@@ -198,16 +199,30 @@ if (summary_visible) {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
 
-    draw_text(cx, cy - 150, "Quiz Summary");
-    draw_text(cx, cy - 60, "Your Score: " + string(quiz_score) + " / " + string(total_questions));
+    // 🟦 Chapter info (fetched from obj_controller)
+    var chap_no = global.chapter_number;
+    var chap_title = string(global.chapter_title);
+    var chap_summary = string(global.chapter_summary);
+
+    // === Header Section ===
+    draw_text(cx, cy - 220, "Chapter " + string(chap_no) + ": " + chap_title);
+    draw_text(cx, cy - 180, "Quiz Summary");
+
+    // === Chapter Description ===
+    draw_set_font(fnt_global_extraBoldDisplay); // optional smaller font if you have one
+    draw_text_wrap(cx, cy - 130, chap_summary, gui_w * 0.8);
+
+    // === Quiz Score and Remarks ===
+    draw_set_font(fn_quiz);
+    draw_text(cx, cy - 40, "Your Score: " + string(quiz_score) + " / " + string(total_questions));
 
     var remark = "";
     if (quiz_score == total_questions) remark = "Perfect! Excellent work!";
     else if (quiz_score >= 3) remark = "Good job! You passed!";
     else remark = "You didn’t pass. Try again!";
-    draw_text(cx, cy, remark);
+    draw_text(cx, cy + 20, remark);
 
-    // Continue button
+    // === Continue Button ===
     var cont_w = 240;
     var cont_h = 60;
     var cont_x = cx - cont_w * 0.5;

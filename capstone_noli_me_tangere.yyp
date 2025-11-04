@@ -682,6 +682,7 @@
     {"id":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
+    {"id":{"name":"draw_text_wrap","path":"scripts/draw_text_wrap/draw_text_wrap.yy",},},
     {"id":{"name":"quiz_show","path":"scripts/quiz_show/quiz_show.yy",},},
     {"id":{"name":"sc_getSplashForRoom","path":"scripts/sc_getSplashForRoom/sc_getSplashForRoom.yy",},},
     {"id":{"name":"sc_Inventory","path":"scripts/sc_Inventory/sc_Inventory.yy",},},
