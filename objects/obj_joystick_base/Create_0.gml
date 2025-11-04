@@ -34,3 +34,8 @@ input = function (touchId)
 {
     self.touchId = touchId;
 };
+
+
+// Highlight settings for tutorial
+highlight_alpha = 0;
+highlight_dir = 1; // 1 = fade in, -1 = fade out

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"show_tutorial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"show_tutorial",
+  "parent":{
+    "name":"Tutorial",
+    "path":"folders/Tutorial.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

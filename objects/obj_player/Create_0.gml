@@ -13,6 +13,11 @@ moveDown = 0;
 // Track which historical notes have been read
 notes_read = ds_map_create();
 
+// --- Movement variables ---
+hsp = 0; // horizontal speed
+vsp = 0; // vertical speed (optional, if you use vertical movement)
+
+
 
 
 
