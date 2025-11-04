@@ -1,3 +1,4 @@
+/// DRAW GUI EVENT
 var area = scr_get_camera_gui_area();
 
 // === Background ===
@@ -24,8 +25,43 @@ draw_line(area.x, y_top_end,  area.x + area.w, y_top_end);
 draw_line(area.x, y_mid1_end, area.x + area.w, y_mid1_end);
 draw_line(area.x, y_mid2_end, area.x + area.w, y_mid2_end);
 
-// === Header ===
+// Draw different panels depending on state
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 draw_set_font(-1);
+draw_set_color(c_black);
+
+if (state == "title")
+{
+    // Big title in header area
+    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.45, _title_text);
+    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.85, "Tap to continue");
+    // optionally draw a short scenario preview under header
+    draw_set_halign(fa_left);
+    draw_text(area.x + area.w * 0.1, y_top_end + h_mid1 * 0.5, scenario_text);
+    return;
+}
+else if (state == "instruction")
+{
+    // Instruction panel: show instruction text centered
+    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.45, "Instruction");
+    draw_set_halign(fa_center);
+    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.85, _instruction_text);
+    return;
+}
+else if (state == "summary")
+{
+    // Show summary text in mid area
+    draw_set_halign(fa_center);
+    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.35, "Reflection Summary");
+    draw_set_halign(fa_left);
+    draw_text(area.x + area.w * 0.1, y_top_end + h_mid1 * 0.1, _summary_text);
+    return;
+}
+
+// else state == "play" -> draw the existing reflection UI (header, scenario, choices, confirm)
+
+// === Header ===
 draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -45,11 +81,6 @@ var choice_h = 56;
 var spacing = 16;
 
 var colors = [c_red, c_blue, c_green];
-var choices = [
-    "🟥 [A] “Speak up and defend your father’s honor.”  (Justice)",
-    "🟦 [B] “Answer calmly with composure and reason.”  (Wisdom)",
-    "🟩 [C] “Hold your silence to keep the peace.”      (Humility)"
-];
 
 for (var i = 0; i < array_length(choice_list); i++)
 {
@@ -67,17 +98,15 @@ for (var i = 0; i < array_length(choice_list); i++)
     draw_rectangle(choice_x1, y_rect1, choice_x2, y_rect2, true);
 
     draw_set_color(c_black);
+    draw_set_halign(fa_left);
     draw_text(choice_x1 + 12, y_rect1 + choice_h * 0.5, choice_list[i]);
 }
-
-
 
 // === Confirm Button ===
 var confirm_w = 200;
 var confirm_h = 48;
 var confirm_x = area.x + area.w - confirm_w - 100;
 var confirm_y = area.y + area.h - confirm_h - 20;
-
 
 // Hover highlight
 if (hover_confirm)
