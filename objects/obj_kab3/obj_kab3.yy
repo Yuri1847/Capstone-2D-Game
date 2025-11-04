@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_front_kab3",
-    "path":"sprites/spr_front_kab3/spr_front_kab3.yy",
+    "name":"spr_front_kab2",
+    "path":"sprites/spr_front_kab2/spr_front_kab2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

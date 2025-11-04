@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_front_damaso",
+    "path":"sprites/spr_front_damaso/spr_front_damaso.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

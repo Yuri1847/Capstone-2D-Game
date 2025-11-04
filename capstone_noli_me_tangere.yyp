@@ -718,6 +718,8 @@
     {"id":{"name":"seq_chap1","path":"sequences/seq_chap1/seq_chap1.yy",},},
     {"id":{"name":"sq_intro","path":"sequences/sq_intro/sq_intro.yy",},},
     {"id":{"name":"snd_button_clicked","path":"sounds/snd_button_clicked/snd_button_clicked.yy",},},
+    {"id":{"name":"snd_chapter1_room","path":"sounds/snd_chapter1_room/snd_chapter1_room.yy",},},
+    {"id":{"name":"snd_chapter2_room","path":"sounds/snd_chapter2_room/snd_chapter2_room.yy",},},
     {"id":{"name":"snd_dialog_button","path":"sounds/snd_dialog_button/snd_dialog_button.yy",},},
     {"id":{"name":"snd_empty_slot","path":"sounds/snd_empty_slot/snd_empty_slot.yy",},},
     {"id":{"name":"snd_inside_room","path":"sounds/snd_inside_room/snd_inside_room.yy",},},

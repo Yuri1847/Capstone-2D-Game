@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_front_gue",
+    "path":"sprites/spr_front_gue/spr_front_gue.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
