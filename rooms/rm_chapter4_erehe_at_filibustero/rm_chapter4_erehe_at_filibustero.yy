@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_chapter4_erehe_at_filibustero",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_chapter4_erehe_at_filibustero/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_chapter3_hapunan",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_chapter3_hapunan/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
