@@ -50,11 +50,40 @@ for (var i = 0; i < max_fingers; i++) {
         var tx = device_mouse_x_to_gui(i);
         var ty = device_mouse_y_to_gui(i);
 
+        // === TAP TO CONTINUE (SUMMARY SCREEN) ===
+        if (summary_visible) {
+            if (summary_tap_delay <= 0) {
+                continue_pressed = true;
+
+                if (quiz_score >= 3) {
+                    // ✅ PASS: warp to next chapter / location
+                    global.warp_spawn_x = global.quiz_target_x;
+                    global.warp_spawn_y = global.quiz_target_y;
+
+                    var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+                    t.fading_out = true;
+                    t.next_room = global.quiz_target_room;
+
+                    global.quiz_pending_warp = false;
+                    global.quiz_active = false;
+                } else {
+                    // ❌ FAIL: retry quiz
+                    show_toast("Bagsak na pagsusulit, ulitin ang pagsusulit.");
+                    global.quiz_pending_warp = false;
+                    global.quiz_target_room = noone;
+                    with (obj_quiz_controller) quiz_done = false;
+                    instance_destroy();
+                }
+            }
+        }
+
         // === OPTIONS ===
-        for (var j = 0; j < array_length(options); j++) {
-            var opt_y = start_y + j * (btn_height + btn_spacing);
-            if (point_in_rectangle(tx, ty, opt_x, opt_y, opt_x + opt_w, opt_y + btn_height)) {
-                selected = j;
+        if (!summary_visible) {
+            for (var j = 0; j < array_length(options); j++) {
+                var opt_y = start_y + j * (btn_height + btn_spacing);
+                if (point_in_rectangle(tx, ty, opt_x, opt_y, opt_x + opt_w, opt_y + btn_height)) {
+                    selected = j;
+                }
             }
         }
 
@@ -81,13 +110,14 @@ for (var i = 0; i < max_fingers; i++) {
         }
 
         // === CLOSE ===
-        if (point_in_rectangle(tx, ty, close_x, close_y, close_x + close_w, close_y + close_h)) {
+        if (!summary_visible && point_in_rectangle(tx, ty, close_x, close_y, close_x + close_w, close_y + close_h)) {
             close_pressed = true;
             global.quiz_active = false;
             global.quiz_pending_warp = false;
 
             var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
             t.fading_out = true;
+
             if (variable_global_exists("prev_room")) {
                 t.next_room = global.prev_room;
                 global.warp_spawn_x = global.prev_x;
@@ -98,7 +128,7 @@ for (var i = 0; i < max_fingers; i++) {
         }
 
         // === HINT BUTTON ===
-        if (point_in_rectangle(tx, ty, hint_x, hint_y, hint_x + hint_w, hint_y + hint_h)) {
+        if (!summary_visible && point_in_rectangle(tx, ty, hint_x, hint_y, hint_x + hint_w, hint_y + hint_h)) {
             hint_pressed = true;
             var q = quiz_data[question_index];
 
@@ -135,38 +165,9 @@ for (var i = 0; i < max_fingers; i++) {
                 }
             }
         }
-
-        // === SUMMARY CONTINUE BUTTON ===
-        if (summary_visible) {
-            var cont_w = 240;
-            var cont_h = 60;
-            var cont_x = cx - cont_w * 0.5;
-            var cont_y = cy + 120;
-
-            if (point_in_rectangle(tx, ty, cont_x, cont_y, cont_x + cont_w, cont_y + cont_h)) {
-                continue_pressed = true;
-
-                if (quiz_score >= 3) {
-                    // PASS: warp to next
-                    global.warp_spawn_x = global.quiz_target_x;
-                    global.warp_spawn_y = global.quiz_target_y;
-                    var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
-                    t.fading_out = true;
-                    t.next_room = global.quiz_target_room;
-                    global.quiz_pending_warp = false;
-                    global.quiz_active = false;
-                } else {
-                    // FAIL: retry
-                    show_toast("Bagsak na pagsusulit, ulitin ang pagsusulit.");
-                    global.quiz_pending_warp = false;
-                    global.quiz_target_room = noone;
-                    with (obj_quiz_controller) quiz_done = false;
-                    instance_destroy();
-                }
-            }
-        }
     }
 }
+
 
 // === RELEASE STATE RESET ===
 if (mouse_check_button_released(mb_left)) {
@@ -191,6 +192,12 @@ if (showing_result) {
             // ✅ Finished all questions — show summary instead of warp
             showing_result = false;
             summary_visible = true;
+            summary_tap_delay = 15; // small delay before tap works
         }
     }
+}
+
+// === SUMMARY TAP DELAY TIMER ===
+if (summary_visible && summary_tap_delay > 0) {
+    summary_tap_delay -= 1;
 }

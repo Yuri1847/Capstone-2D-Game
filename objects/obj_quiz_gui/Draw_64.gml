@@ -187,57 +187,57 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(close_x + close_w * 0.5, close_y + close_h * 0.5, "Close");
 
-// ================================================================
+
+
 // ================================================================
 // === SUMMARY SCREEN ===
 if (summary_visible) {
+    // Background
     draw_set_color(make_color_rgb(240, 240, 240));
     draw_rectangle(gui_x, gui_y, gui_x + gui_w, gui_y + gui_h, false);
 
+    // Setup
     draw_set_color(c_black);
     draw_set_font(fn_quiz);
     draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
+    draw_set_valign(fa_top);
 
-    // 🟦 Chapter info (fetched from obj_controller)
+    // 🟦 Chapter info (from obj_controller)
     var chap_no = global.chapter_number;
     var chap_title = string(global.chapter_title);
     var chap_summary = string(global.chapter_summary);
 
     // === Header Section ===
-    draw_text(cx, cy - 220, "Chapter " + string(chap_no) + ": " + chap_title);
-    draw_text(cx, cy - 180, "Quiz Summary");
+    var y_offset = gui_y + 60; // start padding from top
+    draw_text(cx, y_offset, "Chapter " + string(chap_no) + ": " + chap_title);
+    y_offset += 40;
+    draw_text(cx, y_offset, "Quiz Summary");
 
-    // === Chapter Description ===
-    draw_set_font(fn_quiz); // optional smaller font if you have one
-    draw_text_wrap(cx, cy - 130, chap_summary, gui_w * 0.8);
+    // === Chapter Summary ===
+    draw_set_font(fn_quiz);
+    var summary_wrap_width = gui_w * 0.8;
+    y_offset += 40;
+    draw_text_wrap(cx, y_offset, chap_summary, summary_wrap_width);
+
+    // Calculate how much height summary text took up
+    var lines = string_count("\n", string_wrap(chap_summary, summary_wrap_width)) + 1;
+    var summary_height = lines * 26; // adjust line spacing if needed
+    y_offset += summary_height + 40;
 
     // === Quiz Score and Remarks ===
-    draw_set_font(fn_quiz);
-    draw_text(cx, cy - 40, "Your Score: " + string(quiz_score) + " / " + string(total_questions));
-
     var remark = "";
     if (quiz_score == total_questions) remark = "Perfect! Excellent work!";
     else if (quiz_score >= 3) remark = "Good job! You passed!";
     else remark = "You didn’t pass. Try again!";
-    draw_text(cx, cy + 20, remark);
 
-    // === Continue Button ===
-    var cont_w = 240;
-    var cont_h = 60;
-    var cont_x = cx - cont_w * 0.5;
-    var cont_y = cy + 120;
+    draw_text(cx, y_offset, "Your Score: " + string(quiz_score) + " / " + string(total_questions));
+    y_offset += 40;
+    draw_text(cx, y_offset, remark);
 
-    draw_set_color(make_color_rgb(30, 144, 255));
-    draw_rectangle(cont_x, cont_y, cont_x + cont_w, cont_y + cont_h, false);
-
-    if (continue_pressed) {
-        draw_set_alpha(0.4);
-        draw_set_color(c_white);
-        draw_rectangle(cont_x, cont_y, cont_x + cont_w, cont_y + cont_h, false);
-        draw_set_alpha(1);
-    }
-
-    draw_set_color(c_white);
-    draw_text(cx, cont_y + cont_h * 0.5, "Continue");
+    // === Tap to Continue ===
+    draw_set_color(c_dkgray);
+    draw_set_font(fn_quiz);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(cx, gui_y + gui_h - 60, "Tap to continue");
 }
