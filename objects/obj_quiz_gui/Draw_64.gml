@@ -209,7 +209,7 @@ if (summary_visible) {
     draw_text(cx, cy - 180, "Quiz Summary");
 
     // === Chapter Description ===
-    draw_set_font(fnt_global_extraBoldDisplay); // optional smaller font if you have one
+    draw_set_font(fn_quiz); // optional smaller font if you have one
     draw_text_wrap(cx, cy - 130, chap_summary, gui_w * 0.8);
 
     // === Quiz Score and Remarks ===
