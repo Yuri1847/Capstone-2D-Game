@@ -11,7 +11,7 @@ dialog_ref = noone;
 reflection_id = "";
 
 // --- New state flow variables ---
-state = "title"; // "title" -> "instruction" -> "play" -> "summary"
+state = "instruction"; // "title" -> "instruction" -> "play" -> "summary"
 _title_text = "Reflection";
 _instruction_text = "Read the reflection and choose wisely.\nTap anywhere to continue.";
 _summary_text = ""; // filled when entering summary

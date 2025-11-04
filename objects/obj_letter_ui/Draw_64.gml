@@ -44,19 +44,30 @@ if (state == "title")
 }
 else if (state == "instruction")
 {
-    // Instruction panel: show instruction text centered
-    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.45, "Instruction");
+    // === Centered Instruction Screen ===
     draw_set_halign(fa_center);
-    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.85, _instruction_text);
+    draw_set_valign(fa_middle);
+
+    var cx = area.x + area.w * 0.5;
+    var cy = area.y + area.h * 0.5;
+
+    draw_text(cx, cy - 40, "Instruction");
+    draw_text(cx, cy + 20, _instruction_text);
+
     return;
 }
 else if (state == "summary")
 {
-    // Show summary text in mid area
+    // === Centered Summary Screen ===
     draw_set_halign(fa_center);
-    draw_text(area.x + area.w * 0.5, area.y + h_top * 0.35, "Reflection Summary");
-    draw_set_halign(fa_left);
-    draw_text(area.x + area.w * 0.1, y_top_end + h_mid1 * 0.1, _summary_text);
+    draw_set_valign(fa_middle);
+
+    var cx = area.x + area.w * 0.5;
+    var cy = area.y + area.h * 0.5;
+
+    draw_text(cx, cy - 60, "Reflection Summary");
+    draw_text(cx, cy + 20, _summary_text);
+
     return;
 }
 
