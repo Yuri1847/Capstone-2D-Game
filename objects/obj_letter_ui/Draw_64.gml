@@ -60,16 +60,21 @@ else if (state == "summary")
 {
     // === Centered Summary Screen ===
     draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
 
     var cx = area.x + area.w * 0.5;
     var cy = area.y + area.h * 0.5;
 
-    draw_text(cx, cy - 60, "Reflection Summary");
-    draw_text(cx, cy + 20, _summary_text);
+    // --- Title ---
+    draw_set_valign(fa_middle);
+    draw_text(cx, cy - 100, "Reflection Summary");
+
+    // --- Summary text ---
+    draw_set_valign(fa_top); // make it start below the y position
+    draw_text(cx, cy - 40, _summary_text);
 
     return;
 }
+
 
 // else state == "play" -> draw the existing reflection UI (header, scenario, choices, confirm)
 

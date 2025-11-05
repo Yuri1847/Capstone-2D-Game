@@ -123,7 +123,7 @@ switch (current_tab) {
 
 	    var header_h = 140;
 	    y_offset += header_h + gap;
-		/*
+		
 
 	    //------------------------------------------
 	    // 2️⃣ TOTALS SECTION (Virtue Progress)
@@ -254,7 +254,7 @@ switch (current_tab) {
 
 	    var reflection_h = (array_length(keys) * 40) + 200;
 	    y_offset += reflection_h + gap;
-		*/
+		
 
 	    //------------------------------------------
 	    // SCROLL AREA END
