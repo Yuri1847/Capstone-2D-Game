@@ -8,7 +8,7 @@ targetY = 673;
 has_quiz = true;
 quiz_data = [
     {
-        question: "Sino ang uminsulto kay Don Rafael sa pagtitipon bago siya pumasok sa pamilihan?",
+        question: "Sino ang uminsulto kay Don Rafael sa pagtitipon?",
         options: ["Padre Damaso", "Padre Sibyla", "Tiniente Guevarra"],
         correct: 0,
         virtue: "justice", // Katarungan — pag-alam sa tama at mali
