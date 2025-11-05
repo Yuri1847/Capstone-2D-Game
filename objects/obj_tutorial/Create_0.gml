@@ -1,9 +1,22 @@
 // 🧩 obj_tutorial: CREATE EVENT
+
+// ✅ Ensure global variable exists before using it
+if (!variable_global_exists("tutorial_done")) {
+    global.tutorial_done = false;
+}
+
+// Now you can safely check it
+if (global.tutorial_done) {
+    instance_destroy();
+    exit;
+}
+
+
+// otherwise continue as normal
 tutorial_stage = 0;
 tutorial_shown = false;
 tutorial_done = false;
 
-// timer (in seconds)
 tutorial_move_time = 0;
 
 global.tutorial_message = "";
@@ -13,10 +26,6 @@ global.tutorial_visible = false;
 global.highlight_joystick = false;
 global.highlight_npc = false;
 global.highlight_journal = false;
-
-// optional fade
-global.tutorial_alpha = 0;
-
-
 global.highlight_talk_button = false;
 
+global.tutorial_alpha = 0;

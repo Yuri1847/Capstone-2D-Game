@@ -57,13 +57,14 @@ switch (tutorial_stage)
     // ✅ FINISHED
     //-----------------------------------
     case 2:
-        if (!tutorial_shown)
-        {
-            show_tutorial("Well done! Tutorial complete.");
-            tutorial_shown = true;
-            tutorial_done = true;
+	    if (!tutorial_shown) {
+	        show_tutorial("Well done! Tutorial complete.");
+	        tutorial_shown = true;
+	        tutorial_done = true;
+	        global.tutorial_done = true; // ✅ mark globally done
 
-            alarm[0] = room_speed * 2;
-        }
-    break;
+	        alarm[0] = room_speed * 2;
+	    }
+	break;
+
 }
