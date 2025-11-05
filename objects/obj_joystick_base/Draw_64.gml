@@ -1,3 +1,4 @@
+if (!global.enabledJOY) exit;
 // Draw GUI Event of obj_joystick_base
 
 var scale = global.joystick_scale;

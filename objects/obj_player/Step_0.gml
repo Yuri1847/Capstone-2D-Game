@@ -12,7 +12,16 @@ if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) 
 	// Calculate movement
 	vx = ((moveRight - moveLeft) * walkSpeed);
 	vy = ((moveDown - moveUp) * walkSpeed);
-}else{
+} else if (instance_exists(obj_cross_controller) && obj_cross_controller.isTouchCrossControll) {
+    var pad = obj_cross_controller;
+    moveUp = pad.moveUp;
+    moveDown = pad.moveDown;
+    moveLeft = pad.moveLeft;
+    moveRight = pad.moveRight;
+	// Calculate movement
+	vx = ((moveRight - moveLeft) * walkSpeed);
+	vy = ((moveDown - moveUp) * walkSpeed);
+} else{
 	//for Joystick
 	var moveX = 0;
 	var moveY = 0;
@@ -26,6 +35,8 @@ if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) 
 	vx = round(moveX * walkSpeed);
 	vy = round( moveY * walkSpeed);
 }
+
+
 
 // If Idle
 if (vx == 0 && vy == 0) {
@@ -66,7 +77,7 @@ if (vx != 0 || vy != 0) {
 }
 
 
-if(global.is_main_state){
+/*if(global.is_main_state){
 	if(global.file_handling_data.player_x != obj_player.x 
 	|| global.file_handling_data.player_y != obj_player.y 
 	|| global.file_handling_data.last_room != room_get_name(room))
@@ -76,7 +87,7 @@ if(global.is_main_state){
 		global.file_handling_data.last_room = room_get_name(room);
 		file_handling_save_game();
 	}
-}
+}*/
 
 //depth sorting
 depth =-y;

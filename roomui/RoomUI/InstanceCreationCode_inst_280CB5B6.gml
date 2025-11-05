@@ -5,4 +5,7 @@ function clickButton(){
 	with(obj_slider_bar){
 	obj_slider_bar.isEnabled = false;
 	}
+	with(obj_toggle_controller_button){
+	obj_toggle_controller_button.isEnabled = false;
+	}
 }

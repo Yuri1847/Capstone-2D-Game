@@ -5,7 +5,7 @@ image_xscale = 0.45; // 150% width
 image_yscale = 0.45; // 80% height
 
 // Variables
-walkSpeed = 8;
+walkSpeed = 3.5;
 vx = 0;
 vy = 0;
 dir = 3;
