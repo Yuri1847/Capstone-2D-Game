@@ -5,6 +5,8 @@ function clickButton(){
 		with(obj_state_slot_save){
 		obj_state_slot_save.isEnabled = false;
 	}
-	sc_visible_layer(["right_option_layer", "pause_button_layer"]);
+	sc_visible_layer([
+	//"right_option_layer", 
+	"pause_button_layer"]);
 	sc_invisible_layer(["state_slot_save_layer"]);
 }

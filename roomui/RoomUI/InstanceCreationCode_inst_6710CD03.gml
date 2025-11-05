@@ -1,6 +1,6 @@
 function clickButton(){
 	sc_visible_layer([
-	"right_option_layer", 
+	//"right_option_layer", 
 	"pause_button_layer", 
 ]);
 	
