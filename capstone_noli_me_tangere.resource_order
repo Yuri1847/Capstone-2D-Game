@@ -4,7 +4,6 @@
     {"name":"Find hidden Item Quest","order":1,"path":"folders/Find hidden Item Quest.yy",},
     {"name":"Global Font","order":2,"path":"folders/Fonts/Global Font.yy",},
     {"name":"GLOBAL","order":2,"path":"folders/GLOBAL.yy",},
-    {"name":"Tutorial","order":6,"path":"folders/Tutorial.yy",},
     {"name":"Audio","order":3,"path":"folders/Objects/FUNCTIONS/Audio.yy",},
     {"name":"daynightcycle","order":16,"path":"folders/Objects/FUNCTIONS/daynightcycle.yy",},
     {"name":"Inventory System","order":4,"path":"folders/Objects/FUNCTIONS/Inventory System.yy",},
@@ -24,6 +23,7 @@
     {"name":"CUTSCENES","order":1,"path":"folders/Sprites/CUTSCENES.yy",},
     {"name":"SPS fonts","order":4,"path":"folders/Storyline Progression System/SPS fonts.yy",},
     {"name":"Escolta","order":1,"path":"folders/Tile Sets/Environment/Escolta.yy",},
+    {"name":"Tutorial","order":6,"path":"folders/Tutorial.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_global_dialogue","order":1,"path":"fonts/fnt_global_dialogue/fnt_global_dialogue.yy",},

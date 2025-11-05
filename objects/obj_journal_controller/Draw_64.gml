@@ -46,7 +46,7 @@ var content_y = area.y + top_h;
 var content_w = area.w;
 var content_h = mid_h;
 
-draw_set_color(c_white);
+draw_set_color(#433017);
 draw_rectangle(content_x, content_y, content_x + content_w, content_y + content_h, false);
 
 // Horizontal padding inside content area
@@ -92,7 +92,7 @@ switch (current_tab) {
 	    //------------------------------------------
 	    var _surf = surface_create(content_w, content_h);
 	    surface_set_target(_surf);
-	    draw_clear_alpha(c_white, 1);
+	    draw_clear_alpha(#433017, 1);
 
 	    var padding_x = 20;
 	    var y_start = 20 + scroll_y;
@@ -102,7 +102,7 @@ switch (current_tab) {
 	    var line_gap = 40;
 	    var gap = 40;
 
-	    draw_set_color(c_black);
+	    draw_set_color(c_white);
 
 	    //------------------------------------------
 	    // 1️⃣ PROFILE HEADER
@@ -155,7 +155,7 @@ switch (current_tab) {
 	    var bar_h = 20;
 
 	    // --- Justice ---
-	    draw_set_color(c_black);
+	    draw_set_color(c_white);
 	    draw_text(tx, ty, "Justice:");
 	    draw_text(tx + label_w + label_gap, ty, string(total_justice));
 	    draw_set_color(make_color_rgb(60, 60, 60));
@@ -164,7 +164,7 @@ switch (current_tab) {
 	    draw_rectangle(bar_x, ty + 4, bar_x + (bar_w * justice_ratio), ty + 4 + bar_h, false);
 
 	    // --- Wisdom ---
-	    draw_set_color(c_black);
+	    draw_set_color(c_white);
 	    draw_text(tx, ty + 40, "Wisdom:");
 	    draw_text(tx + label_w + label_gap, ty + 40, string(total_wisdom));
 	    draw_set_color(make_color_rgb(60, 60, 60));
@@ -173,7 +173,7 @@ switch (current_tab) {
 	    draw_rectangle(bar_x, ty + 44, bar_x + (bar_w * wisdom_ratio), ty + 44 + bar_h, false);
 
 	    // --- Humility ---
-	    draw_set_color(c_black);
+	    draw_set_color(c_white);
 	    draw_text(tx, ty + 80, "Humility:");
 	    draw_text(tx + label_w + label_gap, ty + 80, string(total_humility));
 	    draw_set_color(make_color_rgb(60, 60, 60));
@@ -182,7 +182,7 @@ switch (current_tab) {
 	    draw_rectangle(bar_x, ty + 84, bar_x + (bar_w * humility_ratio), ty + 84 + bar_h, false);
 
 	    // --- Milestone ticks ---
-	    draw_set_color(c_black);
+	    draw_set_color(c_white);
 	    for (var i = 1; i < max_value; i++) {
 	        var tick_x = bar_x + (bar_w * (i / max_value));
 	        draw_line(tick_x, ty + 4, tick_x, ty + 4 + bar_h);
@@ -273,7 +273,7 @@ switch (current_tab) {
 	    //------------------------------------------
 	    var _surf = surface_create(content_w, content_h);
 	    surface_set_target(_surf);
-	    draw_clear_alpha(c_black, 0);
+	    draw_clear_alpha(c_white, 0);
 
 	    var padding_x = 20;
 	    var y_start = 20 + scroll_y;
@@ -404,10 +404,12 @@ switch (current_tab) {
 
 
     case "notes":
+		draw_set_color(c_white);
         draw_text(content_x + padding_x, y_start, "Unlocked Notes:");
         break;
 
     case "inventory":
+		draw_set_color(c_white);
         draw_text(content_x + padding_x, y_start, "Artifacts:");
         draw_text(content_x + padding_x + 20, y_start + 40, "- Jose Rizal's Book");
         draw_text(content_x + padding_x + 20, y_start + 80, "- Old Map of San Diego");
