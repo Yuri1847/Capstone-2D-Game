@@ -23,15 +23,15 @@ draw_set_font(fn_quiz);
 draw_set_valign(fa_middle);
 
 // --- Hint Button (TOP-LEFT) ---
-//hint_w = 160;
-//hint_h = 48;
-//hint_x = gui_x + 80;
-//hint_y = gui_y + 80;
+hint_w = 160;
+hint_h = 48;
+hint_x = gui_x + 80;
+hint_y = gui_y + 80;
 
 // Button background
-//draw_set_color(make_color_rgb(255, 193, 7)); // yellow
-//draw_rectangle(hint_x, hint_y, hint_x + hint_w, hint_y + hint_h, false);
-/*
+draw_set_color(make_color_rgb(255, 193, 7)); // yellow
+draw_rectangle(hint_x, hint_y, hint_x + hint_w, hint_y + hint_h, false);
+
 // Pressed highlight
 if (hint_pressed) {
     draw_set_alpha(0.4);
@@ -50,7 +50,7 @@ draw_text(
     + "  🧠" + string(global.file_handling_data.wisdom_tickets)
     + "  🙇" + string(global.file_handling_data.humility_tickets)
 );
-*/
+
 // --- Score text (TOP-RIGHT) ---
 draw_set_halign(fa_right);
 draw_set_valign(fa_top);
@@ -69,13 +69,13 @@ draw_set_valign(fa_middle);
 var question_y = cy - area.h * 0.25;
 draw_text(cx, question_y, question);
 
-/*
+
 // ================================================================
 // === HINT DISPLAY ===
 if (!showing_result && hint_display_text != "") {
     draw_set_color(c_black);
     draw_text(cx, question_y + 50, hint_display_text);
-}*/
+}
 
 // ================================================================
 // === OPTIONS ===
