@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_ui_loading_progress",
+  "%Name":"spr_ui_loading_progress_next_room",
   "bboxMode":0,
   "bbox_bottom":13,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"eefa16c3-cab4-460c-b22e-a2ee0bd98b9b","blendMode":0,"displayName":"default","isLocked":false,"name":"eefa16c3-cab4-460c-b22e-a2ee0bd98b9b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_ui_loading_progress",
+  "name":"spr_ui_loading_progress_next_room",
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"Loading Bar",
-    "path":"folders/Sprites/FUNCTIONS/Loading Bar.yy",
+    "name":"Loading Bar for  nextRoom",
+    "path":"folders/Sprites/FUNCTIONS/Loading Bar for  nextRoom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_ui_loading_progress",
+    "%Name":"spr_ui_loading_progress_next_room",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_ui_loading_progress",
+    "name":"spr_ui_loading_progress_next_room",
     "playback":1,
     "playbackSpeed":3.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcffd4a3-9993-4d43-9cac-69686e7623f2","path":"sprites/spr_ui_loading_progress/spr_ui_loading_progress.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcffd4a3-9993-4d43-9cac-69686e7623f2","path":"sprites/spr_ui_loading_progress_next_room/spr_ui_loading_progress_next_room.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"47371e9e-c5fb-44d2-9bdc-3059ef094bcc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

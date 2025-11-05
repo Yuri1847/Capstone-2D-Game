@@ -1,5 +1,5 @@
 function clickButton(){
-	sc_visible_layer([
+	/*sc_visible_layer([
 	//"right_option_layer", 
 	"pause_button_layer", 
 ]);
@@ -13,5 +13,7 @@ function clickButton(){
 	file_handling_load_game()
 	obj_player.x = global.file_handling_data.player_x;
 	obj_player.y = global.file_handling_data.player_y;
-	room_goto(asset_get_index(global.file_handling_data.last_room));
+	room_goto(asset_get_index(global.file_handling_data.last_room));*/
+	room_goto(rm_loading_bar_next_room)
+	global.room_check = "main_menu"
 }

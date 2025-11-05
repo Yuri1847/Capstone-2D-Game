@@ -18,6 +18,7 @@ switch (room_name) {
         break;
 	case "rm_splash_screen":
 	case "rm_loading_bar_first_map":
+	case "rm_loading_bar_next_room": 
 		audio_sound_gain(global.BM_id, 0, 0);
 		break;
 	case "rm_Hotel_Fonda_First_Floor":

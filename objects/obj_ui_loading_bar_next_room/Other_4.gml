@@ -1,0 +1,22 @@
+room_speed = 15
+
+sc_invisible_layer([
+	"load_slot1_main_dialog_layer",
+	"load_slot2_main_dialog_layer",
+	"load_slot3_main_dialog_layer",
+	"load_slot1_dialog_layer",
+	"load_slot2_dialog_layer",
+	"load_slot3_dialog_layer",
+	"talk_button_layer",
+	"state_slot_save_layer",
+	"state_slot_load_layer",
+	"load_game_menu_layer",
+	"settings_menu_layer",
+	"main_menu_layer",
+	"settings_layer",
+	"quest_layer",
+	"inventory_layer",
+	"right_option_layer",
+	"pause_button_layer",
+	"pause_layer",
+]);

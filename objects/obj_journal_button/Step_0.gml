@@ -11,7 +11,7 @@ if (global.quiz_active) {
 
 
 // Hide in main menu
-if ((room == rm_main_menu) || (room == rm_load_game_menu)) {
+if ((room == rm_main_menu) || (room == rm_load_game_menu) ||(room == rm_loading_bar_next_room) || (room == rm_loading_bar_first_map)) {
     visible = false;
     exit; // Skip all code below so it doesn’t react
 } else {

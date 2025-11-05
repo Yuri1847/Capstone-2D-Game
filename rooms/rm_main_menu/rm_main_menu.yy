@@ -32,8 +32,6 @@
     {"name":"inst_55FBF507","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_66BDBF2E","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_28FE2CA5","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_2005EBB8","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_22522AD6","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_280CB5B6","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_71DBF325","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_FFFBAED","path":"roomui/RoomUI/RoomUI.yy",},
