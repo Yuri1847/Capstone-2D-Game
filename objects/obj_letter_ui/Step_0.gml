@@ -102,10 +102,14 @@ var y_mid2_end   = y_mid1_end + h_mid2;
 
 var stat_y = y_mid2_end + h_bottom * 0.25;
 
+// === Confirm Button Region (Bottom-Center) ===
 var confirm_w = 200;
 var confirm_h = 48;
-var confirm_x = area.x + area.w - confirm_w - 100;
-var confirm_y = stat_y + 20;
+
+// Match draw position (centered horizontally, near bottom)
+var confirm_x = area.x + (area.w - confirm_w) * 0.5;
+var confirm_y = area.y + area.h - confirm_h - 20;
+
 
 // check hover and presses for confirm (only in play state)
 for (var f3 = 0; f3 < max_fingers; f3++)

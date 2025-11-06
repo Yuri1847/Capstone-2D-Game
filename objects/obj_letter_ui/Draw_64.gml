@@ -20,11 +20,7 @@ var y_mid1_end   = y_top_end + h_mid1;
 var y_mid2_end   = y_mid1_end + h_mid2;
 var y_bottom_end = area.y + area.h;
 
-// === Dividers ===
-//draw_set_color(c_black);
-//draw_line(area.x, y_top_end,  area.x + area.w, y_top_end);
-//draw_line(area.x, y_mid1_end, area.x + area.w, y_mid1_end);
-//draw_line(area.x, y_mid2_end, area.x + area.w, y_mid2_end);
+
 
 // Draw different panels depending on state
 draw_set_halign(fa_center);
@@ -119,10 +115,12 @@ for (var i = 0; i < array_length(choice_list); i++)
     draw_text(choice_x1 + 12, y_rect1 + choice_h * 0.5, choice_list[i]);
 }
 
-// === Confirm Button ===
+// === Confirm Button (Bottom-Center) ===
 var confirm_w = 200;
 var confirm_h = 48;
-var confirm_x = area.x + area.w - confirm_w - 100;
+
+// Center horizontally, align near bottom
+var confirm_x = area.x + (area.w - confirm_w) * 0.5;
 var confirm_y = area.y + area.h - confirm_h - 20;
 
 // Hover highlight
@@ -141,3 +139,4 @@ draw_set_color(c_black);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(confirm_x + confirm_w * 0.5, confirm_y + confirm_h * 0.5, "Confirm");
+

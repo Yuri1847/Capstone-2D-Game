@@ -22,9 +22,6 @@ hsp = 0; // horizontal speed
 vsp = 0; // vertical speed (optional, if you use vertical movement)
 
 
-if (!instance_exists(obj_arrow_guide)) {
-    instance_create_layer(x, y, "ins_gui", obj_arrow_guide);
-}
 
 
 
