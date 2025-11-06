@@ -70,3 +70,33 @@ if (is_sfx_dragging) {
 	settings_save_game();
 }
 
+
+
+
+// obj_toggle_button  Step Event
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
+
+// Calculate hover for left and right button
+click_left  = (mx > x_pos && mx < x_pos + btn_w && my > y_pos && my < y_pos + btn_h);
+click_right = (mx > x_pos + btn_w && mx < x_pos + btn_w * 2 && my > y_pos && my < y_pos + btn_h);
+
+// Handle clicks
+if (mouse_check_button_pressed(mb_left)) {
+    if (click_left){  
+		toggle_state = 1;
+		global.switchMovementControll = true;
+		
+		global.settings_data.Movement_Controller.switchMovementControll = global.switchMovementControll;
+		global.settings_data.Movement_Controller.toggle_state = toggle_state;
+		settings_save_game()
+	} else if (click_right){
+		toggle_state = 0;
+		global.switchMovementControll = false;
+		
+		global.settings_data.Movement_Controller.switchMovementControll = global.switchMovementControll;
+		global.settings_data.Movement_Controller.toggle_state = toggle_state;
+		settings_save_game()
+	}
+}
+

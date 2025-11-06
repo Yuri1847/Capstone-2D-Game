@@ -12,8 +12,8 @@ if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) 
 	// Calculate movement
 	vx = ((moveRight - moveLeft) * walkSpeed);
 	vy = ((moveDown - moveUp) * walkSpeed);
-} else if (instance_exists(obj_cross_controller) && obj_cross_controller.isTouchCrossControll) {
-    var pad = obj_cross_controller;
+} else if (instance_exists(obj_joystick_base) && obj_joystick_base.isTouchCrossControll) {
+    var pad = obj_joystick_base;
     moveUp = pad.moveUp;
     moveDown = pad.moveDown;
     moveLeft = pad.moveLeft;

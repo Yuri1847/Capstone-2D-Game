@@ -32,3 +32,19 @@ draw_sprite(spr_slider_icon, 0, icon_sfx_x, icon_sfx_y-1);
 var percent_sfx = round(slider_sfx_value * 100);
 draw_set_valign(fa_middle)
 draw_text(slider_sfx_x + slider_width+40, slider_sfx_y, string(percent_sfx) + "%");
+
+
+
+
+// obj_toggle_button - Draw GUI Event
+draw_set_font(fn_ui_loading_progress)
+draw_set_color(c_white);
+draw_text(x_pos+75, y_pos-30, "Movement Controller");
+
+// Left button
+var left_subimg  = (toggle_state == 1) ? 1 : 0;
+draw_sprite(spr_toggle_left_button, left_subimg, x_pos, y_pos);
+
+// Right button
+var right_subimg = (toggle_state == 0) ? 1 : 0;
+draw_sprite(spr_toggle_right_button, right_subimg, x_pos + btn_w, y_pos);

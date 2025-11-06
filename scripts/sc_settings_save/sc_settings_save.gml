@@ -19,6 +19,11 @@ global.settings_data = {
 	{
 	sound_effect_value: 0.8,
 	background_music_value: 0.5
+	},
+	Movement_Controller:
+	{
+		switchMovementControll: true,
+		toggle_state: 1
 	}
 };
 
