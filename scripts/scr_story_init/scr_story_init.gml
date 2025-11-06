@@ -17,7 +17,7 @@ global.story_quests = [
 	    completed: false
 	},
 	
-	//chapter 1
+	//chapter 1 3
     {//trigger Cutscene o diyalogo ng pagbati sa mga panauhin.
 	    title: "Dumalo sa Handaan ni Kapitan Tiago",
 	    description: "...",
@@ -59,9 +59,14 @@ global.story_quests = [
 		npc_id: "chap1Tinong",
 	    completed: false
 	},
+	{
+	    title: "Tumungo sa sumunod na kwarto.",
+	    description: "Tumungo sa may may arrow pababa.",
+	    completed: false
+	},
 	
 	
-	//chapter 2
+	//chapter 2 11
 	{//Trigger: Cutscene kung saan makikita ang pagtatalo ng mga pari sa upuan. -- Kinalabasan: Simula ng eksenang sosyal na puno ng tensyon.
 	    title: "Dumalo sa Hapunan",
 	    description: "Umupo sa kabisera at makibahagi sa pagtitipon..",
