@@ -5,7 +5,7 @@ image_xscale = 0.45; // 150% width
 image_yscale = 0.45; // 80% height
 
 // Variables
-walkSpeed = 3.5;
+walkSpeed = 10;
 vx = 0;
 vy = 0;
 dir = 3;
@@ -20,6 +20,11 @@ notes_read = ds_map_create();
 // --- Movement variables ---
 hsp = 0; // horizontal speed
 vsp = 0; // vertical speed (optional, if you use vertical movement)
+
+if (!instance_exists(obj_arrow_guide)) {
+    instance_create_layer(x, y, "ins_gui", obj_arrow_guide);
+}
+
 
 
 
