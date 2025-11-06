@@ -1,9 +1,26 @@
 
 global.story_quests = [
+	//chapter 0
+    {
+	    title: "Tumungo sa market/pamilihan",
+	    description: "...",
+	    completed: false
+	},
+	{
+	    title: "Dumeretso pa plaza.",
+	    description: "...",
+	    completed: false
+	},
+	{
+	    title: "Dumeretso pa anluwage street.",
+	    description: "Maglakad sa fountain, kumanan sabay kumaliwa.",
+	    completed: false
+	},
+	
 	//chapter 1
     {//trigger Cutscene o diyalogo ng pagbati sa mga panauhin.
 	    title: "Dumalo sa Handaan ni Kapitan Tiago",
-	    description: "Pumasok sa bulwagan at obserbahan ang mga panauhin.",
+	    description: "...",
 	    completed: false
 	},
 	{//Tatanggihan ang iyong pagbati — magbubukas ng emosyonal na reaksyon o pagpipilian ng tugon.
