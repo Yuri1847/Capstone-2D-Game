@@ -12,6 +12,6 @@ if (room == rm_fonde_de_lala_market && global.current_story_index == 0) {
     scr_story_next(false);
 }else if (room == rm_chapter4_erehe_at_filibustero && global.current_story_index == 12) {
     scr_story_next(false);
-}else if (room == rm_fondeDeLala && global.current_story_index == 10) {
+}else if (room == rm_fondeDeLala && global.current_story_index == 13) {
     scr_story_next(false);
 }

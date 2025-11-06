@@ -51,7 +51,7 @@ function scr_dialogue_seq(){
 		    }
 			//chapter 4
 			else if (messages == global.chap4_dial1) {
-				if (global.current_story_index == 9) {
+				if (global.current_story_index == 14) {
 				    scr_story_next();
 				}
 		        global.current_dialogue = global.chap5_dial1; 
