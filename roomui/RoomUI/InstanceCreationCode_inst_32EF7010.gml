@@ -22,7 +22,7 @@ function clickButton(){
 	    if (persistent && object_index != obj_player && 
 		object_index != obj_Inventory && 
 		object_index != obj_Pause_manager &&
-		object_index != obj_slider_bar &&
+		object_index != obj_settings_options &&
 		object_index != obj_state_slot_save &&
 		object_index != obj_state_slot_load) {
 	        instance_destroy();

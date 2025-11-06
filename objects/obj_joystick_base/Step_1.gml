@@ -68,52 +68,52 @@ if(global.switchMovementControll){
 	    // --- Check regions ---
 
 	    // Top Left ↖
-	    if (mx >= left_x1 && mx < left_x2 && my >= top_y1 && my < top_y2) {
+	    if (mx >= left_x1+30 && mx < left_x2 && my >= top_y1+30 && my < top_y2) {
 	        moveUp = true;
 	        moveLeft = true;
 			isTouchCrossControll = true;
 	    }
 
 	    // Top Center ↑
-	    if (mx >= mid_x1 && mx < mid_x2 && my >= top_y1 && my < top_y2){
+	    if (mx >= mid_x1 && mx < mid_x2 && my >= top_y1+30 && my < top_y2){
 	        moveUp = true;
 			isTouchCrossControll = true;
 		}
 
 	    // Top Right ↗
-	    if (mx >= right_x1 && mx < right_x2 && my >= top_y1 && my < top_y2) {
+	    if (mx >= right_x1-20 && mx < right_x2-40 && my >= top_y1+30 && my < top_y2) {
 	        moveUp = true;
 	        moveRight = true;
 			isTouchCrossControll = true;
 	    }
 
 	    // Middle Left ←
-	    if (mx >= left_x1 && mx < left_x2 && my >= mid_y1 && my < mid_y2){
+	    if (mx >= left_x1+30 && mx < left_x2 && my >= mid_y1 && my < mid_y2){
 	        moveLeft = true;
 			isTouchCrossControll = true;
 		}
 
 	    // Middle Right →
-	    if (mx >= right_x1 && mx < right_x2 && my >= mid_y1 && my < mid_y2){
+	    if (mx >= right_x1-30 && mx < right_x2-60 && my >= mid_y1 && my < mid_y2){
 	        moveRight = true;
 			isTouchCrossControll = true;
 		}
 
 	    // Bottom Left ↙
-	    if (mx >= left_x1 && mx < left_x2 && my >= bot_y1 && my < bot_y2) {
+	    if (mx >= left_x1+30 && mx < left_x2 && my >= bot_y1-20 && my < bot_y2-50) {
 	        moveDown = true;
 	        moveLeft = true;
 			isTouchCrossControll = true;
 	    }
 
 	    // Bottom Center ↓
-	    if (mx >= mid_x1 && mx < mid_x2 && my >= bot_y1 && my < bot_y2){
+	    if (mx >= mid_x1 && mx < mid_x2 && my >= bot_y1-30 && my < bot_y2-60){
 	        moveDown = true;
 			isTouchCrossControll = true;
 		}
 
 	    // Bottom Right ↘
-	    if (mx >= right_x1 && mx < right_x2 && my >= bot_y1 && my < bot_y2) {
+	    if (mx >= right_x1-20 && mx < right_x2-50 && my >= bot_y1-20 && my < bot_y2-50) {
 	        moveDown = true;
 	        moveRight = true;
 			isTouchCrossControll = true;

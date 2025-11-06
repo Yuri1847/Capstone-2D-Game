@@ -11,8 +11,8 @@ for (var i = 0; i < max_fingers; i++) {
 			//Place it inside a object button click event
 			var sfx_id = audio_play_sound(snd_button_clicked, 1, false);
 			// apply slider’s volume immediately
-			if (instance_exists(obj_slider_bar)) {
-			    audio_sound_gain(sfx_id, obj_slider_bar.slider_sfx_value, 0);
+			if (instance_exists(obj_settings_options)) {
+			    audio_sound_gain(sfx_id, obj_settings_options.slider_sfx_value, 0);
 			}
 			// random pitch
 			audio_sound_pitch(sfx_id, random_range(0.95, 1.05));

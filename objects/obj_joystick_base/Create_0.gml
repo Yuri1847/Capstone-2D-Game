@@ -57,9 +57,9 @@ moveRight = false;
 margin = 128;
 
 // Button sizes
-w_top = 36; h_top = 38;
-w_mid = 36; h_mid = 38;
-w_bot = 36; h_bot = 38;
+w_top = 56; h_top = 58;
+w_mid = 56; h_mid = 58;
+w_bot = 56; h_bot = 58;
 
 gap = 20; // pixels of space between buttons (adjust as you like)
 
@@ -73,6 +73,6 @@ center_y = display_get_gui_height() - (margin + (h_top + h_mid * 0.5 + h_bot * 0
 // Top-left of full grid
 //x0 = center_x - max_w * 1.5;
 //y0 = center_y - (h_top + h_mid * 0.5 + h_bot * 0.5);
-x0 = center_x - max_w * 1.5;
-y0 = center_y - (h_top + h_mid * 0.5 + h_bot * 0.5);
+x0 = x - max_w * 1.5;
+y0 = y - (h_top + h_mid * 0.5 + h_bot * 0.5);
 isTouchCrossControll = false;

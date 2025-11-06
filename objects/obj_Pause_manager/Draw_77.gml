@@ -23,7 +23,7 @@ function update_pause(){
 		instance_activate_object(obj_state_slot_save)
 		instance_activate_object(obj_state_slot_load)
 		instance_activate_object(obj_player)
-		instance_activate_object(obj_slider_bar)
+		instance_activate_object(obj_settings_options)
 		instance_activate_object(obj_Background_Music_Manager)
 		instance_activate_object(obj_exit_dialog_box)
 		//NOTE:

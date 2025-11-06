@@ -1,8 +1,8 @@
 // Wait for slider to exist and have its value ready
 if (!volume_ready) {
-    if (instance_exists(obj_slider_bar)) {
-        if (variable_instance_exists(obj_slider_bar, "slider_bm_value")) {
-            var vol = obj_slider_bar.slider_bm_value;
+    if (instance_exists(obj_settings_options)) {
+        if (variable_instance_exists(obj_settings_options, "slider_bm_value")) {
+            var vol = obj_settings_options.slider_bm_value;
             audio_sound_gain(global.BM_id, vol, 0);
             volume_ready = true;
         }
@@ -44,7 +44,7 @@ if (is_fading_out) {
 // Gradually fade in (optional)
 if (!is_fading_out && variable_global_exists("BM_id")) {
     var cur_gain = audio_sound_get_gain(global.BM_id);
-    var target_gain = instance_exists(obj_slider_bar) ? obj_slider_bar.slider_bm_value : 1;
+    var target_gain = instance_exists(obj_settings_options) ? obj_settings_options.slider_bm_value : 1;
     if (cur_gain < target_gain) {
         audio_sound_gain(global.BM_id, min(cur_gain + 0.02, target_gain), 0);
     }

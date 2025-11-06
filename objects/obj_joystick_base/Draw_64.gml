@@ -32,18 +32,18 @@ if(global.switchMovementControll){
 } else {
 	//D-PAD
 	// Top row
-	draw_sprite(spr_top_left_cb, 0, x0, y0);
-	draw_sprite(spr_top_center_cb, 0, x0 + (max_w + gap), y0);
-	draw_sprite(spr_top_right_cb, 0, x0 + (max_w + gap) * 2, y0);
+	draw_sprite(spr_top_left_cb, 0, x0+30, y0+30);
+	draw_sprite(spr_top_center_cb, 0, x0 + (max_w + gap), y0+30);
+	draw_sprite(spr_top_right_cb, 0, (x0 + (max_w + gap) * 2)-10, y0+30);
 
 	// Middle row
-	draw_sprite(spr_middle_left_cb, 0, x0, y0 + (h_top + gap));
-	draw_sprite(spr_middle_right_cb, 0, x0 + (max_w + gap) * 2, y0 + (h_top + gap));
+	draw_sprite(spr_middle_left_cb, 0, x0+30, y0 + (h_top + gap));
+	draw_sprite(spr_middle_right_cb, 0, x0 + ((max_w + gap) * 2)-30, y0 + (h_top + gap));
 
 	// Bottom row
-	draw_sprite(spr_bottom_left_cb, 0, x0, y0 + (h_top + gap) + (h_mid + gap));
-	draw_sprite(spr_bottom_center_cb, 0, x0 + (max_w + gap), y0 + (h_top + gap) + (h_mid + gap));
-	draw_sprite(spr_bottom_right_cb, 0, x0 + (max_w + gap) * 2, y0 + (h_top + gap) + (h_mid + gap));
+	draw_sprite(spr_bottom_left_cb, 0, x0+30, (y0 + (h_top + gap) + (h_mid + gap))-10);
+	draw_sprite(spr_bottom_center_cb, 0, x0 + (max_w + gap), (y0 + (h_top + gap) + (h_mid + gap))-30);
+	draw_sprite(spr_bottom_right_cb, 0, (x0 + (max_w + gap) * 2)-10, (y0 + (h_top + gap) + (h_mid + gap))-10);
 
 	// Optional debug rectangles
 	/*draw_set_color(c_lime);
