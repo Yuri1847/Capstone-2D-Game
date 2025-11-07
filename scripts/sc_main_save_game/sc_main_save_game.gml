@@ -46,7 +46,7 @@ function file_handling_save_game(){
 
 		buffer_write( _buffer, buffer_string, _string);
 
-		buffer_save( _buffer, "Nolausss.txt");
+		buffer_save( _buffer, "Naraaolausss.txt");
 
 		buffer_delete( _buffer);
 		
@@ -55,9 +55,9 @@ function file_handling_save_game(){
 
 function file_handling_load_game(){
 	
-	if( file_exists( "Nolausss.txt")) 
+	if( file_exists( "Naraaolausss.txt")) 
 	{
-		var _buffer = buffer_load( "Nolausss.txt");
+		var _buffer = buffer_load( "Naraaolausss.txt");
 	
 		var _json = buffer_read(_buffer, buffer_string);
 	

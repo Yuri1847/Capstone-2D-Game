@@ -10,9 +10,9 @@ global.reflection_data = {
 	        "Manahimik at magbigay-daan bilang paggalang. (Humility)"
 	    ],
 	    choice_stats: [
-	        { justice: 7, wisdom: 2, humility: 4 }, // A
-	        { justice: 3, wisdom: 9, humility: 1 }, // B
-	        { justice: 2, wisdom: 3, humility: 9 }  // C
+	        { justice: 5, wisdom: 0, humility: 0 }, // A
+	        { justice: 0, wisdom: 0, humility: 0 }, // B
+	        { justice: 0, wisdom: 0, humility: 0 }  // C
 	    ],
 	},
 
@@ -26,9 +26,9 @@ global.reflection_data = {
 	        "Manahimik upang mapanatili ang kapayapaan. (Humility)"
 	    ],
 	    choice_stats: [
-	        { justice: 7, wisdom: 2, humility: 4 }, // A
-	        { justice: 3, wisdom: 9, humility: 1 }, // B
-	        { justice: 2, wisdom: 3, humility: 9 }  // C
+	        { justice: 0, wisdom: 0, humility: 0 }, // A
+	        { justice: 0, wisdom: 5, humility: 0 }, // B
+	        { justice: 0, wisdom: 0, humility: 0 }  // C
 	    ],
 	},
 

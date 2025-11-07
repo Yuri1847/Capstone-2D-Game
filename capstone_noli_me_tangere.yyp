@@ -140,6 +140,7 @@
     {"$GMFolder":"","%Name":"Anluwage","folderPath":"folders/Rooms/Main_Rooms/Anluwage.yy","name":"Anluwage","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"chapter 7 Ligawan sa Asotea","folderPath":"folders/Rooms/Main_Rooms/chapter 7 Ligawan sa Asotea.yy","name":"chapter 7 Ligawan sa Asotea","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"FondeDeLala","folderPath":"folders/Rooms/Main_Rooms/FondeDeLala.yy","name":"FondeDeLala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"UI","folderPath":"folders/Rooms/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Old_Rooms","folderPath":"folders/Rooms/UI/Old_Rooms.yy","name":"Old_Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BINONDO","folderPath":"folders/Rooms/UI/Old_Rooms/BINONDO.yy","name":"BINONDO","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level1","folderPath":"folders/Rooms/UI/Old_Rooms/Level1.yy","name":"Level1","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -152,7 +153,6 @@
     {"$GMFolder":"","%Name":"Level8","folderPath":"folders/Rooms/UI/Old_Rooms/Level8.yy","name":"Level8","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NOT_INCLUDED","folderPath":"folders/Rooms/UI/Old_Rooms/NOT_INCLUDED.yy","name":"NOT_INCLUDED","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SAN_DIEGO","folderPath":"folders/Rooms/UI/Old_Rooms/SAN_DIEGO.yy","name":"SAN_DIEGO","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"UI","folderPath":"folders/Rooms/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Audio","folderPath":"folders/Scripts/Audio.yy","name":"Audio","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inventory","folderPath":"folders/Scripts/Inventory.yy","name":"Inventory","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -1215,8 +1215,8 @@
   "RoomOrderNodes":[
     {"children":[
         {"children":[
-            {"roomId":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
             {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+            {"roomId":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
             {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
             {"roomId":{"name":"rm_settings_menu","path":"rooms/rm_settings_menu/rm_settings_menu.yy",},},
             {"roomId":{"name":"rm_load_game_menu","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},},
