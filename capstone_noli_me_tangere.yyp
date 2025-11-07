@@ -1215,8 +1215,8 @@
   "RoomOrderNodes":[
     {"children":[
         {"children":[
-            {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
             {"roomId":{"name":"rm_splash_screen","path":"rooms/rm_splash_screen/rm_splash_screen.yy",},},
+            {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
             {"roomId":{"name":"rm_loading_bar_first_map","path":"rooms/rm_loading_bar_first_map/rm_loading_bar_first_map.yy",},},
             {"roomId":{"name":"rm_settings_menu","path":"rooms/rm_settings_menu/rm_settings_menu.yy",},},
             {"roomId":{"name":"rm_load_game_menu","path":"rooms/rm_load_game_menu/rm_load_game_menu.yy",},},
