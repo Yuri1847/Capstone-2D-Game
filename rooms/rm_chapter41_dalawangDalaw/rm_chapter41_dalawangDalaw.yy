@@ -18,7 +18,7 @@
   "name":"rm_chapter41_dalawangDalaw",
   "parent":{
     "name":"Level6",
-    "path":"folders/Rooms/Old_Rooms/Level6.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level6.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

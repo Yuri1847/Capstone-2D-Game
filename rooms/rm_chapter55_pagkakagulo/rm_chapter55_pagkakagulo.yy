@@ -18,7 +18,7 @@
   "name":"rm_chapter55_pagkakagulo",
   "parent":{
     "name":"Level7",
-    "path":"folders/Rooms/Old_Rooms/Level7.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level7.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

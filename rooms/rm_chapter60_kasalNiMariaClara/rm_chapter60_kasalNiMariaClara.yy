@@ -18,7 +18,7 @@
   "name":"rm_chapter60_kasalNiMariaClara",
   "parent":{
     "name":"Level8",
-    "path":"folders/Rooms/Old_Rooms/Level8.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level8.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

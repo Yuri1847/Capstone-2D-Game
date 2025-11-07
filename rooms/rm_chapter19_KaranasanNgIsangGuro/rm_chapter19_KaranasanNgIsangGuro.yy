@@ -50,7 +50,7 @@
   "name":"rm_chapter19_KaranasanNgIsangGuro",
   "parent":{
     "name":"Level3",
-    "path":"folders/Rooms/Old_Rooms/Level3.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level3.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
