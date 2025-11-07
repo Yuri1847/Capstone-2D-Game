@@ -36,7 +36,7 @@
   "name":"rm_anluwageasdfasd",
   "parent":{
     "name":"BINONDO",
-    "path":"folders/Rooms/Old_Rooms/BINONDO.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/BINONDO.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

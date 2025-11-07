@@ -365,7 +365,7 @@
   "name":"rm_chapter13_BabalaNgSigwa",
   "parent":{
     "name":"Level3",
-    "path":"folders/Rooms/Old_Rooms/Level3.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level3.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

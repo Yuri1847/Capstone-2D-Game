@@ -28,7 +28,7 @@
   "name":"rm_baybayin",
   "parent":{
     "name":"NOT_INCLUDED",
-    "path":"folders/Rooms/Old_Rooms/NOT_INCLUDED.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/NOT_INCLUDED.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -236,7 +236,7 @@
   "name":"rm_chapter25_bahayNiPilosopoTasyo",
   "parent":{
     "name":"Level4",
-    "path":"folders/Rooms/Old_Rooms/Level4.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level4.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

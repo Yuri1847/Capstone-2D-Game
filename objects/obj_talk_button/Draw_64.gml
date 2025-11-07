@@ -18,6 +18,7 @@ global.talk_button_h = sprite_get_height(spr_talk_button);
 // --- Draw normal button ---
 draw_sprite(spr_talk_button, 0, bx, by);
 
+/*
 // 🔆 Highlight effect if tutorial wants it
 if (global.highlight_talk_button)
 {
@@ -31,4 +32,4 @@ if (global.highlight_talk_button)
         1.2, 1.2, 0, c_white, 1
     );
     draw_set_alpha(1);
-}
+}*/

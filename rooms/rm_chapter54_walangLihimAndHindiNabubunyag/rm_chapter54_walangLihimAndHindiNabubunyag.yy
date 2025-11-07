@@ -18,7 +18,7 @@
   "name":"rm_chapter54_walangLihimAndHindiNabubunyag",
   "parent":{
     "name":"Level7",
-    "path":"folders/Rooms/Old_Rooms/Level7.yy",
+    "path":"folders/Rooms/UI/Old_Rooms/Level7.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
