@@ -77,7 +77,7 @@ if (vx != 0 || vy != 0) {
 }
 
 
-/*if(global.is_main_state){
+if(global.is_main_state){
 	if(global.file_handling_data.player_x != obj_player.x 
 	|| global.file_handling_data.player_y != obj_player.y 
 	|| global.file_handling_data.last_room != room_get_name(room))
@@ -87,7 +87,7 @@ if (vx != 0 || vy != 0) {
 		global.file_handling_data.last_room = room_get_name(room);
 		file_handling_save_game();
 	}
-}*/
+}
 
 //depth sorting
 depth =-y;
