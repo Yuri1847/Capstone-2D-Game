@@ -51,12 +51,15 @@ btn_h = 36;
 click_left  = false;
 click_right = false;
 
-
 if(!variable_global_exists("switchMovementControll")){
 	global.switchMovementControll = true;
 }
 
-settings_load_game()
-global.switchMovementControll = global.settings_data.Movement_Controller.switchMovementControll;
-toggle_state = global.settings_data.Movement_Controller.toggle_state;
+if(variable_global_exists("switchMovementControll") && variable_global_exists("settings_data")){
+	settings_load_game()
+	global.switchMovementControll = global.settings_data.Movement_Controller.switchMovementControll;
+	toggle_state = global.settings_data.Movement_Controller.toggle_state;
+}
+
+
 
