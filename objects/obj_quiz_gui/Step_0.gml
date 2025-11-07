@@ -43,6 +43,18 @@ if (submit_press_timer > 0) {
 
 
 // ==================================================================
+// === DETERMINE CURRENT VIRTUE (for GUI display) ===
+if (array_length(quiz_data) > 0) {
+    var q = quiz_data[question_index];
+    if (variable_struct_exists(q, "virtue")) {
+        current_virtue = q.virtue;
+    } else {
+        current_virtue = "unknown";
+    }
+}
+
+
+// ==================================================================
 // === INPUT HANDLING ===
 var max_fingers = 5;
 for (var i = 0; i < max_fingers; i++) {
@@ -68,41 +80,39 @@ for (var i = 0; i < max_fingers; i++) {
                     global.quiz_active = false;
                 } else {
                     // ❌ FAIL: retry quiz
-                    // ❌ FAIL: retry quiz
-				show_toast("Bagsak na pagsusulit, ulitin ang pagsusulit.");
+                    show_toast("Bagsak na pagsusulit, ulitin ang pagsusulit.");
 
-				// Reset all relevant globals
-				global.quiz_pending_warp = false;
-				global.quiz_active = false;
-				global.quiz_target_room = noone;
+                    // Reset all relevant globals
+                    global.quiz_pending_warp = false;
+                    global.quiz_active = false;
+                    global.quiz_target_room = noone;
 
-				// Reset quiz controller state
-				with (obj_quiz_controller) {
-				    quiz_done = false;
-				    quiz_score = 0;
-				    question_index = 0;
-				    summary_visible = false;
-				    showing_result = false;
-				    hint_revealed = false;
-				    hint_display_text = "";
-				}
+                    // Reset quiz controller state
+                    with (obj_quiz_controller) {
+                        quiz_done = false;
+                        quiz_score = 0;
+                        question_index = 0;
+                        summary_visible = false;
+                        showing_result = false;
+                        hint_revealed = false;
+                        hint_display_text = "";
+                    }
 
-				// Return to the previous room
-				if (variable_global_exists("prev_room")) {
-				    global.warp_spawn_x = global.prev_x;
-				    global.warp_spawn_y = global.prev_y;
+                    // Return to the previous room
+                    if (variable_global_exists("prev_room")) {
+                        global.warp_spawn_x = global.prev_x;
+                        global.warp_spawn_y = global.prev_y;
 
-				    var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
-				    t.fading_out = true;
-				    t.next_room = global.prev_room;
-				} else {
-				    // fallback: reload current room
-				    room_goto(room);
-				}
+                        var t = instance_create_layer(0, 0, "ins_transition", obj_transition);
+                        t.fading_out = true;
+                        t.next_room = global.prev_room;
+                    } else {
+                        // fallback: reload current room
+                        room_goto(room);
+                    }
 
-				// Destroy the current quiz GUI instance
-				instance_destroy();
-
+                    // Destroy the current quiz GUI instance
+                    instance_destroy();
                 }
             }
         }

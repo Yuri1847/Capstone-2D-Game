@@ -1,18 +1,18 @@
-
-
-
 /// @description Initialize quiz GUI
 visible = false; // hidden until function is called
 
+// --- Basic quiz data ---
 question = "";
 options = [];
 correct_index = -1;
 selected = -1;
+quiz_score = 0;
 
-// new variables to avoid undefined errors
+// --- Result display ---
 showing_result = false;
 result_text = "";
 result_timer = 0;
+result_sprite = noone;
 
 // --- Layout setup ---
 gui_w = display_get_gui_width();
@@ -28,12 +28,6 @@ btn_height = 60;
 btn_spacing = 20;
 start_y = cy - (panel_h * 0.5) + 150;
 
-selected = -1;
-showing_result = false;
-
-quiz_score = 0;
-
-
 // --- Submit button setup ---
 var spr_w = sprite_get_width(spr_quiz_submit);
 var spr_h = sprite_get_height(spr_quiz_submit);
@@ -43,40 +37,45 @@ submit_w = spr_w * 2;
 submit_h = spr_h * 1.2;
 
 // Bottom-right corner positioning
-submit_x = display_get_gui_width() - submit_w - 64; // 20px margin from right
-submit_y = display_get_gui_height() - submit_h - 64; // 20px margin from bottom
+submit_x = gui_w - submit_w - 64;
+submit_y = gui_h - submit_h - 64;
+
 submit_press_timer = 0;
 submit_pressed = false;
-
-//result 
-result_sprite = noone;
-
-
-
-
-
-submit_pressed = false;
-
-// ✅ NEW: for hints
-virtue = "";
-hint_text = "";
-hint_revealed = false;
-hint_button_y = start_y + (btn_height + btn_spacing) * 3 + 60; // position below options
-// --- Close button pressed flag ---
-close_pressed = false;
 
 // --- Close button setup ---
 close_w = 120;
 close_h = 48;
-close_x = gui_w - close_w - 40; // top-right corner, 40px from edge
+close_x = gui_w - close_w - 40; // top-right corner
 close_y = 40;
+close_pressed = false;
 
-
+// --- Hint system ---
+virtue = "";
+hint_text = "";
+hint_revealed = false;
 hint_pressed = false;
-
-
 hint_display_text = "";
+hint_button_y = start_y + (btn_height + btn_spacing) * 3 + 60;
 
+// --- Summary state ---
 summary_visible = false;
 continue_pressed = false;
 
+// ==================================================================
+// ✅ NEW: SAFE INITIALIZATION to avoid "quiz_data not set" errors
+// ==================================================================
+if (!variable_instance_exists(id, "quiz_data")) {
+    quiz_data = [];
+}
+question_index = 0;
+total_questions = 0;
+
+// Track current virtue for Draw GUI
+current_virtue = "unknown";
+
+// ==================================================================
+// ✅ Optional: Initialize warp/quiz globals to ensure clean state
+// ==================================================================
+if (!variable_global_exists("quiz_active")) global.quiz_active = false;
+if (!variable_global_exists("quiz_pending_warp")) global.quiz_pending_warp = false;
