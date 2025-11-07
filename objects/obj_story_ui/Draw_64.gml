@@ -18,6 +18,13 @@ var ah = area.h;
 var margin_left = ax + 32;
 var margin_top  = ay + 32;
 
+if(object_exists(obj_Mini_Map)){
+	// === Margins ===
+	margin_left = ax + obj_Mini_Map.w+62;
+	margin_top  = ay + 80;
+}
+
+
 // === Text content ===
 var text_label = "Objective:";
 var text_obj   = string(q.title);

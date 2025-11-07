@@ -3,7 +3,7 @@
 var area = scr_get_camera_gui_area();
 
 xx = area.x + minimap_margin;
-yy = area.y + (area.h - h)/2;
+yy = area.y +  minimap_margin;
 
 
 
