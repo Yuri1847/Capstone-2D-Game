@@ -32,18 +32,18 @@ var hint_label = "";
 switch (current_virtue) {
     case "justice":
         hint_col = make_color_rgb(255, 215, 0); // gold
-        hint_label = "⚖️ Hints: " + string(global.file_handling_data.justice_tickets);
+        hint_label = "Hints: " + string(global.file_handling_data.justice_tickets);
         break;
     case "wisdom":
         hint_col = make_color_rgb(100, 149, 237); // blue
-        hint_label = "🧠 Hints: " + string(global.file_handling_data.wisdom_tickets);
+        hint_label = "Hints: " + string(global.file_handling_data.wisdom_tickets);
         break;
     case "humility":
         hint_col = make_color_rgb(144, 238, 144); // green
-        hint_label = "🙇 Hints: " + string(global.file_handling_data.humility_tickets);
+        hint_label = "Hints: " + string(global.file_handling_data.humility_tickets);
         break;
     default:
-        hint_label = "🧩 Hints: ?";
+        hint_label = "Hints: ?";
         break;
 }
 
@@ -81,6 +81,41 @@ draw_set_valign(fa_middle);
 
 var question_y = cy - area.h * 0.25;
 draw_text(cx, question_y, question);
+
+// ================================================================
+// === VIRTUE LABEL ===
+var virtue_label = "";
+var virtue_color = c_white;
+
+switch (current_virtue) {
+    case "justice":
+        virtue_label = "Justice";
+        virtue_color = make_color_rgb(255, 215, 0);
+        break;
+    case "wisdom":
+        virtue_label = "Wisdom";
+        virtue_color = make_color_rgb(100, 149, 237);
+        break;
+    case "humility":
+        virtue_label = "Humility";
+        virtue_color = make_color_rgb(144, 238, 144);
+        break;
+    default:
+        virtue_label = "Virtue Unknown";
+        virtue_color = c_ltgray;
+        break;
+}
+
+// Draw virtue tag (above question)
+var virt_w = 200;
+var virt_h = 40;
+var virt_x = cx - virt_w * 0.5;
+var virt_y = question_y - 70;
+
+draw_set_color(merge_color(virtue_color, c_white, 0.5));
+draw_roundrect(virt_x, virt_y, virt_x + virt_w, virt_y + virt_h, false);
+draw_set_color(virtue_color);
+draw_text(cx, virt_y + virt_h * 0.5, virtue_label);
 
 // ================================================================
 // === HINT DISPLAY ===
