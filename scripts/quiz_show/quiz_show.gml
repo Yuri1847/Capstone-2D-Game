@@ -13,7 +13,7 @@ function quiz_show(_quiz_data, _index) {
         hint_text = q.hint;          // ✅ NEW
         hint_revealed = false;       // ✅ NEW
         selected = -1;
-
+		
         showing_result = false;
         result_text = "";
         result_timer = 0;

@@ -85,6 +85,7 @@
     {"name":"snd_chapter1_room","order":2,"path":"sounds/snd_chapter1_room/snd_chapter1_room.yy",},
     {"name":"snd_chapter2_room","order":3,"path":"sounds/snd_chapter2_room/snd_chapter2_room.yy",},
     {"name":"snd_dialog_button","order":1,"path":"sounds/snd_dialog_button/snd_dialog_button.yy",},
+    {"name":"snd_quiz_bgm","order":4,"path":"sounds/snd_quiz_bgm/snd_quiz_bgm.yy",},
     {"name":"spr_alert","order":1,"path":"sprites/spr_alert/spr_alert.yy",},
     {"name":"spr_anluwage","order":5,"path":"sprites/spr_anluwage/spr_anluwage.yy",},
     {"name":"spr_arr_anluwage","order":4,"path":"sprites/spr_arr_anluwage/spr_arr_anluwage.yy",},

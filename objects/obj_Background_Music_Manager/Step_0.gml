@@ -49,3 +49,7 @@ if (!is_fading_out && variable_global_exists("BM_id")) {
         audio_sound_gain(global.BM_id, min(cur_gain + 0.02, target_gain), 0);
     }
 }
+
+if (instance_exists(obj_quiz_gui) && obj_quiz_gui.visible){
+	sc_set_bgm(snd_quiz_bgm);
+}

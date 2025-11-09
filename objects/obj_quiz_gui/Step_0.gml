@@ -163,7 +163,7 @@ for (var i = 0; i < max_fingers; i++) {
                 global.warp_spawn_x = global.prev_x;
                 global.warp_spawn_y = global.prev_y;
             } else t.next_room = room;
-
+			
             instance_destroy();
         }
 
