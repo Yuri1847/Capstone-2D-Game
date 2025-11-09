@@ -61,7 +61,7 @@ w_top = 56; h_top = 58;
 w_mid = 56; h_mid = 58;
 w_bot = 56; h_bot = 58;
 
-gap = 20; // pixels of space between buttons (adjust as you like)
+gap = 30; // pixels of space between buttons (adjust as you like)
 
 // Base for positioning
 max_w = w_mid;
