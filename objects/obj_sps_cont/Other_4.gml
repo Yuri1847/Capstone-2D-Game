@@ -21,3 +21,15 @@ if (room == rm_fonde_de_lala_market && global.current_story_index == 0) {
 }else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 17) {
     scr_story_next(false);
 }
+
+else if (room == rm_Hotel_Fonda_First_Floor && global.current_story_index == 19) {
+    scr_story_next(false);
+}else if (room == rm_fondeDeLala && global.current_story_index == 20) {
+    scr_story_next(false);
+}else if (room == rm_fonde_de_lala_market && global.current_story_index == 21) {
+    scr_story_next(false);
+}else if (room == rm_binondo_main && global.current_story_index == 22) {
+    scr_story_next(false);
+}else if (room == rm_anluwage && global.current_story_index == 23) {
+    scr_story_next(false);
+}

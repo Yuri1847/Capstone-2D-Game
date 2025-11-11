@@ -105,12 +105,39 @@ global.story_quests = [
 		    description: "...",
 		    completed: false
 		},
-		{//rigger: Pagkatapos makita si Maria Clara. ➤ Resulta: Fade-out cutscene → Simula ng susunod na kabanata (“Paglalakbay ni Ibarra”). ➤ Gantimpala: +Emotional Recovery.
+		{//18
 		    title: "Magpahinga",
 		    description: "Matulog upang tapusin ang gabi.",
 		    completed: false
 		},
-
+		
+	{//rigger: Pagkatapos makita si Maria Clara. ➤ Resulta: Fade-out cutscene → Simula ng susunod na kabanata (“Paglalakbay ni Ibarra”). ➤ Gantimpala: +Emotional Recovery.
+		    title: "Bumaba sa unang palapag",
+		    description: "...",
+		    completed: false
+		},
+	{//rigger: Pagkatapos makita si Maria Clara. ➤ Resulta: Fade-out cutscene → Simula ng susunod na kabanata (“Paglalakbay ni Ibarra”). ➤ Gantimpala: +Emotional Recovery.
+		    title: "Lumabas sa Hotel",
+		    description: "...",
+		    completed: false
+		},
+	{//21
+	    title: "Tumungo sa market/pamilihan",
+	    description: "...",
+	    completed: false
+	},
+	{ 
+	    title: "Dumeretso pa plaza.",
+	    description: "...",
+	    completed: false
+	},
+	{
+	    title: "Dumeretso pa anluwage street.",
+	    description: "Maglakad sa fountain, kumanan sabay kumaliwa.",
+	    completed: false
+	},
+	
+	
 	
 	//chapter 5
 	{//Trigger: Cutscene ng pagdating ni Ibarra sa bahay.
