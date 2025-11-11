@@ -12,6 +12,12 @@ if (room == rm_fonde_de_lala_market && global.current_story_index == 0) {
     scr_story_next(false);
 }else if (room == rm_chapter4_erehe_at_filibustero && global.current_story_index == 12) {
     scr_story_next(false);
-}else if (room == rm_fondeDeLala && global.current_story_index == 13) {
+}else if (room == rm_binondo_main && global.current_story_index == 14) {
+    scr_story_next(false);
+}else if (room == rm_fondeDeLala && global.current_story_index == 15) {
+    scr_story_next(false);
+}else if (room == rm_Hotel_Fonda_First_Floor && global.current_story_index == 16) {
+    scr_story_next(false);
+}else if (room == rm_Hotel_Fonda_Second_Floor && global.current_story_index == 17) {
     scr_story_next(false);
 }

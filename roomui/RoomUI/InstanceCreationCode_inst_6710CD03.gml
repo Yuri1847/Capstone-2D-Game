@@ -14,6 +14,7 @@ function clickButton(){
 	obj_player.x = global.file_handling_data.player_x;
 	obj_player.y = global.file_handling_data.player_y;
 	room_goto(asset_get_index(global.file_handling_data.last_room));*/
+	//enable this
 	room_goto(rm_loading_bar_next_room)
 	global.room_check = "main_menu"
 }

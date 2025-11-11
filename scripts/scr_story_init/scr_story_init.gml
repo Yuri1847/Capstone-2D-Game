@@ -59,7 +59,7 @@ global.story_quests = [
 		npc_id: "chap1Tinong",
 	    completed: false
 	},
-	{
+	{//10
 	    title: "Tumungo sa sumunod na kwarto.",
 	    description: "Tumungo sa may may arrow pababa.",
 	    completed: false
@@ -78,36 +78,31 @@ global.story_quests = [
 	    description: "Umalis upang maglakad-lakad at makahinga ng sariwang hangin.",
 	    completed: false
 	},
-	{//Trigger: Automatic dialogue cutscene. - Resulta: Bubukas ang “Kwento ng Ama.”
+	{ //13
 	    title: "Makita si Tinyente Guevarra",
 	    description: "Lapitan si Tinyente na nasa gilid ng plasa.",
 	    completed: false
 	},
-	{//Mekaniko: Pindutin o lapitan ang mga tindera upang marinig ang mga linya gaya ng - “Ganyan pa rin dito, ginoo.” antimpala: +Reflection Points (“Walang Pagbabago sa Bayan”).
+	{// 14
 	    title: "Maglakad sa Plasa ng Binondo",
 	    description: "Obserbahan ang paligid at makausap ang mga tindera.",
 	    completed: false
 	},
+	{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
+		    title: "Dumeretso pa Fonda de Lala",
+		    description: "..",
+		    completed: false
+	},
 	
 		//chapter 4
+	{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
+		    title: "Pumasok sa Fonda de Lala",
+		    description: "...",
+		    completed: false
+	},
 		{//rigger: Matapos ang eksenang may Tinyente Guevarra (mula Kabanata 4).➤ Resulta: Bubukas ang quiet scene sa loob ng silid ni Ibarra.➤ Gantimpala: +Checkpoint “Pahinga sa Fonda.”
-		    title: "Dumating sa Fonda de Lala",
-		    description: "Ipatuloy ang biyahe at pumasok sa tinutuluyan ni Ibarra.",
-		    completed: false
-		},
-		{//Mekaniko: Gamitin ang “Look” interaction sa mga bagay tulad ng mesa, ilaw, o bintana.➤ Gantimpala: +Reflection Entry — “Ang Alaala ng Nakaraan.”
-		    title: "Magmasid sa Silid at Kapaligiran",
-		    description: "Obserbahan ang mga gamit sa silid at mga tanawin sa labas ng bintana.",
-		    completed: false
-		},
-		{//Resulta: Mapapansin ni Ibarra ang kasayahan, musika, at liwanag mula sa bahay ni Kapitan Tiago. ➤ Symbolic Effect: +Hope / +Memory of Home.
-		    title: "Tumingin sa Bintana",
-		    description: "Lapitan ang bintana upang simulan ang cutscene kung saan makikita ang bahay sa kabilang ilog.",
-		    completed: false
-		},
-		{//Cutscene: Makikilala si Maria Clara. ➤ Resulta: Journal update — “Ang Alaala ng Pag-ibig.”
-		    title: "Matunghayan si Maria Clara",
-		    description: "Obserbahan ang babaeng nagliliwanag sa kasuotan ng ginto’t diyamante.",
+		    title: "Umakyat sa ikalawang palapag",
+		    description: "...",
 		    completed: false
 		},
 		{//rigger: Pagkatapos makita si Maria Clara. ➤ Resulta: Fade-out cutscene → Simula ng susunod na kabanata (“Paglalakbay ni Ibarra”). ➤ Gantimpala: +Emotional Recovery.
