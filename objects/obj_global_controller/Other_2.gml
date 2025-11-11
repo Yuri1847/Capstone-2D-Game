@@ -13,3 +13,5 @@ global.highlight_journal = false;
 global.tutorial_step = 0;
 global.tutorial_active = true;
 
+//changing warp locations
+global.global_warp_count = 0;
