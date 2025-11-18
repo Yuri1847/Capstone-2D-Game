@@ -1,6 +1,3 @@
-// --------------------------------------------------
-// create_dialogue(messages) — create new dialog instance
-// --------------------------------------------------
 function create_dialogue(_messages) {
     if (instance_exists(obj_dialog)) return noone;
     var _inst = instance_create_depth(0, 0, 0, obj_dialog);
@@ -12,111 +9,6 @@ function create_dialogue(_messages) {
     dialogue_active = true;
     return _inst;
 }
-
-
-/*
-function create_dialogue(_messages) {
-    if (instance_exists(obj_dialog)) return noone;
-    
-    var _inst = instance_create_depth(0, 0, 0, obj_dialog);
-    _inst.messages = _messages;
-    _inst.current_message = 0;
-    
-    return _inst; // ✅ Return the created instance
-}
-*/
-
-/*
-// color for names ....
-char_colors = {
-	"Crisostomo Ibarra" : c_blue,
-	"Kapitan Tiago" : c_aqua,
-	"Narration" : c_olive,
-	"Padre Damaso" : c_green,
-	"Tiniente Guevarra" : c_lime,
-	"Isa sa mga binata" : c_orange,
-	"Makata" : c_teal,
-	"Lingkod" : c_olive,
-	"Kapitan Tinong" : c_olive,
-	"Laruja" : c_olive,
-	"Maria Clara" : c_olive,
-	"Katiwala" : c_olive,
-}
-*/
-
-//testing dialogue
-welcome_dialog = [
-    {
-        name: "Crisostomo Ibarra",
-        msg: "Kamusta ka na Kapitan Tiago.",
-        portrait: spr_por_ibarra
-    },
-    {
-        name: "Kapitan Tiago",
-        msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
-        portrait: spr_por_tiago,
-        //action: "lettersystem:ibarra_tiago"
-    },	
-    {
-        name: "Narration",
-        msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"
-    }
-];
-welcomed_dialog = [
-    {
-        name: "Crisostomo Ibarra",
-        msg: "Kamusta ka na Kapitan Tiago.",
-        portrait: spr_por_ibarra
-    },
-    {
-        name: "Kapitan Tiago",
-        msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
-        portrait: spr_por_tiago,
-        action: "lettersystem:ibarra_damaso"
-    },	
-    {
-        name: "Narration",
-        msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"
-    }
-];
-
-
-
-chap2_find_hidden_quest_start = [
-	  {
-	    "name": "Kapitan Tiago",
-	    "msg": "Ibarra, may maliit akong pakiusap. Naiwan ko ang rosaryong regalo ni Padre Dámaso sa may hardin sa likod ng bahay."
-	  },
-	  {
-	    "name": "Kapitan Tiago",
-	    "msg": "Baka maaari mong hanapin ito bago dumating ang iba. Isang tanda iyon ng aking pananampalataya."
-	  },
-	  {
-	    "name": "Ibarra",
-	    "msg": "Walang anuman, Kapitan. Hahanapin ko po agad."
-	  }
-]
-
-chap2_find_hidden_quest_complete = [
-	 {
-    "name": "Ibarra",
-    "msg": "Kapitan, narito na po ang rosaryong hinahanap ninyo."
-  },
-  {
-    "name": "Kapitan Tiago",
-    "msg": "Maraming salamat, Ibarra! Pasensya na sa abala..."
-  },
-  {
-    "name": "Kapitan Tiago",
-    "msg": "Narito ang susi ng lumang silid sa itaas. Buksan mo iyon, baka may mahahanap kang mahalagang gamit ng iyong ama."
-  },
-  {
-    "name": "Narration",
-    "msg": "(Nakakuha ka ng “Old Room Key”)"
-  }
-]
-
-
 
 //level 1
 //chapter 2 crisostomo ibarra
@@ -1797,3 +1689,108 @@ lvl_3_one = [
 		msg: "Ipakita mo sa akin ang nitso ng aking ama"
 	},
 ]
+
+
+/*
+function create_dialogue(_messages) {
+    if (instance_exists(obj_dialog)) return noone;
+    
+    var _inst = instance_create_depth(0, 0, 0, obj_dialog);
+    _inst.messages = _messages;
+    _inst.current_message = 0;
+    
+    return _inst; // ✅ Return the created instance
+}
+*/
+
+/*
+// color for names ....
+char_colors = {
+	"Crisostomo Ibarra" : c_blue,
+	"Kapitan Tiago" : c_aqua,
+	"Narration" : c_olive,
+	"Padre Damaso" : c_green,
+	"Tiniente Guevarra" : c_lime,
+	"Isa sa mga binata" : c_orange,
+	"Makata" : c_teal,
+	"Lingkod" : c_olive,
+	"Kapitan Tinong" : c_olive,
+	"Laruja" : c_olive,
+	"Maria Clara" : c_olive,
+	"Katiwala" : c_olive,
+}
+*/
+
+//testing dialogue
+welcome_dialog = [
+    {
+        name: "Crisostomo Ibarra",
+        msg: "Kamusta ka na Kapitan Tiago.",
+        portrait: spr_por_ibarra
+    },
+    {
+        name: "Kapitan Tiago",
+        msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
+        portrait: spr_por_tiago,
+        //action: "lettersystem:ibarra_tiago"
+    },	
+    {
+        name: "Narration",
+        msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"
+    }
+];
+welcomed_dialog = [
+    {
+        name: "Crisostomo Ibarra",
+        msg: "Kamusta ka na Kapitan Tiago.",
+        portrait: spr_por_ibarra
+    },
+    {
+        name: "Kapitan Tiago",
+        msg: "Mabuti naman Ibarra. May karangalan akong ipakilala sa inyo si Don Crisostomo Ibarra.",
+        portrait: spr_por_tiago,
+        action: "lettersystem:ibarra_damaso"
+    },	
+    {
+        name: "Narration",
+        msg: "(Pagdating ni Ibarra kasama ni Kapitan Tiago...)"
+    }
+];
+
+
+
+chap2_find_hidden_quest_start = [
+	  {
+	    "name": "Kapitan Tiago",
+	    "msg": "Ibarra, may maliit akong pakiusap. Naiwan ko ang rosaryong regalo ni Padre Dámaso sa may hardin sa likod ng bahay."
+	  },
+	  {
+	    "name": "Kapitan Tiago",
+	    "msg": "Baka maaari mong hanapin ito bago dumating ang iba. Isang tanda iyon ng aking pananampalataya."
+	  },
+	  {
+	    "name": "Ibarra",
+	    "msg": "Walang anuman, Kapitan. Hahanapin ko po agad."
+	  }
+]
+
+chap2_find_hidden_quest_complete = [
+	 {
+    "name": "Ibarra",
+    "msg": "Kapitan, narito na po ang rosaryong hinahanap ninyo."
+  },
+  {
+    "name": "Kapitan Tiago",
+    "msg": "Maraming salamat, Ibarra! Pasensya na sa abala..."
+  },
+  {
+    "name": "Kapitan Tiago",
+    "msg": "Narito ang susi ng lumang silid sa itaas. Buksan mo iyon, baka may mahahanap kang mahalagang gamit ng iyong ama."
+  },
+  {
+    "name": "Narration",
+    "msg": "(Nakakuha ka ng “Old Room Key”)"
+  }
+]
+
+

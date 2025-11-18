@@ -38,7 +38,6 @@ for (var i = 0; i < max_fingers; i++) {
 
 // === If an external action is running, freeze dialogue until it completes ===
 if (_action_running) {
-    // Optional: instantly show the full line while waiting
     draw_message = string_copy(_str, 0, string_length(_str));
     exit;
 }

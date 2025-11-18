@@ -1,6 +1,3 @@
-/// scr_dialogue_start_action(_action, _dialog)
-/// Safely executes dialogue-defined actions like "lettersystem:elias_guard"
-
 function scr_dialogue_start_action(_action, _dialog)
 {
     // === Sanity & type checks ===

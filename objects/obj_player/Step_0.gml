@@ -1,8 +1,5 @@
 //test dialog
 if(instance_exists(obj_dialog)) exit;
-
-
-// Check keys for movement
 if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) || keyboard_check(vk_down)){
 	//for Keyboard
 	moveRight = keyboard_check(vk_right);
@@ -35,9 +32,6 @@ if(keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_left) 
 	vx = round(moveX * walkSpeed);
 	vy = round( moveY * walkSpeed);
 }
-
-
-
 // If Idle
 if (vx == 0 && vy == 0) {
 	// Change idle Sprite based on last direction
@@ -75,8 +69,6 @@ if (vx != 0 || vy != 0) {
 	dir = 1;
 	}
 }
-
-
 if(global.is_main_state){
 	if(global.file_handling_data.player_x != obj_player.x 
 	|| global.file_handling_data.player_y != obj_player.y 
@@ -88,6 +80,5 @@ if(global.is_main_state){
 		file_handling_save_game();
 	}
 }
-
 //depth sorting
 depth =-y;

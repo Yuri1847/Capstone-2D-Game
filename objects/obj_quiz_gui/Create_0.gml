@@ -1,4 +1,3 @@
-/// @description Initialize quiz GUI
 visible = false; // hidden until function is called
 
 // --- Basic quiz data ---
@@ -62,9 +61,6 @@ hint_button_y = start_y + (btn_height + btn_spacing) * 3 + 60;
 summary_visible = false;
 continue_pressed = false;
 
-// ==================================================================
-// ✅ NEW: SAFE INITIALIZATION to avoid "quiz_data not set" errors
-// ==================================================================
 if (!variable_instance_exists(id, "quiz_data")) {
     quiz_data = [];
 }
@@ -74,8 +70,5 @@ total_questions = 0;
 // Track current virtue for Draw GUI
 current_virtue = "unknown";
 
-// ==================================================================
-// ✅ Optional: Initialize warp/quiz globals to ensure clean state
-// ==================================================================
 if (!variable_global_exists("quiz_active")) global.quiz_active = false;
 if (!variable_global_exists("quiz_pending_warp")) global.quiz_pending_warp = false;
